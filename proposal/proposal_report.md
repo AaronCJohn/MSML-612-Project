@@ -48,12 +48,24 @@ The resulting system could demonstrate how structured generative models can inco
 
 The training dataset will consist of Pokémon images paired with metadata describing attributes such as Pokémon type, evolution stage, and artistic style.
 
-Possible data sources include:
+We will use three primary datasets:
 
-* PokéAPI ([https://pokeapi.co/](https://pokeapi.co/)) for metadata about Pokémon types and evolution chains.
-* Pokémon sprite repositories (e.g., Pokémon Showdown sprite datasets).
-* Kaggle Pokémon datasets containing official artwork and sprites.
-* Pokémon GO or Pokémon HOME image collections.
+### PokeSprite
+* **Content**: 68×56 pixel 2D Pokémon sprites (906 Pokémon)
+* **Source**: [https://github.com/msikma/pokesprite/tree/master/pokemon-gen7x](https://github.com/msikma/pokesprite/tree/master/pokemon-gen7x) and [https://github.com/msikma/pokesprite/tree/master/pokemon-gen8](https://github.com/msikma/pokesprite/tree/master/pokemon-gen8)
+* **Description**: Small-format pixel art sprites suitable for learning low-resolution generation patterns
+
+### ProjectPokemon
+* **Content**: 3D Pokémon HOME models (all Pokémon)
+* **Source**: [https://projectpokemon.org/home/docs/spriteindex_148/](https://projectpokemon.org/home/docs/spriteindex_148/) (home-sprites-gen-{X}-r{Y} where X = 1-8 (generation) and Y = 128-135 (ID))
+* **Description**: High-quality 3D renders with 512×512 resolution for Pokémon #1-898 and 256×256 resolution for Pokémon #899+
+
+### SugimoriSprites
+* **Content**: Large quality 2D Pokémon sprites (all Pokémon)
+* **Source**: [Google Drive collection](https://drive.google.com/drive/folders/1T2hF3ieas4mNBKQN6v94mlY8lbwT4KLx?usp=sharing) and [Reddit post](https://www.reddit.com/r/pokemon/comments/wx1qxp/all_officialsugimori_pokemon_art_collection_zip/)
+* **Description**: Official Sugimori-style artwork (>500×500 pixels) representing the canonical artistic style
+
+For metadata, we will use **PokéAPI** ([https://pokeapi.co/](https://pokeapi.co/)) to obtain information about Pokémon types and evolution chains.
 
 The dataset will include multiple image styles, including:
 
@@ -73,14 +85,14 @@ The images will be preprocessed to ensure consistent resolution (e.g., 128×128 
 To support evolution modeling, training samples will include pairs such as:
 
 ```
-(previous Pokémon image, attributes) → evolved Pokémon image
+(previous Pokémon image, attributes) -> evolved Pokémon image
 ```
 
 For example:
 
 ```
-Charmander → Charmeleon
-Bulbasaur → Ivysaur
+Charmander -> Charmeleon
+Bulbasaur -> Ivysaur
 ```
 
 This allows the model to learn visual transformation patterns that occur during Pokémon evolution.
@@ -113,8 +125,8 @@ At inference time, the model begins with random noise and iteratively denoises t
 The architecture can be summarized as:
 
 ```
-conditioning attributes → transformer encoder → conditioning embedding
-noise image → diffusion UNet → predicted noise → generated Pokémon image
+conditioning attributes -> transformer encoder -> conditioning embedding
+noise image -> diffusion UNet -> predicted noise -> generated Pokémon image
 ```
 
 This architecture enables both attribute-controlled generation and evolution-based conditioning.
