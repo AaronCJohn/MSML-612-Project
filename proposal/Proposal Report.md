@@ -30,17 +30,17 @@ Designing new Pokémon species is traditionally a manual artistic process that r
 
 The problem addressed in this project is:
 
-**Can a deep learning model generate new Pokémon designs that respect these structural patterns while producing novel species that do not already exist in the dataset?**
+Can a deep learning model generate new Pokémon designs that respect these structural patterns while producing novel species that do not already exist in the dataset?
 
 Specifically, we aim to build a model capable of:
 
 1. Generating new Pokémon images conditioned on attributes such as type, stage, and style.
 2. Producing plausible evolutionary forms conditioned on previously generated Pokémon.
-3. Maintaining stylistic consistency with known Pokémon artwork while encouraging novelty.
+3. Maintaining stylistic consistency with known Pokémon artwork.
 
 Transformers are used to encode attribute information because they are effective at learning relationships between structured inputs. The transformer embeddings provide a flexible conditioning mechanism that allows the diffusion model to adapt generation based on combinations of attributes. This architecture enables more structured generation compared to unconditional diffusion models.
 
-The resulting system could demonstrate how structured generative models can incorporate both **semantic attributes and visual conditioning**, which has broader implications for conditional image generation in areas such as character design, game development, and creative AI systems.
+The resulting system could demonstrate how structured generative models can incorporate both semantic attributes and visual conditioning, which has broader implications for conditional image generation in areas such as character design, game development, and creative AI systems.
 
 ---
 
@@ -50,9 +50,9 @@ The training dataset will consist of Pokémon images paired with metadata descri
 
 Possible data sources include:
 
-* **PokéAPI** ([https://pokeapi.co/](https://pokeapi.co/)) for metadata about Pokémon types and evolution chains.
-* **Pokémon sprite repositories** (e.g., Pokémon Showdown sprite datasets).
-* **Kaggle Pokémon datasets** containing official artwork and sprites.
+* PokéAPI ([https://pokeapi.co/](https://pokeapi.co/)) for metadata about Pokémon types and evolution chains.
+* Pokémon sprite repositories (e.g., Pokémon Showdown sprite datasets).
+* Kaggle Pokémon datasets containing official artwork and sprites.
 * Pokémon GO or Pokémon HOME image collections.
 
 The dataset will include multiple image styles, including:
@@ -89,7 +89,7 @@ This allows the model to learn visual transformation patterns that occur during 
 
 # 4. Model Architecture
 
-The system will use a **conditional diffusion model** to generate images.
+The system will use a conditional diffusion model to generate images.
 
 The model receives the following inputs:
 
@@ -117,23 +117,23 @@ conditioning attributes → transformer encoder → conditioning embedding
 noise image → diffusion UNet → predicted noise → generated Pokémon image
 ```
 
-This architecture enables both **attribute-controlled generation** and **evolution-based conditioning**.
+This architecture enables both attribute-controlled generation and evolution-based conditioning.
 
 ---
 
 # 5. Evaluation Metrics
 
-The quality of generated Pokémon images will be evaluated using both **quantitative and qualitative metrics**.
+The quality of generated Pokémon images will be evaluated using both quantitative and qualitative metrics.
 
 Quantitative evaluation will include:
 
-**Fréchet Inception Distance (FID)**
+* Fréchet Inception Distance (FID)
 Measures similarity between generated images and the real Pokémon dataset.
 
-**Structural Similarity Index (SSIM)**
+* Structural Similarity Index (SSIM)
 Measures similarity between generated images and training samples.
 
-**Diversity metrics**
+* Diversity metrics
 Evaluate whether the model produces varied outputs instead of repeating similar images.
 
 Qualitative evaluation will also be performed by visually examining generated Pokémon designs to assess whether they:
@@ -146,7 +146,7 @@ Qualitative evaluation will also be performed by visually examining generated Po
 
 # 6. Implementation Framework
 
-The model will be implemented using **PyTorch**, which provides flexible tools for building diffusion models and transformer architectures.
+The model will be implemented using PyTorch which provides flexible tools for building diffusion models and transformer architectures.
 
 Existing diffusion implementations will be adapted from publicly available repositories, including:
 
