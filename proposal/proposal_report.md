@@ -2,13 +2,13 @@
 
 ## Members and Contributions
 
-### Aaron Cyril John:
+### Aaron Cyril John: Data processing and model evaluation
 
-### Yugaank Kalia:
+### Yugaank Kalia: Model training and architecture development
 
-### Varen Maniktala:
+### Varen Maniktala: Data collection and pre-processing
 
-## 1. Background
+## 1.1 Background
 
 Generative models have become an important area of deep learning research, enabling the synthesis of realistic images, audio, and text. In recent years, diffusion models have emerged as one of the most powerful generative modeling approaches, surpassing generative adversarial networks (GANs) in many image generation tasks. Diffusion models learn to generate images by gradually transforming random noise into structured images through a learned denoising process.
 
@@ -16,9 +16,12 @@ The Pokémon franchise provides a well-structured dataset for studying generativ
 
 The goal of this project is to develop a conditional diffusion-based generative model capable of producing novel Pokémon designs based on user-specified attributes such as Pokémon type, evolution stage, and art style. In addition, the model will support conditional evolution generation, where a newly generated Pokémon can be used as input to generate a plausible evolutionary form.
 
-Transformers will be used as part of the architecture to model the conditional inputs and guide the diffusion process. Transformer-based embeddings allow the model to learn relationships between attributes such as type and evolution stage, providing a flexible mechanism for conditioning image generation.
+In addition to generating standalone Pokémon, the model will support conditional evolution generation, where a generated Pokémon can be used as a reference to produce a plausible evolved form. This allows the system to model visual progression across evolutionary stages while maintaining stylistic consistency. Through this approach, the project aims to demonstrate how conditional diffusion models can generate structured and coherent character designs while preserving relationships between related entities such as evolutionary chains.
 
----
+## 1.2 Novelty
+To generate sprite-style images for the generated Pokémons and their evolutions, we will use a U-Net–based image generation architecture, potentially implemented as an autoencoder or within a GAN framework. The encoder–decoder structure with skip connections allows the model to capture both global structure and fine visual details while preserving spatial information.
+
+By conditioning the model on Pokémon attributes and, when applicable, a previously generated evolution stage, the system can produce coherent sprite representations that remain consistent across evolutionary chains. These generated sprites could potentially be used as assets for small game prototypes or other creative applications.
 
 # 2. Significance and Problem Statement
 
@@ -37,10 +40,11 @@ Specifically, we aim to build a model capable of:
 1. Generating new Pokémon images conditioned on attributes such as type, stage, and style.
 2. Producing plausible evolutionary forms conditioned on previously generated Pokémon.
 3. Maintaining stylistic consistency with known Pokémon artwork.
+4. Generating sprites that could later be used for game design / development.
 
-Transformers are used to encode attribute information because they are effective at learning relationships between structured inputs. The transformer embeddings provide a flexible conditioning mechanism that allows the diffusion model to adapt generation based on combinations of attributes. This architecture enables more structured generation compared to unconditional diffusion models.
+Attribute information will be incorporated into the model through learned embeddings that encode structured inputs such as Pokémon type, evolution stage, and artistic style. These attributes will first be represented using one‑hot encodings and then mapped to a dense embedding space. This embedding serves as a conditioninal embedding that guides the diffusion model during the image generation process.
 
-The resulting system could demonstrate how structured generative models can incorporate both semantic attributes and visual conditioning, which has broader implications for conditional image generation in areas such as character design, game development, and creative AI systems.
+By injecting the conditional embeddings into the U‑Net architecture, the model may learn relationships between attributes and their visual characteristics. This would allow the diffusion process to adapt generation based on specific attribute combinations, enabling more controlled and structured image synthesis compared to an unconditional model. This will be explored further during training of the diffusion model.
 
 ---
 
@@ -78,7 +82,7 @@ Each image will be labeled with:
 * Pokémon type (one or two types),
 * evolution stage (base, stage 1, stage 2),
 * artistic style,
-* previous evolution (if applicable).
+* previous evolution.
 
 The images will be preprocessed to ensure consistent resolution (e.g., 128×128 or 256×256) and normalized for model training.
 
@@ -107,7 +111,7 @@ The model receives the following inputs:
 
 * noisy image (during training),
 * diffusion timestep,
-* conditioning vector describing Pokémon attributes,
+* conditional embedding describing Pokémon attributes,
 * optional reference image representing a previous evolution.
 
 The conditioning information includes:
@@ -116,7 +120,7 @@ The conditioning information includes:
 * evolution stage
 * art style
 
-These attributes are encoded into embeddings using a transformer-based encoder, which produces a conditioning representation used by the diffusion model.
+These attributes are encoded into a vector representation using a fully connected embedding layer, which produces a conditioning representation used by the diffusion model.
 
 The diffusion network then predicts the noise added to an image at each timestep, gradually learning to reconstruct the original image while incorporating the conditioning information.
 
@@ -125,11 +129,11 @@ At inference time, the model begins with random noise and iteratively denoises t
 The architecture can be summarized as:
 
 ```
-conditioning attributes -> transformer encoder -> conditioning embedding
+conditional attributes -> embedding layers -> conditional embedding
 noise image -> diffusion UNet -> predicted noise -> generated Pokémon image
 ```
 
-This architecture enables both attribute-controlled generation and evolution-based conditioning.
+This architecture enables both attribute-controlled generation and evolution-based conditioning, where the model can incorporate both attribute vectors and features from the previous evolution to guide generation.
 
 ---
 
@@ -158,7 +162,7 @@ Qualitative evaluation will also be performed by visually examining generated Po
 
 # 6. Implementation Framework
 
-The model will be implemented using PyTorch which provides flexible tools for building diffusion models and transformer architectures.
+The model will be implemented using PyTorch which provides flexible tools for building diffusion architectures.
 
 Existing diffusion implementations will be adapted from publicly available repositories, including:
 
@@ -171,6 +175,7 @@ These implementations will be modified to incorporate conditional embeddings rep
 The training pipeline will include:
 
 * dataset preparation and preprocessing,
-* conditioning vector encoding,
+* conditional embedding encoding,
 * diffusion model training,
 * evaluation and visualization of generated Pokémon.
+* sprite generation using UNet auto-encoders or GANs.
