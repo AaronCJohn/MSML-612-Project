@@ -55,10 +55,10 @@ We will use three primary datasets:
 * **Source**: [https://github.com/msikma/pokesprite/tree/master/pokemon-gen7x](https://github.com/msikma/pokesprite/tree/master/pokemon-gen7x) and [https://github.com/msikma/pokesprite/tree/master/pokemon-gen8](https://github.com/msikma/pokesprite/tree/master/pokemon-gen8)
 * **Description**: Small-format pixel art sprites suitable for learning low-resolution generation patterns
 
-### ProjectPokemon
+### ProjectPokemon/PokemonDB
 * **Content**: 3D Pokémon HOME models (all Pokémon)
-* **Source**: [https://projectpokemon.org/home/docs/spriteindex_148/](https://projectpokemon.org/home/docs/spriteindex_148/) (home-sprites-gen-{X}-r{Y} where X = 1-8 (generation) and Y = 128-135 (ID))
-* **Description**: High-quality 3D renders with 512×512 resolution for Pokémon #1-898 and 256×256 resolution for Pokémon #899+
+* **Source**: [https://projectpokemon.org/home/docs/spriteindex_148/](https://projectpokemon.org/home/docs/spriteindex_148/) (home-sprites-gen-{X}-r{Y} where X = 1-8 (generation) and Y = 128-135 (ID)) and [https://pokemondb.net/pokedex/national](https://pokemondb.net/pokedex/national)
+* **Description**: High-quality 3D renders with 512×512 resolution for Pokémon #1-898 (ProjectPokemon) and 256×256 resolution for Pokémon #899+ (PokemonDB)
 
 ### SugimoriSprites
 * **Content**: Large quality 2D Pokémon sprites (all Pokémon)
