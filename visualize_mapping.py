@@ -19,7 +19,7 @@ from typing import List, Dict, Any, cast
 
 from PIL import Image, ImageDraw, ImageFont
 
-MAPPING_CSV = Path("mapping.csv")
+MAPPING_CSV = Path("mapping_3d_to_sprite.csv")
 OUTPUT_DIR = Path("mapping_preview")
 UNRESOLVED_CSV = OUTPUT_DIR / "unresolved_rows.csv"
 
@@ -71,9 +71,8 @@ def draw_row(
 
     draw.rectangle([(0, y0), (PAGE_WIDTH, y1)], outline=(220, 220, 220), width=1)
 
-    project_file = Path(row.get("project_file", ""))
-    sprite_file_value = row.get("sprite_file", "")
-    sprite_file = Path(sprite_file_value) if sprite_file_value else None
+    project_file = Path("poke-data/ProjectPokemon") / Path(row.get("model_folder", "")) / Path(row.get("model_file", ""))
+    sprite_file = Path("poke-data/PokeSprite") / Path(row.get("sprite_folder", "")) / Path(row.get("sprite_file", ""))
 
     left_img_x = MARGIN_X
     right_img_x = 320
