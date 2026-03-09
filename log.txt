@@ -1,0 +1,123 @@
+=== Evolution Mapping Log ===
+
+Total pairs written: 1078
+Total skipped (regional forms): 58
+Total form variants (added as base): 53
+Total 404s: 0
+
+--- Skipped (regional forms) ---
+  SKIPPED: Rattata-Alola
+  SKIPPED: Raticate-Alola
+  SKIPPED: Raichu-Alola
+  SKIPPED: Sandshrew-Alola
+  SKIPPED: Sandslash-Alola
+  SKIPPED: Vulpix-Alola
+  SKIPPED: Ninetales-Alola
+  SKIPPED: Diglett-Alola
+  SKIPPED: Dugtrio-Alola
+  SKIPPED: Meowth-Alola
+  SKIPPED: Persian-Alola
+  SKIPPED: Geodude-Alola
+  SKIPPED: Graveler-Alola
+  SKIPPED: Golem-Alola
+  SKIPPED: Grimer-Alola
+  SKIPPED: Muk-Alola
+  SKIPPED: Exeggutor-Alola
+  SKIPPED: Marowak-Alola
+  SKIPPED: Meowth-Galar
+  SKIPPED: Ponyta-Galar
+  SKIPPED: Rapidash-Galar
+  SKIPPED: Slowpoke-Galar
+  SKIPPED: Slowbro-Galar
+  SKIPPED: Farfetchd-Galar
+  SKIPPED: Weezing-Galar
+  SKIPPED: Mr-Mime-Galar
+  SKIPPED: Corsola-Galar
+  SKIPPED: Zigzagoon-Galar
+  SKIPPED: Linoone-Galar
+  SKIPPED: Darumaka-Galar
+  SKIPPED: Darmanitan-Galar
+  SKIPPED: Yamask-Galar
+  SKIPPED: Stunfisk-Galar
+  SKIPPED: Articuno-Galar
+  SKIPPED: Zapdos-Galar
+  SKIPPED: Moltres-Galar
+  SKIPPED: Slowking-Galar
+  SKIPPED: Growlithe-Hisui
+  SKIPPED: Arcanine-Hisui
+  SKIPPED: Voltorb-Hisui
+  SKIPPED: Electrode-Hisui
+  SKIPPED: Zorua-Hisui
+  SKIPPED: Zoroark-Hisui
+  SKIPPED: Qwilfish-Hisui
+  SKIPPED: Sneasel-Hisui
+  SKIPPED: Samurott-Hisui
+  SKIPPED: Lilligant-Hisui
+  SKIPPED: Avalugg-Hisui
+  SKIPPED: Decidueye-Hisui
+  SKIPPED: Typhlosion-Hisui
+  SKIPPED: Braviary-Hisui
+  SKIPPED: Sliggoo-Hisui
+  SKIPPED: Goodra-Hisui
+  SKIPPED: Wooper-Paldea
+  SKIPPED: tauros-paldea-combat-breed
+  SKIPPED: tauros-paldea-blaze-breed
+  SKIPPED: tauros-paldea-aqua-breed
+  SKIPPED: darmanitan-galar-zen
+
+--- Form Variants (added as standalone base) ---
+  FORM: basculin-white-striped
+  FORM: castform-sunny
+  FORM: castform-rainy
+  FORM: castform-snowy
+  FORM: deoxys-attack
+  FORM: deoxys-defense
+  FORM: deoxys-speed
+  FORM: burmy-trash
+  FORM: burmy-sandy
+  FORM: wormadam-trash
+  FORM: wormadam-sandy
+  FORM: cherrim-sunshine
+  FORM: rotom-heat
+  FORM: rotom-wash
+  FORM: rotom-frost
+  FORM: rotom-fan
+  FORM: rotom-mow
+  FORM: dialga-origin
+  FORM: palkia-origin
+  FORM: giratina-altered
+  FORM: shaymin-sky
+  FORM: darmanitan-zen
+  FORM: tornadus-therian
+  FORM: thundurus-therian
+  FORM: landorus-therian
+  FORM: enamorus-therian
+  FORM: kyurem-white
+  FORM: kyurem-black
+  FORM: meloetta-pirouette
+  FORM: zygarde-10
+  FORM: zygarde-complete
+  FORM: hoopa-unbound
+  FORM: oricorio-pompom
+  FORM: oricorio-pau
+  FORM: oricorio-sensu
+  FORM: wishiwashi-school
+  FORM: necrozma-dusk-mane
+  FORM: necrozma-dawn-wings
+  FORM: necrozma-ultra
+  FORM: eternatus-eternamax
+  FORM: ursaluna-bloodmoon
+  FORM: palafin-hero
+  FORM: tatsugiri-droopy
+  FORM: tatsugiri-stretchy
+  FORM: gimmighoul-roaming
+  FORM: ogerpon-wellspring-mask
+  FORM: ogerpon-hearthflame-mask
+  FORM: ogerpon-cornerstone-mask
+  FORM: terapagos-terastal
+  FORM: terapagos-stellar
+  FORM: lycanroc-midnight
+  FORM: calyrex-ice
+  FORM: calyrex-shadow
+
+--- 404 Not Found ---
