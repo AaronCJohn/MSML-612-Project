@@ -4310,5 +4310,117 @@
   {
     "prev": null,
     "next": "calyrex-shadow"
+  },
+  {
+    "prev": null,
+    "next": "Rattata-Alola"
+  },
+  {
+    "prev": "Rattata-Alola",
+    "next": "Raticate-Alola"
+  },
+  {
+    "prev": null,
+    "next": "Sandshrew-Alola"
+  },
+  {
+    "prev": "Sandshrew-Alola",
+    "next": "Sandslash-Alola"
+  },
+  {
+    "prev": null,
+    "next": "Vulpix-Alola"
+  },
+  {
+    "prev": "Vulpix-Alola",
+    "next": "Ninetales-Alola"
+  },
+  {
+    "prev": null,
+    "next": "Geodude-Alola"
+  },
+  {
+    "prev": "Geodude-Alola",
+    "next": "Graveler-Alola"
+  },
+  {
+    "prev": "Graveler-Alola",
+    "next": "Golem-Alola"
+  },
+  {
+    "prev": null,
+    "next": "Meowth-Alola"
+  },
+  {
+    "prev": "Meowth-Alola",
+    "next": "Persian-Alola"
+  },
+  {
+    "prev": null,
+    "next": "Grimer-Alola"
+  },
+  {
+    "prev": "Grimer-Alola",
+    "next": "Muk-Alola"
+  },
+  {
+    "prev": null,
+    "next": "Slowpoke-Galar"
+  },
+  {
+    "prev": "Slowpoke-Galar",
+    "next": "Slowbro-Galar"
+  },
+  {
+    "prev": "Slowpoke-Galar",
+    "next": "Slowking-Galar"
+  },
+  {
+    "prev": null,
+    "next": "Zigzagoon-Galar"
+  },
+  {
+    "prev": "Zigzagoon-Galar",
+    "next": "Linoone-Galar"
+  },
+  {
+    "prev": null,
+    "next": "Darumaka-Galar"
+  },
+  {
+    "prev": "Darumaka-Galar",
+    "next": "Darmanitan-Galar"
+  },
+  {
+    "prev": null,
+    "next": "Voltorb-Hisui"
+  },
+  {
+    "prev": "Voltorb-Hisui",
+    "next": "Electrode-Hisui"
+  },
+  {
+    "prev": null,
+    "next": "Zorua-Hisui"
+  },
+  {
+    "prev": "Zorua-Hisui",
+    "next": "Zoroark-Hisui"
+  },
+  {
+    "prev": null,
+    "next": "Sliggoo-Hisui"
+  },
+  {
+    "prev": "Sliggoo-Hisui",
+    "next": "Goodra-Hisui"
+  },
+  {
+    "prev": null,
+    "next": "Wooper-Paldea"
+  },
+  {
+    "prev": "Wooper-Paldea",
+    "next": "Clodsire"
   }
 ]
