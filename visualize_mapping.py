@@ -100,7 +100,7 @@ def draw_row(
         draw.text((right_img_x, img_y + 80), "No sprite mapped", fill=(180, 0, 0), font=font)
 
     # Labels and metadata
-    draw.text((left_img_x, y0 + 5), "ProjectPokemon", fill=(0, 0, 0), font=font)
+    draw.text((left_img_x, y0 + 5), "SugimoriSprites", fill=(0, 0, 0), font=font)
     draw.text((right_img_x, y0 + 5), "PokeSprite", fill=(0, 0, 0), font=font)
 
     text_x = 560
