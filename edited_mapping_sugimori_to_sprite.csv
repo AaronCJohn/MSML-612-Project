@@ -1,0 +1,978 @@
+art_folder,art_file,sprite_folder,sprite_file
+0001bulbasaur,0001 Bulbasaur RG.png,0001bulbasaur,bulbasaur.png
+0002ivysaur,0002 Ivysaur RG.png,0002ivysaur,ivysaur.png
+0003venusaur,0003 Venusaur.png,0003venusaur,venusaur.png
+0004charmander,0004 Charmander RG.png,0004charmander,charmander.png
+0005charmeleon,0005 Charmeleon RG.png,0005charmeleon,charmeleon.png
+0006charizard,0006 Charizard Mega Y.png,0006charizard,charizard-mega-y.png
+0007squirtle,0007 Squirtle.png,0007squirtle,squirtle.png
+0008wartortle,0008 Wartortle.png,0008wartortle,wartortle.png
+0009blastoise,0009 Blastoise Gigantamax.png,0009blastoise,blastoise-gmax.png
+0009blastoise,0009 Blastoise Mega.png,0009blastoise,blastoise-mega.png
+0009blastoise,0009 Blastoise RB.png,0009blastoise,blastoise.png
+0010caterpie,0010 Caterpie.png,0010caterpie,caterpie.png
+0011metapod,0011 Metapod RG.png,0011metapod,metapod.png
+0012butterfree,0012 Butterfree.png,0012butterfree,butterfree.png
+0013weedle,0013 Weedle RG.png,0013weedle,weedle.png
+0014kakuna,0014 Kakuna.png,0014kakuna,kakuna.png
+0015beedrill,0015 Beedrill Mega.png,0015beedrill,beedrill-mega.png
+0015beedrill,0015 Beedrill.png,0015beedrill,beedrill.png
+0016pidgey,0016 Pidgey.png,0016pidgey,pidgey.png
+0017pidgeotto,0017 Pidgeotto RG.png,0017pidgeotto,pidgeotto.png
+0018pidgeot,0018 Pidgeot Mega.png,0018pidgeot,pidgeot-mega.png
+0018pidgeot,0018 Pidgeot RG.png,0018pidgeot,pidgeot.png
+0019rattata,0019 Rattata Alola.png,0019rattata,rattata alola.png
+0019rattata,0019 Rattata.png,0019rattata,rattata.png
+0020raticate,0020 Raticate Alola.png,0020raticate,raticate alola.png
+0020raticate,0020 Raticate.png,0020raticate,raticate.png
+0021spearow,0021 Spearow RG.png,0021spearow,spearow.png
+0022fearow,0022 Fearow.png,0022fearow,fearow.png
+0023ekans,0023 Ekans.png,0023ekans,ekans.png
+0024arbok,0024 Arbok.png,0024arbok,arbok.png
+0025pikachu,0025 Pikachu Gigantamax.png,0025pikachu,pikachu-gmax.png
+0025pikachu,0025 Pikachu.png,0025pikachu,pikachu.png
+0027sandshrew,0027 Sandshrew.png,0027sandshrew,sandshrew.png
+0028sandslash,0028 Sandslash RG.png,0028sandslash,sandslash.png
+0029nidoran-f,0029 Nidoran.png,0029nidoran-f,nidoran-f.png
+0030nidorina,0030 Nidorina RG.png,0030nidorina,nidorina.png
+0031nidoqueen,0031 Nidoqueen RG.png,0031nidoqueen,nidoqueen.png
+0032nidoran-m,0032 Nidoran.png,0032nidoran-m,nidoran-m.png
+0033nidorino,0033 Nidorino.png,0033nidorino,nidorino.png
+0034nidoking,0034 Nidoking.png,0034nidoking,nidoking.png
+0035clefairy,0035 Clefairy RG.png,0035clefairy,clefairy.png
+0036clefable,0036 Clefable RB.png,0036clefable,clefable.png
+0037vulpix,0037 Vulpix Alola.png,0037vulpix,vulpix alola.png
+0037vulpix,0037 Vulpix.png,0037vulpix,vulpix.png
+0038ninetales,0038 Ninetales RB.png,0038ninetales,ninetales.png
+0039jigglypuff,0039 Jigglypuff.png,0039jigglypuff,jigglypuff.png
+0040wigglytuff,0040 Wigglytuff RG.png,0040wigglytuff,wigglytuff.png
+0043oddish,0043 Oddish.png,0043oddish,oddish.png
+0044gloom,0044 Gloom.png,0044gloom,gloom.png
+0045vileplume,0045 Vileplume.png,0045vileplume,vileplume.png
+0046paras,0046 Paras.png,0046paras,paras.png
+0047parasect,0047 Parasect RG.png,0047parasect,parasect.png
+0049venomoth,0049 Venomoth.png,0049venomoth,venomoth.png
+0050diglett,0050 Diglett Alola.png,0050diglett,diglett alola.png
+0050diglett,0050 Diglett RG.png,0050diglett,diglett.png
+0051dugtrio,0051 Dugtrio Alola.png,0051dugtrio,dugtrio alola.png
+0051dugtrio,0051 Dugtrio.png,0051dugtrio,dugtrio.png
+0052meowth,0052 Meowth Galar.png,0052meowth,meowth galar.png
+0052meowth,0052 Meowth.png,0052meowth,meowth.png
+0053persian,0053 Persian Alola.png,0053persian,persian alola.png
+0054psyduck,0054 Psyduck.png,0054psyduck,psyduck.png
+0055golduck,0055 Golduck.png,0055golduck,golduck.png
+0056mankey,0056 Mankey.png,0056mankey,mankey.png
+0057primeape,0057 Primeape RG.png,0057primeape,primeape.png
+0058growlithe,0058 Growlithe Hisui.png,0058growlithe,growlithe hisui.png
+0058growlithe,0058 Growlithe RG.png,0058growlithe,growlithe.png
+0059arcanine,0059 Arcanine Hisui.png,0059arcanine,arcanine hisui.png
+0059arcanine,0059 Arcanine RG.png,0059arcanine,arcanine.png
+0060poliwag,0060 Poliwag RB.png,0060poliwag,poliwag.png
+0061poliwhirl,0061 Poliwhirl.png,0061poliwhirl,poliwhirl.png
+0062poliwrath,0062 Poliwrath.png,0062poliwrath,poliwrath.png
+0063abra,0063 Abra.png,0063abra,abra.png
+0065alakazam,0065 Alakazam.png,0065alakazam,alakazam.png
+0066machop,0066 Machop TCG.png,0066machop,machop.png
+0067machoke,0067 Machoke.png,0067machoke,machoke.png
+0068machamp,0068 Machamp Gigantamax.png,0068machamp,machamp-gmax.png
+0068machamp,0068 Machamp TCG.png,0068machamp,machamp.png
+0069bellsprout,0069 Bellsprout.png,0069bellsprout,bellsprout.png
+0070weepinbell,0070 Weepinbell.png,0070weepinbell,weepinbell.png
+0071victreebel,0071 Victreebel.png,0071victreebel,victreebel.png
+0072tentacool,0072 Tentacool RG.png,0072tentacool,tentacool.png
+0073tentacruel,0073 Tentacruel.png,0073tentacruel,tentacruel.png
+0074geodude,0074 Geodude Alola.png,0074geodude,geodude alola.png
+0074geodude,0074 Geodude RG.png,0074geodude,geodude.png
+0075graveler,0075 Graveler Alola.png,0075graveler,graveler alola.png
+0076golem,0076 Golem Alola.png,0076golem,golem alola.png
+0076golem,0076 Golem.png,0076golem,golem.png
+0077ponyta,0077 Ponyta Galar.png,0077ponyta,ponyta galar.png
+0077ponyta,0077 Ponyta.png,0077ponyta,ponyta.png
+0078rapidash,0078 Rapidash RG.png,0078rapidash,rapidash.png
+0079slowpoke,0079 Slowpoke Galar.png,0079slowpoke,slowpoke galar.png
+0079slowpoke,0079 Slowpoke RG.png,0079slowpoke,slowpoke.png
+0080slowbro,0080 Slowbro Galar.png,0080slowbro,slowbro galar.png
+0080slowbro,0080 Slowbro.png,0080slowbro,slowbro.png
+0081magnemite,0081 Magnemite RG.png,0081magnemite,magnemite.png
+0082magneton,0082 Magneton RG.png,0082magneton,magneton.png
+0083farfetch'd,0083 Farfetch'd Galar.png,0083farfetch'd,farfetch_d_galar.png
+0085dodrio,0085 Dodrio RB.png,0085dodrio,dodrio.png
+0086seel,0086 Seel RG.png,0086seel,seel.png
+0087dewgong,0087 Dewgong.png,0087dewgong,dewgong.png
+0088grimer,0088 Grimer Alola.png,0088grimer,grimer alola.png
+0088grimer,0088 Grimer.png,0088grimer,grimer.png
+0089muk,0089 Muk RG.png,0089muk,muk.png
+0090shellder,0090 Shellder.png,0090shellder,shellder.png
+0091cloyster,0091 Cloyster.png,0091cloyster,cloyster.png
+0092gastly,0092 Gastly.png,0092gastly,gastly.png
+0093haunter,0093 Haunter.png,0093haunter,haunter.png
+0094gengar,0094 Gengar Mega.png,0094gengar,gengar-mega.png
+0094gengar,0094 Gengar RG.png,0094gengar,gengar.png
+0095onix,0095 Onix.png,0095onix,onix.png
+0096drowzee,0096 Drowzee RG.png,0096drowzee,drowzee.png
+0097hypno,0097 Hypno.png,0097hypno,hypno.png
+0099kingler,0099 Kingler RG.png,0099kingler,kingler.png
+0100voltorb,0100 Voltorb RG.png,0100voltorb,voltorb.png
+0101electrode,0101 Electrode.png,0101electrode,electrode.png
+0102exeggcute,0102 Exeggcute.png,0102exeggcute,exeggcute.png
+0103exeggutor,0103 Exeggutor Alola.png,0103exeggutor,exeggutor alola.png
+0103exeggutor,0103 Exeggutor.png,0103exeggutor,exeggutor.png
+0104cubone,0104 Cubone RG.png,0104cubone,cubone.png
+0105marowak,0105 Marowak RB.png,0105marowak,marowak.png
+0106hitmonlee,0106 Hitmonlee RG.png,0106hitmonlee,hitmonlee.png
+0107hitmonchan,0107 Hitmonchan RB.png,0107hitmonchan,hitmonchan.png
+0108lickitung,0108 Lickitung.png,0108lickitung,lickitung.png
+0109koffing,0109 Koffing RG.png,0109koffing,koffing.png
+0110weezing,0110 Weezing Galar.png,0110weezing,weezing galar.png
+0110weezing,0110 Weezing.png,0110weezing,weezing.png
+0111rhyhorn,0111 Rhyhorn RG.png,0111rhyhorn,rhyhorn.png
+0112rhydon,0112 Rhydon RG.png,0112rhydon,rhydon.png
+0113chansey,0113 Chansey.png,0113chansey,chansey.png
+0114tangela,0114 Tangela RB.png,0114tangela,tangela.png
+0115kangaskhan,0115 Kangaskhan RG.png,0115kangaskhan,kangaskhan.png
+0116horsea,0116 Horsea.png,0116horsea,horsea.png
+0117seadra,0117 Seadra RG.png,0117seadra,seadra.png
+0118goldeen,0118 Goldeen RG.png,0118goldeen,goldeen.png
+0119seaking,0119 Seaking.png,0119seaking,seaking.png
+0120staryu,0120 Staryu.png,0120staryu,staryu.png
+0121starmie,0121 Starmie.png,0121starmie,starmie.png
+0122mr. mime,0122 Mr. Mime .png,0122mr. mime,mr. mime.png
+0122mr. mime,0122 Mr. Mime Galar.png,0122mr. mime,mr. mime_galar.png
+0123scyther,0123 Scyther RG.png,0123scyther,scyther.png
+0124jynx,0124 Jynx.png,0124jynx,jynx.png
+0125electabuzz,0125 Electabuzz RB.png,0125electabuzz,electabuzz.png
+0126magmar,0126 Magmar RG.png,0126magmar,magmar.png
+0127pinsir,0127 Pinsir Mega.png,0127pinsir,pinsir-mega.png
+0127pinsir,0127 Pinsir RG.png,0127pinsir,pinsir.png
+0128tauros,0128 Tauros.png,0128tauros,tauros.png
+0129magikarp,0129 Magikarp RG.png,0129magikarp,magikarp.png
+0130gyarados,0130 Gyarados Mega.png,0130gyarados,gyarados-mega.png
+0130gyarados,0130 Gyarados.png,0130gyarados,gyarados.png
+0131lapras,0131 Lapras Gigantamax.png,0131lapras,lapras-gmax.png
+0131lapras,0131 Lapras RG.png,0131lapras,lapras.png
+0132ditto,0132 Ditto.png,0132ditto,ditto.png
+0133eevee,0133 Eevee Gigantamax 2.png,0133eevee,eevee-gmax.png
+0133eevee,0133 Eevee Y.png,0133eevee,eevee.png
+0134vaporeon,0134 Vaporeon RB.png,0134vaporeon,vaporeon.png
+0135jolteon,0135 Jolteon RG.png,0135jolteon,jolteon.png
+0136flareon,0136 Flareon.png,0136flareon,flareon.png
+0137porygon,0137 Porygon.png,0137porygon,porygon.png
+0139omastar,0139 Omastar RG.png,0139omastar,omastar.png
+0140kabuto,0140 Kabuto.png,0140kabuto,kabuto.png
+0141kabutops,0141 Kabutops.png,0141kabutops,kabutops.png
+0142aerodactyl,0142 Aerodactyl Mega.png,0142aerodactyl,aerodactyl-mega.png
+0142aerodactyl,0142 Aerodactyl.png,0142aerodactyl,aerodactyl.png
+0143snorlax,0143 Snorlax Gigantamax.png,0143snorlax,snorlax-gmax.png
+0144articuno,0144 Articuno Galar.png,0144articuno,articuno galar.png
+0144articuno,0144 Articuno.png,0144articuno,articuno.png
+0145zapdos,0145 Zapdos Galar 2.png,0145zapdos,zapdos galar.png
+0145zapdos,0145 Zapdos.png,0145zapdos,zapdos.png
+0146moltres,0146 Moltres BDSP.png,0146moltres,moltres.png
+0146moltres,0146 Moltres Galar.png,0146moltres,moltres galar.png
+0147dratini,0147 Dratini RG.png,0147dratini,dratini.png
+0148dragonair,0148 Dragonair.png,0148dragonair,dragonair.png
+0149dragonite,0149 Dragonite RG.png,0149dragonite,dragonite.png
+0150mewtwo,0150 Mewtwo BDSP.png,0150mewtwo,mewtwo.png
+0150mewtwo,0150 Mewtwo Mega Y.png,0150mewtwo,mewtwo-mega-y.png
+0151mew,0151 Mew.png,0151mew,mew.png
+0152chikorita,0152 Chikorita GS.png,0152chikorita,chikorita.png
+0153bayleef,0153 Bayleef.png,0153bayleef,bayleef.png
+0154meganium,0154 Meganium GS.png,0154meganium,meganium.png
+0155cyndaquil,0155 Cyndaquil E.png,0155cyndaquil,cyndaquil.png
+0157typhlosion,0157 Typhlosion GS.png,0157typhlosion,typhlosion.png
+0158totodile,0158 Totodile E.png,0158totodile,totodile.png
+0159croconaw,0159 Croconaw.png,0159croconaw,croconaw.png
+0160feraligatr,0160 Feraligatr.png,0160feraligatr,feraligatr.png
+0161sentret,0161 Sentret.png,0161sentret,sentret.png
+0163hoothoot,0163 Hoothoot.png,0163hoothoot,hoothoot.png
+0164noctowl,0164 Noctowl GS.png,0164noctowl,noctowl.png
+0165ledyba,0165 Ledyba.png,0165ledyba,ledyba.png
+0166ledian,0166 Ledian.png,0166ledian,ledian.png
+0167spinarak,0167 Spinarak.png,0167spinarak,spinarak.png
+0168ariados,0168 Ariados.png,0168ariados,ariados.png
+0169crobat,0169 Crobat GS.png,0169crobat,crobat.png
+0170chinchou,0170 Chinchou.png,0170chinchou,chinchou.png
+0171lanturn,0171 Lanturn GS.png,0171lanturn,lanturn.png
+0172pichu,0172 Pichu GS.png,0172pichu,pichu.png
+0173cleffa,0173 Cleffa GS.png,0173cleffa,cleffa.png
+0173cleffa,0173 Cleffa.png,0173cleffa,cleffa_right.png
+0174igglybuff,0174 Igglybuff.png,0174igglybuff,igglybuff.png
+0175togepi,0175 Togepi.png,0175togepi,togepi.png
+0176togetic,0176 Togetic GS.png,0176togetic,togetic.png
+0177natu,0177 Natu GS.png,0177natu,natu.png
+0178xatu,0178 Xatu.png,0178xatu,xatu.png
+0179mareep,0179 Mareep GS.png,0179mareep,mareep.png
+0180flaaffy,0180 Flaaffy.png,0180flaaffy,flaaffy.png
+0181ampharos,0181 Ampharos GS.png,0181ampharos,ampharos.png
+0181ampharos,0181 Ampharos Mega.png,0181ampharos,ampharos-mega.png
+0182bellossom,0182 Bellossom.png,0182bellossom,bellossom.png
+0183marill,0183 Marill GS.png,0183marill,marill.png
+0184azumarill,0184 Azumarill GS.png,0184azumarill,azumarill.png
+0185sudowoodo,0185 Sudowoodo GS.png,0185sudowoodo,sudowoodo.png
+0186politoed,0186 Politoed.png,0186politoed,politoed.png
+0187hoppip,0187 Hoppip GS.png,0187hoppip,hoppip.png
+0188skiploom,0188 Skiploom.png,0188skiploom,skiploom.png
+0189jumpluff,0189 Jumpluff GS.png,0189jumpluff,jumpluff.png
+0191sunkern,0191 Sunkern GS.png,0191sunkern,sunkern.png
+0192sunflora,0192 Sunflora GS.png,0192sunflora,sunflora.png
+0193yanma,0193 Yanma.png,0193yanma,yanma.png
+0194wooper,0194 Wooper GS.png,0194wooper,wooper.png
+0195quagsire,0195 Quagsire GS.png,0195quagsire,quagsire.png
+0196espeon,0196 Espeon.png,0196espeon,espeon.png
+0197umbreon,0197 Umbreon GS.png,0197umbreon,umbreon.png
+0198murkrow,0198 Murkrow.png,0198murkrow,murkrow.png
+0199slowking,0199 Slowking Galar.png,0199slowking,slowking galar.png
+0199slowking,0199 Slowking.png,0199slowking,slowking.png
+0200misdreavus,0200 Misdreavus GS.png,0200misdreavus,misdreavus.png
+0201unown,0201 Unown GS.png,0201unown,unown-f.png
+0201unown,0201 Unown.png,0201unown,unown-g.png
+0202wobbuffet,0202 Wobbuffet.png,0202wobbuffet,wobbuffet.png
+0203girafarig,0203 Girafarig GS.png,0203girafarig,girafarig.png
+0204pineco,0204 Pineco.png,0204pineco,pineco.png
+0205forretress,0205 Forretress GS.png,0205forretress,forretress.png
+0206dunsparce,0206 Dunsparce.png,0206dunsparce,dunsparce.png
+0207gligar,0207 Gligar GS.png,0207gligar,gligar.png
+0208steelix,0208 Steelix Mega.png,0208steelix,steelix-mega.png
+0208steelix,0208 Steelix.png,0208steelix,steelix.png
+0209snubbull,0209 Snubbull.png,0209snubbull,snubbull.png
+0210granbull,0210 Granbull GS.png,0210granbull,granbull.png
+0211qwilfish,0211 Qwilfish Hisui.png,0211qwilfish,qwilfish hisui.png
+0212scizor,0212 Scizor GS.png,0212scizor,scizor.png
+0212scizor,0212 Scizor Mega.png,0212scizor,scizor-mega.png
+0213shuckle,0213 Shuckle GS.png,0213shuckle,shuckle.png
+0214heracross,0214 Heracross Mega.png,0214heracross,heracross-mega.png
+0214heracross,0214 Heracross.png,0214heracross,heracross.png
+0215sneasel,0215 Sneasel GS.png,0215sneasel,sneasel.png
+0216teddiursa,0216 Teddiursa.png,0216teddiursa,teddiursa.png
+0217ursaring,0217 Ursaring.png,0217ursaring,ursaring.png
+0218slugma,0218 Slugma.png,0218slugma,slugma.png
+0219magcargo,0219 Magcargo GS.png,0219magcargo,magcargo.png
+0220swinub,0220 Swinub GS.png,0220swinub,swinub.png
+0221piloswine,0221 Piloswine GS.png,0221piloswine,piloswine.png
+0222corsola,0222 Corsola GS.png,0222corsola,corsola.png
+0223remoraid,0223 Remoraid.png,0223remoraid,remoraid.png
+0224octillery,0224 Octillery GS.png,0224octillery,octillery.png
+0225delibird,0225 Delibird.png,0225delibird,delibird.png
+0226mantine,0226 Mantine GS.png,0226mantine,mantine.png
+0227skarmory,0227 Skarmory GS.png,0227skarmory,skarmory.png
+0228houndour,0228 Houndour.png,0228houndour,houndour.png
+0229houndoom,0229 Houndoom.png,0229houndoom,houndoom.png
+0230kingdra,0230 Kingdra.png,0230kingdra,kingdra.png
+0231phanpy,0231 Phanpy GS.png,0231phanpy,phanpy.png
+0232donphan,0232 Donphan.png,0232donphan,donphan.png
+0234stantler,0234 Stantler.png,0234stantler,stantler.png
+0235smeargle,0235 Smeargle GS.png,0235smeargle,smeargle.png
+0236tyrogue,0236 Tyrogue GS.png,0236tyrogue,tyrogue.png
+0237hitmontop,0237 Hitmontop GS.png,0237hitmontop,hitmontop.png
+0238smoochum,0238 Smoochum GS.png,0238smoochum,smoochum.png
+0239elekid,0239 Elekid.png,0239elekid,elekid.png
+0240magby,0240 Magby.png,0240magby,magby.png
+0241miltank,0241 Miltank GS.png,0241miltank,miltank.png
+0242blissey,0242 Blissey GS.png,0242blissey,blissey.png
+0243raikou,0243 Raikou GS.png,0243raikou,raikou.png
+0244entei,0244 Entei.png,0244entei,entei.png
+0245suicune,0245 Suicune.png,0245suicune,suicune.png
+0246larvitar,0246 Larvitar GS.png,0246larvitar,larvitar.png
+0248tyranitar,0248 Tyranitar GS.png,0248tyranitar,tyranitar.png
+0248tyranitar,0248 Tyranitar Mega.png,0248tyranitar,tyranitar-mega.png
+0249lugia,0249 Lugia.png,0249lugia,lugia.png
+0251celebi,0251 Celebi.png,0251celebi,celebi.png
+0252treecko,0252 Treecko.png,0252treecko,treecko.png
+0253grovyle,0253 Grovyle.png,0253grovyle,grovyle.png
+0254sceptile,0254 Sceptile.png,0254sceptile,sceptile.png
+0255torchic,0255 Torchic.png,0255torchic,torchic.png
+0256combusken,0256 Combusken.png,0256combusken,combusken.png
+0257blaziken,0257 Blaziken Mega.png,0257blaziken,blaziken-mega.png
+0258mudkip,0258 Mudkip.png,0258mudkip,mudkip.png
+0259marshtomp,0259 Marshtomp.png,0259marshtomp,marshtomp.png
+0260swampert,0260 Swampert Mega.png,0260swampert,swampert-mega.png
+0260swampert,0260 Swampert.png,0260swampert,swampert.png
+0261poochyena,0261 Poochyena.png,0261poochyena,poochyena.png
+0262mightyena,0262 Mightyena.png,0262mightyena,mightyena.png
+0263zigzagoon,0263 Zigzagoon Galar.png,0263zigzagoon,zigzagoon galar.png
+0263zigzagoon,0263 Zigzagoon.png,0263zigzagoon,zigzagoon.png
+0264linoone,0264 Linoone.png,0264linoone,linoone.png
+0266silcoon,0266 Silcoon.png,0266silcoon,silcoon.png
+0267beautifly,0267 Beautifly.png,0267beautifly,beautifly.png
+0268cascoon,0268 Cascoon.png,0268cascoon,cascoon.png
+0269dustox,0269 Dustox.png,0269dustox,dustox.png
+0270lotad,0270 Lotad.png,0270lotad,lotad.png
+0271lombre,0271 Lombre.png,0271lombre,lombre.png
+0272ludicolo,0272 Ludicolo.png,0272ludicolo,ludicolo.png
+0273seedot,0273 Seedot.png,0273seedot,seedot.png
+0274nuzleaf,0274 Nuzleaf.png,0274nuzleaf,nuzleaf.png
+0275shiftry,0275 Shiftry.png,0275shiftry,shiftry.png
+0276taillow,0276 Taillow.png,0276taillow,taillow.png
+0277swellow,0277 Swellow.png,0277swellow,swellow.png
+0278wingull,0278 Wingull.png,0278wingull,wingull.png
+0279pelipper,0279 Pelipper.png,0279pelipper,pelipper.png
+0280ralts,0280 Ralts.png,0280ralts,ralts.png
+0281kirlia,0281 Kirlia.png,0281kirlia,kirlia.png
+0282gardevoir,0282 Gardevoir Mega.png,0282gardevoir,gardevoir-mega.png
+0282gardevoir,0282 Gardevoir.png,0282gardevoir,gardevoir.png
+0283surskit,0283 Surskit.png,0283surskit,surskit.png
+0284masquerain,0284 Masquerain.png,0284masquerain,masquerain.png
+0285shroomish,0285 Shroomish.png,0285shroomish,shroomish.png
+0286breloom,0286 Breloom.png,0286breloom,breloom.png
+0287slakoth,0287 Slakoth.png,0287slakoth,slakoth.png
+0288vigoroth,0288 Vigoroth.png,0288vigoroth,vigoroth.png
+0289slaking,0289 Slaking.png,0289slaking,slaking.png
+0290nincada,0290 Nincada.png,0290nincada,nincada.png
+0291ninjask,0291 Ninjask.png,0291ninjask,ninjask.png
+0292shedinja,0292 Shedinja.png,0292shedinja,shedinja.png
+0293whismur,0293 Whismur.png,0293whismur,whismur.png
+0294loudred,0294 Loudred.png,0294loudred,loudred.png
+0295exploud,0295 Exploud.png,0295exploud,exploud.png
+0296makuhita,0296 Makuhita.png,0296makuhita,makuhita.png
+0297hariyama,0297 Hariyama.png,0297hariyama,hariyama.png
+0298azurill,0298 Azurill.png,0298azurill,azurill.png
+0301delcatty,0301 Delcatty.png,0301delcatty,delcatty.png
+0302sableye,0302 Sableye Mega.png,0302sableye,sableye-mega.png
+0302sableye,0302 Sableye.png,0302sableye,sableye.png
+0303mawile,0303 Mawile.png,0303mawile,mawile.png
+0304aron,0304 Aron.png,0304aron,aron.png
+0305lairon,0305 Lairon.png,0305lairon,lairon.png
+0306aggron,0306 Aggron Mega.png,0306aggron,aggron-mega.png
+0306aggron,0306 Aggron.png,0306aggron,aggron.png
+0307meditite,0307 Meditite.png,0307meditite,meditite.png
+0308medicham,0308 Medicham Mega.png,0308medicham,medicham-mega.png
+0308medicham,0308 Medicham.png,0308medicham,medicham.png
+0309electrike,0309 Electrike.png,0309electrike,electrike.png
+0310manectric,0310 Manectric Mega.png,0310manectric,manectric-mega.png
+0310manectric,0310 Manectric.png,0310manectric,manectric.png
+0311plusle,0311 Plusle.png,0311plusle,plusle.png
+0312minun,0312 Minun.png,0312minun,minun.png
+0313volbeat,0313 Volbeat.png,0313volbeat,volbeat.png
+0314illumise,0314 Illumise.png,0314illumise,illumise.png
+0315roselia,0315 Roselia.png,0315roselia,roselia.png
+0316gulpin,0316 Gulpin.png,0316gulpin,gulpin.png
+0317swalot,0317 Swalot.png,0317swalot,swalot.png
+0318carvanha,0318 Carvanha.png,0318carvanha,carvanha.png
+0319sharpedo,0319 Sharpedo Mega.png,0319sharpedo,sharpedo-mega.png
+0319sharpedo,0319 Sharpedo.png,0319sharpedo,sharpedo.png
+0320wailmer,0320 Wailmer.png,0320wailmer,wailmer.png
+0321wailord,0321 Wailord.png,0321wailord,wailord.png
+0322numel,0322 Numel.png,0322numel,numel.png
+0323camerupt,0323 Camerupt Mega.png,0323camerupt,camerupt-mega.png
+0323camerupt,0323 Camerupt.png,0323camerupt,camerupt.png
+0324torkoal,0324 Torkoal.png,0324torkoal,torkoal.png
+0325spoink,0325 Spoink.png,0325spoink,spoink.png
+0326grumpig,0326 Grumpig.png,0326grumpig,grumpig.png
+0327spinda,0327 Spinda.png,0327spinda,spinda.png
+0328trapinch,0328 Trapinch.png,0328trapinch,trapinch.png
+0329vibrava,0329 Vibrava.png,0329vibrava,vibrava.png
+0330flygon,0330 Flygon.png,0330flygon,flygon.png
+0331cacnea,0331 Cacnea.png,0331cacnea,cacnea.png
+0332cacturne,0332 Cacturne.png,0332cacturne,cacturne.png
+0333swablu,0333 Swablu.png,0333swablu,swablu.png
+0334altaria,0334 Altaria Mega.png,0334altaria,altaria-mega.png
+0334altaria,0334 Altaria.png,0334altaria,altaria.png
+0335zangoose,0335 Zangoose.png,0335zangoose,zangoose.png
+0336seviper,0336 Seviper.png,0336seviper,seviper.png
+0337lunatone,0337 Lunatone.png,0337lunatone,lunatone.png
+0338solrock,0338 Solrock.png,0338solrock,solrock.png
+0339barboach,0339 Barboach.png,0339barboach,barboach.png
+0340whiscash,0340 Whiscash.png,0340whiscash,whiscash.png
+0341corphish,0341 Corphish.png,0341corphish,corphish.png
+0342crawdaunt,0342 Crawdaunt.png,0342crawdaunt,crawdaunt.png
+0343baltoy,0343 Baltoy.png,0343baltoy,baltoy.png
+0344claydol,0344 Claydol.png,0344claydol,claydol.png
+0345lileep,0345 Lileep.png,0345lileep,lileep.png
+0346cradily,0346 Cradily.png,0346cradily,cradily.png
+0347anorith,0347 Anorith.png,0347anorith,anorith.png
+0348armaldo,0348 Armaldo.png,0348armaldo,armaldo.png
+0349feebas,0349 Feebas.png,0349feebas,feebas.png
+0350milotic,0350 Milotic.png,0350milotic,milotic.png
+0351castform,0351 Castform Rainy.png,0351castform,castform-rainy.png
+0351castform,0351 Castform Snowy.png,0351castform,castform-snowy.png
+0351castform,0351 Castform Sunny.png,0351castform,castform-sunny.png
+0351castform,0351 Castform.png,0351castform,castform.png
+0352kecleon,0352 Kecleon.png,0352kecleon,kecleon.png
+0353shuppet,0353 Shuppet.png,0353shuppet,shuppet.png
+0354banette,0354 Banette Mega.png,0354banette,banette-mega.png
+0354banette,0354 Banette.png,0354banette,banette.png
+0355duskull,0355 Duskull.png,0355duskull,duskull.png
+0356dusclops,0356 Dusclops.png,0356dusclops,dusclops.png
+0358chimecho,0358 Chimecho.png,0358chimecho,chimecho.png
+0359absol,0359 Absol Mega.png,0359absol,absol-mega.png
+0359absol,0359 Absol.png,0359absol,absol_right.png
+0360wynaut,0360 Wynaut.png,0360wynaut,wynaut.png
+0361snorunt,0361 Snorunt.png,0361snorunt,snorunt.png
+0362glalie,0362 Glalie.png,0362glalie,glalie.png
+0363spheal,0363 Spheal.png,0363spheal,spheal.png
+0365walrein,0365 Walrein.png,0365walrein,walrein.png
+0366clamperl,0366 Clamperl.png,0366clamperl,clamperl.png
+0367huntail,0367 Huntail.png,0367huntail,huntail.png
+0368gorebyss,0368 Gorebyss.png,0368gorebyss,gorebyss.png
+0369relicanth,0369 Relicanth.png,0369relicanth,relicanth.png
+0370luvdisc,0370 Luvdisc.png,0370luvdisc,luvdisc.png
+0371bagon,0371 Bagon.png,0371bagon,bagon.png
+0372shelgon,0372 Shelgon.png,0372shelgon,shelgon.png
+0373salamence,0373 Salamence Mega.png,0373salamence,salamence-mega.png
+0373salamence,0373 Salamence.png,0373salamence,salamence.png
+0374beldum,0374 Beldum.png,0374beldum,beldum.png
+0375metang,0375 Metang.png,0375metang,metang.png
+0376metagross,0376 Metagross Mega.png,0376metagross,metagross-mega.png
+0376metagross,0376 Metagross.png,0376metagross,metagross.png
+0377regirock,0377 Regirock.png,0377regirock,regirock.png
+0378regice,0378 Regice.png,0378regice,regice.png
+0379registeel,0379 Registeel.png,0379registeel,registeel.png
+0380latias,0380 Latias.png,0380latias,latias.png
+0381latios,0381 Latios Mega.png,0381latios,latios-mega.png
+0381latios,0381 Latios.png,0381latios,latios.png
+0382kyogre,0382 Kyogre Primal 2.png,0382kyogre,kyogre-primal.png
+0382kyogre,0382 Kyogre.png,0382kyogre,kyogre.png
+0383groudon,0383 Groudon.png,0383groudon,groudon.png
+0384rayquaza,0384 Rayquaza Mega Shiny.png,0384rayquaza,rayquaza-mega_shiny.png
+0384rayquaza,0384 Rayquaza Mega.png,0384rayquaza,rayquaza-mega.png
+0384rayquaza,0384 Rayquaza.png,0384rayquaza,rayquaza.png
+0385jirachi,0385 Jirachi.png,0385jirachi,jirachi.png
+0386deoxys,0386 Deoxys Attack.png,0386deoxys,deoxys-attack.png
+0386deoxys,0386 Deoxys Speed.png,0386deoxys,deoxys-speed.png
+0386deoxys,0386 Deoxys.png,0386deoxys,deoxys.png
+0387turtwig,0387 Turtwig.png,0387turtwig,turtwig.png
+0388grotle,0388 Grotle.png,0388grotle,grotle.png
+0389torterra,0389 Torterra.png,0389torterra,torterra.png
+0390chimchar,0390 Chimchar.png,0390chimchar,chimchar.png
+0391monferno,0391 Monferno.png,0391monferno,monferno.png
+0392infernape,0392 Infernape.png,0392infernape,infernape.png
+0393piplup,0393 Piplup BDSP.png,0393piplup,piplup.png
+0395empoleon,0395 Empoleon.png,0395empoleon,empoleon.png
+0396starly,0396 Starly.png,0396starly,starly.png
+0397staravia,0397 Staravia.png,0397staravia,staravia.png
+0398staraptor,0398 Staraptor.png,0398staraptor,staraptor.png
+0399bidoof,0399 Bidoof.png,0399bidoof,bidoof.png
+0401kricketot,0401 Kricketot.png,0401kricketot,kricketot.png
+0402kricketune,0402 Kricketune.png,0402kricketune,kricketune.png
+0403shinx,0403 Shinx BDSP.png,0403shinx,shinx.png
+0404luxio,0404 Luxio.png,0404luxio,luxio.png
+0405luxray,0405 Luxray.png,0405luxray,luxray.png
+0406budew,0406 Budew.png,0406budew,budew.png
+0407roserade,0407 Roserade.png,0407roserade,roserade.png
+0408cranidos,0408 Cranidos BDSP.png,0408cranidos,cranidos.png
+0410shieldon,0410 Shieldon.png,0410shieldon,shieldon.png
+0411bastiodon,0411 Bastiodon.png,0411bastiodon,bastiodon.png
+0412burmy,0412 Burmy Plant.png,0412burmy,burmy.png
+0412burmy,0412 Burmy Sandy.png,0412burmy,burmy-sandy.png
+0412burmy,0412 Burmy Trash.png,0412burmy,burmy-trash.png
+0413wormadam,0413 Wormadam Plant.png,0413wormadam,wormadam.png
+0413wormadam,0413 Wormadam Trash.png,0413wormadam,wormadam-trash.png
+0414mothim,0414 Mothim.png,0414mothim,mothim.png
+0415combee,0415 Combee.png,0415combee,combee.png
+0416vespiquen,0416 Vespiquen.png,0416vespiquen,vespiquen.png
+0417pachirisu,0417 Pachirisu.png,0417pachirisu,pachirisu.png
+0418buizel,0418 Buizel BDSP.png,0418buizel,buizel.png
+0419floatzel,0419 Floatzel.png,0419floatzel,floatzel.png
+0420cherubi,0420 Cherubi.png,0420cherubi,cherubi.png
+0421cherrim,0421 Cherrim Overcast.png,0421cherrim,cherrim.png
+0421cherrim,0421 Cherrim Sunny.png,0421cherrim,cherrim-sunshine.png
+0422shellos,0422 Shellos East.png,0422shellos,shellos-east.png
+0422shellos,0422 Shellos West.png,0422shellos,shellos.png 
+0423gastrodon,0423 Gastrodon East.png,0423gastrodon,gastrodon-east.png
+0424ambipom,0424 Ambipom.png,0424ambipom,ambipom.png
+0425drifloon,0425 Drifloon.png,0425drifloon,drifloon.png
+0426drifblim,0426 Drifblim.png,0426drifblim,drifblim.png
+0427buneary,0427 Buneary.png,0427buneary,buneary.png
+0428lopunny,0428 Lopunny Mega.png,0428lopunny,lopunny-mega.png
+0428lopunny,0428 Lopunny.png,0428lopunny,lopunny.png
+0429mismagius,0429 Mismagius.png,0429mismagius,mismagius.png
+0430honchkrow,0430 Honchkrow.png,0430honchkrow,honchkrow.png
+0431glameow,0431 Glameow.png,0431glameow,glameow.png
+0432purugly,0432 Purugly BDSP.png,0432purugly,purugly.png
+0433chingling,0433 Chingling.png,0433chingling,chingling.png
+0434stunky,0434 Stunky.png,0434stunky,stunky.png
+0435skuntank,0435 Skuntank.png,0435skuntank,skuntank.png
+0436bronzor,0436 Bronzor.png,0436bronzor,bronzor.png
+0437bronzong,0437 Bronzong.png,0437bronzong,bronzong.png
+0438bonsly,0438 Bonsly.png,0438bonsly,bonsly.png
+0439mime jr,0439 Mime Jr.png,0439mime jr,mime jr.png
+0440happiny,0440 Happiny.png,0440happiny,happiny.png
+0441chatot,0441 Chatot.png,0441chatot,chatot.png
+0442spiritomb,0442 Spiritomb.png,0442spiritomb,spiritomb.png
+0443gible,0443 Gible.png,0443gible,gible.png
+0444gabite,0444 Gabite.png,0444gabite,gabite.png
+0445garchomp,0445 Garchomp BDSP.png,0445garchomp,garchomp.png
+0445garchomp,0445 Garchomp Mega.png,0445garchomp,garchomp-mega.png
+0446munchlax,0446 Munchlax SM.png,0446munchlax,munchlax.png
+0447riolu,0447 Riolu.png,0447riolu,riolu.png
+0448lucario,0448 Lucario Mega.png,0448lucario,lucario-mega.png
+0448lucario,0448 Lucario.png,0448lucario,lucario.png
+0449hippopotas,0449 Hippopotas.png,0449hippopotas,hippopotas.png
+0450hippowdon,0450 Hippowdon.png,0450hippowdon,hippowdon.png
+0451skorupi,0451 Skorupi.png,0451skorupi,skorupi.png
+0452drapion,0452 Drapion.png,0452drapion,drapion.png
+0453croagunk,0453 Croagunk.png,0453croagunk,croagunk.png
+0454toxicroak,0454 Toxicroak.png,0454toxicroak,toxicroak.png
+0455carnivine,0455 Carnivine.png,0455carnivine,carnivine.png
+0456finneon,0456 Finneon.png,0456finneon,finneon.png
+0457lumineon,0457 Lumineon.png,0457lumineon,lumineon.png
+0458mantyke,0458 Mantyke.png,0458mantyke,mantyke.png
+0459snover,0459 Snover.png,0459snover,snover.png
+0460abomasnow,0460 Abomasnow BDSP.png,0460abomasnow,abomasnow.png
+0460abomasnow,0460 Abomasnow Mega.png,0460abomasnow,abomasnow-mega.png
+0461weavile,0461 Weavile.png,0461weavile,weavile.png
+0462magnezone,0462 Magnezone.png,0462magnezone,magnezone.png
+0463lickilicky,0463 Lickilicky.png,0463lickilicky,lickilicky.png
+0464rhyperior,0464 Rhyperior.png,0464rhyperior,rhyperior.png
+0465tangrowth,0465 Tangrowth.png,0465tangrowth,tangrowth.png
+0466electivire,0466 Electivire BDSP.png,0466electivire,electivire.png
+0467magmortar,0467 Magmortar BDSP.png,0467magmortar,magmortar.png
+0468togekiss,0468 Togekiss.png,0468togekiss,togekiss.png
+0469yanmega,0469 Yanmega.png,0469yanmega,yanmega.png
+0470leafeon,0470 Leafeon.png,0470leafeon,leafeon.png
+0472gliscor,0472 Gliscor.png,0472gliscor,gliscor.png
+0473mamoswine,0473 Mamoswine.png,0473mamoswine,mamoswine.png
+0474porygon-z,0474 Porygon-Z.png,0474porygon-z,porygon-z.png
+0475gallade,0475 Gallade Mega.png,0475gallade,gallade-mega.png
+0475gallade,0475 Gallade.png,0475gallade,gallade.png
+0476probopass,0476 Probopass.png,0476probopass,probopass.png
+0478froslass,0478 Froslass.png,0478froslass,froslass.png
+0479rotom,0479 Rotom BDSP.png,0479rotom,rotom.png
+0479rotom,0479 Rotom Fan.png,0479rotom,rotom-fan.png
+0479rotom,0479 Rotom Frost.png,0479rotom,rotom-frost.png
+0479rotom,0479 Rotom Heat.png,0479rotom,rotom-heat.png
+0479rotom,0479 Rotom Mow.png,0479rotom,rotom-mow.png
+0479rotom,0479 Rotom Wash.png,0479rotom,rotom-wash_right.png
+0480uxie,0480 Uxie.png,0480uxie,uxie.png
+0481mesprit,0481 Mesprit.png,0481mesprit,mesprit.png
+0482azelf,0482 Azelf BDSP.png,0482azelf,azelf.png
+0483dialga,0483 Dialga Origin.png,0483dialga,dialga-origin.png
+0484palkia,0484 Palkia BDSP.png,0484palkia,palkia.png
+0485heatran,0485 Heatran.png,0485heatran,heatran.png
+0486regigigas,0486 Regigigas.png,0486regigigas,regigigas.png
+0487giratina,0487 Giratina Origin.png,0487giratina,giratina-origin.png
+0487giratina,0487 Giratina.png,0487giratina,giratina.png
+0489phione,0489 Phione.png,0489phione,phione.png
+0490manaphy,0490 Manaphy.png,0490manaphy,manaphy.png
+0491darkrai,0491 Darkrai.png,0491darkrai,darkrai.png
+0492shaymin,0492 Shaymin.png,0492shaymin,shaymin.png
+0493arceus,0493 Arceus.png,0493arceus,arceus.png
+0494victini,0494 Victini.png,0494victini,victini.png
+0495snivy,0495 Snivy.png,0495snivy,snivy.png
+0497serperior,0497 Serperior.png,0497serperior,serperior.png
+0498tepig,0498 Tepig B2W2.png,0498tepig,tepig.png
+0499pignite,0499 Pignite.png,0499pignite,pignite.png
+0500emboar,0500 Emboar.png,0500emboar,emboar.png
+0501oshawott,0501 Oshawott.png,0501oshawott,oshawott.png
+0502dewott,0502 Dewott.png,0502dewott,dewott.png
+0503samurott,0503 Samurott Hisui.png,0503samurott,samurott hisui.png
+0503samurott,0503 Samurott.png,0503samurott,samurott.png
+0504patrat,0504 Patrat.png,0504patrat,patrat.png
+0505watchog,0505 Watchog.png,0505watchog,watchog.png
+0506lillipup,0506 Lillipup.png,0506lillipup,lillipup.png
+0507herdier,0507 Herdier.png,0507herdier,herdier.png
+0508stoutland,0508 Stoutland.png,0508stoutland,stoutland.png
+0510liepard,0510 Liepard.png,0510liepard,liepard.png
+0511pansage,0511 Pansage.png,0511pansage,pansage.png
+0512simisage,0512 Simisage.png,0512simisage,simisage.png
+0513pansear,0513 Pansear.png,0513pansear,pansear.png
+0514simisear,0514 Simisear.png,0514simisear,simisear.png
+0515panpour,0515 Panpour.png,0515panpour,panpour.png
+0516simipour,0516 Simipour.png,0516simipour,simipour.png
+0517munna,0517 Munna.png,0517munna,munna.png
+0518musharna,0518 Musharna.png,0518musharna,musharna.png
+0519pidove,0519 Pidove.png,0519pidove,pidove.png
+0520tranquill,0520 Tranquill.png,0520tranquill,tranquill.png
+0521unfezant,0521 Unfezant Female.png,0521unfezant,unfezant_female.png
+0521unfezant,0521 Unfezant Male.png,0521unfezant,unfezant.png
+0523zebstrika,0523 Zebstrika.png,0523zebstrika,zebstrika.png
+0524roggenrola,0524 Roggenrola.png,0524roggenrola,roggenrola.png
+0525boldore,0525 Boldore.png,0525boldore,boldore.png
+0526gigalith,0526 Gigalith.png,0526gigalith,gigalith.png
+0527woobat,0527 Woobat.png,0527woobat,woobat.png
+0528swoobat,0528 Swoobat.png,0528swoobat,swoobat.png
+0529drilbur,0529 Drilbur.png,0529drilbur,drilbur.png
+0531audino,0531 Audino Mega.png,0531audino,audino-mega.png
+0531audino,0531 Audino.png,0531audino,audino.png
+0532timburr,0532 Timburr.png,0532timburr,timburr.png
+0533gurdurr,0533 Gurdurr.png,0533gurdurr,gurdurr.png
+0534conkeldurr,0534 Conkeldurr.png,0534conkeldurr,conkeldurr.png
+0535tympole,0535 Tympole.png,0535tympole,tympole.png
+0536palpitoad,0536 Palpitoad.png,0536palpitoad,palpitoad.png
+0537seismitoad,0537 Seismitoad.png,0537seismitoad,seismitoad.png
+0539sawk,0539 Sawk.png,0539sawk,sawk.png
+0540sewaddle,0540 Sewaddle.png,0540sewaddle,sewaddle.png
+0541swadloon,0541 Swadloon.png,0541swadloon,swadloon.png
+0542leavanny,0542 Leavanny.png,0542leavanny,leavanny.png
+0543venipede,0543 Venipede.png,0543venipede,venipede.png
+0544whirlipede,0544 Whirlipede.png,0544whirlipede,whirlipede.png
+0545scolipede,0545 Scolipede.png,0545scolipede,scolipede.png
+0546cottonee,0546 Cottonee.png,0546cottonee,cottonee.png
+0547whimsicott,0547 Whimsicott.png,0547whimsicott,whimsicott.png
+0548petilil,0548 Petilil.png,0548petilil,petilil.png
+0549lilligant,0549 Lilligant Hisui.png,0549lilligant,lilligant hisui.png
+0549lilligant,0549 Lilligant.png,0549lilligant,lilligant.png
+0550basculin,0550 Basculin Blue.png,0550basculin,basculin blue striped.png
+0550basculin,0550 Basculin Red.png,0550basculin,basculin.png
+0550basculin,0550 Basculin White.png,0550basculin,basculin white striped.png
+0551sandile,0551 Sandile.png,0551sandile,sandile.png
+0552krokorok,0552 Krokorok.png,0552krokorok,krokorok.png
+0554darumaka,0554 Darumaka Galar.png,0554darumaka,darumaka galar.png
+0554darumaka,0554 Darumaka.png,0554darumaka,darumaka.png
+0555darmanitan,0555 Darmanitan Zen.png,0555darmanitan,darmanitan-zen.png
+0555darmanitan,0555 Darmanitan.png,0555darmanitan,darmanitan.png
+0556maractus,0556 Maractus.png,0556maractus,maractus.png
+0557dwebble,0557 Dwebble.png,0557dwebble,dwebble.png
+0558crustle,0558 Crustle.png,0558crustle,crustle.png
+0559scraggy,0559 Scraggy.png,0559scraggy,scraggy.png
+0560scrafty,0560 Scrafty.png,0560scrafty,scrafty.png
+0561sigilyph,0561 Sigilyph.png,0561sigilyph,sigilyph.png
+0562yamask,0562 Yamask Galar.png,0562yamask,yamask galar.png
+0562yamask,0562 Yamask.png,0562yamask,yamask.png
+0563cofagrigus,0563 Cofagrigus.png,0563cofagrigus,cofagrigus.png
+0564tirtouga,0564 Tirtouga.png,0564tirtouga,tirtouga.png
+0565carracosta,0565 Carracosta.png,0565carracosta,carracosta.png
+0566archen,0566 Archen.png,0566archen,archen.png
+0567archeops,0567 Archeops.png,0567archeops,archeops.png
+0568trubbish,0568 Trubbish.png,0568trubbish,trubbish.png
+0569garbodor,0569 Garbodor Gigantamax.png,0569garbodor,garbodor-gmax.png
+0569garbodor,0569 Garbodor.png,0569garbodor,garbodor.png
+0570zorua,0570 Zorua Hisui.png,0570zorua,zorua hisui.png
+0570zorua,0570 Zorua.png,0570zorua,zorua.png
+0571zoroark,0571 Zoroark Hisui.png,0571zoroark,zoroark hisui.png
+0571zoroark,0571 Zoroark.png,0571zoroark,zoroark.png
+0572minccino,0572 Minccino.png,0572minccino,minccino.png
+0573cinccino,0573 Cinccino.png,0573cinccino,cinccino.png
+0574gothita,0574 Gothita.png,0574gothita,gothita.png
+0576gothitelle,0576 Gothitelle.png,0576gothitelle,gothitelle.png
+0577solosis,0577 Solosis.png,0577solosis,solosis.png
+0578duosion,0578 Duosion.png,0578duosion,duosion.png
+0579reuniclus,0579 Reuniclus.png,0579reuniclus,reuniclus.png
+0580ducklett,0580 Ducklett.png,0580ducklett,ducklett.png
+0581swanna,0581 Swanna.png,0581swanna,swanna.png
+0582vanillite,0582 Vanillite.png,0582vanillite,vanillite.png
+0583vanillish,0583 Vanillish.png,0583vanillish,vanillish.png
+0584vanilluxe,0584 Vanilluxe.png,0584vanilluxe,vanilluxe.png
+0585deerling,0585 Deerling Autumn.png,0585deerling,deerling-autumn.png
+0585deerling,0585 Deerling Spring.png,0585deerling,deerling.png
+0585deerling,0585 Deerling Summer.png,0585deerling,deerling-summer.png
+0585deerling,0585 Deerling Winter.png,0585deerling,deerling-winter.png
+0587emolga,0587 Emolga.png,0587emolga,emolga.png
+0588karrablast,0588 Karrablast.png,0588karrablast,karrablast.png
+0589escavalier,0589 Escavalier.png,0589escavalier,escavalier.png
+0590foongus,0590 Foongus.png,0590foongus,foongus.png
+0591amoonguss,0591 Amoonguss.png,0591amoonguss,amoonguss.png
+0592frillish,0592 Frillish Female.png,0592frillish,frillish_female.png
+0592frillish,0592 Frillish Male.png,0592frillish,frillish.png
+0593jellicent,0593 Jellicent Female.png,0593jellicent,jellicent_female.png
+0593jellicent,0593 Jellicent Male.png,0593jellicent,jellicent.png
+0594alomomola,0594 Alomomola.png,0594alomomola,alomomola.png
+0595joltik,0595 Joltik.png,0595joltik,joltik.png
+0596galvantula,0596 Galvantula.png,0596galvantula,galvantula.png
+0597ferroseed,0597 Ferroseed.png,0597ferroseed,ferroseed.png
+0598ferrothorn,0598 Ferrothorn.png,0598ferrothorn,ferrothorn.png
+0599klink,0599 Klink.png,0599klink,klink.png
+0600klang,0600 Klang.png,0600klang,klang.png
+0601klinklang,0601 Klinklang.png,0601klinklang,klinklang.png
+0602tynamo,0602 Tynamo.png,0602tynamo,tynamo.png
+0603eelektrik,0603 Eelektrik.png,0603eelektrik,eelektrik.png
+0604eelektross,0604 Eelektross.png,0604eelektross,eelektross.png
+0606beheeyem,0606 Beheeyem.png,0606beheeyem,beheeyem.png
+0607litwick,0607 Litwick.png,0607litwick,litwick.png
+0608lampent,0608 Lampent.png,0608lampent,lampent.png
+0609chandelure,0609 Chandelure.png,0609chandelure,chandelure.png
+0610axew,0610 Axew.png,0610axew,axew.png
+0611fraxure,0611 Fraxure.png,0611fraxure,fraxure.png
+0612haxorus,0612 Haxorus.png,0612haxorus,haxorus.png
+0613cubchoo,0613 Cubchoo.png,0613cubchoo,cubchoo.png
+0614beartic,0614 Beartic.png,0614beartic,beartic.png
+0615cryogonal,0615 Cryogonal.png,0615cryogonal,cryogonal.png
+0616shelmet,0616 Shelmet.png,0616shelmet,shelmet.png
+0618stunfisk,0618 Stunfisk Galar.png,0618stunfisk,stunfisk galar.png
+0618stunfisk,0618 Stunfisk.png,0618stunfisk,stunfisk.png
+0619mienfoo,0619 Mienfoo.png,0619mienfoo,mienfoo.png
+0620mienshao,0620 Mienshao.png,0620mienshao,mienshao.png
+0621druddigon,0621 Druddigon.png,0621druddigon,druddigon.png
+0622golett,0622 Golett.png,0622golett,golett.png
+0623golurk,0623 Golurk.png,0623golurk,golurk.png
+0625bisharp,0625 Bisharp.png,0625bisharp,bisharp.png
+0626bouffalant,0626 Bouffalant.png,0626bouffalant,bouffalant.png
+0627rufflet,0627 Rufflet.png,0627rufflet,rufflet.png
+0628braviary,0628 Braviary Hisui.png,0628braviary,braviary hisui.png
+0628braviary,0628 Braviary.png,0628braviary,braviary.png
+0629vullaby,0629 Vullaby.png,0629vullaby,vullaby.png
+0631heatmor,0631 Heatmor.png,0631heatmor,heatmor.png
+0632durant,0632 Durant.png,0632durant,durant.png
+0633deino,0633 Deino.png,0633deino,deino.png
+0634zweilous,0634 Zweilous.png,0634zweilous,zweilous.png
+0635hydreigon,0635 Hydreigon.png,0635hydreigon,hydreigon.png
+0636larvesta,0636 Larvesta.png,0636larvesta,larvesta.png
+0637volcarona,0637 Volcarona.png,0637volcarona,volcarona.png
+0638cobalion,0638 Cobalion.png,0638cobalion,cobalion.png
+0639terrakion,0639 Terrakion.png,0639terrakion,terrakion.png
+0641tornadus,0641 Tornadus Therian.png,0641tornadus,tornadus-therian.png
+0641tornadus,0641 Tornadus.png,0641tornadus,tornadus.png
+0644zekrom,0644 Zekrom.png,0644zekrom,zekrom.png
+0645landorus,0645 Landorus Therian.png,0645landorus,landorus-therian.png
+0645landorus,0645 Landorus.png,0645landorus,landorus.png
+0646kyurem,0646 Kyurem White.png,0646kyurem,kyurem-white.png
+0646kyurem,0646 Kyurem.png,0646kyurem,kyurem.png
+0647keldeo,0647 Keldeo.png,0647keldeo,keldeo.png
+0648meloetta,0648 Meloetta Pirouette.png,0648meloetta,meloetta-pirouette.png
+0648meloetta,0648 Meloetta.png,0648meloetta,meloetta.png
+0649genesect,0649 Genesect.png,0649genesect,genesect.png
+0650chespin,0650 Chespin.png,0650chespin,chespin.png
+0651quilladin,0651 Quilladin.png,0651quilladin,quilladin.png
+0652chesnaught,0652 Chesnaught.png,0652chesnaught,chesnaught.png
+0654braixen,0654 Braixen.png,0654braixen,braixen.png
+0655delphox,0655 Delphox.png,0655delphox,delphox.png
+0656froakie,0656 Froakie.png,0656froakie,froakie.png
+0657frogadier,0657 Frogadier.png,0657frogadier,frogadier.png
+0658greninja,0658 Greninja Ash.png,0658greninja,greninja-ash.png
+0659bunnelby,0659 Bunnelby.png,0659bunnelby,bunnelby.png
+0660diggersby,0660 Diggersby.png,0660diggersby,diggersby.png
+0661fletchling,0661 Fletchling.png,0661fletchling,fletchling.png
+0662fletchinder,0662 Fletchinder.png,0662fletchinder,fletchinder.png
+0663talonflame,0663 Talonflame.png,0663talonflame,talonflame.png
+0664scatterbug,0664 Scatterbug.png,0664scatterbug,scatterbug.png
+0665spewpa,0665 Spewpa.png,0665spewpa,spewpa.png
+0666vivillon,0666 Vivillon Jungle.png,0666vivillon,vivillon-jungle.png
+0666vivillon,0666 Vivillon.png,0666vivillon,vivillon.png
+0667litleo,0667 Litleo.png,0667litleo,litleo.png
+0668pyroar,0668 Pyroar Female.png,0668pyroar,pyroar_female.png
+0669flabebe,0669 Flabébé.png,0669flabebe,flabebe.png
+0670floette,0670 Floette.png,0670floette,floette.png
+0671florges,0671 Florges.png,0671florges,florges.png
+0672skiddo,0672 Skiddo.png,0672skiddo,skiddo.png
+0673gogoat,0673 Gogoat.png,0673gogoat,gogoat.png
+0674pancham,0674 Pancham.png,0674pancham,pancham.png
+0675pangoro,0675 Pangoro.png,0675pangoro,pangoro.png
+0676furfrou,0676 Furfrou Diamond.png,0676furfrou,furfrou-diamond.png
+0676furfrou,0676 Furfrou Heart.png,0676furfrou,furfrou-heart.png
+0676furfrou,0676 Furfrou Star.png,0676furfrou,furfrou-star.png
+0676furfrou,0676 Furfrou.png,0676furfrou,furfrou.png
+0677espurr,0677 Espurr.png,0677espurr,espurr.png
+0678meowstic,0678 Meowstic Female.png,0678meowstic,meowstic_female.png
+0678meowstic,0678 Meowstic Male.png,0678meowstic,meowstic.png
+0679honedge,0679 Honedge.png,0679honedge,honedge.png
+0680doublade,0680 Doublade.png,0680doublade,doublade.png
+0681aegislash,0681 Aegislash Blade.png,0681aegislash,aegislash-blade.png
+0681aegislash,0681 Aegislash Shield.png,0681aegislash,aegislash.png
+0682spritzee,0682 Spritzee.png,0682spritzee,spritzee.png
+0683aromatisse,0683 Aromatisse.png,0683aromatisse,aromatisse.png
+0684swirlix,0684 Swirlix.png,0684swirlix,swirlix.png
+0685slurpuff,0685 Slurpuff.png,0685slurpuff,slurpuff.png
+0686inkay,0686 Inkay.png,0686inkay,inkay.png
+0687malamar,0687 Malamar.png,0687malamar,malamar.png
+0688binacle,0688 Binacle.png,0688binacle,binacle.png
+0689barbaracle,0689 Barbaracle.png,0689barbaracle,barbaracle.png
+0690skrelp,0690 Skrelp.png,0690skrelp,skrelp.png
+0691dragalge,0691 Dragalge.png,0691dragalge,dragalge.png
+0692clauncher,0692 Clauncher.png,0692clauncher,clauncher.png
+0693clawitzer,0693 Clawitzer.png,0693clawitzer,clawitzer.png
+0695heliolisk,0695 Heliolisk.png,0695heliolisk,heliolisk.png
+0697tyrantrum,0697 Tyrantrum.png,0697tyrantrum,tyrantrum.png
+0698amaura,0698 Amaura.png,0698amaura,amaura.png
+0699aurorus,0699 Aurorus.png,0699aurorus,aurorus.png
+0700sylveon,0700 Sylveon.png,0700sylveon,sylveon.png
+0701hawlucha,0701 Hawlucha.png,0701hawlucha,hawlucha.png
+0703carbink,0703 Carbink.png,0703carbink,carbink.png
+0704goomy,0704 Goomy.png,0704goomy,goomy.png
+0705sliggoo,0705 Sliggoo Hisui.png,0705sliggoo,sliggoo hisui.png
+0706goodra,0706 Goodra Hisui.png,0706goodra,goodra hisui.png
+0707klefki,0707 Klefki.png,0707klefki,klefki.png
+0709trevenant,0709 Trevenant.png,0709trevenant,trevenant.png
+0710pumpkaboo,0710 Pumpkaboo.png,0710pumpkaboo,pumpkaboo.png
+0711gourgeist,0711 Gourgeist.png,0711gourgeist,gourgeist.png
+0712bergmite,0712 Bergmite.png,0712bergmite,bergmite.png
+0713avalugg,0713 Avalugg Hisui.png,0713avalugg,avalugg hisui.png
+0713avalugg,0713 Avalugg.png,0713avalugg,avalugg.png
+0714noibat,0714 Noibat.png,0714noibat,noibat.png
+0715noivern,0715 Noivern.png,0715noivern,noivern.png
+0717yveltal,0717 Yveltal.png,0717yveltal,yveltal.png
+0718zygarde,0718 Zygarde 10Percent.png,0718zygarde,zygarde-10.png
+0718zygarde,0718 Zygarde Complete.png,0718zygarde,zygarde-complete.png
+0718zygarde,0718 Zygarde.png,0718zygarde,zygarde.png
+0719diancie,0719 Diancie Mega.png,0719diancie,diancie-mega.png
+0719diancie,0719 Diancie.png,0719diancie,diancie.png
+0720hoopa,0720 Hoopa Unbound.png,0720hoopa,hoopa-unbound.png
+0720hoopa,0720 Hoopa.png,0720hoopa,hoopa.png
+0721volcanion,0721 Volcanion.png,0721volcanion,volcanion.png
+0722rowlet,0722 Rowlet.png,0722rowlet,rowlet.png
+0724decidueye,0724 Decidueye Hisui.png,0724decidueye,decidueye hisui.png
+0724decidueye,0724 Decidueye.png,0724decidueye,decidueye.png
+0725litten,0725 Litten.png,0725litten,litten.png
+0726torracat,0726 Torracat.png,0726torracat,torracat.png
+0727incineroar,0727 Incineroar.png,0727incineroar,incineroar.png
+0730primarina,0730 Primarina.png,0730primarina,primarina.png
+0731pikipek,0731 Pikipek.png,0731pikipek,pikipek.png
+0732trumbeak,0732 Trumbeak.png,0732trumbeak,trumbeak.png
+0733toucannon,0733 Toucannon.png,0733toucannon,toucannon.png
+0734yungoos,0734 Yungoos.png,0734yungoos,yungoos.png
+0736grubbin,0736 Grubbin.png,0736grubbin,grubbin.png
+0737charjabug,0737 Charjabug.png,0737charjabug,charjabug.png
+0738vikavolt,0738 Vikavolt.png,0738vikavolt,vikavolt.png
+0739crabrawler,0739 Crabrawler.png,0739crabrawler,crabrawler.png
+0740crabominable,0740 Crabominable.png,0740crabominable,crabominable.png
+0741oricorio,0741 Oricorio Pa'u.png,0741oricorio,oricorio-pau.png
+0741oricorio,0741 Oricorio Pom-Pom.png,0741oricorio,oricorio-pom-pom.png
+0741oricorio,0741 Oricorio Sensu.png,0741oricorio,oricorio-sensu.png
+0741oricorio,0741 Oricorio.png,0741oricorio,oricorio.png
+0742cutiefly,0742 Cutiefly.png,0742cutiefly,cutiefly.png
+0743ribombee,0743 Ribombee.png,0743ribombee,ribombee.png
+0744rockruff,0744 Rockruff.png,0744rockruff,rockruff.png
+0745lycanroc,0745 Lycanroc.png,0745lycanroc,lycanroc.png
+0746wishiwashi,0746 Wishiwashi School.png,0746wishiwashi,wishiwashi-school.png
+0746wishiwashi,0746 Wishiwashi.png,0746wishiwashi,wishiwashi.png
+0747mareanie,0747 Mareanie.png,0747mareanie,mareanie.png
+0748toxapex,0748 Toxapex.png,0748toxapex,toxapex.png
+0749mudbray,0749 Mudbray.png,0749mudbray,mudbray.png
+0751dewpider,0751 Dewpider.png,0751dewpider,dewpider.png
+0753fomantis,0753 Fomantis.png,0753fomantis,fomantis.png
+0754lurantis,0754 Lurantis.png,0754lurantis,lurantis.png
+0755morelull,0755 Morelull.png,0755morelull,morelull.png
+0756shiinotic,0756 Shiinotic.png,0756shiinotic,shiinotic.png
+0757salandit,0757 Salandit.png,0757salandit,salandit.png
+0759stufful,0759 Stufful.png,0759stufful,stufful.png
+0760bewear,0760 Bewear.png,0760bewear,bewear.png
+0761bounsweet,0761 Bounsweet.png,0761bounsweet,bounsweet.png
+0762steenee,0762 Steenee.png,0762steenee,steenee.png
+0763tsareena,0763 Tsareena.png,0763tsareena,tsareena.png
+0764comfey,0764 Comfey.png,0764comfey,comfey.png
+0765oranguru,0765 Oranguru.png,0765oranguru,oranguru.png
+0766passimian,0766 Passimian.png,0766passimian,passimian.png
+0768golisopod,0768 Golisopod.png,0768golisopod,golisopod.png
+0769sandygast,0769 Sandygast.png,0769sandygast,sandygast.png
+0770palossand,0770 Palossand.png,0770palossand,palossand.png
+0771pyukumuku,0771 Pyukumuku.png,0771pyukumuku,pyukumuku.png
+0773silvally,0773 Silvally Shiny.png,0773silvally,silvally_shiny.png
+0773silvally,0773 Silvally.png,0773silvally,silvally.png
+0774minior,0774 Minior Core.png,0774minior,minior-red.png
+0774minior,0774 Minior.png,0774minior,minior.png
+0775komala,0775 Komala.png,0775komala,komala.png
+0776turtonator,0776 Turtonator.png,0776turtonator,turtonator.png
+0777togedemaru,0777 Togedemaru.png,0777togedemaru,togedemaru.png
+0778mimikyu,0778 Mimikyu.png,0778mimikyu,mimikyu.png
+0779bruxish,0779 Bruxish.png,0779bruxish,bruxish.png
+0780drampa,0780 Drampa.png,0780drampa,drampa.png
+0781dhelmise,0781 Dhelmise.png,0781dhelmise,dhelmise.png
+0782jangmo-o,0782 Jangmo o.png,0782jangmo-o,jangmo-o.png
+0783hakamo-o,0783 Hakamo o.png,0783hakamo-o,hakamo-o.png
+0784kommo-o,0784 Kommo o.png,0784kommo-o,kommo-o.png
+0785tapu koko,0785 Tapu Koko.png,0785tapu koko,tapu koko.png
+0786tapu lele,0786 Tapu Lele.png,0786tapu lele,tapu lele.png
+0787tapu bulu,0787 Tapu Bulu.png,0787tapu bulu,tapu bulu.png
+0790cosmoem,0790 Cosmoem.png,0790cosmoem,cosmoem.png
+0791solgaleo,0791 Solgaleo RadiantSunPhase.png,0791solgaleo,solgaleo.png
+0792lunala,0792 Lunala.png,0792lunala,lunala.png
+0793nihilego,0793 Nihilego.png,0793nihilego,nihilego.png
+0794buzzwole,0794 Buzzwole.png,0794buzzwole,buzzwole.png
+0795pheromosa,0795 Pheromosa.png,0795pheromosa,pheromosa.png
+0796xurkitree,0796 Xurkitree.png,0796xurkitree,xurkitree.png
+0797celesteela,0797 Celesteela.png,0797celesteela,celesteela.png
+0798kartana,0798 Kartana.png,0798kartana,kartana.png
+0799guzzlord,0799 Guzzlord.png,0799guzzlord,guzzlord.png
+0800necrozma,0800 Necrozma Dawn Wings 2.png,0800necrozma,necrozma-dawn.png
+0800necrozma,0800 Necrozma Dawn Wings.png,0800necrozma,necrozma-dawn_right.png
+0800necrozma,0800 Necrozma Dusk Mane.png,0800necrozma,necrozma-dusk.png
+0800necrozma,0800 Necrozma Ultra.png,0800necrozma,necrozma-ultra_right.png
+0800necrozma,0800 Necrozma.png,0800necrozma,necrozma.png
+0801magearna,0801 Magearna.png,0801magearna,magearna.png
+0802marshadow,0802 Marshadow.png,0802marshadow,marshadow.png
+0803poipole,0803 Poipole.png,0803poipole,poipole.png
+0804naganadel,0804 Naganadel.png,0804naganadel,naganadel.png
+0805stakataka,0805 Stakataka.png,0805stakataka,stakataka.png
+0806blacephalon,0806 Blacephalon.png,0806blacephalon,blacephalon.png
+0807zeraora,0807 Zeraora.png,0807zeraora,zeraora.png
+0808meltan,0808 Meltan.png,0808meltan,meltan.png
+0809melmetal,0809 Melmetal.png,0809melmetal,melmetal.png
+0809melmetal,0809Melmetal-Gigantamax.png,0809melmetal,melmetal-gmax.png
+0810grookey,0810 Grookey 2.png,0810grookey,grookey.png
+0811thwackey,0811 Thwackey.png,0811thwackey,thwackey.png
+0812rillaboom,0812 Rillaboom.png,0812rillaboom,rillaboom.png
+0812rillaboom,0812Rillaboom-Gigantamax.png,0812rillaboom,rillaboom-gmax.png
+0813scorbunny,0813 Scorbunny.png,0813scorbunny,scorbunny.png
+0815cinderace,0815Cinderace-Gigantamax.png,0815cinderace,cinderace-gmax.png
+0816sobble,0816 Sobble.png,0816sobble,sobble.png
+0817drizzile,0817 Drizzile.png,0817drizzile,drizzile.png
+0818inteleon,0818 Inteleon Gigantamax 2.png,0818inteleon,inteleon-gmax.png
+0818inteleon,0818 Inteleon.png,0818inteleon,inteleon.png
+0822corvisquire,0822 Corvisquire.png,0822corvisquire,corvisquire.png
+0823corviknight,0823Corviknight-Gigantamax.png,0823corviknight,corviknight-gmax.png
+0824blipbug,0824 Blipbug.png,0824blipbug,blipbug.png
+0826orbeetle,0826 Orbeetle Gigantamax.png,0826orbeetle,orbeetle-gmax.png
+0826orbeetle,0826 Orbeetle.png,0826orbeetle,orbeetle.png
+0828thievul,0828 Thievul.png,0828thievul,thievul.png
+0829gossifleur,0829 Gossifleur.png,0829gossifleur,gossifleur.png
+0830eldegoss,0830 Eldegoss.png,0830eldegoss,eldegoss.png
+0831wooloo,0831 Wooloo 2.png,0831wooloo,wooloo.png
+0833chewtle,0833 Chewtle.png,0833chewtle,chewtle.png
+0834drednaw,0834 Drednaw Gigantamax.png,0834drednaw,drednaw-gmax.png
+0834drednaw,0834 Drednaw.png,0834drednaw,drednaw.png
+0836boltund,0836 Boltund.png,0836boltund,boltund.png
+0837rolycoly,0837 Rolycoly.png,0837rolycoly,rolycoly.png
+0839coalossal,0839 Coalossal Gigantamax.png,0839coalossal,coalossal-gmax.png
+0839coalossal,0839 Coalossal.png,0839coalossal,coalossal.png
+0840applin,0840 Applin.png,0840applin,applin.png
+0841flapple,0841 Flapple Gigantamax.png,0841flapple,flapple-gmax.png
+0841flapple,0841 Flapple.png,0841flapple,flapple.png
+0842appletun,0842 Appletun.png,0842appletun,appletun.png
+0843silicobra,0843 Silicobra.png,0843silicobra,silicobra.png
+0844sandaconda,0844 Sandaconda Gigantamax.png,0844sandaconda,sandaconda-gmax.png
+0846arrokuda,0846 Arrokuda.png,0846arrokuda,arrokuda.png
+0847barraskewda,0847 Barraskewda.png,0847barraskewda,barraskewda.png
+0848toxel,0848 Toxel.png,0848toxel,toxel.png
+0849toxtricity,0849 Toxtricity Amped.png,0849toxtricity,toxtricity.png
+0849toxtricity,0849 Toxtricity Gigantamax.png,0849toxtricity,toxtricity-gmax.png
+0849toxtricity,0849 Toxtricity Low Key.png,0849toxtricity,toxtricity-low-key.png
+0851centiskorch,0851 Centiskorch Gigantamax.png,0851centiskorch,centiskorch-gmax.png
+0851centiskorch,0851 Centiskorch.png,0851centiskorch,centiskorch.png
+0852clobbopus,0852 Clobbopus.png,0852clobbopus,clobbopus.png
+0853grapploct,0853 Grapploct.png,0853grapploct,grapploct.png
+0854sinistea,0854 Sinistea.png,0854sinistea,sinistea.png
+0855polteageist,0855 Polteageist.png,0855polteageist,polteageist.png
+0856hatenna,0856 Hatenna.png,0856hatenna,hatenna.png
+0857hattrem,0857 Hattrem.png,0857hattrem,hattrem.png
+0858hatterene,0858 Hatterene.png,0858hatterene,hatterene.png
+0859impidimp,0859 Impidimp.png,0859impidimp,impidimp.png
+0860morgrem,0860 Morgrem.png,0860morgrem,morgrem.png
+0861grimmsnarl,0861 Grimmsnarl Gigantamax.png,0861grimmsnarl,grimmsnarl-gmax.png
+0861grimmsnarl,0861 Grimmsnarl.png,0861grimmsnarl,grimmsnarl.png
+0862obstagoon,0862 Obstagoon.png,0862obstagoon,obstagoon.png
+0863perrserker,0863 Perrserker.png,0863perrserker,perrserker.png
+0864cursola,0864 Cursola.png,0864cursola,cursola.png
+0865sirfetch'd,0865 Sirfetch'd.png,0865sirfetch'd,sirfetch_d.png
+0866mr. rime,0866 Mr. Rime.png,0866mr. rime,mr. rime.png
+0867runerigus,0867 Runerigus.png,0867runerigus,runerigus.png
+0869alcremie,0869 Alcremie Gigantamax.png,0869alcremie,alcremie-gmax.png
+0869alcremie,0869 Alcremie.png,0869alcremie,alcremie.png
+0870falinks,0870 Falinks.png,0870falinks,falinks.png
+0871pincurchin,0871 Pincurchin.png,0871pincurchin,pincurchin.png
+0874stonjourner,0874 Stonjourner.png,0874stonjourner,stonjourner.png
+0875eiscue,0875 Eiscue Ice.png,0875eiscue,eiscue.png
+0875eiscue,0875 Eiscue Noice.png,0875eiscue,eiscue-noice.png
+0876indeedee,0876 Indeedee Female.png,0876indeedee,indeedee_female.png
+0876indeedee,0876 Indeedee Male.png,0876indeedee,indeedee.png
+0877morpeko,0877 Morpeko Full.png,0877morpeko,morpeko.png
+0877morpeko,0877 Morpeko Hangry.png,0877morpeko,morpeko-hangry.png
+0879copperajah,0879 Copperajah Gigantamax.png,0879copperajah,copperajah-gmax.png
+0879copperajah,0879 Copperajah.png,0879copperajah,copperajah.png
+0880dracozolt,0880 Dracozolt.png,0880dracozolt,dracozolt.png
+0881arctozolt,0881 Arctozolt.png,0881arctozolt,arctozolt.png
+0882dracovish,0882 Dracovish.png,0882dracovish,dracovish.png
+0883arctovish,0883 Arctovish.png,0883arctovish,arctovish.png
+0884duraludon,0884 Duraludon.png,0884duraludon,duraludon.png
+0885dreepy,0885 Dreepy.png,0885dreepy,dreepy.png
+0886drakloak,0886 Drakloak.png,0886drakloak,drakloak.png
+0887dragapult,0887 Dragapult.png,0887dragapult,dragapult.png
+0889zamazenta,0889 Zamazenta Hero.png,0889zamazenta,zamazenta.png
+0889zamazenta,0889 Zamazenta.png,0889zamazenta,zamazenta-crowned.png
+0890eternatus,0890 Eternatus.png,0890eternatus,eternatus.png
+0891kubfu,0891 Kubfu.png,0891kubfu,kubfu.png
+0892urshifu,0892 Urshifu Gigantamax Rapid Strike.png,0892urshifu,urshifu-rapid-strike-gmax.png
+0892urshifu,0892 Urshifu Gigantamax Single Strike.png,0892urshifu,urshifu-gmax.png
+0892urshifu,0892 Urshifu Single Strike.png,0892urshifu,urshifu.png
+0893zarude,0893 Zarude.png,0893zarude,zarude.png
+0894regieleki,0894 Regieleki.png,0894regieleki,regieleki.png
+0896glastrier,0896 Glastrier.png,0896glastrier,glastrier.png
+0897spectrier,0897 Spectrier.png,0897spectrier,spectrier.png
+0898calyrex,0898 Calyrex Ice Rider.png,0898calyrex,calyrex-ice-rider.png
+0898calyrex,0898 Calyrex.png,0898calyrex,calyrex.png
+0900kleavor,0900 Kleavor.png,0900kleavor,kleavor.png
+0901ursaluna,0901 Ursaluna.png,0901ursaluna,ursaluna.png
+0902basculegion,0902 Basculegion Female.png,0902basculegion,basculegion_female.png
+0902basculegion,0902 Basculegion Male.png,0902basculegion,basculegion.png
+0903sneasler,0903 Sneasler.png,0903sneasler,sneasler.png
+0904overqwil,0904 Overqwil.png,0904overqwil,overqwil.png
+0905enamorus,0905 Enamorus Therian.png,0905enamorus,enamorus-therian.png
+0905enamorus,0905 Enamorus.png,0905enamorus,enamorus.png
