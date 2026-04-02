@@ -8,7 +8,7 @@ At the interim stage, the strongest progress has been in data collection, prepro
 
 ## 2. Data Collection, Processing, and Curation
 
-For our project, the first rubric item is best interpreted as the amount of structured image data collected, processed, and curated rather than time-sequence data specifically. The dataset currently combines three complementary visual sources:
+For our project, we have collected are large amount of structured image data that has been processed and curated. The dataset currently combines three complementary visual sources:
 
 - **SugimoriSprites**: official-style 2D Pokemon artwork used as high-quality reference art
 - **PokeSprite**: compact game-style sprite assets used as the target sprite representation
