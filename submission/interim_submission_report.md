@@ -6,15 +6,7 @@ The goal of this project is to build a conditional image-generation system that 
 
 At the interim stage, the strongest progress has been in data collection, preprocessing, and curation. We have assembled multiple Pokemon image sources, written scripts to align images across formats, and manually reviewed a curated subset of mappings that will support later model training and evaluation. The core training pipeline is still being finalized, so this report focuses on completed data work, the planned neural network design, code organization, and the evaluation framework that will be used once training runs are complete.
 
-## 2. Progress 
-
-1. **Data preparation and curation**: substantial progress has already been made through large-scale collection and alignment of Pokemon artwork, sprite images, and 3D render assets.
-2. **Difficulty of neural network design and implementation**: the proposed model is a conditional diffusion architecture with attribute embeddings and optional evolution-based conditioning.
-3. **Working, clean, readable code**: the repository already contains dedicated preprocessing and visualization scripts used to build and inspect the dataset.
-4. **High performance**: 
-6. **References**: 
-
-## 3. Data Collection, Processing, and Curation
+## 2. Data Collection, Processing, and Curation
 
 For our project, the first rubric item is best interpreted as the amount of structured image data collected, processed, and curated rather than time-sequence data specifically. The dataset currently combines three complementary visual sources:
 
@@ -39,32 +31,24 @@ An important part of the curation effort has been manual verification. The repos
 
 ### Table 1. Dataset Summary
 
-| Dataset | Raw Images | Curated/Aligned Samples | Notes |
-|---|---:|---:|---|
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+| Dataset         | Raw Images                                                                                                                                                                                                                                                    |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| SugimoriSprites | <img src="../poke-data/SugimoriSprites/0001bulbasaur/0001 Bulbasaur.png" width="128px" height="128px"> <img src="../poke-data/SugimoriSprites/0006charizard/0006 Charizard.png" width="128px" height="128px">                                                 |
+| PokeSprite      | <img src="../poke-data/PokeSprite/0001bulbasaur/bulbasaur.png" width="128px" height="128px"> <img src="../poke-data/PokeSprite/0006charizard/charizard.png" width="128px" height="128px">                                                                     |
+| ProjectPokemon  | <img src="../poke-data/ProjectPokemon/0001bulbasaur/poke_capture_0001_000_mf_n_00000000_f_n.png" width="128px" height="128px"> <img src="../poke-data/ProjectPokemon/0006charizard/poke_capture_0006_000_mf_n_00000000_f_n.png" width="128px" height="128px"> |
 
-### Table 2. Curation Progress
+### Pre-processing pipeline
 
-| Artifact | Current Count | Intended Use | Status |
-|---|---:|---|---|
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+<img src="data-preprocessing.png" width="100%">
 
-**Figure 1.** Blank placeholder for dataset pipeline diagram.
-
-**Figure 2.** Blank placeholder for example aligned image pairs.
-
-## 4. Neural Network Design and Implementation
+## 3. Neural Network Design and Implementation
 
 The planned model is intentionally more difficult than a basic unconditional image generator. Rather than training a model that only memorizes one image style, we are designing a conditional diffusion-based system that can generate Pokemon imagery under structured controls. The current design includes the following components:
 
-- a **diffusion U-Net backbone** for iterative denoising and image synthesis
-- **attribute conditioning** for Pokemon type, evolution stage, and style
-- an optional **reference-image conditioning path** so a generated Pokemon can be used to guide the generation of a plausible evolution
-- a sprite-focused output space so that the final results can be used in a game-style visual setting
+- A **diffusion U-Net backbone** for iterative denoising and image synthesis
+- **Attribute conditioning** for Pokemon type, evolution stage, and style
+- An optional **reference-image conditioning path** so a generated Pokemon can be used to guide the generation of a plausible evolution
+- A sprite-focused output space so that the final results can be used in a game-style visual setting
 
 The motivation for this design is that Pokemon generation is not only an image synthesis problem, but also a structured conditional generation problem. A successful model should produce outputs that are visually coherent, stylistically consistent, and semantically plausible given the conditioning variables.
 
@@ -72,32 +56,19 @@ At this stage, most implementation effort has gone into dataset preparation beca
 
 The main planned adaptation is not simply training a standard image generator. Instead, the architecture will be modified to:
 
-- ingest structured condition vectors for Pokemon metadata
-- support style-aware generation across multiple visual domains
-- support evolution-aware conditioning so generated forms can remain related across a chain
+- Ingest structured condition vectors for Pokemon metadata
+- Support style-aware generation across multiple visual domains
+- Support evolution-aware conditioning so generated forms can remain related across a chain
 
-### Table 3. Planned Model Configuration
+### Architecture Proposal
 
-| Component | Design Choice | Purpose | Notes |
-|---|---|---|---|
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+<img src="pokemon-diffusion.png" width="100%">
 
-**Figure 3.** Blank placeholder for conditional diffusion architecture diagram.
+### Training
 
-## 5. Working, Clean, and Readable Code
+<img src="training.png" width="100%">
 
-The repository already reflects a reproducible preprocessing workflow rather than ad hoc manual editing. Current scripts support:
-
-- building cross-dataset mapping CSV files
-- checking variant and filename consistency
-- generating visualization pages for manual verification
-- analyzing image distributions and dataset structure
-
-
-
-## 6. Current Performance Status and Evaluation Plan
+## 4. Current Performance Status and Evaluation Plan
 
 At the interim stage, we are **not yet reporting final quantitative generation performance**. We do not want to claim results before the training pipeline and evaluation procedures are complete. Instead, this section documents how performance will be measured in the final submission.
 
@@ -105,48 +76,28 @@ Planned evaluation includes:
 
 - **FID** to compare the distribution of generated images to real Pokemon images
 - **SSIM** or related similarity measures for controlled image-to-image comparisons where appropriate
-- **diversity analysis** to check whether the model produces varied outputs instead of repeating near-duplicates
-- **qualitative visual review** to assess whether generated Pokemon respect conditioning attributes and plausible evolution structure
+- **Diversity analysis** to check whether the model produces varied outputs instead of repeating near-duplicates
+- **Qualitative visual review** to assess whether generated Pokemon respect conditioning attributes and plausible evolution structure
 
-We also plan to compare different conditioning settings, such as:
+If time allows, we may also compare different conditioning settings, such as:
 
-- unconditional generation vs. attribute-conditioned generation
-- generation with and without evolution-reference input
-- different image styles or target resolutions
+- Unconditional generation vs. attribute-conditioned generation
+- Generation with and without evolution-reference input
+- Different image styles or target resolutions
 
-### Table 4. Planned Quantitative Results
-
-| Model Variant | FID | SSIM | Diversity Metric | Notes |
-|---|---:|---:|---:|---|
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-
-### Table 5. Planned Ablation Study
-
-| Configuration | Conditioning Used | Expected Benefit | Result |
-|---|---|---|---|
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-
-**Figure 4.** Blank placeholder for training-loss graph.
-
-**Figure 5.** Blank placeholder for generated-sample comparison grid.
-
-## 7. Presentation and Reporting Plan
+## 5. Presentation and Reporting Plan
 
 For the final project presentation, we plan to include:
 
-- a short motivation for why Pokemon is a useful structured visual domain for conditional generation
-- a data pipeline overview showing how multiple image sources were aligned
-- a model diagram summarizing the conditional diffusion architecture
-- example generations and qualitative comparisons
-- quantitative evaluation tables and brief ablation results
+- A short motivation for why Pokemon is a useful structured visual domain for conditional generation
+- A data pipeline overview showing how multiple image sources were aligned
+- A model diagram summarizing the conditional diffusion architecture
+- Example generations and qualitative comparisons
+- Quantitative evaluation tables and brief ablation results
 
 The final written report will also revise this interim update into a cleaner final narrative with polished tables, figures, and proofreading. At this point, the main missing pieces are final training results, completed plots, and a concise summary of empirical findings.
 
-## 8. Conclusion
+## 6. Conclusion
 
 The project is currently strongest in the area of data collection, preprocessing, and dataset curation. We have already collected multiple Pokemon image sources, generated thousands of structured cross-format mappings, and manually verified a substantial subset of aligned pairs for downstream use. This work is a necessary foundation for the model because conditional generation quality will depend heavily on the accuracy of these correspondences.
 
@@ -154,19 +105,19 @@ The neural network component is conceptually ambitious: a conditional diffusion 
 
 The next milestone is to convert the curated dataset into a finalized training pipeline, run baseline and conditioned experiments, and populate the currently blank tables and figures with real results.
 
-## 9. References
+## 7. References
 
-[1] Ho, J., Jain, A., and Abbeel, P. *Denoising Diffusion Probabilistic Models*. NeurIPS, 2020.
+[1] Ho, J., Jain, A., and Abbeel, P. _Denoising Diffusion Probabilistic Models_. NeurIPS, 2020.
 
-[2] Ronneberger, O., Fischer, P., and Brox, T. *U-Net: Convolutional Networks for Biomedical Image Segmentation*. MICCAI, 2015.
+[2] Ronneberger, O., Fischer, P., and Brox, T. _U-Net: Convolutional Networks for Biomedical Image Segmentation_. MICCAI, 2015.
 
-[3] Saharia, C., Chan, W., Saxena, S., et al. *Palette: Image-to-Image Diffusion Models*. SIGGRAPH, 2022.
+[3] Saharia, C., Chan, W., Saxena, S., et al. _Palette: Image-to-Image Diffusion Models_. SIGGRAPH, 2022.
 
-[4] Hugging Face. *Diffusers: State-of-the-art diffusion models for image and audio generation in PyTorch*. [https://github.com/huggingface/diffusers](https://github.com/huggingface/diffusers)
+[4] Hugging Face. _Diffusers: State-of-the-art diffusion models for image and audio generation in PyTorch_. [https://github.com/huggingface/diffusers](https://github.com/huggingface/diffusers)
 
 [5] PokéAPI. [https://pokeapi.co/](https://pokeapi.co/)
 
-[6] msikma. *pokesprite*. [https://github.com/msikma/pokesprite](https://github.com/msikma/pokesprite)
+[6] msikma. _pokesprite_. [https://github.com/msikma/pokesprite](https://github.com/msikma/pokesprite)
 
 [7] Project Pokemon. Sprite and asset resources. [https://projectpokemon.org/](https://projectpokemon.org/)
 
