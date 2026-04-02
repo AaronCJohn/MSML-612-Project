@@ -39,10 +39,9 @@ An important part of the curation effort has been manual verification. The repos
 
 ### Pre-processing pipeline
 
-<img src="data-preprocessing.png" width="100%">
+<img src="data-preprocessing.jpeg" width="100%">
 
 ## 3. Neural Network Design and Implementation
-
 The planned model is intentionally more difficult than a basic unconditional image generator. Rather than training a model that only memorizes one image style, we are designing a conditional diffusion-based system that can generate Pokemon imagery under structured controls. The current design includes the following components:
 
 - A **diffusion U-Net backbone** for iterative denoising and image synthesis
@@ -62,11 +61,22 @@ The main planned adaptation is not simply training a standard image generator. I
 
 ### Architecture Proposal
 
-<img src="pokemon-diffusion.png" width="100%">
+<img src="pokemon-diffusion.jpeg" width="100%">
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ### Training
-
-<img src="training.png" width="100%">
+<img src="training.jpeg" width="100%">
 
 ## 4. Current Performance Status and Evaluation Plan
 
