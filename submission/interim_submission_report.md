@@ -39,7 +39,7 @@ An important part of the curation effort has been manual verification. The repos
 
 ### Pre-processing pipeline
 
-<img src="data-preprocessing.png" width="100%">
+<img src="images/data-preprocessing.png" width="100%">
 
 ## 3. Neural Network Design and Implementation
 
@@ -62,15 +62,49 @@ The main planned adaptation is not simply training a standard image generator. I
 
 ### Architecture Proposal
 
-<img src="pokemon-diffusion.png" width="100%">
+<img src="images/pokemon-diffusion.png" width="100%">
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ### Training
 
-<img src="training.png" width="100%">
+<img src="images/training.png" width="100%">
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ## 4. Current Performance Status and Evaluation Plan
 
-At the interim stage, we are **not yet reporting final quantitative generation performance**. We do not want to claim results before the training pipeline and evaluation procedures are complete. Instead, this section documents how performance will be measured in the final submission.
+As a preliminary baseline, we trained a GAN-based model to translate Sugimori/3D artwork into game-style sprites. The following figure shows three sample results. Each column shows the input artwork (top), the GAN-predicted sprite (middle), and the original ground-truth sprite (bottom).
+
+### Figure 1. Preliminary GAN Results (Sugimori/3D → Sprite)
+
+| Arceus | Pachirisu | Naganadel |
+|:------:|:---------:|:---------:|
+| <img src="images/gan_result_3.png" width="200px"> | <img src="images/gan_result_1.png" width="200px"> | <img src="images/gan_result_2.png" width="200px"> |
+
+The GAN captures broad color palettes and rough silhouettes, but the predicted sprites lack fine detail and sharpness compared to the ground-truth sprites. A diffusion transformer should improve global consistency and recover sharper fine-grained detail relative to this baseline.
 
 Planned evaluation includes:
 
@@ -85,17 +119,15 @@ If time allows, we may also compare different conditioning settings, such as:
 - Generation with and without evolution-reference input
 - Different image styles or target resolutions
 
-## 5. Presentation and Reporting Plan
+## 5. Next Steps
+The remaining project objectives are:
 
-For the final project presentation, we plan to include:
-
-- A short motivation for why Pokemon is a useful structured visual domain for conditional generation
-- A data pipeline overview showing how multiple image sources were aligned
-- A model diagram summarizing the conditional diffusion architecture
-- Example generations and qualitative comparisons
-- Quantitative evaluation tables and brief ablation results
-
-The final written report will also revise this interim update into a cleaner final narrative with polished tables, figures, and proofreading. At this point, the main missing pieces are final training results, completed plots, and a concise summary of empirical findings.
+1. Finalize the training pipeline and convert the curated dataset into DataLoader-ready format.
+2. Run a baseline diffusion experiment on sprite images.
+3. Add conditioning for Pokemon type, evolution stage, and style embeddings.
+4. Train and compare generated outputs on held-out Pokemon examples.
+5. Perform an ablation study to measure the impact of each conditioning component.
+6. Produce a visual summary of generated Pokemon designs for the final presentation.
 
 ## 6. Conclusion
 
@@ -105,7 +137,7 @@ The neural network component is conceptually ambitious: a conditional diffusion 
 
 The next milestone is to convert the curated dataset into a finalized training pipeline, run baseline and conditioned experiments, and populate the currently blank tables and figures with real results.
 
-## 7. References
+## 6. References
 
 [1] Ho, J., Jain, A., and Abbeel, P. _Denoising Diffusion Probabilistic Models_. NeurIPS, 2020. [https://arxiv.org/abs/2006.11239](https://arxiv.org/abs/2006.11239)
 

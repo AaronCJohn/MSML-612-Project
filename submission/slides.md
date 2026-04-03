@@ -124,6 +124,46 @@ style: |
   section.arch-side .arch-text li {
     margin-bottom: 5px;
   }
+  section.gan-side {
+    font-size: 17px;
+  }
+  section.gan-side h2 {
+    margin-bottom: 10px;
+  }
+  section.gan-side .gan-wrap {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+  }
+  section.gan-side .gan-visuals {
+    width: 68%;
+  }
+  section.gan-side .gan-text {
+    width: 32%;
+    font-size: 16px;
+    line-height: 1.35;
+  }
+  section.gan-side .gan-text p {
+    margin: 0 0 10px 0;
+  }
+  section.gan-side .gan-text strong {
+    font-weight: 700;
+  }
+  section.gan-side table.gan-grid {
+    width: 100%;
+    margin-top: 0;
+    table-layout: fixed;
+  }
+  section.gan-side table.gan-grid th,
+  section.gan-side table.gan-grid td {
+    padding: 6px 4px;
+    font-size: 14px;
+  }
+  section.gan-side table.gan-grid img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+  }
   .centered-figure {
     text-align: center;
     margin: 6px 0 0 0;
@@ -211,7 +251,7 @@ Three complementary image sources collected and aligned:
 ---
 ## Preprocessing Pipeline
 
-![w:900](data-preprocessing.png)
+![w:900](images/data-preprocessing.png)
 
 > Filename normalization → form-variant handling (Mega, Gigantamax) → CSV mapping generation → manual verification via contact-sheet review
 
@@ -223,7 +263,7 @@ Three complementary image sources collected and aligned:
 
 <div class="arch-wrap">
   <div class="arch-image">
-    <img src="pokemon-diffusion.png" alt="System architecture diagram">
+    <img src="images/pokemon-diffusion.png" alt="System architecture diagram">
   </div>
   <div class="arch-text">
     <p><strong>Key components:</strong></p>
@@ -255,12 +295,42 @@ Three complementary image sources collected and aligned:
 
 ## Training Procedure
 
-<p class="centered-figure"><img src="training.png" alt="Training procedure diagram"></p>
+<p class="centered-figure"><img src="images/training.png" alt="Training procedure diagram"></p>
 
 **Training approach:**
 - Adapt publicly available diffusion model implementations (Hugging Face Diffusers)
 - Modify conditioning mechanism for structured Pokemon metadata
 - Train on aligned Sugimori to Sprite pairs from the curated dataset
+
+---
+
+<!-- _class: gan-side -->
+
+## Preliminary GAN Results
+
+<div class="gan-wrap">
+  <div class="gan-visuals">
+    <table class="gan-grid">
+      <tr>
+        <th>Arceus</th>
+        <th>Pachirisu</th>
+        <th>Naganadel</th>
+      </tr>
+      <tr>
+        <td><img src="images/gan_result_3.png" alt="Arceus results"></td>
+        <td><img src="images/gan_result_1.png" alt="Pachirisu results"></td>
+        <td><img src="images/gan_result_2.png" alt="Naganadel results"></td>
+      </tr>
+    </table>
+  </div>
+  <div class="gan-text">
+    <p><strong>Top:</strong> Input artwork</p>
+    <p><strong>Middle:</strong> GAN-predicted sprite</p>
+    <p><strong>Bottom:</strong> Ground-truth sprite</p>
+    <p>GAN captures color palettes and rough silhouettes but lacks fine detail and sharpness compared with the ground-truth sprites.</p>
+    <p>A diffusion transformer should improve global consistency and recover sharper fine-grained detail relative to this baseline.</p>
+  </div>
+</div>
 
 ---
 
@@ -273,7 +343,7 @@ Three complementary image sources collected and aligned:
 | **Diversity Score** | Pairwise distance across generated samples | Mode coverage |
 | **Qualitative Review** | Side-by-side visual inspection | Attribute adherence |
 
-**Planned ablations:**
+**Planned ablations (If time allows):**
 
 | Experiment | Variable |
 |---|---|
@@ -316,14 +386,18 @@ Three complementary image sources collected and aligned:
 
 ## **References**
 
-Ho et al. *Denoising Diffusion Probabilistic Models*. NeurIPS, 2020.
+[1] Ho, J., Jain, A., and Abbeel, P. *Denoising Diffusion Probabilistic Models*. NeurIPS, 2020. https://arxiv.org/abs/2006.11239
 
-Ronneberger et al. *U-Net: Convolutional Networks for Biomedical Image Segmentation*. MICCAI, 2015.
+[2] Ronneberger, O., Fischer, P., and Brox, T. *U-Net: Convolutional Networks for Biomedical Image Segmentation*. MICCAI, 2015. https://arxiv.org/abs/1505.04597
 
-Saharia et al. *Palette: Image-to-Image Diffusion Models*. SIGGRAPH, 2022.
+[3] Saharia, C., Chan, W., Saxena, S., et al. *Palette: Image-to-Image Diffusion Models*. SIGGRAPH, 2022. https://arxiv.org/abs/2111.05826
 
-Hugging Face. *Diffusers*. github.com/huggingface/diffusers
+[4] Hugging Face. *Diffusers: State-of-the-art diffusion models for image and audio generation in PyTorch*. https://github.com/huggingface/diffusers
 
-PokéAPI. pokeapi.co - msikma. *pokesprite*. github.com/msikma/pokesprite
+[5] PokéAPI. https://pokeapi.co/
 
-Project Pokémon. projectpokemon.org - Pokémon Database. pokemondb.net
+[6] msikma. *pokesprite*. https://github.com/msikma/pokesprite
+
+[7] Project Pokémon. Sprite and asset resources. https://projectpokemon.org/
+
+[8] Pokémon Database. National Pokédex and image resources. https://pokemondb.net/pokedex/national
