@@ -8,7 +8,7 @@ At the interim stage, the strongest progress has been in data collection, prepro
 
 ## 2. Data Collection, Processing, and Curation
 
-For our project, we have collected are large amount of structured image data that has been processed and curated. The dataset currently combines three complementary visual sources:
+For our project, we have collected a large amount of structured image data that has been processed and curated. The dataset currently combines three complementary visual sources:
 
 - **SugimoriSprites**: official-style 2D Pokemon artwork used as high-quality reference art
 - **PokeSprite**: compact game-style sprite assets used as the target sprite representation
@@ -100,7 +100,7 @@ As a preliminary baseline, we trained a GAN-based model to translate Sugimori/3D
 
 ### Figure 1. Preliminary GAN Results (Sugimori/3D → Sprite)
 
-| Arceus | Pachirisu | Naganadel |
+| Arceus | Pachirisu | Swampert |
 |:------:|:---------:|:---------:|
 | <img src="images/gan_result_3.png" width="200px"> | <img src="images/gan_result_1.png" width="200px"> | <img src="images/gan_result_2.png" width="200px"> |
 
@@ -137,7 +137,7 @@ The neural network component is conceptually ambitious: a conditional diffusion 
 
 The next milestone is to convert the curated dataset into a finalized training pipeline, run baseline and conditioned experiments, and populate the currently blank tables and figures with real results.
 
-## 6. References
+## 7. References
 
 [1] Ho, J., Jain, A., and Abbeel, P. _Denoising Diffusion Probabilistic Models_. NeurIPS, 2020. [https://arxiv.org/abs/2006.11239](https://arxiv.org/abs/2006.11239)
 

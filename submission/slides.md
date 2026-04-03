@@ -314,7 +314,7 @@ Three complementary image sources collected and aligned:
       <tr>
         <th>Arceus</th>
         <th>Pachirisu</th>
-        <th>Naganadel</th>
+        <th>Swampert</th>
       </tr>
       <tr>
         <td><img src="images/gan_result_3.png" alt="Arceus results"></td>
