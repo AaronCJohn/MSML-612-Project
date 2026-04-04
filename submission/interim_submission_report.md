@@ -1,5 +1,7 @@
 # **Diffusion-Based Generation of Novel Pokemon with Conditional Evolution Modeling**
 
+**MSML 612** Aaron Cyril John, Yugaank Kalia, Varen Maniktala
+
 ## 1. Project Overview
 
 The goal of this project is to build a conditional image-generation system that can produce novel Pokemon designs while preserving important structural properties of the Pokemon domain, including elemental style cues, evolution stage progression, and stylistic consistency across artwork formats. Our current direction uses a conditional diffusion model with a U-Net backbone and structured attribute conditioning.
@@ -22,8 +24,9 @@ The current repository already contains the following processed artifacts:
 
 The raw image sources currently present in the repository include:
 
-- `poke-data/SugimoriSprites`: **1,848** image files across **1,025** folders
 - `poke-data/PokeSprite`: **2,853** image files across **905** folders
+- `poke-data/ProjectPokemon`: **2,799** image files across **1,026** folders
+- `poke-data/SugimoriSprites`: **1,848** image files across **1,025** folders
 
 The model requires more than raw image collection. The project depends on cross-style correspondence between official artwork, sprite representations, and alternate forms. To support that need, we implemented mapping scripts that parse filenames, normalize naming differences, handle form-specific cases such as Mega and Gigantamax variants, and generate CSV files that can be reused in downstream training code.
 
@@ -100,8 +103,8 @@ As a preliminary baseline, we trained a GAN-based model to translate Sugimori/3D
 
 ### Figure 1. Preliminary GAN Results (Sugimori/3D → Sprite)
 
-| Arceus | Pachirisu | Swampert |
-|:------:|:---------:|:---------:|
+|                      Arceus                       |                     Pachirisu                     |                     Swampert                      |
+| :-----------------------------------------------: | :-----------------------------------------------: | :-----------------------------------------------: |
 | <img src="images/gan_result_3.png" width="200px"> | <img src="images/gan_result_1.png" width="200px"> | <img src="images/gan_result_2.png" width="200px"> |
 
 The GAN captures broad color palettes and rough silhouettes, but the predicted sprites lack fine detail and sharpness compared to the ground-truth sprites. A diffusion transformer should improve global consistency and recover sharper fine-grained detail relative to this baseline.
@@ -120,6 +123,7 @@ If time allows, we may also compare different conditioning settings, such as:
 - Different image styles or target resolutions
 
 ## 5. Next Steps
+
 The remaining project objectives are:
 
 1. Finalize the training pipeline and convert the curated dataset into DataLoader-ready format.
