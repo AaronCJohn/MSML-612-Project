@@ -232,7 +232,7 @@
 		"next": "persian"
 	},
 	{
-		"prev": "meowth",
+		"prev": "Meowth-Galar",
 		"next": "perrserker"
 	},
 	{
@@ -370,10 +370,6 @@
 	{
 		"prev": null,
 		"next": "farfetchd"
-	},
-	{
-		"prev": "farfetchd",
-		"next": "sirfetchd"
 	},
 	{
 		"prev": null,
@@ -572,7 +568,7 @@
 		"next": "mr-mime"
 	},
 	{
-		"prev": "mr-mime",
+		"prev": "Mr-Mime-Galar",
 		"next": "mr-rime"
 	},
 	{
@@ -924,7 +920,7 @@
 		"next": "quagsire"
 	},
 	{
-		"prev": "wooper",
+		"prev": "Wooper-Paldea",
 		"next": "clodsire"
 	},
 	{
@@ -1000,7 +996,7 @@
 		"next": "qwilfish"
 	},
 	{
-		"prev": "qwilfish",
+		"prev": "Qwilfish-Hisui",
 		"next": "overqwil"
 	},
 	{
@@ -1020,7 +1016,7 @@
 		"next": "weavile"
 	},
 	{
-		"prev": "sneasel",
+		"prev": "Sneasel-Hisui",
 		"next": "sneasler"
 	},
 	{
@@ -1060,7 +1056,7 @@
 		"next": "corsola"
 	},
 	{
-		"prev": "corsola",
+		"prev": "Corsola-Galar",
 		"next": "cursola"
 	},
 	{
@@ -1208,7 +1204,7 @@
 		"next": "linoone"
 	},
 	{
-		"prev": "linoone",
+		"prev": "Linoone-Galar",
 		"next": "obstagoon"
 	},
 	{
@@ -2016,7 +2012,7 @@
 		"next": "phione"
 	},
 	{
-		"prev": "phione",
+		"prev": null,
 		"next": "manaphy"
 	},
 	{
@@ -2260,7 +2256,7 @@
 		"next": "basculin"
 	},
 	{
-		"prev": "basculin",
+		"prev": "basculin-white-striped",
 		"next": "basculegion"
 	},
 	{
@@ -2316,7 +2312,7 @@
 		"next": "cofagrigus"
 	},
 	{
-		"prev": "yamask",
+		"prev": "Yamask-Galar",
 		"next": "runerigus"
 	},
 	{
@@ -3300,7 +3296,7 @@
 		"next": "meltan"
 	},
 	{
-		"prev": null,
+		"prev": "meltan",
 		"next": "melmetal"
 	},
 	{
@@ -4136,15 +4132,23 @@
 		"next": "burmy-sandy"
 	},
 	{
-		"prev": null,
+		"prev": "burmy-trash",
 		"next": "wormadam-trash"
 	},
 	{
-		"prev": null,
+		"prev": "burmy-sandy",
 		"next": "wormadam-sandy"
 	},
 	{
-		"prev": null,
+		"prev": "burmy-trash",
+		"next": "mothim"
+	},
+		{
+		"prev": "burmy-sandy",
+		"next": "mothim"
+	},
+	{
+		"prev": "cherubi",
 		"next": "cherrim-sunshine"
 	},
 	{
@@ -4184,7 +4188,7 @@
 		"next": "shaymin-sky"
 	},
 	{
-		"prev": null,
+		"prev": "darumaka",
 		"next": "darmanitan-zen"
 	},
 	{
@@ -4260,11 +4264,11 @@
 		"next": "eternatus-eternamax"
 	},
 	{
-		"prev": null,
+		"prev": "ursaring",
 		"next": "ursaluna-bloodmoon"
 	},
 	{
-		"prev": null,
+		"prev": "finizen",
 		"next": "palafin-hero"
 	},
 	{
@@ -4300,7 +4304,11 @@
 		"next": "terapagos-stellar"
 	},
 	{
-		"prev": null,
+		"prev": "rockruff",
+		"next": "lycanroc-dusk"
+	},
+	{
+		"prev": "rockruff",
 		"next": "lycanroc-midnight"
 	},
 	{
@@ -4372,15 +4380,15 @@
 		"next": "Muk-Alola"
 	},
 	{
-		"prev": null,
+		"prev": "pikachu",
 		"next": "Raichu-Alola"
 	},
 	{
-		"prev": null,
+		"prev": "exeggcute",
 		"next": "Exeggutor-Alola"
 	},
 	{
-		"prev": null,
+		"prev": "cubone",
 		"next": "Marowak-Alola"
 	},
 	{
@@ -4412,11 +4420,15 @@
 		"next": "Farfetchd-Galar"
 	},
 	{
-		"prev": null,
+		"prev": "Farfetchd-Galar",
+		"next": "sirfetchd"
+	},
+	{
+		"prev": "koffing",
 		"next": "Weezing-Galar"
 	},
 	{
-		"prev": null,
+		"prev": "mime-jr",
 		"next": "Mr-Mime-Galar"
 	},
 	{
@@ -4440,7 +4452,7 @@
 		"next": "Darmanitan-Galar"
 	},
 	{
-		"prev": "Darmanitan-Galar",
+		"prev": "Darumaka-Galar",
 		"next": "darmanitan-galar-zen"
 	},
 	{
@@ -4496,31 +4508,31 @@
 		"next": "Sneasel-Hisui"
 	},
 	{
-		"prev": null,
+		"prev": "dewott",
 		"next": "Samurott-Hisui"
 	},
 	{
-		"prev": null,
+		"prev": "petilil",
 		"next": "Lilligant-Hisui"
 	},
 	{
-		"prev": null,
+		"prev": "bergmite",
 		"next": "Avalugg-Hisui"
 	},
 	{
-		"prev": null,
+		"prev": "dartrix",
 		"next": "Decidueye-Hisui"
 	},
 	{
-		"prev": null,
+		"prev": "quilava",
 		"next": "Typhlosion-Hisui"
 	},
 	{
-		"prev": null,
+		"prev": "rufflet",
 		"next": "Braviary-Hisui"
 	},
 	{
-		"prev": null,
+		"prev": "goomy",
 		"next": "Sliggoo-Hisui"
 	},
 	{
@@ -4542,9 +4554,5 @@
 	{
 		"prev": null,
 		"next": "tauros-paldea-aqua-breed"
-	},
-	{
-		"prev": null,
-		"next": "darmanitan-galar-zen"
 	}
 ]
