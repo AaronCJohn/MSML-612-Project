@@ -6,11 +6,11 @@
 
 The goal of this project is to build a conditional image-generation system that can produce novel Pokemon designs while preserving important structural properties of the Pokemon domain, including elemental style cues, evolution stage progression, and stylistic consistency across artwork formats. Our current direction uses a conditional diffusion model with a U-Net backbone and structured attribute conditioning.
 
-At the interim stage, the strongest progress has been in data collection, preprocessing, and curation. We have assembled multiple Pokemon image sources, written scripts to align images across formats, and manually reviewed a curated subset of mappings that will support later model training and evaluation. The core training pipeline is still being finalized, so this report focuses on completed data work, the planned neural network design, code organization, and the evaluation framework that will be used once training runs are complete.
+At this stage, our strongest progress has been in data collection, preprocessing, and curation. We have assembled multiple Pokemon image sources, written scripts to align images across formats, and manually reviewed a curated subset of mappings that will support later model training and evaluation. Because the core training pipeline is still being finalized, the current focus is on completed data curation, model implementation, and evaluation setup for upcoming training runs.
 
 ## 2. Data Collection, Processing, and Curation
 
-For our project, we have collected a large amount of structured image data that has been processed and curated. The dataset currently combines three complementary visual sources:
+We have collected a large amount of structured image data that has been processed and curated. The dataset currently combines three complementary visual sources:
 
 - **SugimoriSprites**: official-style 2D Pokemon artwork used as high-quality reference art
 - **PokeSprite**: compact game-style sprite assets used as the target sprite representation
@@ -135,11 +135,11 @@ The remaining project objectives are:
 
 ## 6. Conclusion
 
-The project is currently strongest in the area of data collection, preprocessing, and dataset curation. We have already collected multiple Pokemon image sources, generated thousands of structured cross-format mappings, and manually verified a substantial subset of aligned pairs for downstream use. This work is a necessary foundation for the model because conditional generation quality will depend heavily on the accuracy of these correspondences.
+So far, the strongest part of this project has been the data work: collecting images, cleaning them, and building reliable mappings across formats. Multiple Pokemon image sources have been gathered, a large number of structured pairings have been generated, and many aligned examples have been manually checked. That foundation is important, since output quality will depend heavily on the accuracy of those pairings.
 
-The neural network component is conceptually ambitious: a conditional diffusion model with structured metadata conditioning and evolution-aware generation. Although final training results are not yet available, the design is appropriately complex for the project scope and is grounded in established diffusion-model literature and open-source implementations that will be adapted to this domain.
+The modeling part is still in progress. The current approach is a conditional diffusion model that uses structured metadata and evolution information to guide generation. The design is realistic for the project timeline and is grounded in prior diffusion research and open-source implementations that can be adapted.
 
-The next milestone is to convert the curated dataset into a finalized training pipeline, run baseline and conditioned experiments, and populate the currently blank tables and figures with real results.
+The next milestone is to convert the curated dataset into a stable training pipeline, run baseline and conditioned experiments, and report those results in the final report.
 
 ## 7. References
 
