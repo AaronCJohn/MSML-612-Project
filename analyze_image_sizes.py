@@ -88,7 +88,7 @@ def display_results(size_counter, total_images, errors):
 def main():
     # Set the path to poke-data directory
     script_dir = Path(__file__).parent
-    pokesprite_dir = script_dir / "poke-data" / "PokeSpriteCleaned"
+    pokesprite_dir = script_dir / "poke-data" / "PokeSprite"
     
     if not pokesprite_dir.exists():
         print(f"Error: Directory '{pokesprite_dir}' not found!")

@@ -19,8 +19,8 @@ from typing import List, Dict, Any, cast
 
 from PIL import Image, ImageDraw, ImageFont
 
-MAPPING_CSV = Path("mapping_sugimori_to_sprite.csv")
-OUTPUT_DIR = Path("mapping_preview_sugimori")
+MAPPING_CSV = Path("mapping_3d_to_sprite.csv")
+OUTPUT_DIR = Path("mapping_preview_3D")
 UNRESOLVED_CSV = OUTPUT_DIR / "unresolved_rows.csv"
 
 THUMB_SIZE = (192, 192)
@@ -71,7 +71,7 @@ def draw_row(
 
     draw.rectangle([(0, y0), (PAGE_WIDTH, y1)], outline=(220, 220, 220), width=1)
 
-    project_file = Path("poke-data/SugimoriSprites") / Path(row.get("art_folder", "")) / Path(row.get("art_file", ""))
+    project_file = Path("poke-data/ProjectPokemon") / Path(row.get("model_folder", "")) / Path(row.get("model_file", ""))
     sprite_file = Path("poke-data/PokeSprite") / Path(row.get("sprite_folder", "")) / Path(row.get("sprite_file", ""))
 
     left_img_x = MARGIN_X
