@@ -158,12 +158,18 @@ def make_pairs(
     pairs: list[dict] = []
     base_next = next_vmap.get("") or (next(iter(next_vmap.values()), None) if next_vmap else None)
 
+    _digits = re.compile(r"^\d+(.+)$")
+
+    def folder_name(img: Path) -> str:
+        m = _digits.match(img.parent.name)
+        return m.group(1) if m else img.parent.name
+
     if prev_vmap is None:
         # Chain start: one null-prev entry per next image
         for next_img in next_vmap.values():
             pairs.append({
                 "prev": None,
-                "next": next_img.stem,
+                "next": folder_name(next_img),
                 "prev_sprite": None,
                 "next_sprite": str(next_img.relative_to(repo_root)),
             })
@@ -172,8 +178,8 @@ def make_pairs(
     for variant_key, prev_img in prev_vmap.items():
         next_img = next_vmap.get(variant_key) or base_next
         pairs.append({
-            "prev": prev_img.stem,
-            "next": next_img.stem if next_img else None,
+            "prev": folder_name(prev_img),
+            "next": folder_name(next_img) if next_img else None,
             "prev_sprite": str(prev_img.relative_to(repo_root)),
             "next_sprite": str(next_img.relative_to(repo_root)) if next_img else None,
         })
