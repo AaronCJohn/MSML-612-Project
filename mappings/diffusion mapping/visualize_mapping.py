@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Visualize sprite_to_sprite mappings side by side for manual verification.
+Visualize mappings side by side for manual verification.
 
 Input:
-- mappings/Diffusion_mapping/sprite_to_sprite.json
+- mappings/Diffusion_mapping/<mapping>.json
 
 Output:
 - mapping_preview_diffusion/page_XXXX.png  (paginated contact sheets)
@@ -18,7 +18,7 @@ from typing import Any, cast
 
 from PIL import Image, ImageDraw, ImageFont
 
-MAPPING_JSON = Path(__file__).resolve().parents[1] / "diffusion mapping" / "sprite_to_sprite.json"
+MAPPING_JSON = Path(__file__).resolve().parents[1] / "diffusion mapping" / "sugimori_to_sugimori.json"
 REPO_ROOT    = Path(__file__).resolve().parents[2]
 OUTPUT_DIR   = Path(__file__).parent / "mapping_preview_diffusion"
 
