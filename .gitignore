@@ -1,3 +1,7 @@
 .vscode
 .DS*
 __py*
+
+# mapping previews
+mapping_preview_diffusion
+*log.txt

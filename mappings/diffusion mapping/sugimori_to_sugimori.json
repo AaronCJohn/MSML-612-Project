@@ -134,12 +134,6 @@
 	{
 		"prev": "squirtle",
 		"next": "wartortle",
-		"prev_sprite": "poke-data/SugimoriSprites/0007squirtle/0007 Squirtle MD.png",
-		"next_sprite": "poke-data/SugimoriSprites/0008wartortle/0008 Wartortle.png"
-	},
-	{
-		"prev": "squirtle",
-		"next": "wartortle",
 		"prev_sprite": "poke-data/SugimoriSprites/0007squirtle/0007 Squirtle RB.png",
 		"next_sprite": "poke-data/SugimoriSprites/0008wartortle/0008 Wartortle RB.png"
 	},
@@ -488,72 +482,6 @@
 	{
 		"prev": "pikachu",
 		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu BDSP.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Belle.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu GS.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Hoenn.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Kalos.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Libre.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Original.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Partner.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu PhD.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Pok\u00e9mon Pia.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Pop Star.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
 		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu RB.png",
 		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu RB.png"
 	},
@@ -562,48 +490,6 @@
 		"next": "raichu",
 		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu RG.png",
 		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu RG.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Rock Star.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Sinnoh.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu TCG.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Unova.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu World.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Y 2.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Y.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu.png"
 	},
 	{
 		"prev": "pikachu",
@@ -782,20 +668,8 @@
 	{
 		"prev": "cleffa",
 		"next": "clefairy",
-		"prev_sprite": "poke-data/SugimoriSprites/0173cleffa/0173 Cleffa GS.png",
-		"next_sprite": "poke-data/SugimoriSprites/0035clefairy/0035 Clefairy.png"
-	},
-	{
-		"prev": "cleffa",
-		"next": "clefairy",
 		"prev_sprite": "poke-data/SugimoriSprites/0173cleffa/0173 Cleffa.png",
 		"next_sprite": "poke-data/SugimoriSprites/0035clefairy/0035 Clefairy.png"
-	},
-	{
-		"prev": "clefairy",
-		"next": "clefable",
-		"prev_sprite": "poke-data/SugimoriSprites/0035clefairy/0035 Clefairy C.png",
-		"next_sprite": "poke-data/SugimoriSprites/0036clefable/0036 Clefable.png"
 	},
 	{
 		"prev": "clefairy",
@@ -878,12 +752,6 @@
 	{
 		"prev": "igglybuff",
 		"next": "jigglypuff",
-		"prev_sprite": "poke-data/SugimoriSprites/0174igglybuff/0174 Igglybuff GS.png",
-		"next_sprite": "poke-data/SugimoriSprites/0039jigglypuff/0039 Jigglypuff.png"
-	},
-	{
-		"prev": "igglybuff",
-		"next": "jigglypuff",
 		"prev_sprite": "poke-data/SugimoriSprites/0174igglybuff/0174 Igglybuff.png",
 		"next_sprite": "poke-data/SugimoriSprites/0039jigglypuff/0039 Jigglypuff.png"
 	},
@@ -944,18 +812,6 @@
 	{
 		"prev": "golbat",
 		"next": "crobat",
-		"prev_sprite": "poke-data/SugimoriSprites/0042golbat/0042 Golbat RB.png",
-		"next_sprite": "poke-data/SugimoriSprites/0169crobat/0169 Crobat.png"
-	},
-	{
-		"prev": "golbat",
-		"next": "crobat",
-		"prev_sprite": "poke-data/SugimoriSprites/0042golbat/0042 Golbat RG.png",
-		"next_sprite": "poke-data/SugimoriSprites/0169crobat/0169 Crobat.png"
-	},
-	{
-		"prev": "golbat",
-		"next": "crobat",
 		"prev_sprite": "poke-data/SugimoriSprites/0042golbat/0042 Golbat.png",
 		"next_sprite": "poke-data/SugimoriSprites/0169crobat/0169 Crobat.png"
 	},
@@ -1012,18 +868,6 @@
 		"next": "vileplume",
 		"prev_sprite": "poke-data/SugimoriSprites/0044gloom/0044 Gloom.png",
 		"next_sprite": "poke-data/SugimoriSprites/0045vileplume/0045 Vileplume.png"
-	},
-	{
-		"prev": "gloom",
-		"next": "bellossom",
-		"prev_sprite": "poke-data/SugimoriSprites/0044gloom/0044 Gloom RB.png",
-		"next_sprite": "poke-data/SugimoriSprites/0182bellossom/0182 Bellossom.png"
-	},
-	{
-		"prev": "gloom",
-		"next": "bellossom",
-		"prev_sprite": "poke-data/SugimoriSprites/0044gloom/0044 Gloom RG.png",
-		"next_sprite": "poke-data/SugimoriSprites/0182bellossom/0182 Bellossom.png"
 	},
 	{
 		"prev": "gloom",
@@ -1190,12 +1034,6 @@
 	{
 		"prev": "meowth",
 		"next": "persian",
-		"prev_sprite": "poke-data/SugimoriSprites/0052meowth/0052 Meowth Galar.png",
-		"next_sprite": "poke-data/SugimoriSprites/0053persian/0053 Persian.png"
-	},
-	{
-		"prev": "meowth",
-		"next": "persian",
 		"prev_sprite": "poke-data/SugimoriSprites/0052meowth/0052 Meowth RB.png",
 		"next_sprite": "poke-data/SugimoriSprites/0053persian/0053 Persian RB.png"
 	},
@@ -1288,18 +1126,6 @@
 		"next": "primeape",
 		"prev_sprite": "poke-data/SugimoriSprites/0056mankey/0056 Mankey.png",
 		"next_sprite": "poke-data/SugimoriSprites/0057primeape/0057 Primeape.png"
-	},
-	{
-		"prev": "primeape",
-		"next": "annihilape",
-		"prev_sprite": "poke-data/SugimoriSprites/0057primeape/0057 Primeape RB.png",
-		"next_sprite": "poke-data/SugimoriSprites/0979annihilape/0979 Annihilape.png"
-	},
-	{
-		"prev": "primeape",
-		"next": "annihilape",
-		"prev_sprite": "poke-data/SugimoriSprites/0057primeape/0057 Primeape RG.png",
-		"next_sprite": "poke-data/SugimoriSprites/0979annihilape/0979 Annihilape.png"
 	},
 	{
 		"prev": "primeape",
@@ -1412,18 +1238,6 @@
 	{
 		"prev": "poliwhirl",
 		"next": "politoed",
-		"prev_sprite": "poke-data/SugimoriSprites/0061poliwhirl/0061 Poliwhirl RB.png",
-		"next_sprite": "poke-data/SugimoriSprites/0186politoed/0186 Politoed.png"
-	},
-	{
-		"prev": "poliwhirl",
-		"next": "politoed",
-		"prev_sprite": "poke-data/SugimoriSprites/0061poliwhirl/0061 Poliwhirl RG.png",
-		"next_sprite": "poke-data/SugimoriSprites/0186politoed/0186 Politoed.png"
-	},
-	{
-		"prev": "poliwhirl",
-		"next": "politoed",
 		"prev_sprite": "poke-data/SugimoriSprites/0061poliwhirl/0061 Poliwhirl.png",
 		"next_sprite": "poke-data/SugimoriSprites/0186politoed/0186 Politoed.png"
 	},
@@ -1468,12 +1282,6 @@
 		"next": "alakazam",
 		"prev_sprite": "poke-data/SugimoriSprites/0064kadabra/0064 Kadabra RB.png",
 		"next_sprite": "poke-data/SugimoriSprites/0065alakazam/0065 Alakazam RB.png"
-	},
-	{
-		"prev": "kadabra",
-		"next": "alakazam",
-		"prev_sprite": "poke-data/SugimoriSprites/0064kadabra/0064 Kadabra RG.png",
-		"next_sprite": "poke-data/SugimoriSprites/0065alakazam/0065 Alakazam.png"
 	},
 	{
 		"prev": "kadabra",
@@ -1730,12 +1538,6 @@
 	{
 		"prev": "ponyta",
 		"next": "rapidash",
-		"prev_sprite": "poke-data/SugimoriSprites/0077ponyta/0077 Ponyta Galar 2.png",
-		"next_sprite": "poke-data/SugimoriSprites/0078rapidash/0078 Rapidash.png"
-	},
-	{
-		"prev": "ponyta",
-		"next": "rapidash",
 		"prev_sprite": "poke-data/SugimoriSprites/0077ponyta/0077 Ponyta Galar.png",
 		"next_sprite": "poke-data/SugimoriSprites/0078rapidash/0078 Rapidash Galar.png"
 	},
@@ -1814,18 +1616,6 @@
 	{
 		"prev": "slowpoke",
 		"next": "slowking",
-		"prev_sprite": "poke-data/SugimoriSprites/0079slowpoke/0079 Slowpoke RB.png",
-		"next_sprite": "poke-data/SugimoriSprites/0199slowking/0199 Slowking.png"
-	},
-	{
-		"prev": "slowpoke",
-		"next": "slowking",
-		"prev_sprite": "poke-data/SugimoriSprites/0079slowpoke/0079 Slowpoke RG.png",
-		"next_sprite": "poke-data/SugimoriSprites/0199slowking/0199 Slowking.png"
-	},
-	{
-		"prev": "slowpoke",
-		"next": "slowking",
 		"prev_sprite": "poke-data/SugimoriSprites/0079slowpoke/0079 Slowpoke.png",
 		"next_sprite": "poke-data/SugimoriSprites/0199slowking/0199 Slowking.png"
 	},
@@ -1856,12 +1646,6 @@
 	{
 		"prev": "magnemite",
 		"next": "magneton",
-		"prev_sprite": "poke-data/SugimoriSprites/0081magnemite/0081 Magnemite MD.png",
-		"next_sprite": "poke-data/SugimoriSprites/0082magneton/0082 Magneton.png"
-	},
-	{
-		"prev": "magnemite",
-		"next": "magneton",
 		"prev_sprite": "poke-data/SugimoriSprites/0081magnemite/0081 Magnemite RB.png",
 		"next_sprite": "poke-data/SugimoriSprites/0082magneton/0082 Magneton RB.png"
 	},
@@ -1876,18 +1660,6 @@
 		"next": "magneton",
 		"prev_sprite": "poke-data/SugimoriSprites/0081magnemite/0081 Magnemite.png",
 		"next_sprite": "poke-data/SugimoriSprites/0082magneton/0082 Magneton.png"
-	},
-	{
-		"prev": "magneton",
-		"next": "magnezone",
-		"prev_sprite": "poke-data/SugimoriSprites/0082magneton/0082 Magneton RB.png",
-		"next_sprite": "poke-data/SugimoriSprites/0462magnezone/0462 Magnezone.png"
-	},
-	{
-		"prev": "magneton",
-		"next": "magnezone",
-		"prev_sprite": "poke-data/SugimoriSprites/0082magneton/0082 Magneton RG.png",
-		"next_sprite": "poke-data/SugimoriSprites/0462magnezone/0462 Magnezone.png"
 	},
 	{
 		"prev": "magneton",
@@ -2150,18 +1922,6 @@
 	{
 		"prev": "onix",
 		"next": "steelix",
-		"prev_sprite": "poke-data/SugimoriSprites/0095onix/0095 Onix RB.png",
-		"next_sprite": "poke-data/SugimoriSprites/0208steelix/0208 Steelix.png"
-	},
-	{
-		"prev": "onix",
-		"next": "steelix",
-		"prev_sprite": "poke-data/SugimoriSprites/0095onix/0095 Onix RG.png",
-		"next_sprite": "poke-data/SugimoriSprites/0208steelix/0208 Steelix.png"
-	},
-	{
-		"prev": "onix",
-		"next": "steelix",
 		"prev_sprite": "poke-data/SugimoriSprites/0095onix/0095 Onix.png",
 		"next_sprite": "poke-data/SugimoriSprites/0208steelix/0208 Steelix.png"
 	},
@@ -2372,20 +2132,8 @@
 	{
 		"prev": "tyrogue",
 		"next": "hitmonlee",
-		"prev_sprite": "poke-data/SugimoriSprites/0236tyrogue/0236 Tyrogue GS.png",
-		"next_sprite": "poke-data/SugimoriSprites/0106hitmonlee/0106 Hitmonlee.png"
-	},
-	{
-		"prev": "tyrogue",
-		"next": "hitmonlee",
 		"prev_sprite": "poke-data/SugimoriSprites/0236tyrogue/0236 Tyrogue.png",
 		"next_sprite": "poke-data/SugimoriSprites/0106hitmonlee/0106 Hitmonlee.png"
-	},
-	{
-		"prev": "tyrogue",
-		"next": "hitmonchan",
-		"prev_sprite": "poke-data/SugimoriSprites/0236tyrogue/0236 Tyrogue GS.png",
-		"next_sprite": "poke-data/SugimoriSprites/0107hitmonchan/0107 Hitmonchan.png"
 	},
 	{
 		"prev": "tyrogue",
@@ -2422,18 +2170,6 @@
 		"next": "lickitung",
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0108lickitung/0108 Lickitung.png"
-	},
-	{
-		"prev": "lickitung",
-		"next": "lickilicky",
-		"prev_sprite": "poke-data/SugimoriSprites/0108lickitung/0108 Lickitung RB.png",
-		"next_sprite": "poke-data/SugimoriSprites/0463lickilicky/0463 Lickilicky.png"
-	},
-	{
-		"prev": "lickitung",
-		"next": "lickilicky",
-		"prev_sprite": "poke-data/SugimoriSprites/0108lickitung/0108 Lickitung RG.png",
-		"next_sprite": "poke-data/SugimoriSprites/0463lickilicky/0463 Lickilicky.png"
 	},
 	{
 		"prev": "lickitung",
@@ -2516,18 +2252,6 @@
 	{
 		"prev": "rhydon",
 		"next": "rhyperior",
-		"prev_sprite": "poke-data/SugimoriSprites/0112rhydon/0112 Rhydon RB.png",
-		"next_sprite": "poke-data/SugimoriSprites/0464rhyperior/0464 Rhyperior.png"
-	},
-	{
-		"prev": "rhydon",
-		"next": "rhyperior",
-		"prev_sprite": "poke-data/SugimoriSprites/0112rhydon/0112 Rhydon RG.png",
-		"next_sprite": "poke-data/SugimoriSprites/0464rhyperior/0464 Rhyperior.png"
-	},
-	{
-		"prev": "rhydon",
-		"next": "rhyperior",
 		"prev_sprite": "poke-data/SugimoriSprites/0112rhydon/0112 Rhydon.png",
 		"next_sprite": "poke-data/SugimoriSprites/0464rhyperior/0464 Rhyperior.png"
 	},
@@ -2542,24 +2266,6 @@
 		"next": "chansey",
 		"prev_sprite": "poke-data/SugimoriSprites/0440happiny/0440 Happiny.png",
 		"next_sprite": "poke-data/SugimoriSprites/0113chansey/0113 Chansey.png"
-	},
-	{
-		"prev": "chansey",
-		"next": "blissey",
-		"prev_sprite": "poke-data/SugimoriSprites/0113chansey/0113 Chansey BDSP.png",
-		"next_sprite": "poke-data/SugimoriSprites/0242blissey/0242 Blissey.png"
-	},
-	{
-		"prev": "chansey",
-		"next": "blissey",
-		"prev_sprite": "poke-data/SugimoriSprites/0113chansey/0113 Chansey RB.png",
-		"next_sprite": "poke-data/SugimoriSprites/0242blissey/0242 Blissey.png"
-	},
-	{
-		"prev": "chansey",
-		"next": "blissey",
-		"prev_sprite": "poke-data/SugimoriSprites/0113chansey/0113 Chansey RG.png",
-		"next_sprite": "poke-data/SugimoriSprites/0242blissey/0242 Blissey.png"
 	},
 	{
 		"prev": "chansey",
@@ -2584,18 +2290,6 @@
 		"next": "tangela",
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0114tangela/0114 Tangela.png"
-	},
-	{
-		"prev": "tangela",
-		"next": "tangrowth",
-		"prev_sprite": "poke-data/SugimoriSprites/0114tangela/0114 Tangela RB.png",
-		"next_sprite": "poke-data/SugimoriSprites/0465tangrowth/0465 Tangrowth.png"
-	},
-	{
-		"prev": "tangela",
-		"next": "tangrowth",
-		"prev_sprite": "poke-data/SugimoriSprites/0114tangela/0114 Tangela RG.png",
-		"next_sprite": "poke-data/SugimoriSprites/0465tangrowth/0465 Tangrowth.png"
 	},
 	{
 		"prev": "tangela",
@@ -2648,12 +2342,6 @@
 	{
 		"prev": "horsea",
 		"next": "seadra",
-		"prev_sprite": "poke-data/SugimoriSprites/0116horsea/0116 Horsea C.png",
-		"next_sprite": "poke-data/SugimoriSprites/0117seadra/0117 Seadra.png"
-	},
-	{
-		"prev": "horsea",
-		"next": "seadra",
 		"prev_sprite": "poke-data/SugimoriSprites/0116horsea/0116 Horsea RB.png",
 		"next_sprite": "poke-data/SugimoriSprites/0117seadra/0117 Seadra RB.png"
 	},
@@ -2668,18 +2356,6 @@
 		"next": "seadra",
 		"prev_sprite": "poke-data/SugimoriSprites/0116horsea/0116 Horsea.png",
 		"next_sprite": "poke-data/SugimoriSprites/0117seadra/0117 Seadra.png"
-	},
-	{
-		"prev": "seadra",
-		"next": "kingdra",
-		"prev_sprite": "poke-data/SugimoriSprites/0117seadra/0117 Seadra RB.png",
-		"next_sprite": "poke-data/SugimoriSprites/0230kingdra/0230 Kingdra.png"
-	},
-	{
-		"prev": "seadra",
-		"next": "kingdra",
-		"prev_sprite": "poke-data/SugimoriSprites/0117seadra/0117 Seadra RG.png",
-		"next_sprite": "poke-data/SugimoriSprites/0230kingdra/0230 Kingdra.png"
 	},
 	{
 		"prev": "seadra",
@@ -2798,32 +2474,8 @@
 	{
 		"prev": "scyther",
 		"next": "scizor",
-		"prev_sprite": "poke-data/SugimoriSprites/0123scyther/0123 Scyther RB.png",
-		"next_sprite": "poke-data/SugimoriSprites/0212scizor/0212 Scizor.png"
-	},
-	{
-		"prev": "scyther",
-		"next": "scizor",
-		"prev_sprite": "poke-data/SugimoriSprites/0123scyther/0123 Scyther RG.png",
-		"next_sprite": "poke-data/SugimoriSprites/0212scizor/0212 Scizor.png"
-	},
-	{
-		"prev": "scyther",
-		"next": "scizor",
 		"prev_sprite": "poke-data/SugimoriSprites/0123scyther/0123 Scyther.png",
 		"next_sprite": "poke-data/SugimoriSprites/0212scizor/0212 Scizor.png"
-	},
-	{
-		"prev": "scyther",
-		"next": "kleavor",
-		"prev_sprite": "poke-data/SugimoriSprites/0123scyther/0123 Scyther RB.png",
-		"next_sprite": "poke-data/SugimoriSprites/0900kleavor/0900 Kleavor.png"
-	},
-	{
-		"prev": "scyther",
-		"next": "kleavor",
-		"prev_sprite": "poke-data/SugimoriSprites/0123scyther/0123 Scyther RG.png",
-		"next_sprite": "poke-data/SugimoriSprites/0900kleavor/0900 Kleavor.png"
 	},
 	{
 		"prev": "scyther",
@@ -2846,12 +2498,6 @@
 	{
 		"prev": "smoochum",
 		"next": "jynx",
-		"prev_sprite": "poke-data/SugimoriSprites/0238smoochum/0238 Smoochum GS.png",
-		"next_sprite": "poke-data/SugimoriSprites/0124jynx/0124 Jynx.png"
-	},
-	{
-		"prev": "smoochum",
-		"next": "jynx",
 		"prev_sprite": "poke-data/SugimoriSprites/0238smoochum/0238 Smoochum.png",
 		"next_sprite": "poke-data/SugimoriSprites/0124jynx/0124 Jynx.png"
 	},
@@ -2870,26 +2516,8 @@
 	{
 		"prev": "elekid",
 		"next": "electabuzz",
-		"prev_sprite": "poke-data/SugimoriSprites/0239elekid/0239 Elekid GS.png",
-		"next_sprite": "poke-data/SugimoriSprites/0125electabuzz/0125 Electabuzz.png"
-	},
-	{
-		"prev": "elekid",
-		"next": "electabuzz",
 		"prev_sprite": "poke-data/SugimoriSprites/0239elekid/0239 Elekid.png",
 		"next_sprite": "poke-data/SugimoriSprites/0125electabuzz/0125 Electabuzz.png"
-	},
-	{
-		"prev": "electabuzz",
-		"next": "electivire",
-		"prev_sprite": "poke-data/SugimoriSprites/0125electabuzz/0125 Electabuzz RB.png",
-		"next_sprite": "poke-data/SugimoriSprites/0466electivire/0466 Electivire.png"
-	},
-	{
-		"prev": "electabuzz",
-		"next": "electivire",
-		"prev_sprite": "poke-data/SugimoriSprites/0125electabuzz/0125 Electabuzz RG.png",
-		"next_sprite": "poke-data/SugimoriSprites/0466electivire/0466 Electivire.png"
 	},
 	{
 		"prev": "electabuzz",
@@ -2912,26 +2540,8 @@
 	{
 		"prev": "magby",
 		"next": "magmar",
-		"prev_sprite": "poke-data/SugimoriSprites/0240magby/0240 Magby GS.png",
-		"next_sprite": "poke-data/SugimoriSprites/0126magmar/0126 Magmar.png"
-	},
-	{
-		"prev": "magby",
-		"next": "magmar",
 		"prev_sprite": "poke-data/SugimoriSprites/0240magby/0240 Magby.png",
 		"next_sprite": "poke-data/SugimoriSprites/0126magmar/0126 Magmar.png"
-	},
-	{
-		"prev": "magmar",
-		"next": "magmortar",
-		"prev_sprite": "poke-data/SugimoriSprites/0126magmar/0126 Magmar RB.png",
-		"next_sprite": "poke-data/SugimoriSprites/0467magmortar/0467 Magmortar.png"
-	},
-	{
-		"prev": "magmar",
-		"next": "magmortar",
-		"prev_sprite": "poke-data/SugimoriSprites/0126magmar/0126 Magmar RG.png",
-		"next_sprite": "poke-data/SugimoriSprites/0467magmortar/0467 Magmortar.png"
 	},
 	{
 		"prev": "magmar",
@@ -3104,12 +2714,6 @@
 	{
 		"prev": "eevee",
 		"next": "vaporeon",
-		"prev_sprite": "poke-data/SugimoriSprites/0133eevee/0133 Eevee Y.png",
-		"next_sprite": "poke-data/SugimoriSprites/0134vaporeon/0134 Vaporeon.png"
-	},
-	{
-		"prev": "eevee",
-		"next": "vaporeon",
 		"prev_sprite": "poke-data/SugimoriSprites/0133eevee/0133 Eevee.png",
 		"next_sprite": "poke-data/SugimoriSprites/0134vaporeon/0134 Vaporeon.png"
 	},
@@ -3124,12 +2728,6 @@
 		"next": "jolteon",
 		"prev_sprite": "poke-data/SugimoriSprites/0133eevee/0133 Eevee RG.png",
 		"next_sprite": "poke-data/SugimoriSprites/0135jolteon/0135 Jolteon RG.png"
-	},
-	{
-		"prev": "eevee",
-		"next": "jolteon",
-		"prev_sprite": "poke-data/SugimoriSprites/0133eevee/0133 Eevee Y.png",
-		"next_sprite": "poke-data/SugimoriSprites/0135jolteon/0135 Jolteon.png"
 	},
 	{
 		"prev": "eevee",
@@ -3152,56 +2750,14 @@
 	{
 		"prev": "eevee",
 		"next": "flareon",
-		"prev_sprite": "poke-data/SugimoriSprites/0133eevee/0133 Eevee Y.png",
-		"next_sprite": "poke-data/SugimoriSprites/0136flareon/0136 Flareon.png"
-	},
-	{
-		"prev": "eevee",
-		"next": "flareon",
 		"prev_sprite": "poke-data/SugimoriSprites/0133eevee/0133 Eevee.png",
 		"next_sprite": "poke-data/SugimoriSprites/0136flareon/0136 Flareon.png"
 	},
 	{
 		"prev": "eevee",
 		"next": "espeon",
-		"prev_sprite": "poke-data/SugimoriSprites/0133eevee/0133 Eevee RB.png",
-		"next_sprite": "poke-data/SugimoriSprites/0196espeon/0196 Espeon.png"
-	},
-	{
-		"prev": "eevee",
-		"next": "espeon",
-		"prev_sprite": "poke-data/SugimoriSprites/0133eevee/0133 Eevee RG.png",
-		"next_sprite": "poke-data/SugimoriSprites/0196espeon/0196 Espeon.png"
-	},
-	{
-		"prev": "eevee",
-		"next": "espeon",
-		"prev_sprite": "poke-data/SugimoriSprites/0133eevee/0133 Eevee Y.png",
-		"next_sprite": "poke-data/SugimoriSprites/0196espeon/0196 Espeon.png"
-	},
-	{
-		"prev": "eevee",
-		"next": "espeon",
 		"prev_sprite": "poke-data/SugimoriSprites/0133eevee/0133 Eevee.png",
 		"next_sprite": "poke-data/SugimoriSprites/0196espeon/0196 Espeon.png"
-	},
-	{
-		"prev": "eevee",
-		"next": "umbreon",
-		"prev_sprite": "poke-data/SugimoriSprites/0133eevee/0133 Eevee RB.png",
-		"next_sprite": "poke-data/SugimoriSprites/0197umbreon/0197 Umbreon.png"
-	},
-	{
-		"prev": "eevee",
-		"next": "umbreon",
-		"prev_sprite": "poke-data/SugimoriSprites/0133eevee/0133 Eevee RG.png",
-		"next_sprite": "poke-data/SugimoriSprites/0197umbreon/0197 Umbreon.png"
-	},
-	{
-		"prev": "eevee",
-		"next": "umbreon",
-		"prev_sprite": "poke-data/SugimoriSprites/0133eevee/0133 Eevee Y.png",
-		"next_sprite": "poke-data/SugimoriSprites/0197umbreon/0197 Umbreon.png"
 	},
 	{
 		"prev": "eevee",
@@ -3212,68 +2768,14 @@
 	{
 		"prev": "eevee",
 		"next": "leafeon",
-		"prev_sprite": "poke-data/SugimoriSprites/0133eevee/0133 Eevee RB.png",
-		"next_sprite": "poke-data/SugimoriSprites/0470leafeon/0470 Leafeon.png"
-	},
-	{
-		"prev": "eevee",
-		"next": "leafeon",
-		"prev_sprite": "poke-data/SugimoriSprites/0133eevee/0133 Eevee RG.png",
-		"next_sprite": "poke-data/SugimoriSprites/0470leafeon/0470 Leafeon.png"
-	},
-	{
-		"prev": "eevee",
-		"next": "leafeon",
-		"prev_sprite": "poke-data/SugimoriSprites/0133eevee/0133 Eevee Y.png",
-		"next_sprite": "poke-data/SugimoriSprites/0470leafeon/0470 Leafeon.png"
-	},
-	{
-		"prev": "eevee",
-		"next": "leafeon",
 		"prev_sprite": "poke-data/SugimoriSprites/0133eevee/0133 Eevee.png",
 		"next_sprite": "poke-data/SugimoriSprites/0470leafeon/0470 Leafeon.png"
 	},
 	{
 		"prev": "eevee",
 		"next": "glaceon",
-		"prev_sprite": "poke-data/SugimoriSprites/0133eevee/0133 Eevee RB.png",
-		"next_sprite": "poke-data/SugimoriSprites/0471glaceon/0471 Glaceon.png"
-	},
-	{
-		"prev": "eevee",
-		"next": "glaceon",
-		"prev_sprite": "poke-data/SugimoriSprites/0133eevee/0133 Eevee RG.png",
-		"next_sprite": "poke-data/SugimoriSprites/0471glaceon/0471 Glaceon.png"
-	},
-	{
-		"prev": "eevee",
-		"next": "glaceon",
-		"prev_sprite": "poke-data/SugimoriSprites/0133eevee/0133 Eevee Y.png",
-		"next_sprite": "poke-data/SugimoriSprites/0471glaceon/0471 Glaceon.png"
-	},
-	{
-		"prev": "eevee",
-		"next": "glaceon",
 		"prev_sprite": "poke-data/SugimoriSprites/0133eevee/0133 Eevee.png",
 		"next_sprite": "poke-data/SugimoriSprites/0471glaceon/0471 Glaceon.png"
-	},
-	{
-		"prev": "eevee",
-		"next": "sylveon",
-		"prev_sprite": "poke-data/SugimoriSprites/0133eevee/0133 Eevee RB.png",
-		"next_sprite": "poke-data/SugimoriSprites/0700sylveon/0700 Sylveon.png"
-	},
-	{
-		"prev": "eevee",
-		"next": "sylveon",
-		"prev_sprite": "poke-data/SugimoriSprites/0133eevee/0133 Eevee RG.png",
-		"next_sprite": "poke-data/SugimoriSprites/0700sylveon/0700 Sylveon.png"
-	},
-	{
-		"prev": "eevee",
-		"next": "sylveon",
-		"prev_sprite": "poke-data/SugimoriSprites/0133eevee/0133 Eevee Y.png",
-		"next_sprite": "poke-data/SugimoriSprites/0700sylveon/0700 Sylveon.png"
 	},
 	{
 		"prev": "eevee",
@@ -3302,26 +2804,8 @@
 	{
 		"prev": "porygon",
 		"next": "porygon2",
-		"prev_sprite": "poke-data/SugimoriSprites/0137porygon/0137 Porygon RB.png",
-		"next_sprite": "poke-data/SugimoriSprites/0233porygon2/0233 Porygon2.png"
-	},
-	{
-		"prev": "porygon",
-		"next": "porygon2",
-		"prev_sprite": "poke-data/SugimoriSprites/0137porygon/0137 Porygon RG.png",
-		"next_sprite": "poke-data/SugimoriSprites/0233porygon2/0233 Porygon2.png"
-	},
-	{
-		"prev": "porygon",
-		"next": "porygon2",
 		"prev_sprite": "poke-data/SugimoriSprites/0137porygon/0137 Porygon.png",
 		"next_sprite": "poke-data/SugimoriSprites/0233porygon2/0233 Porygon2.png"
-	},
-	{
-		"prev": "porygon2",
-		"next": "porygon-z",
-		"prev_sprite": "poke-data/SugimoriSprites/0233porygon2/0233 Porygon2 GS.png",
-		"next_sprite": "poke-data/SugimoriSprites/0474porygon-z/0474 Porygon-Z.png"
 	},
 	{
 		"prev": "porygon2",
@@ -3430,12 +2914,6 @@
 		"next": "munchlax",
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0446munchlax/0446 Munchlax.png"
-	},
-	{
-		"prev": "munchlax",
-		"next": "snorlax",
-		"prev_sprite": "poke-data/SugimoriSprites/0446munchlax/0446 Munchlax SM.png",
-		"next_sprite": "poke-data/SugimoriSprites/0143snorlax/0143 Snorlax.png"
 	},
 	{
 		"prev": "munchlax",
@@ -3674,18 +3152,6 @@
 	{
 		"prev": "chikorita",
 		"next": "bayleef",
-		"prev_sprite": "poke-data/SugimoriSprites/0152chikorita/0152 Chikorita E.png",
-		"next_sprite": "poke-data/SugimoriSprites/0153bayleef/0153 Bayleef.png"
-	},
-	{
-		"prev": "chikorita",
-		"next": "bayleef",
-		"prev_sprite": "poke-data/SugimoriSprites/0152chikorita/0152 Chikorita GS 2.png",
-		"next_sprite": "poke-data/SugimoriSprites/0153bayleef/0153 Bayleef.png"
-	},
-	{
-		"prev": "chikorita",
-		"next": "bayleef",
 		"prev_sprite": "poke-data/SugimoriSprites/0152chikorita/0152 Chikorita GS.png",
 		"next_sprite": "poke-data/SugimoriSprites/0153bayleef/0153 Bayleef GS.png"
 	},
@@ -3697,15 +3163,15 @@
 	},
 	{
 		"prev": "bayleef",
-		"next": null,
+		"next": "meganium",
 		"prev_sprite": "poke-data/SugimoriSprites/0153bayleef/0153 Bayleef GS.png",
-		"next_sprite": null
+		"next_sprite": "poke-data/SugimoriSprites/0154meganium/0154 Meganium GS.png"
 	},
 	{
 		"prev": "bayleef",
-		"next": null,
+		"next": "meganium",
 		"prev_sprite": "poke-data/SugimoriSprites/0153bayleef/0153 Bayleef.png",
-		"next_sprite": null
+		"next_sprite": "poke-data/SugimoriSprites/0154meganium/0154 Meganium.png"
 	},
 	{
 		"prev": null,
@@ -3734,20 +3200,8 @@
 	{
 		"prev": "cyndaquil",
 		"next": "quilava",
-		"prev_sprite": "poke-data/SugimoriSprites/0155cyndaquil/0155 Cyndaquil E.png",
-		"next_sprite": "poke-data/SugimoriSprites/0156quilava/0156 Quilava.png"
-	},
-	{
-		"prev": "cyndaquil",
-		"next": "quilava",
 		"prev_sprite": "poke-data/SugimoriSprites/0155cyndaquil/0155 Cyndaquil GS.png",
 		"next_sprite": "poke-data/SugimoriSprites/0156quilava/0156 Quilava GS.png"
-	},
-	{
-		"prev": "cyndaquil",
-		"next": "quilava",
-		"prev_sprite": "poke-data/SugimoriSprites/0155cyndaquil/0155 Cyndaquil LA.png",
-		"next_sprite": "poke-data/SugimoriSprites/0156quilava/0156 Quilava.png"
 	},
 	{
 		"prev": "cyndaquil",
@@ -3784,12 +3238,6 @@
 		"next": "totodile",
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0158totodile/0158 Totodile.png"
-	},
-	{
-		"prev": "totodile",
-		"next": "croconaw",
-		"prev_sprite": "poke-data/SugimoriSprites/0158totodile/0158 Totodile E.png",
-		"next_sprite": "poke-data/SugimoriSprites/0159croconaw/0159 Croconaw.png"
 	},
 	{
 		"prev": "totodile",
@@ -3945,12 +3393,6 @@
 		"prev": null,
 		"next": "togepi",
 		"prev_sprite": null,
-		"next_sprite": "poke-data/SugimoriSprites/0175togepi/0175 Togepi alternate.png"
-	},
-	{
-		"prev": null,
-		"next": "togepi",
-		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0175togepi/0175 Togepi.png"
 	},
 	{
@@ -3962,20 +3404,8 @@
 	{
 		"prev": "togepi",
 		"next": "togetic",
-		"prev_sprite": "poke-data/SugimoriSprites/0175togepi/0175 Togepi alternate.png",
-		"next_sprite": "poke-data/SugimoriSprites/0176togetic/0176 Togetic.png"
-	},
-	{
-		"prev": "togepi",
-		"next": "togetic",
 		"prev_sprite": "poke-data/SugimoriSprites/0175togepi/0175 Togepi.png",
 		"next_sprite": "poke-data/SugimoriSprites/0176togetic/0176 Togetic.png"
-	},
-	{
-		"prev": "togetic",
-		"next": "togekiss",
-		"prev_sprite": "poke-data/SugimoriSprites/0176togetic/0176 Togetic GS.png",
-		"next_sprite": "poke-data/SugimoriSprites/0468togekiss/0468 Togekiss.png"
 	},
 	{
 		"prev": "togetic",
@@ -4130,12 +3560,6 @@
 	{
 		"prev": "aipom",
 		"next": "ambipom",
-		"prev_sprite": "poke-data/SugimoriSprites/0190aipom/0190 Aipom GS.png",
-		"next_sprite": "poke-data/SugimoriSprites/0424ambipom/0424 Ambipom.png"
-	},
-	{
-		"prev": "aipom",
-		"next": "ambipom",
 		"prev_sprite": "poke-data/SugimoriSprites/0190aipom/0190 Aipom.png",
 		"next_sprite": "poke-data/SugimoriSprites/0424ambipom/0424 Ambipom.png"
 	},
@@ -4177,15 +3601,9 @@
 	},
 	{
 		"prev": "yanma",
-		"next": null,
-		"prev_sprite": "poke-data/SugimoriSprites/0193yanma/0193 Yanma GS.png",
-		"next_sprite": null
-	},
-	{
-		"prev": "yanma",
-		"next": null,
+		"next": "yanmega",
 		"prev_sprite": "poke-data/SugimoriSprites/0193yanma/0193 Yanma.png",
-		"next_sprite": null
+		"next_sprite": "poke-data/SugimoriSprites/0469yanmega/0469 Yanmega.png"
 	},
 	{
 		"prev": null,
@@ -4214,12 +3632,6 @@
 	{
 		"prev": "wooper",
 		"next": "quagsire",
-		"prev_sprite": "poke-data/SugimoriSprites/0194wooper/0194 Wooper Paldea.png",
-		"next_sprite": "poke-data/SugimoriSprites/0195quagsire/0195 Quagsire.png"
-	},
-	{
-		"prev": "wooper",
-		"next": "quagsire",
 		"prev_sprite": "poke-data/SugimoriSprites/0194wooper/0194 Wooper.png",
 		"next_sprite": "poke-data/SugimoriSprites/0195quagsire/0195 Quagsire.png"
 	},
@@ -4244,12 +3656,6 @@
 	{
 		"prev": "murkrow",
 		"next": "honchkrow",
-		"prev_sprite": "poke-data/SugimoriSprites/0198murkrow/0198 Murkrow GS.png",
-		"next_sprite": "poke-data/SugimoriSprites/0430honchkrow/0430 Honchkrow.png"
-	},
-	{
-		"prev": "murkrow",
-		"next": "honchkrow",
 		"prev_sprite": "poke-data/SugimoriSprites/0198murkrow/0198 Murkrow.png",
 		"next_sprite": "poke-data/SugimoriSprites/0430honchkrow/0430 Honchkrow.png"
 	},
@@ -4264,12 +3670,6 @@
 		"next": "misdreavus",
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0200misdreavus/0200 Misdreavus.png"
-	},
-	{
-		"prev": "misdreavus",
-		"next": "mismagius",
-		"prev_sprite": "poke-data/SugimoriSprites/0200misdreavus/0200 Misdreavus GS.png",
-		"next_sprite": "poke-data/SugimoriSprites/0429mismagius/0429 Mismagius.png"
 	},
 	{
 		"prev": "misdreavus",
@@ -4316,12 +3716,6 @@
 	{
 		"prev": "girafarig",
 		"next": "farigiraf",
-		"prev_sprite": "poke-data/SugimoriSprites/0203girafarig/0203 Girafarig GS.png",
-		"next_sprite": "poke-data/SugimoriSprites/0981farigiraf/0981 Farigiraf.png"
-	},
-	{
-		"prev": "girafarig",
-		"next": "farigiraf",
 		"prev_sprite": "poke-data/SugimoriSprites/0203girafarig/0203 Girafarig.png",
 		"next_sprite": "poke-data/SugimoriSprites/0981farigiraf/0981 Farigiraf.png"
 	},
@@ -4364,12 +3758,6 @@
 	{
 		"prev": "dunsparce",
 		"next": "dudunsparce",
-		"prev_sprite": "poke-data/SugimoriSprites/0206dunsparce/0206 Dunsparce GS.png",
-		"next_sprite": "poke-data/SugimoriSprites/0982dudunsparce/0982 Dudunsparce.png"
-	},
-	{
-		"prev": "dunsparce",
-		"next": "dudunsparce",
 		"prev_sprite": "poke-data/SugimoriSprites/0206dunsparce/0206 Dunsparce.png",
 		"next_sprite": "poke-data/SugimoriSprites/0982dudunsparce/0982 Dudunsparce.png"
 	},
@@ -4384,12 +3772,6 @@
 		"next": "gligar",
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0207gligar/0207 Gligar.png"
-	},
-	{
-		"prev": "gligar",
-		"next": "gliscor",
-		"prev_sprite": "poke-data/SugimoriSprites/0207gligar/0207 Gligar GS.png",
-		"next_sprite": "poke-data/SugimoriSprites/0472gliscor/0472 Gliscor.png"
 	},
 	{
 		"prev": "gligar",
@@ -4490,18 +3872,6 @@
 	{
 		"prev": "sneasel",
 		"next": "weavile",
-		"prev_sprite": "poke-data/SugimoriSprites/0215sneasel/0215 Sneasel GS.png",
-		"next_sprite": "poke-data/SugimoriSprites/0461weavile/0461 Weavile.png"
-	},
-	{
-		"prev": "sneasel",
-		"next": "weavile",
-		"prev_sprite": "poke-data/SugimoriSprites/0215sneasel/0215 Sneasel Hisui.png",
-		"next_sprite": "poke-data/SugimoriSprites/0461weavile/0461 Weavile.png"
-	},
-	{
-		"prev": "sneasel",
-		"next": "weavile",
 		"prev_sprite": "poke-data/SugimoriSprites/0215sneasel/0215 Sneasel.png",
 		"next_sprite": "poke-data/SugimoriSprites/0461weavile/0461 Weavile.png"
 	},
@@ -4534,12 +3904,6 @@
 		"next": "ursaring",
 		"prev_sprite": "poke-data/SugimoriSprites/0216teddiursa/0216 Teddiursa.png",
 		"next_sprite": "poke-data/SugimoriSprites/0217ursaring/0217 Ursaring.png"
-	},
-	{
-		"prev": "ursaring",
-		"next": "ursaluna",
-		"prev_sprite": "poke-data/SugimoriSprites/0217ursaring/0217 Ursaring GS.png",
-		"next_sprite": "poke-data/SugimoriSprites/0901ursaluna/0901 Ursaluna.png"
 	},
 	{
 		"prev": "ursaring",
@@ -4594,12 +3958,6 @@
 		"next": "piloswine",
 		"prev_sprite": "poke-data/SugimoriSprites/0220swinub/0220 Swinub.png",
 		"next_sprite": "poke-data/SugimoriSprites/0221piloswine/0221 Piloswine.png"
-	},
-	{
-		"prev": "piloswine",
-		"next": "mamoswine",
-		"prev_sprite": "poke-data/SugimoriSprites/0221piloswine/0221 Piloswine GS.png",
-		"next_sprite": "poke-data/SugimoriSprites/0473mamoswine/0473 Mamoswine.png"
 	},
 	{
 		"prev": "piloswine",
@@ -4750,12 +4108,6 @@
 		"next": "stantler",
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0234stantler/0234 Stantler.png"
-	},
-	{
-		"prev": "stantler",
-		"next": "wyrdeer",
-		"prev_sprite": "poke-data/SugimoriSprites/0234stantler/0234 Stantler GS.png",
-		"next_sprite": "poke-data/SugimoriSprites/0899wyrdeer/0899 Wyrdeer.png"
 	},
 	{
 		"prev": "stantler",
@@ -4958,18 +4310,6 @@
 	{
 		"prev": "treecko",
 		"next": "grovyle",
-		"prev_sprite": "poke-data/SugimoriSprites/0252treecko/0252 Treecko E.png",
-		"next_sprite": "poke-data/SugimoriSprites/0253grovyle/0253 Grovyle.png"
-	},
-	{
-		"prev": "treecko",
-		"next": "grovyle",
-		"prev_sprite": "poke-data/SugimoriSprites/0252treecko/0252 Treecko ORAS.png",
-		"next_sprite": "poke-data/SugimoriSprites/0253grovyle/0253 Grovyle.png"
-	},
-	{
-		"prev": "treecko",
-		"next": "grovyle",
 		"prev_sprite": "poke-data/SugimoriSprites/0252treecko/0252 Treecko.png",
 		"next_sprite": "poke-data/SugimoriSprites/0253grovyle/0253 Grovyle.png"
 	},
@@ -5000,18 +4340,6 @@
 	{
 		"prev": "torchic",
 		"next": "combusken",
-		"prev_sprite": "poke-data/SugimoriSprites/0255torchic/0255 Torchic E.png",
-		"next_sprite": "poke-data/SugimoriSprites/0256combusken/0256 Combusken.png"
-	},
-	{
-		"prev": "torchic",
-		"next": "combusken",
-		"prev_sprite": "poke-data/SugimoriSprites/0255torchic/0255 Torchic ORAS.png",
-		"next_sprite": "poke-data/SugimoriSprites/0256combusken/0256 Combusken.png"
-	},
-	{
-		"prev": "torchic",
-		"next": "combusken",
 		"prev_sprite": "poke-data/SugimoriSprites/0255torchic/0255 Torchic.png",
 		"next_sprite": "poke-data/SugimoriSprites/0256combusken/0256 Combusken.png"
 	},
@@ -5038,18 +4366,6 @@
 		"next": "mudkip",
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0258mudkip/0258 Mudkip.png"
-	},
-	{
-		"prev": "mudkip",
-		"next": "marshtomp",
-		"prev_sprite": "poke-data/SugimoriSprites/0258mudkip/0258 Mudkip E.png",
-		"next_sprite": "poke-data/SugimoriSprites/0259marshtomp/0259 Marshtomp.png"
-	},
-	{
-		"prev": "mudkip",
-		"next": "marshtomp",
-		"prev_sprite": "poke-data/SugimoriSprites/0258mudkip/0258 Mudkip ORAS.png",
-		"next_sprite": "poke-data/SugimoriSprites/0259marshtomp/0259 Marshtomp.png"
 	},
 	{
 		"prev": "mudkip",
@@ -5822,12 +5138,6 @@
 	{
 		"prev": "beldum",
 		"next": "metang",
-		"prev_sprite": "poke-data/SugimoriSprites/0374beldum/0374 Beldum Shiny.png",
-		"next_sprite": "poke-data/SugimoriSprites/0375metang/0375 Metang.png"
-	},
-	{
-		"prev": "beldum",
-		"next": "metang",
 		"prev_sprite": "poke-data/SugimoriSprites/0374beldum/0374 Beldum.png",
 		"next_sprite": "poke-data/SugimoriSprites/0375metang/0375 Metang.png"
 	},
@@ -5984,18 +5294,6 @@
 	{
 		"prev": "turtwig",
 		"next": "grotle",
-		"prev_sprite": "poke-data/SugimoriSprites/0387turtwig/0387 Turtwig BDSP.png",
-		"next_sprite": "poke-data/SugimoriSprites/0388grotle/0388 Grotle.png"
-	},
-	{
-		"prev": "turtwig",
-		"next": "grotle",
-		"prev_sprite": "poke-data/SugimoriSprites/0387turtwig/0387 Turtwig Pt.png",
-		"next_sprite": "poke-data/SugimoriSprites/0388grotle/0388 Grotle.png"
-	},
-	{
-		"prev": "turtwig",
-		"next": "grotle",
 		"prev_sprite": "poke-data/SugimoriSprites/0387turtwig/0387 Turtwig.png",
 		"next_sprite": "poke-data/SugimoriSprites/0388grotle/0388 Grotle.png"
 	},
@@ -6026,18 +5324,6 @@
 	{
 		"prev": "chimchar",
 		"next": "monferno",
-		"prev_sprite": "poke-data/SugimoriSprites/0390chimchar/0390 Chimchar BDSP.png",
-		"next_sprite": "poke-data/SugimoriSprites/0391monferno/0391 Monferno.png"
-	},
-	{
-		"prev": "chimchar",
-		"next": "monferno",
-		"prev_sprite": "poke-data/SugimoriSprites/0390chimchar/0390 Chimchar Pt.png",
-		"next_sprite": "poke-data/SugimoriSprites/0391monferno/0391 Monferno.png"
-	},
-	{
-		"prev": "chimchar",
-		"next": "monferno",
 		"prev_sprite": "poke-data/SugimoriSprites/0390chimchar/0390 Chimchar.png",
 		"next_sprite": "poke-data/SugimoriSprites/0391monferno/0391 Monferno.png"
 	},
@@ -6064,18 +5350,6 @@
 		"next": "piplup",
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0393piplup/0393 Piplup.png"
-	},
-	{
-		"prev": "piplup",
-		"next": "prinplup",
-		"prev_sprite": "poke-data/SugimoriSprites/0393piplup/0393 Piplup BDSP.png",
-		"next_sprite": "poke-data/SugimoriSprites/0394prinplup/0394 Prinplup.png"
-	},
-	{
-		"prev": "piplup",
-		"next": "prinplup",
-		"prev_sprite": "poke-data/SugimoriSprites/0393piplup/0393 Piplup Pt.png",
-		"next_sprite": "poke-data/SugimoriSprites/0394prinplup/0394 Prinplup.png"
 	},
 	{
 		"prev": "piplup",
@@ -6116,12 +5390,6 @@
 	{
 		"prev": "staravia",
 		"next": "staraptor",
-		"prev_sprite": "poke-data/SugimoriSprites/0397staravia/0397 Staravia BDSP.png",
-		"next_sprite": "poke-data/SugimoriSprites/0398staraptor/0398 Staraptor.png"
-	},
-	{
-		"prev": "staravia",
-		"next": "staraptor",
 		"prev_sprite": "poke-data/SugimoriSprites/0397staravia/0397 Staravia.png",
 		"next_sprite": "poke-data/SugimoriSprites/0398staraptor/0398 Staraptor.png"
 	},
@@ -6136,12 +5404,6 @@
 		"next": "bidoof",
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0399bidoof/0399 Bidoof.png"
-	},
-	{
-		"prev": "bidoof",
-		"next": "bibarel",
-		"prev_sprite": "poke-data/SugimoriSprites/0399bidoof/0399 Bidoof BDSP.png",
-		"next_sprite": "poke-data/SugimoriSprites/0400bibarel/0400 Bibarel.png"
 	},
 	{
 		"prev": "bidoof",
@@ -6176,12 +5438,6 @@
 	{
 		"prev": "shinx",
 		"next": "luxio",
-		"prev_sprite": "poke-data/SugimoriSprites/0403shinx/0403 Shinx BDSP.png",
-		"next_sprite": "poke-data/SugimoriSprites/0404luxio/0404 Luxio.png"
-	},
-	{
-		"prev": "shinx",
-		"next": "luxio",
 		"prev_sprite": "poke-data/SugimoriSprites/0403shinx/0403 Shinx.png",
 		"next_sprite": "poke-data/SugimoriSprites/0404luxio/0404 Luxio.png"
 	},
@@ -6202,12 +5458,6 @@
 		"next": "cranidos",
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0408cranidos/0408 Cranidos.png"
-	},
-	{
-		"prev": "cranidos",
-		"next": "rampardos",
-		"prev_sprite": "poke-data/SugimoriSprites/0408cranidos/0408 Cranidos BDSP.png",
-		"next_sprite": "poke-data/SugimoriSprites/0409rampardos/0409 Rampardos.png"
 	},
 	{
 		"prev": "cranidos",
@@ -6260,12 +5510,6 @@
 	{
 		"prev": "burmy",
 		"next": "wormadam",
-		"prev_sprite": "poke-data/SugimoriSprites/0412burmy/0412 Burmy No Cloak.png",
-		"next_sprite": "poke-data/SugimoriSprites/0413wormadam/0413 Wormadam.png"
-	},
-	{
-		"prev": "burmy",
-		"next": "wormadam",
 		"prev_sprite": "poke-data/SugimoriSprites/0412burmy/0412 Burmy Plant.png",
 		"next_sprite": "poke-data/SugimoriSprites/0413wormadam/0413 Wormadam Plant.png"
 	},
@@ -6286,30 +5530,6 @@
 		"next": "wormadam",
 		"prev_sprite": "poke-data/SugimoriSprites/0412burmy/0412 Burmy.png",
 		"next_sprite": "poke-data/SugimoriSprites/0413wormadam/0413 Wormadam.png"
-	},
-	{
-		"prev": "burmy",
-		"next": "mothim",
-		"prev_sprite": "poke-data/SugimoriSprites/0412burmy/0412 Burmy No Cloak.png",
-		"next_sprite": "poke-data/SugimoriSprites/0414mothim/0414 Mothim.png"
-	},
-	{
-		"prev": "burmy",
-		"next": "mothim",
-		"prev_sprite": "poke-data/SugimoriSprites/0412burmy/0412 Burmy Plant.png",
-		"next_sprite": "poke-data/SugimoriSprites/0414mothim/0414 Mothim.png"
-	},
-	{
-		"prev": "burmy",
-		"next": "mothim",
-		"prev_sprite": "poke-data/SugimoriSprites/0412burmy/0412 Burmy Sandy.png",
-		"next_sprite": "poke-data/SugimoriSprites/0414mothim/0414 Mothim.png"
-	},
-	{
-		"prev": "burmy",
-		"next": "mothim",
-		"prev_sprite": "poke-data/SugimoriSprites/0412burmy/0412 Burmy Trash.png",
-		"next_sprite": "poke-data/SugimoriSprites/0414mothim/0414 Mothim.png"
 	},
 	{
 		"prev": "burmy",
@@ -6356,12 +5576,6 @@
 	{
 		"prev": "buizel",
 		"next": "floatzel",
-		"prev_sprite": "poke-data/SugimoriSprites/0418buizel/0418 Buizel BDSP.png",
-		"next_sprite": "poke-data/SugimoriSprites/0419floatzel/0419 Floatzel.png"
-	},
-	{
-		"prev": "buizel",
-		"next": "floatzel",
 		"prev_sprite": "poke-data/SugimoriSprites/0418buizel/0418 Buizel.png",
 		"next_sprite": "poke-data/SugimoriSprites/0419floatzel/0419 Floatzel.png"
 	},
@@ -6370,12 +5584,6 @@
 		"next": "cherubi",
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0420cherubi/0420 Cherubi.png"
-	},
-	{
-		"prev": "cherubi",
-		"next": "cherrim",
-		"prev_sprite": "poke-data/SugimoriSprites/0420cherubi/0420 Cherubi.png",
-		"next_sprite": "poke-data/SugimoriSprites/0421cherrim/0421 Cherrim Overcast.png"
 	},
 	{
 		"prev": null,
@@ -6735,12 +5943,6 @@
 		"prev": null,
 		"next": "palkia",
 		"prev_sprite": null,
-		"next_sprite": "poke-data/SugimoriSprites/0484palkia/0484 Palkia alternate.png"
-	},
-	{
-		"prev": null,
-		"next": "palkia",
-		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0484palkia/0484 Palkia.png"
 	},
 	{
@@ -6866,12 +6068,6 @@
 	{
 		"prev": "snivy",
 		"next": "servine",
-		"prev_sprite": "poke-data/SugimoriSprites/0495snivy/0495 Snivy B2W2.png",
-		"next_sprite": "poke-data/SugimoriSprites/0496servine/0496 Servine.png"
-	},
-	{
-		"prev": "snivy",
-		"next": "servine",
 		"prev_sprite": "poke-data/SugimoriSprites/0495snivy/0495 Snivy.png",
 		"next_sprite": "poke-data/SugimoriSprites/0496servine/0496 Servine.png"
 	},
@@ -6892,12 +6088,6 @@
 		"next": "tepig",
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0498tepig/0498 Tepig.png"
-	},
-	{
-		"prev": "tepig",
-		"next": "pignite",
-		"prev_sprite": "poke-data/SugimoriSprites/0498tepig/0498 Tepig B2W2.png",
-		"next_sprite": "poke-data/SugimoriSprites/0499pignite/0499 Pignite.png"
 	},
 	{
 		"prev": "tepig",
@@ -6928,18 +6118,6 @@
 		"next": "oshawott",
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0501oshawott/0501 Oshawott.png"
-	},
-	{
-		"prev": "oshawott",
-		"next": "dewott",
-		"prev_sprite": "poke-data/SugimoriSprites/0501oshawott/0501 Oshawott B2W2.png",
-		"next_sprite": "poke-data/SugimoriSprites/0502dewott/0502 Dewott.png"
-	},
-	{
-		"prev": "oshawott",
-		"next": "dewott",
-		"prev_sprite": "poke-data/SugimoriSprites/0501oshawott/0501 Oshawott LA.png",
-		"next_sprite": "poke-data/SugimoriSprites/0502dewott/0502 Dewott.png"
 	},
 	{
 		"prev": "oshawott",
@@ -7348,12 +6526,6 @@
 		"next": "yamask",
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0562yamask/0562 Yamask.png"
-	},
-	{
-		"prev": "yamask",
-		"next": "cofagrigus",
-		"prev_sprite": "poke-data/SugimoriSprites/0562yamask/0562 Yamask Galar.png",
-		"next_sprite": "poke-data/SugimoriSprites/0563cofagrigus/0563 Cofagrigus.png"
 	},
 	{
 		"prev": "yamask",
@@ -8529,12 +7701,6 @@
 		"prev": null,
 		"next": "rowlet",
 		"prev_sprite": null,
-		"next_sprite": "poke-data/SugimoriSprites/0722rowlet/0722 Rowlet 2.png"
-	},
-	{
-		"prev": null,
-		"next": "rowlet",
-		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0722rowlet/0722 Rowlet USUM.png"
 	},
 	{
@@ -8550,40 +7716,10 @@
 		"next_sprite": "poke-data/SugimoriSprites/0722rowlet/0722Rowlet_LA.png"
 	},
 	{
-		"prev": "rowlet",
-		"next": "dartrix",
-		"prev_sprite": "poke-data/SugimoriSprites/0722rowlet/0722 Rowlet 2.png",
-		"next_sprite": "poke-data/SugimoriSprites/0723dartrix/0723 Dartrix.png"
-	},
-	{
-		"prev": "rowlet",
-		"next": "dartrix",
-		"prev_sprite": "poke-data/SugimoriSprites/0722rowlet/0722 Rowlet USUM.png",
-		"next_sprite": "poke-data/SugimoriSprites/0723dartrix/0723 Dartrix.png"
-	},
-	{
-		"prev": "rowlet",
-		"next": "dartrix",
-		"prev_sprite": "poke-data/SugimoriSprites/0722rowlet/0722 Rowlet.png",
-		"next_sprite": "poke-data/SugimoriSprites/0723dartrix/0723 Dartrix.png"
-	},
-	{
-		"prev": "rowlet",
-		"next": "dartrix",
-		"prev_sprite": "poke-data/SugimoriSprites/0722rowlet/0722Rowlet_LA.png",
-		"next_sprite": "poke-data/SugimoriSprites/0723dartrix/0723 Dartrix.png"
-	},
-	{
 		"prev": "dartrix",
 		"next": "decidueye",
 		"prev_sprite": "poke-data/SugimoriSprites/0723dartrix/0723 Dartrix.png",
 		"next_sprite": "poke-data/SugimoriSprites/0724decidueye/0724 Decidueye.png"
-	},
-	{
-		"prev": null,
-		"next": "litten",
-		"prev_sprite": null,
-		"next_sprite": "poke-data/SugimoriSprites/0725litten/0725 Litten 2.png"
 	},
 	{
 		"prev": null,
@@ -8596,18 +7732,6 @@
 		"next": "litten",
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0725litten/0725 Litten.png"
-	},
-	{
-		"prev": "litten",
-		"next": "torracat",
-		"prev_sprite": "poke-data/SugimoriSprites/0725litten/0725 Litten 2.png",
-		"next_sprite": "poke-data/SugimoriSprites/0726torracat/0726 Torracat.png"
-	},
-	{
-		"prev": "litten",
-		"next": "torracat",
-		"prev_sprite": "poke-data/SugimoriSprites/0725litten/0725 Litten USUM.png",
-		"next_sprite": "poke-data/SugimoriSprites/0726torracat/0726 Torracat.png"
 	},
 	{
 		"prev": "litten",
@@ -8625,12 +7749,6 @@
 		"prev": null,
 		"next": "popplio",
 		"prev_sprite": null,
-		"next_sprite": "poke-data/SugimoriSprites/0728popplio/0728 Popplio 2.png"
-	},
-	{
-		"prev": null,
-		"next": "popplio",
-		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0728popplio/0728 Popplio USUM.png"
 	},
 	{
@@ -8638,18 +7756,6 @@
 		"next": "popplio",
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0728popplio/0728 Popplio.png"
-	},
-	{
-		"prev": "popplio",
-		"next": "brionne",
-		"prev_sprite": "poke-data/SugimoriSprites/0728popplio/0728 Popplio 2.png",
-		"next_sprite": "poke-data/SugimoriSprites/0729brionne/0729 Brionne.png"
-	},
-	{
-		"prev": "popplio",
-		"next": "brionne",
-		"prev_sprite": "poke-data/SugimoriSprites/0728popplio/0728 Popplio USUM.png",
-		"next_sprite": "poke-data/SugimoriSprites/0729brionne/0729 Brionne.png"
 	},
 	{
 		"prev": "popplio",
@@ -8979,12 +8085,6 @@
 		"prev": null,
 		"next": "mimikyu",
 		"prev_sprite": null,
-		"next_sprite": "poke-data/SugimoriSprites/0778mimikyu/0778 Mimikyu 2.png"
-	},
-	{
-		"prev": null,
-		"next": "mimikyu",
-		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0778mimikyu/0778 Mimikyu.png"
 	},
 	{
@@ -9022,12 +8122,6 @@
 		"next": "kommo-o",
 		"prev_sprite": "poke-data/SugimoriSprites/0783hakamo-o/0783 Hakamo o.png",
 		"next_sprite": "poke-data/SugimoriSprites/0784kommo-o/0784 Kommo o.png"
-	},
-	{
-		"prev": null,
-		"next": "tapu koko",
-		"prev_sprite": null,
-		"next_sprite": "poke-data/SugimoriSprites/0785tapu koko/0785 Tapu Koko 2.png"
 	},
 	{
 		"prev": null,
@@ -9210,12 +8304,6 @@
 		"next_sprite": "poke-data/SugimoriSprites/0808meltan/0808 Meltan.png"
 	},
 	{
-		"prev": "meltan",
-		"next": "melmetal",
-		"prev_sprite": "poke-data/SugimoriSprites/0808meltan/0808 Meltan.png",
-		"next_sprite": "poke-data/SugimoriSprites/0809melmetal/0809 Melmetal.png"
-	},
-	{
 		"prev": null,
 		"next": "grookey",
 		"prev_sprite": null,
@@ -9230,20 +8318,8 @@
 	{
 		"prev": "grookey",
 		"next": "thwackey",
-		"prev_sprite": "poke-data/SugimoriSprites/0810grookey/0810 Grookey 2.png",
-		"next_sprite": "poke-data/SugimoriSprites/0811thwackey/0811 Thwackey.png"
-	},
-	{
-		"prev": "grookey",
-		"next": "thwackey",
 		"prev_sprite": "poke-data/SugimoriSprites/0810grookey/0810 Grookey.png",
 		"next_sprite": "poke-data/SugimoriSprites/0811thwackey/0811 Thwackey.png"
-	},
-	{
-		"prev": "thwackey",
-		"next": "rillaboom",
-		"prev_sprite": "poke-data/SugimoriSprites/0811thwackey/0811 Thwackey.png",
-		"next_sprite": "poke-data/SugimoriSprites/0812rillaboom/0812 Rillaboom.png"
 	},
 	{
 		"prev": null,
@@ -9260,26 +8336,8 @@
 	{
 		"prev": "scorbunny",
 		"next": "raboot",
-		"prev_sprite": "poke-data/SugimoriSprites/0813scorbunny/0813 Scorbunny 2.png",
-		"next_sprite": "poke-data/SugimoriSprites/0814raboot/0814 Raboot.png"
-	},
-	{
-		"prev": "scorbunny",
-		"next": "raboot",
 		"prev_sprite": "poke-data/SugimoriSprites/0813scorbunny/0813 Scorbunny.png",
 		"next_sprite": "poke-data/SugimoriSprites/0814raboot/0814 Raboot.png"
-	},
-	{
-		"prev": "raboot",
-		"next": "cinderace",
-		"prev_sprite": "poke-data/SugimoriSprites/0814raboot/0814 Raboot.png",
-		"next_sprite": "poke-data/SugimoriSprites/0815cinderace/0815 Cinderace.png"
-	},
-	{
-		"prev": null,
-		"next": "sobble",
-		"prev_sprite": null,
-		"next_sprite": "poke-data/SugimoriSprites/0816sobble/0816 Sobble 2.png"
 	},
 	{
 		"prev": null,
@@ -9290,20 +8348,8 @@
 	{
 		"prev": "sobble",
 		"next": "drizzile",
-		"prev_sprite": "poke-data/SugimoriSprites/0816sobble/0816 Sobble 2.png",
-		"next_sprite": "poke-data/SugimoriSprites/0817drizzile/0817 Drizzile.png"
-	},
-	{
-		"prev": "sobble",
-		"next": "drizzile",
 		"prev_sprite": "poke-data/SugimoriSprites/0816sobble/0816 Sobble.png",
 		"next_sprite": "poke-data/SugimoriSprites/0817drizzile/0817 Drizzile.png"
-	},
-	{
-		"prev": "drizzile",
-		"next": "inteleon",
-		"prev_sprite": "poke-data/SugimoriSprites/0817drizzile/0817 Drizzile.png",
-		"next_sprite": "poke-data/SugimoriSprites/0818inteleon/0818 Inteleon.png"
 	},
 	{
 		"prev": null,
@@ -9328,12 +8374,6 @@
 		"next": "corvisquire",
 		"prev_sprite": "poke-data/SugimoriSprites/0821rookidee/0821 Rookidee.png",
 		"next_sprite": "poke-data/SugimoriSprites/0822corvisquire/0822 Corvisquire.png"
-	},
-	{
-		"prev": "corvisquire",
-		"next": "corviknight",
-		"prev_sprite": "poke-data/SugimoriSprites/0822corvisquire/0822 Corvisquire.png",
-		"next_sprite": "poke-data/SugimoriSprites/0823corviknight/0823 Corviknight.png"
 	},
 	{
 		"prev": null,
@@ -9392,12 +8432,6 @@
 	{
 		"prev": "wooloo",
 		"next": "dubwool",
-		"prev_sprite": "poke-data/SugimoriSprites/0831wooloo/0831 Wooloo 2.png",
-		"next_sprite": "poke-data/SugimoriSprites/0832dubwool/0832 Dubwool.png"
-	},
-	{
-		"prev": "wooloo",
-		"next": "dubwool",
 		"prev_sprite": "poke-data/SugimoriSprites/0831wooloo/0831 Wooloo.png",
 		"next_sprite": "poke-data/SugimoriSprites/0832dubwool/0832 Dubwool.png"
 	},
@@ -9428,12 +8462,6 @@
 	{
 		"prev": "yamper",
 		"next": "boltund",
-		"prev_sprite": "poke-data/SugimoriSprites/0835yamper/0835 Yamper 2.png",
-		"next_sprite": "poke-data/SugimoriSprites/0836boltund/0836 Boltund.png"
-	},
-	{
-		"prev": "yamper",
-		"next": "boltund",
 		"prev_sprite": "poke-data/SugimoriSprites/0835yamper/0835 Yamper.png",
 		"next_sprite": "poke-data/SugimoriSprites/0836boltund/0836 Boltund.png"
 	},
@@ -9448,12 +8476,6 @@
 		"next": "rolycoly",
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0837rolycoly/0837 Rolycoly.png"
-	},
-	{
-		"prev": "rolycoly",
-		"next": "carkol",
-		"prev_sprite": "poke-data/SugimoriSprites/0837rolycoly/0837 Rolycoly 2.png",
-		"next_sprite": "poke-data/SugimoriSprites/0838carkol/0838 Carkol.png"
 	},
 	{
 		"prev": "rolycoly",
@@ -9532,12 +8554,6 @@
 		"next": "toxel",
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0848toxel/0848 Toxel.png"
-	},
-	{
-		"prev": "toxel",
-		"next": "toxtricity",
-		"prev_sprite": "poke-data/SugimoriSprites/0848toxel/0848 Toxel.png",
-		"next_sprite": "poke-data/SugimoriSprites/0849toxtricity/0849 Toxtricity Amped.png"
 	},
 	{
 		"prev": null,
@@ -9814,12 +8830,6 @@
 		"next": "kubfu",
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0891kubfu/0891 Kubfu.png"
-	},
-	{
-		"prev": "kubfu",
-		"next": "urshifu",
-		"prev_sprite": "poke-data/SugimoriSprites/0891kubfu/0891 Kubfu.png",
-		"next_sprite": "poke-data/SugimoriSprites/0892urshifu/0892 Urshifu Rapid Strike.png"
 	},
 	{
 		"prev": null,
@@ -10436,12 +9446,6 @@
 	{
 		"prev": "gimmighoul",
 		"next": "gholdengo",
-		"prev_sprite": "poke-data/SugimoriSprites/0999gimmighoul/0999 Gimmighoul Roaming.png",
-		"next_sprite": "poke-data/SugimoriSprites/1000gholdengo/1000 Gholdengo.png"
-	},
-	{
-		"prev": "gimmighoul",
-		"next": "gholdengo",
 		"prev_sprite": "poke-data/SugimoriSprites/0999gimmighoul/0999 Gimmighoul.png",
 		"next_sprite": "poke-data/SugimoriSprites/1000gholdengo/1000 Gholdengo.png"
 	},
@@ -10489,21 +9493,9 @@
 	},
 	{
 		"prev": null,
-		"next": "koraidon",
-		"prev_sprite": null,
-		"next_sprite": "poke-data/SugimoriSprites/1007koraidon/Koraidon 2.png"
-	},
-	{
-		"prev": null,
 		"next": "miraidon",
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/1008miraidon/1008 Miraidon.png"
-	},
-	{
-		"prev": null,
-		"next": "miraidon",
-		"prev_sprite": null,
-		"next_sprite": "poke-data/SugimoriSprites/1008miraidon/Miraidon 2.png"
 	},
 	{
 		"prev": null,
@@ -10716,12 +9708,6 @@
 		"next_sprite": "poke-data/SugimoriSprites/0414mothim/0414 Mothim.png"
 	},
 	{
-		"prev": "cherubi",
-		"next": "cherrim",
-		"prev_sprite": "poke-data/SugimoriSprites/0420cherubi/0420 Cherubi.png",
-		"next_sprite": "poke-data/SugimoriSprites/0421cherrim/0421 Cherrim Overcast.png"
-	},
-	{
 		"prev": null,
 		"next": "rotom",
 		"prev_sprite": null,
@@ -10786,18 +9772,6 @@
 		"next": "shaymin",
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0492shaymin/0492 Shaymin Sky.png"
-	},
-	{
-		"prev": "darumaka",
-		"next": "darmanitan",
-		"prev_sprite": "poke-data/SugimoriSprites/0554darumaka/0554 Darumaka Galar.png",
-		"next_sprite": "poke-data/SugimoriSprites/0555darmanitan/0555 Darmanitan Galar Zen.png"
-	},
-	{
-		"prev": "darumaka",
-		"next": "darmanitan",
-		"prev_sprite": "poke-data/SugimoriSprites/0554darumaka/0554 Darumaka.png",
-		"next_sprite": "poke-data/SugimoriSprites/0555darmanitan/0555 Darmanitan Galar Zen.png"
 	},
 	{
 		"prev": null,
@@ -10982,20 +9956,8 @@
 	{
 		"prev": "ursaring",
 		"next": "ursaluna",
-		"prev_sprite": "poke-data/SugimoriSprites/0217ursaring/0217 Ursaring GS.png",
-		"next_sprite": "poke-data/SugimoriSprites/0901ursaluna/0901 Ursaluna.png"
-	},
-	{
-		"prev": "ursaring",
-		"next": "ursaluna",
 		"prev_sprite": "poke-data/SugimoriSprites/0217ursaring/0217 Ursaring.png",
 		"next_sprite": "poke-data/SugimoriSprites/0901ursaluna/0901 Ursaluna.png"
-	},
-	{
-		"prev": "finizen",
-		"next": "palafin",
-		"prev_sprite": "poke-data/SugimoriSprites/0963finizen/0963 Finizen.png",
-		"next_sprite": "poke-data/SugimoriSprites/0964palafin/0964 Palafin Hero.png"
 	},
 	{
 		"prev": null,
@@ -11106,18 +10068,6 @@
 		"next_sprite": "poke-data/SugimoriSprites/1024terapagos/terapagos stellar form.png"
 	},
 	{
-		"prev": "rockruff",
-		"next": "lycanroc",
-		"prev_sprite": "poke-data/SugimoriSprites/0744rockruff/0744 Rockruff.png",
-		"next_sprite": "poke-data/SugimoriSprites/0745lycanroc/0745 Lycanroc Dusk.png"
-	},
-	{
-		"prev": "rockruff",
-		"next": "lycanroc",
-		"prev_sprite": "poke-data/SugimoriSprites/0744rockruff/0744 Rockruff.png",
-		"next_sprite": "poke-data/SugimoriSprites/0745lycanroc/0745 Lycanroc Midnight.png"
-	},
-	{
 		"prev": null,
 		"next": "calyrex",
 		"prev_sprite": null,
@@ -11226,168 +10176,6 @@
 		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png"
 	},
 	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu BDSP.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Belle.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu GS.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Hoenn.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Kalos.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Libre.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Original.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Partner.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu PhD.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Pok\u00e9mon Pia.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Pop Star.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu RB.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu RG.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Rock Star.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Sinnoh.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu TCG.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Unova.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu World.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Y 2.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Y.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png"
-	},
-	{
-		"prev": "pikachu",
-		"next": "raichu",
-		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu.png",
-		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png"
-	},
-	{
-		"prev": "exeggcute",
-		"next": "exeggutor",
-		"prev_sprite": "poke-data/SugimoriSprites/0102exeggcute/0102 Exeggcute RB.png",
-		"next_sprite": "poke-data/SugimoriSprites/0103exeggutor/0103 Exeggutor Alola.png"
-	},
-	{
-		"prev": "exeggcute",
-		"next": "exeggutor",
-		"prev_sprite": "poke-data/SugimoriSprites/0102exeggcute/0102 Exeggcute RG.png",
-		"next_sprite": "poke-data/SugimoriSprites/0103exeggutor/0103 Exeggutor Alola.png"
-	},
-	{
-		"prev": "exeggcute",
-		"next": "exeggutor",
-		"prev_sprite": "poke-data/SugimoriSprites/0102exeggcute/0102 Exeggcute.png",
-		"next_sprite": "poke-data/SugimoriSprites/0103exeggutor/0103 Exeggutor Alola.png"
-	},
-	{
-		"prev": "cubone",
-		"next": "marowak",
-		"prev_sprite": "poke-data/SugimoriSprites/0104cubone/0104 Cubone RB.png",
-		"next_sprite": "poke-data/SugimoriSprites/0105marowak/0105 Marowak Alola.png"
-	},
-	{
-		"prev": "cubone",
-		"next": "marowak",
-		"prev_sprite": "poke-data/SugimoriSprites/0104cubone/0104 Cubone RG.png",
-		"next_sprite": "poke-data/SugimoriSprites/0105marowak/0105 Marowak Alola.png"
-	},
-	{
-		"prev": "cubone",
-		"next": "marowak",
-		"prev_sprite": "poke-data/SugimoriSprites/0104cubone/0104 Cubone.png",
-		"next_sprite": "poke-data/SugimoriSprites/0105marowak/0105 Marowak Alola.png"
-	},
-	{
 		"prev": null,
 		"next": "meowth",
 		"prev_sprite": null,
@@ -11446,30 +10234,6 @@
 		"next": "sirfetch'd",
 		"prev_sprite": "poke-data/SugimoriSprites/0083farfetch'd/0083 Farfetch'd Galar.png",
 		"next_sprite": "poke-data/SugimoriSprites/0865sirfetch'd/0865 Sirfetch'd.png"
-	},
-	{
-		"prev": "koffing",
-		"next": "weezing",
-		"prev_sprite": "poke-data/SugimoriSprites/0109koffing/0109 Koffing RB.png",
-		"next_sprite": "poke-data/SugimoriSprites/0110weezing/0110 Weezing Galar.png"
-	},
-	{
-		"prev": "koffing",
-		"next": "weezing",
-		"prev_sprite": "poke-data/SugimoriSprites/0109koffing/0109 Koffing RG.png",
-		"next_sprite": "poke-data/SugimoriSprites/0110weezing/0110 Weezing Galar.png"
-	},
-	{
-		"prev": "koffing",
-		"next": "weezing",
-		"prev_sprite": "poke-data/SugimoriSprites/0109koffing/0109 Koffing.png",
-		"next_sprite": "poke-data/SugimoriSprites/0110weezing/0110 Weezing Galar.png"
-	},
-	{
-		"prev": "mime jr",
-		"next": "mr. mime",
-		"prev_sprite": "poke-data/SugimoriSprites/0439mime jr/0439 Mime Jr.png",
-		"next_sprite": "poke-data/SugimoriSprites/0122mr. mime/0122 Mr. Mime Galar.png"
 	},
 	{
 		"prev": null,
@@ -11602,54 +10366,6 @@
 		"next": "sneasel",
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0215sneasel/0215 Sneasel Hisui.png"
-	},
-	{
-		"prev": "dewott",
-		"next": "samurott",
-		"prev_sprite": "poke-data/SugimoriSprites/0502dewott/0502 Dewott.png",
-		"next_sprite": "poke-data/SugimoriSprites/0503samurott/0503 Samurott Hisui.png"
-	},
-	{
-		"prev": "petilil",
-		"next": "lilligant",
-		"prev_sprite": "poke-data/SugimoriSprites/0548petilil/0548 Petilil.png",
-		"next_sprite": "poke-data/SugimoriSprites/0549lilligant/0549 Lilligant Hisui.png"
-	},
-	{
-		"prev": "bergmite",
-		"next": "avalugg",
-		"prev_sprite": "poke-data/SugimoriSprites/0712bergmite/0712 Bergmite.png",
-		"next_sprite": "poke-data/SugimoriSprites/0713avalugg/0713 Avalugg Hisui.png"
-	},
-	{
-		"prev": "dartrix",
-		"next": "decidueye",
-		"prev_sprite": "poke-data/SugimoriSprites/0723dartrix/0723 Dartrix.png",
-		"next_sprite": "poke-data/SugimoriSprites/0724decidueye/0724 Decidueye Hisui.png"
-	},
-	{
-		"prev": "quilava",
-		"next": "typhlosion",
-		"prev_sprite": "poke-data/SugimoriSprites/0156quilava/0156 Quilava GS.png",
-		"next_sprite": "poke-data/SugimoriSprites/0157typhlosion/0157 Typhlosion Hisui.png"
-	},
-	{
-		"prev": "quilava",
-		"next": "typhlosion",
-		"prev_sprite": "poke-data/SugimoriSprites/0156quilava/0156 Quilava.png",
-		"next_sprite": "poke-data/SugimoriSprites/0157typhlosion/0157 Typhlosion Hisui.png"
-	},
-	{
-		"prev": "rufflet",
-		"next": "braviary",
-		"prev_sprite": "poke-data/SugimoriSprites/0627rufflet/0627 Rufflet.png",
-		"next_sprite": "poke-data/SugimoriSprites/0628braviary/0628 Braviary Hisui.png"
-	},
-	{
-		"prev": "goomy",
-		"next": "sliggoo",
-		"prev_sprite": "poke-data/SugimoriSprites/0704goomy/0704 Goomy.png",
-		"next_sprite": "poke-data/SugimoriSprites/0705sliggoo/0705 Sliggoo Hisui.png"
 	},
 	{
 		"prev": "sliggoo",
