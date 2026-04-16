@@ -54,30 +54,46 @@ class SpriteFile:
     variant: int      # 0, 1, 2, …
     gender: str       # mf | md | fd | mo | fo | uk
     is_shiny: bool
-
+    
     @classmethod
     def parse(cls, path: Path) -> "SpriteFile | None":
         """
         Parse a ProjectPokemon filename into its components.
         Returns None if the file should be skipped (gmax, bad format).
+
+        Supports:
+        1. Standard poke_capture format
+        2. Fallback: simple 'name.png'
         """
         parts = path.stem.split("_")
-        # Expected: poke capture DDDD VVV GG F 00000000 f S
-        if len(parts) < 9 or parts[0] != "poke" or parts[1] != "capture":
-            return None
 
-        form = parts[5]       # n or g
-        if form == "g":       # skip gigantamax
-            return None
+        # ---- Standard format ----
+        if len(parts) >= 9 and parts[0] == "poke" and parts[1] == "capture":
+            form = parts[5]       # n or g
+            if form == "g":       # skip gigantamax
+                return None
 
-        try:
-            variant = int(parts[3])
-        except ValueError:
-            return None
+            try:
+                variant = int(parts[3])
+            except ValueError:
+                return None
 
-        gender  = parts[4]
-        is_shiny = parts[8] == "r"
-        return cls(path=path, variant=variant, gender=gender, is_shiny=is_shiny)
+            gender   = parts[4]
+            is_shiny = parts[8] == "r"
+
+            return cls(path=path, variant=variant, gender=gender, is_shiny=is_shiny)
+
+        # ---- Fallback: simple naming (e.g., "annihilape.png") ----
+        # Only accept if it's a clean single-token filename (no underscores)
+        if "_" not in path.stem:
+            return cls(
+                path=path,
+                variant=0,
+                gender="mf",   # default assumption
+                is_shiny=False
+            )
+
+        return None
 
 
 # ---------------------------------------------------------------------------
@@ -156,6 +172,19 @@ def build_sprite_lookup(
             lookup[key][0] = sf
     return {k: (v[0], v[1]) for k, v in lookup.items()}
 
+def gender_priority_list(gender: str) -> list[str]:
+    """
+    Returns fallback priority list for genders.
+    """
+    if gender == "mf":
+        return ["mf", "md", "fd"]
+    if gender == "md":
+        return ["md", "mf"]
+    if gender == "fd":
+        return ["fd", "mf"]
+    # rare/edge cases
+    return [gender, "mf", "md", "fd", "uk", "mo", "fo"]
+
 
 def find_best_next(
     variant: int,
@@ -163,18 +192,56 @@ def find_best_next(
     next_lookup: dict[tuple[int, str], tuple[SpriteFile | None, SpriteFile | None]],
 ) -> tuple[SpriteFile | None, SpriteFile | None]:
     """
-    Return the best (normal, shiny) pair from next_lookup for given (variant, gender).
+    Improved matching with gender-aware fallback.
 
-    Fallback chain:
+    Priority:
         1. Exact (variant, gender)
-        2. (0, gender)         — same gender, default variant
-        3. (variant, "mf")     — default gender, same variant
-        4. (0, "mf")           — default gender, default variant
+        2. (0, gender)
+        3. (variant, compatible gender)
+        4. (0, compatible gender)
+        5. (variant, any gender)
+        6. (0, any gender)
     """
-    for v, g in [(variant, gender), (0, gender), (variant, "mf"), (0, "mf")]:
-        if (v, g) in next_lookup:
-            return next_lookup[(v, g)]
+
+    gender_priority = gender_priority_list(gender)
+
+    # 1 & 2: exact + same gender fallback
+    for g in gender_priority:
+        if (variant, g) in next_lookup:
+            return next_lookup[(variant, g)]
+    for g in gender_priority:
+        if (0, g) in next_lookup:
+            return next_lookup[(0, g)]
+
+    # 5: same variant, ANY gender
+    for (v, g), pair in next_lookup.items():
+        if v == variant:
+            return pair
+
+    # 6: default variant, ANY gender
+    for (v, g), pair in next_lookup.items():
+        if v == 0:
+            return pair
+
     return None, None
+# def find_best_next(
+#     variant: int,
+#     gender: str,
+#     next_lookup: dict[tuple[int, str], tuple[SpriteFile | None, SpriteFile | None]],
+# ) -> tuple[SpriteFile | None, SpriteFile | None]:
+#     """
+#     Return the best (normal, shiny) pair from next_lookup for given (variant, gender).
+
+#     Fallback chain:
+#         1. Exact (variant, gender)
+#         2. (0, gender)         — same gender, default variant
+#         3. (variant, "mf")     — default gender, same variant
+#         4. (0, "mf")           — default gender, default variant
+#     """
+#     for v, g in [(variant, gender), (0, gender), (variant, "mf"), (0, "mf")]:
+#         if (v, g) in next_lookup:
+#             return next_lookup[(v, g)]
+#     return None, None
 
 
 # ---------------------------------------------------------------------------
@@ -291,11 +358,27 @@ def main() -> None:
             next_normal, next_shiny = find_best_next(var, gen, next_lookup)
 
             if prev_normal:
-                # normal → normal; if next has no normal fall back to its shiny
-                results.append(make_entry(prev_normal, next_normal or next_shiny))
+                if next_normal:
+                    results.append(make_entry(prev_normal, next_normal))
+                else:
+                    unresolved.append({
+                        "prev": prev_name,
+                        "next": next_name,
+                        "reason": f"no NORMAL match for variant={var}, gender={gen}"
+                    })
+                # # normal → normal; if next has no normal fall back to its shiny
+                # results.append(make_entry(prev_normal, next_normal or next_shiny))
             if prev_shiny:
-                # shiny → shiny; if next has no shiny fall back to its normal
-                results.append(make_entry(prev_shiny, next_shiny or next_normal))
+                if next_shiny:
+                    results.append(make_entry(prev_shiny, next_shiny))
+                else:
+                    unresolved.append({
+                        "prev": prev_name,
+                        "next": next_name,
+                        "reason": f"no NORMAL match for variant={var}, gender={gen}"
+                    })
+                # # shiny → shiny; if next has no shiny fall back to its normal
+                # results.append(make_entry(prev_shiny, next_shiny or next_normal))
 
     # ---- Write outputs ----
     with open(OUTPUT_JSON, "w", encoding="utf-8") as f:

@@ -18,7 +18,7 @@ from typing import Any, cast
 
 from PIL import Image, ImageDraw, ImageFont
 
-MAPPING_JSON = Path(__file__).resolve().parents[1] / "diffusion mapping" / "sugimori_to_sugimori.json"
+MAPPING_JSON = Path(__file__).resolve().parents[1] / "diffusion mapping" / "project_to_project.json"
 REPO_ROOT    = Path(__file__).resolve().parents[2]
 OUTPUT_DIR   = Path(__file__).parent / "mapping_preview_diffusion"
 
