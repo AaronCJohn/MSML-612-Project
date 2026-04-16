@@ -83,14 +83,17 @@ class SpriteFile:
 
             return cls(path=path, variant=variant, gender=gender, is_shiny=is_shiny)
 
-        # ---- Fallback: simple naming (e.g., "annihilape.png") ----
-        # Only accept if it's a clean single-token filename (no underscores)
-        if "_" not in path.stem:
+        # ---- Fallback: HOME format (e.g., "HOME0001.png", "HOME0001_s.png") ----
+        home_match = re.fullmatch(r"HOME(\d{4})(?:_s)?", path.stem, re.IGNORECASE)
+
+        if home_match:
+            is_shiny = path.stem.lower().endswith("_s")
+
             return cls(
                 path=path,
-                variant=0,
-                gender="mf",   # default assumption
-                is_shiny=False
+                variant=0,        # HOME sprites don't encode variants
+                gender="mf",      # default assumption
+                is_shiny=is_shiny
             )
 
         return None

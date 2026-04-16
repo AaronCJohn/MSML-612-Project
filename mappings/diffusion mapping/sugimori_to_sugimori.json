@@ -2448,6 +2448,12 @@
 		"next_sprite": "poke-data/SugimoriSprites/0122mr. mime/0122 Mr. Mime .png"
 	},
 	{
+		"prev": "mime jr",
+		"next": "mr. mime",
+		"prev_sprite": "poke-data/SugimoriSprites/0439mime jr/0439 Mime Jr.png",
+		"next_sprite": "poke-data/SugimoriSprites/0122mr. mime/0122 Mr. Mime Galar.png"
+	},
+	{
 		"prev": "mr. mime",
 		"next": "mr. rime",
 		"prev_sprite": "poke-data/SugimoriSprites/0122mr. mime/0122 Mr. Mime Galar.png",
