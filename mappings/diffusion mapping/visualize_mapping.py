@@ -39,7 +39,7 @@ def fit_thumb(image_path: Path, size: tuple[int, int]) -> Image.Image:
     if img.mode not in {"RGB", "RGBA"}:
         img = img.convert("RGBA")
 
-    bg = Image.new("RGBA", size, (245, 245, 245, 255))
+    bg = Image.new("RGBA", size, (255, 255, 255, 255))
     img_copy = img.copy()
     img_copy.thumbnail(size, cast(Any, RESAMPLE))
 

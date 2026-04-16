@@ -32,6 +32,7 @@ _SKIP_WORDS = {"mega", "gigantamax"}
 # Exact image stems (lowercased, with dex prefix) to exclude from all mappings.
 SKIP_STEMS = {
     "0175 togepi alternate",
+    "0249 lugia hgss 2",
     "0484 palkia alternate",
     "0722 rowlet 2",
     "0725 litten 2",
