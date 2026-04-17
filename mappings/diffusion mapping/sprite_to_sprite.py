@@ -166,6 +166,7 @@ def main():
     index = build_sprite_index(SPRITE_ROOT)
 
     results = []
+    seen: set[tuple] = set()
     unresolved = []
     skipped = 0
 
@@ -200,14 +201,17 @@ def main():
                     }
                 )
 
-            results.append(
-                {
-                    "prev": f"{prev_name}{suffix}" if prev_name else None,
-                    "next": f"{next_name}{suffix}" if next_name else None,
-                    "prev_sprite": prev_sprite,
-                    "next_sprite": next_sprite,
-                }
-            )
+            key = (prev_sprite, next_sprite)
+            if key not in seen:
+                seen.add(key)
+                results.append(
+                    {
+                        "prev": f"{prev_name}{suffix}" if prev_name else None,
+                        "next": f"{next_name}{suffix}" if next_name else None,
+                        "prev_sprite": prev_sprite,
+                        "next_sprite": next_sprite,
+                    }
+                )
 
     with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
         json.dump(results, f, indent="\t")

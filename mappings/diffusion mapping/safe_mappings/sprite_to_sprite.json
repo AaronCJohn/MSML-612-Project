@@ -10855,48 +10855,6 @@
 	},
 	{
 		"prev": null,
-		"next": "frigibax shiny",
-		"prev_sprite": null,
-		"next_sprite": null
-	},
-	{
-		"prev": "frigibax",
-		"next": "arctibax",
-		"prev_sprite": null,
-		"next_sprite": null
-	},
-	{
-		"prev": "frigibax shiny",
-		"next": "arctibax shiny",
-		"prev_sprite": null,
-		"next_sprite": null
-	},
-	{
-		"prev": "arctibax",
-		"next": "baxcalibur",
-		"prev_sprite": null,
-		"next_sprite": null
-	},
-	{
-		"prev": "arctibax shiny",
-		"next": "baxcalibur shiny",
-		"prev_sprite": null,
-		"next_sprite": null
-	},
-	{
-		"prev": null,
-		"next": "iron-leaves",
-		"prev_sprite": null,
-		"next_sprite": null
-	},
-	{
-		"prev": null,
-		"next": "iron-leaves shiny",
-		"prev_sprite": null,
-		"next_sprite": null
-	},
-	{
-		"prev": null,
 		"next": "basculin-white-striped",
 		"prev_sprite": null,
 		"next_sprite": "poke-data/PokeSprite/0550basculin/basculin white striped.png"
@@ -12010,53 +11968,5 @@
 		"next": "Goodra-Hisui shiny",
 		"prev_sprite": "poke-data/PokeSprite/0705sliggoo/sliggoo hisui_shiny.png",
 		"next_sprite": "poke-data/PokeSprite/0706goodra/goodra hisui_shiny.png"
-	},
-	{
-		"prev": null,
-		"next": "Wooper-Paldea",
-		"prev_sprite": null,
-		"next_sprite": null
-	},
-	{
-		"prev": null,
-		"next": "Wooper-Paldea shiny",
-		"prev_sprite": null,
-		"next_sprite": null
-	},
-	{
-		"prev": null,
-		"next": "tauros-paldea-combat-breed",
-		"prev_sprite": null,
-		"next_sprite": null
-	},
-	{
-		"prev": null,
-		"next": "tauros-paldea-combat-breed shiny",
-		"prev_sprite": null,
-		"next_sprite": null
-	},
-	{
-		"prev": null,
-		"next": "tauros-paldea-blaze-breed",
-		"prev_sprite": null,
-		"next_sprite": null
-	},
-	{
-		"prev": null,
-		"next": "tauros-paldea-blaze-breed shiny",
-		"prev_sprite": null,
-		"next_sprite": null
-	},
-	{
-		"prev": null,
-		"next": "tauros-paldea-aqua-breed",
-		"prev_sprite": null,
-		"next_sprite": null
-	},
-	{
-		"prev": null,
-		"next": "tauros-paldea-aqua-breed shiny",
-		"prev_sprite": null,
-		"next_sprite": null
 	}
 ]
