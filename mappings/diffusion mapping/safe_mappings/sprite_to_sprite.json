@@ -6720,6 +6720,18 @@
 		"next_sprite": "poke-data/PokeSprite/0550basculin/basculin_shiny.png"
 	},
 	{
+		"prev": "basculin-white-striped",
+		"next": "basculegion",
+		"prev_sprite": "poke-data/PokeSprite/0550basculin/basculin white striped.png",
+		"next_sprite": "poke-data/PokeSprite/0902basculegion/basculegion.png"
+	},
+	{
+		"prev": "basculin-white-striped shiny",
+		"next": "basculegion shiny",
+		"prev_sprite": "poke-data/PokeSprite/0550basculin/basculin white striped_shiny.png",
+		"next_sprite": "poke-data/PokeSprite/0902basculegion/basculegion_shiny.png"
+	},
+	{
 		"prev": null,
 		"next": "sandile",
 		"prev_sprite": null,
@@ -10882,6 +10894,18 @@
 		"next": "iron-leaves shiny",
 		"prev_sprite": null,
 		"next_sprite": null
+	},
+	{
+		"prev": null,
+		"next": "basculin-white-striped",
+		"prev_sprite": null,
+		"next_sprite": "poke-data/PokeSprite/0550basculin/basculin white striped.png"
+	},
+	{
+		"prev": null,
+		"next": "basculin-white-striped shiny",
+		"prev_sprite": null,
+		"next_sprite": "poke-data/PokeSprite/0550basculin/basculin white striped_shiny.png"
 	},
 	{
 		"prev": null,

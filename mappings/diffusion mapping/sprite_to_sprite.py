@@ -89,7 +89,6 @@ REMOVE_POKEMON = {
     "calyrex-ice", "calyrex-shadow",
     "necrozma-dawn-wings", "necrozma-dusk-mane",
     "oricorio-pompom",
-    "basculin-white-striped",
     "zygarde-10", "zygarde-complete",
 }
 
