@@ -47,7 +47,7 @@ def get_image_sizes(root_dir):
     return size_counter, total_images, errors
 
 
-def display_results(size_counter, total_images, errors):
+def display_results(size_counter, total_images, errors, title="Image Size Analysis"):
     """
     Display the results in a pandas DataFrame.
     
@@ -55,6 +55,7 @@ def display_results(size_counter, total_images, errors):
         size_counter: Counter with size counts
         total_images: Total number of images processed
         errors: Number of errors encountered
+        title: Heading printed above the table
     """
     # Convert to DataFrame
     data_list = []
@@ -71,7 +72,7 @@ def display_results(size_counter, total_images, errors):
     df = df.reset_index(drop=True)
     
     # Display results
-    print("\nPokeSprite Image Size Analysis")
+    print(f"\n{title}")
     print("=" * 30)
     print(df.to_string(index=False))
     print("=" * 30)
@@ -79,6 +80,12 @@ def display_results(size_counter, total_images, errors):
     # Print summary
     print(f"\nTotal images analyzed: {total_images}")
     print(f"Unique sizes found: {len(df)}")
+    if len(df) > 0:
+        parts = df['Size'].str.split('x', expand=True)
+        max_width = int(parts[0].astype(int).max())
+        max_height = int(parts[1].astype(int).max())
+        print(f"Max width (any image): {max_width}")
+        print(f"Max height (any image): {max_height}")
     if errors > 0:
         print(f"Errors encountered: {errors}")
     
@@ -87,22 +94,36 @@ def display_results(size_counter, total_images, errors):
 
 def main():
     # Set the path to poke-data directory
-    script_dir = Path(__file__).parent
-    pokesprite_dir = script_dir / "poke-data" / "PokeSprite"
-    
-    if not pokesprite_dir.exists():
-        print(f"Error: Directory '{pokesprite_dir}' not found!")
-        return
-    
-    print(f"Analyzing images in: {pokesprite_dir}")
-    print("This may take a moment...")
-    
-    # Get image sizes
-    size_counter, total_images, errors = get_image_sizes(pokesprite_dir)
-    
-    # Display results and get DataFrame
-    df = display_results(size_counter, total_images, errors)
+    script_dir = Path(__file__).parent.parent
+    pokesprite_dirs = [
+        script_dir / "poke-data" / "PokeSprite",
+        script_dir / "poke-data" / "SugimoriSprites",
+        script_dir / "poke-data" / "ProjectPokemon",
+    ]
 
+    merged_counter = Counter()
+    total_images = 0
+    total_errors = 0
+
+    for d in pokesprite_dirs:
+        if not d.exists():
+            print(f"Error: Directory '{d}' not found!")
+            return
+
+        print(f"Analyzing images in: {d}")
+        print("This may take a moment...")
+
+        size_counter, n_images, errors = get_image_sizes(d)
+        merged_counter.update(size_counter)
+        total_images += n_images
+        total_errors += errors
+
+    display_results(
+        merged_counter,
+        total_images,
+        total_errors,
+        title="Combined poke-data (PokeSprite, SugimoriSprites, ProjectPokemon)",
+    )
 
 if __name__ == "__main__":
     main()
