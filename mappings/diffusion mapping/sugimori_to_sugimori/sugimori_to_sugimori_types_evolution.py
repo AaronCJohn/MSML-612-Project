@@ -2,7 +2,15 @@
 Enriches safe_sugimori_to_sugimori.json with type + evolution-stage info.
 
 For each entry we add:
-    - `types`          : list of types for `next` (from poke-data/pokedex.json).
+    - `types`          :    list of types for `next`.
+                            Base species use poke-data/pokedex.json.
+                            Regional variants (alola / galar / hisui / paldea,
+                            including sub-forms like "Tauros Paldea Combat" or
+                            "Darmanitan Galar Zen") are resolved via PokeAPI's
+                            /pokemon-species/{name} -> varieties -> /pokemon/{slug}
+                            pipeline so the region-specific typing (e.g. dark
+                            Alolan Meowth, fairy Galarian Ponyta) is preserved.
+                            Requires --use-api (network).
     - `evolution_stage`: string label for the pokemon's depth within its chain:
                             "base"  -> 0 (prev: null)
                             "evo 1" -> 1 (first evolution)
@@ -11,14 +19,13 @@ For each entry we add:
 
 Stages are derived from the `prev` / `next` edges in safe_sugimori_to_sugimori.json
 via a BFS starting at every `prev: null` entry (chain starts). Any pokemon not
-reachable that way is optionally looked up against the PokeAPI
-(https://pokeapi.co/api/v2/pokemon-species/{name}) so nothing is silently
-dropped — network use is opt-in via --use-api.
+reachable that way is optionally looked up against the PokeAPI so nothing is
+silently dropped — network use is opt-in via --use-api.
 
 Output
 --
-mappings/diffusion mapping/sugimori_to_sugimori/safe_sugimori_to_sugimori_types.json
-mappings/diffusion mapping/sugimori_to_sugimori/sugimori_to_sugimori_types_unresolved.json
+mappings/diffusion mapping/sugimori_to_sugimori/safe_sugimori_to_sugimori_types_evolution.json
+mappings/diffusion mapping/sugimori_to_sugimori/sugimori_to_sugimori_types_evolution_unresolved.json
 """
 
 from __future__ import annotations
@@ -36,6 +43,8 @@ POKEDEX_JSON    = REPO_ROOT / "poke-data" / "pokedex.json"
 INPUT_JSON      = Path(__file__).parent / "safe_sugimori_to_sugimori.json"
 OUTPUT_JSON     = Path(__file__).parent / "safe_sugimori_to_sugimori_types_evolution.json"
 UNRESOLVED_JSON = Path(__file__).parent / "sugimori_to_sugimori_types_evolution_unresolved.json"
+
+REGIONS = ("alola", "galar", "hisui", "paldea")
 
 
 def stage_label(stage: int | None) -> str | None:
@@ -154,6 +163,108 @@ def _fetch_species(name: str) -> dict | None:
         return None
 
 
+def _fetch_json(url: str) -> dict | None:
+    try:
+        req = Request(url, headers={"User-Agent": "sugimori-types/1.0"})
+        with urlopen(req, timeout=10) as resp:
+            return json.loads(resp.read().decode("utf-8"))
+    except Exception as exc:
+        print(f"  PokeAPI miss for {url}: {exc}")
+        return None
+
+
+def detect_variant(sprite_path: str | None) -> tuple[str | None, list[str]]:
+    """
+    Inspect a sprite path like '.../0555 Darmanitan Galar Zen.png' and return
+    (region, subtokens). Returns (None, []) when no regional form is detected.
+
+    subtokens are any word-ish tokens that appear AFTER the region token in
+    the file stem and help distinguish sub-forms (e.g. tauros paldea "aqua",
+    darmanitan galar "zen"). They are returned lower-cased.
+    """
+    if not sprite_path:
+        return None, []
+    stem = Path(sprite_path).stem.lower()
+    tokens = [t for t in re.split(r"[\s\-_]+", stem) if t]
+    for i, tok in enumerate(tokens):
+        if tok in REGIONS:
+            subtokens = [t for t in tokens[i + 1:] if t.isalpha()]
+            return tok, subtokens
+    return None, []
+
+
+def _variant_score(variant_name: str, region: str, subtokens: list[str]) -> int:
+    """
+    Rank a candidate variety name from PokeAPI. Higher is better.
+    Must contain the region; matches every subtoken for a bigger boost;
+    penalises extra tokens beyond what we asked for.
+    """
+    parts = variant_name.split("-")
+    if region not in parts:
+        return -1
+    score = 100
+    for st in subtokens:
+        score += 50 if st in parts else -50
+    extras = [
+        p for p in parts
+        if p != region and p not in subtokens and not p.isdigit()
+    ]
+    extras = [p for p in extras if p != variant_name.split("-", 1)[0]]
+    score -= 5 * len(extras)
+    return score
+
+
+def resolve_variant_types(
+    species: str,
+    region: str,
+    subtokens: list[str],
+    species_cache: dict[str, dict | None],
+    variant_type_cache: dict[str, list[str]],
+) -> list[str]:
+    """
+    Given a base species name + region (+ optional sub-form tokens), use
+    PokeAPI to find the matching variety and return its types (lower-case).
+    Returns [] when the species or variety can't be resolved.
+    """
+    if species not in species_cache:
+        print(f"  Fetching species {species!r} for {region} variant …")
+        species_cache[species] = _fetch_species(species)
+    species_data = species_cache[species]
+    if not species_data:
+        return []
+
+    varieties = species_data.get("varieties") or []
+    best_name: str | None = None
+    best_url: str | None = None
+    best_score = -1
+    for v in varieties:
+        poke = v.get("pokemon") or {}
+        name = poke.get("name") or ""
+        score = _variant_score(name, region, subtokens)
+        if score > best_score:
+            best_score, best_name, best_url = score, name, poke.get("url")
+
+    if not best_name or best_score < 0 or not best_url:
+        return []
+
+    if best_name in variant_type_cache:
+        return variant_type_cache[best_name]
+
+    print(f"  Fetching variant {best_name!r} …")
+    poke_data = _fetch_json(best_url)
+    if not poke_data:
+        variant_type_cache[best_name] = []
+        return []
+
+    types = []
+    for t in poke_data.get("types") or []:
+        tname = (t.get("type") or {}).get("name")
+        if tname:
+            types.append(tname.lower())
+    variant_type_cache[best_name] = types
+    return types
+
+
 def _stage_from_evolution_chain(chain_url: str, target_norm: str) -> int | None:
     """Walk the PokeAPI evolution-chain tree and return the target's depth."""
     try:
@@ -213,6 +324,9 @@ def main() -> None:
             stage_map[n] = 0
 
     api_cache: dict[str, int | None] = {}
+    species_cache: dict[str, dict | None] = {}
+    variant_type_cache: dict[str, list[str]] = {}
+    variants_used: dict[str, list[str]] = {}
 
     def resolve_stage(name: str | None) -> int | None:
         if not name:
@@ -234,7 +348,22 @@ def main() -> None:
 
     for entry in entries:
         next_name = entry.get("next")
-        types = lookup_types(next_name, type_index)
+        region, subtokens = detect_variant(entry.get("next_sprite"))
+
+        types: list[str] = []
+        if region and next_name and args.use_api:
+            types = resolve_variant_types(
+                next_name, region, subtokens,
+                species_cache, variant_type_cache,
+            )
+            if types:
+                key = f"{next_name}-{region}" + (
+                    ("-" + "-".join(subtokens)) if subtokens else ""
+                )
+                variants_used[key] = types
+        if not types:
+            types = lookup_types(next_name, type_index)
+
         stage = resolve_stage(next_name)
 
         if next_name:
@@ -298,7 +427,11 @@ def main() -> None:
     print(f"Missing types        : {len(missing_types_names)}")
     print(f"Missing stage        : {len(missing_stage_names)}")
     print(f"Stage distribution   : {dict(sorted(stage_hist.items()))}")
+    print(f"Regional variants OK : {len(variants_used)}")
     print(f"Unresolved log       : {UNRESOLVED_JSON}")
+    if variants_used:
+        for key, t in sorted(variants_used.items()):
+            print(f"  {key:35s} -> {t}")
     if missing_types_names:
         print(f"Missing types for    : {sorted(missing_types_names)}")
     if missing_stage_names:

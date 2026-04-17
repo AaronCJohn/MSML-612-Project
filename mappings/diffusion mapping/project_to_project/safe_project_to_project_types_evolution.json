@@ -467,6 +467,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0019rattata/poke_capture_0019_001_mf_n_00000000_f_n.png",
 		"types": [
+			"dark",
 			"normal"
 		],
 		"evolution_stage": "base",
@@ -478,6 +479,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0019rattata/poke_capture_0019_001_mf_n_00000000_f_r.png",
 		"types": [
+			"dark",
 			"normal"
 		],
 		"evolution_stage": "base",
@@ -533,6 +535,7 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0019rattata/poke_capture_0019_001_mf_n_00000000_f_n.png",
 		"next_sprite": "poke-data/ProjectPokemon/0020raticate/poke_capture_0020_001_mf_n_00000000_f_n.png",
 		"types": [
+			"dark",
 			"normal"
 		],
 		"evolution_stage": "evo 1",
@@ -544,6 +547,7 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0019rattata/poke_capture_0019_001_mf_n_00000000_f_r.png",
 		"next_sprite": "poke-data/ProjectPokemon/0020raticate/poke_capture_0020_001_mf_n_00000000_f_r.png",
 		"types": [
+			"dark",
 			"normal"
 		],
 		"evolution_stage": "evo 1",
@@ -735,7 +739,8 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0025pikachu/poke_capture_0025_000_md_n_00000000_f_n.png",
 		"next_sprite": "poke-data/ProjectPokemon/0026raichu/poke_capture_0026_001_mf_n_00000000_f_n.png",
 		"types": [
-			"electric"
+			"electric",
+			"psychic"
 		],
 		"evolution_stage": "evo 2",
 		"art_style": "3d"
@@ -746,7 +751,8 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0025pikachu/poke_capture_0025_000_md_n_00000000_f_r.png",
 		"next_sprite": "poke-data/ProjectPokemon/0026raichu/poke_capture_0026_001_mf_n_00000000_f_r.png",
 		"types": [
-			"electric"
+			"electric",
+			"psychic"
 		],
 		"evolution_stage": "evo 2",
 		"art_style": "3d"
@@ -779,7 +785,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0027sandshrew/poke_capture_0027_001_mf_n_00000000_f_n.png",
 		"types": [
-			"ground"
+			"ice",
+			"steel"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -790,7 +797,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0027sandshrew/poke_capture_0027_001_mf_n_00000000_f_r.png",
 		"types": [
-			"ground"
+			"ice",
+			"steel"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -823,7 +831,8 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0027sandshrew/poke_capture_0027_001_mf_n_00000000_f_n.png",
 		"next_sprite": "poke-data/ProjectPokemon/0028sandslash/poke_capture_0028_001_mf_n_00000000_f_n.png",
 		"types": [
-			"ground"
+			"ice",
+			"steel"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -834,7 +843,8 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0027sandshrew/poke_capture_0027_001_mf_n_00000000_f_r.png",
 		"next_sprite": "poke-data/ProjectPokemon/0028sandslash/poke_capture_0028_001_mf_n_00000000_f_r.png",
 		"types": [
-			"ground"
+			"ice",
+			"steel"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -1069,7 +1079,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0037vulpix/poke_capture_0037_001_mf_n_00000000_f_n.png",
 		"types": [
-			"fire"
+			"ice"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -1080,7 +1090,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0037vulpix/poke_capture_0037_001_mf_n_00000000_f_r.png",
 		"types": [
-			"fire"
+			"ice"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -1113,7 +1123,8 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0037vulpix/poke_capture_0037_001_mf_n_00000000_f_n.png",
 		"next_sprite": "poke-data/ProjectPokemon/0038ninetales/poke_capture_0038_001_mf_n_00000000_f_n.png",
 		"types": [
-			"fire"
+			"ice",
+			"fairy"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -1124,7 +1135,8 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0037vulpix/poke_capture_0037_001_mf_n_00000000_f_r.png",
 		"next_sprite": "poke-data/ProjectPokemon/0038ninetales/poke_capture_0038_001_mf_n_00000000_f_r.png",
 		"types": [
-			"fire"
+			"ice",
+			"fairy"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -1609,7 +1621,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0050diglett/poke_capture_0050_001_mf_n_00000000_f_n.png",
 		"types": [
-			"ground"
+			"ground",
+			"steel"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -1620,7 +1633,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0050diglett/poke_capture_0050_001_mf_n_00000000_f_r.png",
 		"types": [
-			"ground"
+			"ground",
+			"steel"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -1653,7 +1667,8 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0050diglett/poke_capture_0050_001_mf_n_00000000_f_n.png",
 		"next_sprite": "poke-data/ProjectPokemon/0051dugtrio/poke_capture_0051_001_mf_n_00000000_f_n.png",
 		"types": [
-			"ground"
+			"ground",
+			"steel"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -1664,7 +1679,8 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0050diglett/poke_capture_0050_001_mf_n_00000000_f_r.png",
 		"next_sprite": "poke-data/ProjectPokemon/0051dugtrio/poke_capture_0051_001_mf_n_00000000_f_r.png",
 		"types": [
-			"ground"
+			"ground",
+			"steel"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -1697,7 +1713,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0052meowth/poke_capture_0052_001_mf_n_00000000_f_n.png",
 		"types": [
-			"normal"
+			"dark"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -1708,7 +1724,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0052meowth/poke_capture_0052_001_mf_n_00000000_f_r.png",
 		"types": [
-			"normal"
+			"dark"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -1719,7 +1735,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0052meowth/poke_capture_0052_002_mf_n_00000000_f_n.png",
 		"types": [
-			"normal"
+			"steel"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -1730,7 +1746,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0052meowth/poke_capture_0052_002_mf_n_00000000_f_r.png",
 		"types": [
-			"normal"
+			"steel"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -1763,7 +1779,7 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0052meowth/poke_capture_0052_001_mf_n_00000000_f_n.png",
 		"next_sprite": "poke-data/ProjectPokemon/0053persian/poke_capture_0053_001_mf_n_00000000_f_n.png",
 		"types": [
-			"normal"
+			"dark"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -1774,7 +1790,7 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0052meowth/poke_capture_0052_001_mf_n_00000000_f_r.png",
 		"next_sprite": "poke-data/ProjectPokemon/0053persian/poke_capture_0053_001_mf_n_00000000_f_r.png",
 		"types": [
-			"normal"
+			"dark"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -1941,7 +1957,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0058growlithe/HOME0058H.png",
 		"types": [
-			"fire"
+			"fire",
+			"rock"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -1952,7 +1969,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0058growlithe/HOME0058H_s.png",
 		"types": [
-			"fire"
+			"fire",
+			"rock"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -1985,7 +2003,8 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0058growlithe/HOME0058H.png",
 		"next_sprite": "poke-data/ProjectPokemon/0058growlithe/HOME0059H_s.png",
 		"types": [
-			"fire"
+			"fire",
+			"rock"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -1996,7 +2015,8 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0058growlithe/HOME0058H_s.png",
 		"next_sprite": "poke-data/ProjectPokemon/0058growlithe/HOME0059H_s.png",
 		"types": [
-			"fire"
+			"fire",
+			"rock"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -2396,7 +2416,7 @@
 		"next_sprite": "poke-data/ProjectPokemon/0074geodude/poke_capture_0074_001_mf_n_00000000_f_n.png",
 		"types": [
 			"rock",
-			"ground"
+			"electric"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -2408,7 +2428,7 @@
 		"next_sprite": "poke-data/ProjectPokemon/0074geodude/poke_capture_0074_001_mf_n_00000000_f_r.png",
 		"types": [
 			"rock",
-			"ground"
+			"electric"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -2444,7 +2464,7 @@
 		"next_sprite": "poke-data/ProjectPokemon/0075graveler/poke_capture_0075_001_mf_n_00000000_f_n.png",
 		"types": [
 			"rock",
-			"ground"
+			"electric"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -2456,7 +2476,7 @@
 		"next_sprite": "poke-data/ProjectPokemon/0075graveler/poke_capture_0075_001_mf_n_00000000_f_r.png",
 		"types": [
 			"rock",
-			"ground"
+			"electric"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -2492,7 +2512,7 @@
 		"next_sprite": "poke-data/ProjectPokemon/0076golem/poke_capture_0076_001_mf_n_00000000_f_n.png",
 		"types": [
 			"rock",
-			"ground"
+			"electric"
 		],
 		"evolution_stage": "evo 2",
 		"art_style": "3d"
@@ -2504,7 +2524,7 @@
 		"next_sprite": "poke-data/ProjectPokemon/0076golem/poke_capture_0076_001_mf_n_00000000_f_r.png",
 		"types": [
 			"rock",
-			"ground"
+			"electric"
 		],
 		"evolution_stage": "evo 2",
 		"art_style": "3d"
@@ -2537,7 +2557,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0077ponyta/poke_capture_0077_001_mf_n_00000000_f_n.png",
 		"types": [
-			"fire"
+			"psychic"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -2548,7 +2568,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0077ponyta/poke_capture_0077_001_mf_n_00000000_f_r.png",
 		"types": [
-			"fire"
+			"psychic"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -2581,7 +2601,8 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0077ponyta/poke_capture_0077_001_mf_n_00000000_f_n.png",
 		"next_sprite": "poke-data/ProjectPokemon/0078rapidash/poke_capture_0078_001_mf_n_00000000_f_n.png",
 		"types": [
-			"fire"
+			"psychic",
+			"fairy"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -2592,7 +2613,8 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0077ponyta/poke_capture_0077_001_mf_n_00000000_f_r.png",
 		"next_sprite": "poke-data/ProjectPokemon/0078rapidash/poke_capture_0078_001_mf_n_00000000_f_r.png",
 		"types": [
-			"fire"
+			"psychic",
+			"fairy"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -2627,7 +2649,6 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0079slowpoke/poke_capture_0079_001_mf_n_00000000_f_n.png",
 		"types": [
-			"water",
 			"psychic"
 		],
 		"evolution_stage": "base",
@@ -2639,7 +2660,6 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0079slowpoke/poke_capture_0079_001_mf_n_00000000_f_r.png",
 		"types": [
-			"water",
 			"psychic"
 		],
 		"evolution_stage": "base",
@@ -2723,7 +2743,7 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0079slowpoke/poke_capture_0079_001_mf_n_00000000_f_n.png",
 		"next_sprite": "poke-data/ProjectPokemon/0199slowking/poke_capture_0199_001_mf_n_00000000_f_n.png",
 		"types": [
-			"water",
+			"poison",
 			"psychic"
 		],
 		"evolution_stage": "evo 1",
@@ -2735,7 +2755,7 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0079slowpoke/poke_capture_0079_001_mf_n_00000000_f_r.png",
 		"next_sprite": "poke-data/ProjectPokemon/0199slowking/poke_capture_0199_001_mf_n_00000000_f_r.png",
 		"types": [
-			"water",
+			"poison",
 			"psychic"
 		],
 		"evolution_stage": "evo 1",
@@ -2843,8 +2863,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0083farfetch'd/poke_capture_0083_001_mf_n_00000000_f_n.png",
 		"types": [
-			"normal",
-			"flying"
+			"fighting"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -2855,8 +2874,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0083farfetch'd/poke_capture_0083_001_mf_n_00000000_f_r.png",
 		"types": [
-			"normal",
-			"flying"
+			"fighting"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -3055,7 +3073,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0088grimer/poke_capture_0088_001_mf_n_00000000_f_n.png",
 		"types": [
-			"poison"
+			"poison",
+			"dark"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -3066,7 +3085,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0088grimer/poke_capture_0088_001_mf_n_00000000_f_r.png",
 		"types": [
-			"poison"
+			"poison",
+			"dark"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -3099,7 +3119,8 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0088grimer/poke_capture_0088_001_mf_n_00000000_f_n.png",
 		"next_sprite": "poke-data/ProjectPokemon/0089muk/poke_capture_0089_001_mf_n_00000000_f_n.png",
 		"types": [
-			"poison"
+			"poison",
+			"dark"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -3110,7 +3131,8 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0088grimer/poke_capture_0088_001_mf_n_00000000_f_r.png",
 		"next_sprite": "poke-data/ProjectPokemon/0089muk/poke_capture_0089_001_mf_n_00000000_f_r.png",
 		"types": [
-			"poison"
+			"poison",
+			"dark"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -3397,7 +3419,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0100voltorb/HOME0100H.png",
 		"types": [
-			"electric"
+			"electric",
+			"grass"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -3408,7 +3431,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0100voltorb/HOME0100H_s.png",
 		"types": [
-			"electric"
+			"electric",
+			"grass"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -3441,7 +3465,8 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0100voltorb/HOME0100H.png",
 		"next_sprite": "poke-data/ProjectPokemon/0100voltorb/HOME0101H.png",
 		"types": [
-			"electric"
+			"electric",
+			"grass"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -3452,7 +3477,8 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0100voltorb/HOME0100H_s.png",
 		"next_sprite": "poke-data/ProjectPokemon/0100voltorb/HOME0101H_s.png",
 		"types": [
-			"electric"
+			"electric",
+			"grass"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -3512,7 +3538,7 @@
 		"next_sprite": "poke-data/ProjectPokemon/0103exeggutor/poke_capture_0103_001_mf_n_00000000_f_n.png",
 		"types": [
 			"grass",
-			"psychic"
+			"dragon"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -3524,7 +3550,7 @@
 		"next_sprite": "poke-data/ProjectPokemon/0103exeggutor/poke_capture_0103_001_mf_n_00000000_f_r.png",
 		"types": [
 			"grass",
-			"psychic"
+			"dragon"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -3579,7 +3605,8 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0104cubone/poke_capture_0104_000_mf_n_00000000_f_n.png",
 		"next_sprite": "poke-data/ProjectPokemon/0105marowak/poke_capture_0105_001_mf_n_00000000_f_n.png",
 		"types": [
-			"ground"
+			"fire",
+			"ghost"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -3590,7 +3617,8 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0104cubone/poke_capture_0104_000_mf_n_00000000_f_r.png",
 		"next_sprite": "poke-data/ProjectPokemon/0105marowak/poke_capture_0105_001_mf_n_00000000_f_r.png",
 		"types": [
-			"ground"
+			"fire",
+			"ghost"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -3777,7 +3805,8 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0109koffing/poke_capture_0109_000_mf_n_00000000_f_n.png",
 		"next_sprite": "poke-data/ProjectPokemon/0110weezing/poke_capture_0110_001_mf_n_00000000_f_n.png",
 		"types": [
-			"poison"
+			"poison",
+			"fairy"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -3788,7 +3817,8 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0109koffing/poke_capture_0109_000_mf_n_00000000_f_r.png",
 		"next_sprite": "poke-data/ProjectPokemon/0110weezing/poke_capture_0110_001_mf_n_00000000_f_r.png",
 		"types": [
-			"poison"
+			"poison",
+			"fairy"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -4347,8 +4377,8 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0439mime jr/poke_capture_0439_000_mf_n_00000000_f_n.png",
 		"next_sprite": "poke-data/ProjectPokemon/0122mr. mime/poke_capture_0122_001_mf_n_00000000_f_n.png",
 		"types": [
-			"psychic",
-			"fairy"
+			"ice",
+			"psychic"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -4359,8 +4389,8 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0439mime jr/poke_capture_0439_000_mf_n_00000000_f_r.png",
 		"next_sprite": "poke-data/ProjectPokemon/0122mr. mime/poke_capture_0122_001_mf_n_00000000_f_r.png",
 		"types": [
-			"psychic",
-			"fairy"
+			"ice",
+			"psychic"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -4741,7 +4771,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0127pinsir/poke_capture_0127_001_mf_n_00000000_f_n.png",
 		"types": [
-			"bug"
+			"bug",
+			"flying"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -4752,7 +4783,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0127pinsir/poke_capture_0127_001_mf_n_00000000_f_r.png",
 		"types": [
-			"bug"
+			"bug",
+			"flying"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -4785,7 +4817,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0128tauros/HOME0128PA.png",
 		"types": [
-			"normal"
+			"fighting"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -4796,7 +4828,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0128tauros/HOME0128PA_s.png",
 		"types": [
-			"normal"
+			"fighting"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -4807,7 +4839,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0128tauros/HOME0128PB.png",
 		"types": [
-			"normal"
+			"fighting",
+			"fire"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -4818,7 +4851,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0128tauros/HOME0128PB_s.png",
 		"types": [
-			"normal"
+			"fighting",
+			"fire"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -4829,7 +4863,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0128tauros/HOME0128PC.png",
 		"types": [
-			"normal"
+			"fighting",
+			"water"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -4840,7 +4875,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0128tauros/HOME0128PC_s.png",
 		"types": [
-			"normal"
+			"fighting",
+			"water"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -5663,7 +5699,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0144articuno/poke_capture_0144_001_uk_n_00000000_f_n.png",
 		"types": [
-			"ice",
+			"psychic",
 			"flying"
 		],
 		"evolution_stage": "base",
@@ -5675,7 +5711,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0144articuno/poke_capture_0144_001_uk_n_00000000_f_r.png",
 		"types": [
-			"ice",
+			"psychic",
 			"flying"
 		],
 		"evolution_stage": "base",
@@ -5711,7 +5747,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0145zapdos/poke_capture_0145_001_uk_n_00000000_f_n.png",
 		"types": [
-			"electric",
+			"fighting",
 			"flying"
 		],
 		"evolution_stage": "base",
@@ -5723,7 +5759,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0145zapdos/poke_capture_0145_001_uk_n_00000000_f_r.png",
 		"types": [
-			"electric",
+			"fighting",
 			"flying"
 		],
 		"evolution_stage": "base",
@@ -5759,7 +5795,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0146moltres/poke_capture_0146_001_uk_n_00000000_f_n.png",
 		"types": [
-			"fire",
+			"dark",
 			"flying"
 		],
 		"evolution_stage": "base",
@@ -5771,7 +5807,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0146moltres/poke_capture_0146_001_uk_n_00000000_f_r.png",
 		"types": [
-			"fire",
+			"dark",
 			"flying"
 		],
 		"evolution_stage": "base",
@@ -5873,7 +5909,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0150mewtwo/poke_capture_0150_001_uk_n_00000000_f_n.png",
 		"types": [
-			"psychic"
+			"psychic",
+			"fighting"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -5884,7 +5921,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0150mewtwo/poke_capture_0150_001_uk_n_00000000_f_r.png",
 		"types": [
-			"psychic"
+			"psychic",
+			"fighting"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -6071,7 +6109,8 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0156quilava/poke_capture_0156_000_mf_n_00000000_f_n.png",
 		"next_sprite": "poke-data/ProjectPokemon/0157typhlosion/HOME0157H.png",
 		"types": [
-			"fire"
+			"fire",
+			"ghost"
 		],
 		"evolution_stage": "evo 2",
 		"art_style": "3d"
@@ -6082,7 +6121,8 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0156quilava/poke_capture_0156_000_mf_n_00000000_f_r.png",
 		"next_sprite": "poke-data/ProjectPokemon/0157typhlosion/HOME0157H_s.png",
 		"types": [
-			"fire"
+			"fire",
+			"ghost"
 		],
 		"evolution_stage": "evo 2",
 		"art_style": "3d"
@@ -7043,7 +7083,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0194wooper/HOME0194P.png",
 		"types": [
-			"water",
+			"poison",
 			"ground"
 		],
 		"evolution_stage": "base",
@@ -7055,7 +7095,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0194wooper/HOME0194P_s.png",
 		"types": [
-			"water",
+			"poison",
 			"ground"
 		],
 		"evolution_stage": "base",
@@ -8289,7 +8329,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0211qwilfish/HOME0211H.png",
 		"types": [
-			"water",
+			"dark",
 			"poison"
 		],
 		"evolution_stage": "base",
@@ -8301,7 +8341,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0211qwilfish/HOME0211H_s.png",
 		"types": [
-			"water",
+			"dark",
 			"poison"
 		],
 		"evolution_stage": "base",
@@ -8481,8 +8521,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0215sneasel/HOME0215H.png",
 		"types": [
-			"dark",
-			"ice"
+			"fighting",
+			"poison"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -8493,8 +8533,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0215sneasel/HOME0215H_s.png",
 		"types": [
-			"dark",
-			"ice"
+			"fighting",
+			"poison"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -8505,8 +8545,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0215sneasel/HOME0215H_f.png",
 		"types": [
-			"dark",
-			"ice"
+			"fighting",
+			"poison"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -8517,8 +8557,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0215sneasel/HOME0215H_f_s.png",
 		"types": [
-			"dark",
-			"ice"
+			"fighting",
+			"poison"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -8931,8 +8971,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0222corsola/poke_capture_0222_001_mf_n_00000000_f_n.png",
 		"types": [
-			"water",
-			"rock"
+			"ghost"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -8943,8 +8982,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0222corsola/poke_capture_0222_001_mf_n_00000000_f_r.png",
 		"types": [
-			"water",
-			"rock"
+			"ghost"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -9805,6 +9843,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0263zigzagoon/poke_capture_0263_001_mf_n_00000000_f_n.png",
 		"types": [
+			"dark",
 			"normal"
 		],
 		"evolution_stage": "base",
@@ -9816,6 +9855,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0263zigzagoon/poke_capture_0263_001_mf_n_00000000_f_r.png",
 		"types": [
+			"dark",
 			"normal"
 		],
 		"evolution_stage": "base",
@@ -9849,6 +9889,7 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0263zigzagoon/poke_capture_0263_001_mf_n_00000000_f_n.png",
 		"next_sprite": "poke-data/ProjectPokemon/0264linoone/poke_capture_0264_001_mf_n_00000000_f_n.png",
 		"types": [
+			"dark",
 			"normal"
 		],
 		"evolution_stage": "evo 1",
@@ -9860,6 +9901,7 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0263zigzagoon/poke_capture_0263_001_mf_n_00000000_f_r.png",
 		"next_sprite": "poke-data/ProjectPokemon/0264linoone/poke_capture_0264_001_mf_n_00000000_f_r.png",
 		"types": [
+			"dark",
 			"normal"
 		],
 		"evolution_stage": "evo 1",
@@ -12215,7 +12257,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0351castform/poke_capture_0351_001_mf_n_00000000_f_n.png",
 		"types": [
-			"normal"
+			"fire"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -12226,7 +12268,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0351castform/poke_capture_0351_001_mf_n_00000000_f_r.png",
 		"types": [
-			"normal"
+			"fire"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -12237,7 +12279,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0351castform/poke_capture_0351_002_mf_n_00000000_f_n.png",
 		"types": [
-			"normal"
+			"water"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -12248,7 +12290,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0351castform/poke_capture_0351_002_mf_n_00000000_f_r.png",
 		"types": [
-			"normal"
+			"water"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -12259,7 +12301,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0351castform/poke_capture_0351_003_mf_n_00000000_f_n.png",
 		"types": [
-			"normal"
+			"ice"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -12270,7 +12312,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0351castform/poke_capture_0351_003_mf_n_00000000_f_r.png",
 		"types": [
-			"normal"
+			"ice"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -13169,7 +13211,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0383groudon/poke_capture_0383_001_uk_n_00000000_f_n.png",
 		"types": [
-			"ground"
+			"ground",
+			"fire"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -13180,7 +13223,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0383groudon/poke_capture_0383_001_uk_n_00000000_f_r.png",
 		"types": [
-			"ground"
+			"ground",
+			"fire"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -14196,7 +14240,7 @@
 		"next_sprite": "poke-data/ProjectPokemon/0413wormadam/poke_capture_0413_001_fo_n_00000000_f_n.png",
 		"types": [
 			"bug",
-			"grass"
+			"ground"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -14208,7 +14252,7 @@
 		"next_sprite": "poke-data/ProjectPokemon/0413wormadam/poke_capture_0413_001_fo_n_00000000_f_r.png",
 		"types": [
 			"bug",
-			"grass"
+			"ground"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -14220,7 +14264,7 @@
 		"next_sprite": "poke-data/ProjectPokemon/0413wormadam/poke_capture_0413_002_fo_n_00000000_f_n.png",
 		"types": [
 			"bug",
-			"grass"
+			"steel"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -14232,7 +14276,7 @@
 		"next_sprite": "poke-data/ProjectPokemon/0413wormadam/poke_capture_0413_002_fo_n_00000000_f_r.png",
 		"types": [
 			"bug",
-			"grass"
+			"steel"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -15634,7 +15678,7 @@
 		"next_sprite": "poke-data/ProjectPokemon/0479rotom/poke_capture_0479_001_uk_n_00000000_f_n.png",
 		"types": [
 			"electric",
-			"ghost"
+			"fire"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -15646,7 +15690,7 @@
 		"next_sprite": "poke-data/ProjectPokemon/0479rotom/poke_capture_0479_001_uk_n_00000000_f_r.png",
 		"types": [
 			"electric",
-			"ghost"
+			"fire"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -15658,7 +15702,7 @@
 		"next_sprite": "poke-data/ProjectPokemon/0479rotom/poke_capture_0479_002_uk_n_00000000_f_n.png",
 		"types": [
 			"electric",
-			"ghost"
+			"water"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -15670,7 +15714,7 @@
 		"next_sprite": "poke-data/ProjectPokemon/0479rotom/poke_capture_0479_002_uk_n_00000000_f_r.png",
 		"types": [
 			"electric",
-			"ghost"
+			"water"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -15682,7 +15726,7 @@
 		"next_sprite": "poke-data/ProjectPokemon/0479rotom/poke_capture_0479_003_uk_n_00000000_f_n.png",
 		"types": [
 			"electric",
-			"ghost"
+			"ice"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -15694,7 +15738,7 @@
 		"next_sprite": "poke-data/ProjectPokemon/0479rotom/poke_capture_0479_003_uk_n_00000000_f_r.png",
 		"types": [
 			"electric",
-			"ghost"
+			"ice"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -15706,7 +15750,7 @@
 		"next_sprite": "poke-data/ProjectPokemon/0479rotom/poke_capture_0479_004_uk_n_00000000_f_n.png",
 		"types": [
 			"electric",
-			"ghost"
+			"flying"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -15718,7 +15762,7 @@
 		"next_sprite": "poke-data/ProjectPokemon/0479rotom/poke_capture_0479_004_uk_n_00000000_f_r.png",
 		"types": [
 			"electric",
-			"ghost"
+			"flying"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -15730,7 +15774,7 @@
 		"next_sprite": "poke-data/ProjectPokemon/0479rotom/poke_capture_0479_005_uk_n_00000000_f_n.png",
 		"types": [
 			"electric",
-			"ghost"
+			"grass"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -15742,7 +15786,7 @@
 		"next_sprite": "poke-data/ProjectPokemon/0479rotom/poke_capture_0479_005_uk_n_00000000_f_r.png",
 		"types": [
 			"electric",
-			"ghost"
+			"grass"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -16119,7 +16163,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0492shaymin/poke_capture_0492_001_uk_n_00000000_f_n.png",
 		"types": [
-			"grass"
+			"grass",
+			"flying"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -16130,7 +16175,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0492shaymin/poke_capture_0492_001_uk_n_00000000_f_r.png",
 		"types": [
-			"grass"
+			"grass",
+			"flying"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -16763,7 +16809,8 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0502dewott/poke_capture_0502_000_mf_n_00000000_f_n.png",
 		"next_sprite": "poke-data/ProjectPokemon/0503samurott/HOME0503H.png",
 		"types": [
-			"water"
+			"water",
+			"dark"
 		],
 		"evolution_stage": "evo 2",
 		"art_style": "3d"
@@ -16774,7 +16821,8 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0502dewott/poke_capture_0502_000_mf_n_00000000_f_r.png",
 		"next_sprite": "poke-data/ProjectPokemon/0503samurott/HOME0503H_s.png",
 		"types": [
-			"water"
+			"water",
+			"dark"
 		],
 		"evolution_stage": "evo 2",
 		"art_style": "3d"
@@ -17413,7 +17461,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0531audino/poke_capture_0531_001_mf_n_00000000_f_n.png",
 		"types": [
-			"normal"
+			"normal",
+			"fairy"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -17424,7 +17473,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0531audino/poke_capture_0531_001_mf_n_00000000_f_r.png",
 		"types": [
-			"normal"
+			"normal",
+			"fairy"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -17851,7 +17901,8 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0548petilil/poke_capture_0548_000_fo_n_00000000_f_n.png",
 		"next_sprite": "poke-data/ProjectPokemon/0549lilligant/HOME0549H.png",
 		"types": [
-			"grass"
+			"grass",
+			"fighting"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -17862,7 +17913,8 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0548petilil/poke_capture_0548_000_fo_n_00000000_f_r.png",
 		"next_sprite": "poke-data/ProjectPokemon/0549lilligant/HOME0549H_s.png",
 		"types": [
-			"grass"
+			"grass",
+			"fighting"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -18081,7 +18133,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0554darumaka/poke_capture_0554_001_mf_n_00000000_f_n.png",
 		"types": [
-			"fire"
+			"ice"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -18092,7 +18144,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0554darumaka/poke_capture_0554_001_mf_n_00000000_f_r.png",
 		"types": [
-			"fire"
+			"ice"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -18125,7 +18177,8 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0554darumaka/poke_capture_0554_000_mf_n_00000000_f_n.png",
 		"next_sprite": "poke-data/ProjectPokemon/0555darmanitan/poke_capture_0555_001_mf_n_00000000_f_n.png",
 		"types": [
-			"fire"
+			"fire",
+			"psychic"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -18136,7 +18189,8 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0554darumaka/poke_capture_0554_000_mf_n_00000000_f_r.png",
 		"next_sprite": "poke-data/ProjectPokemon/0555darmanitan/poke_capture_0555_001_mf_n_00000000_f_r.png",
 		"types": [
-			"fire"
+			"fire",
+			"psychic"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -18147,7 +18201,7 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0554darumaka/poke_capture_0554_001_mf_n_00000000_f_n.png",
 		"next_sprite": "poke-data/ProjectPokemon/0555darmanitan/poke_capture_0555_002_mf_n_00000000_f_n.png",
 		"types": [
-			"fire"
+			"ice"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -18158,7 +18212,7 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0554darumaka/poke_capture_0554_001_mf_n_00000000_f_r.png",
 		"next_sprite": "poke-data/ProjectPokemon/0555darmanitan/poke_capture_0555_002_mf_n_00000000_f_r.png",
 		"types": [
-			"fire"
+			"ice"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -18169,6 +18223,7 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0554darumaka/poke_capture_0554_001_mf_n_00000000_f_n.png",
 		"next_sprite": "poke-data/ProjectPokemon/0555darmanitan/poke_capture_0555_003_mf_n_00000000_f_n.png",
 		"types": [
+			"ice",
 			"fire"
 		],
 		"evolution_stage": "evo 1",
@@ -18180,6 +18235,7 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0554darumaka/poke_capture_0554_001_mf_n_00000000_f_r.png",
 		"next_sprite": "poke-data/ProjectPokemon/0555darmanitan/poke_capture_0555_003_mf_n_00000000_f_r.png",
 		"types": [
+			"ice",
 			"fire"
 		],
 		"evolution_stage": "evo 1",
@@ -18355,6 +18411,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0562yamask/poke_capture_0562_001_mf_n_00000000_f_n.png",
 		"types": [
+			"ground",
 			"ghost"
 		],
 		"evolution_stage": "base",
@@ -18366,6 +18423,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0562yamask/poke_capture_0562_001_mf_n_00000000_f_r.png",
 		"types": [
+			"ground",
 			"ghost"
 		],
 		"evolution_stage": "base",
@@ -18585,7 +18643,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0570zorua/HOME0570H.png",
 		"types": [
-			"dark"
+			"normal",
+			"ghost"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -18596,7 +18655,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0570zorua/HOME0570H_s.png",
 		"types": [
-			"dark"
+			"normal",
+			"ghost"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -18629,7 +18689,8 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0570zorua/HOME0570H.png",
 		"next_sprite": "poke-data/ProjectPokemon/0571zoroark/HOME0571H.png",
 		"types": [
-			"dark"
+			"normal",
+			"ghost"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -18640,7 +18701,8 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0570zorua/HOME0570H_s.png",
 		"next_sprite": "poke-data/ProjectPokemon/0571zoroark/HOME0571H_s.png",
 		"types": [
-			"dark"
+			"normal",
+			"ghost"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -19914,7 +19976,7 @@
 		"next_sprite": "poke-data/ProjectPokemon/0618stunfisk/poke_capture_0618_001_mf_n_00000000_f_n.png",
 		"types": [
 			"ground",
-			"electric"
+			"steel"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -19926,7 +19988,7 @@
 		"next_sprite": "poke-data/ProjectPokemon/0618stunfisk/poke_capture_0618_001_mf_n_00000000_f_r.png",
 		"types": [
 			"ground",
-			"electric"
+			"steel"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -20193,7 +20255,7 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0627rufflet/poke_capture_0627_000_mo_n_00000000_f_n.png",
 		"next_sprite": "poke-data/ProjectPokemon/0628braviary/HOME0628H.png",
 		"types": [
-			"normal",
+			"psychic",
 			"flying"
 		],
 		"evolution_stage": "evo 1",
@@ -20205,7 +20267,7 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0627rufflet/poke_capture_0627_000_mo_n_00000000_f_r.png",
 		"next_sprite": "poke-data/ProjectPokemon/0628braviary/HOME0628H_s.png",
 		"types": [
-			"normal",
+			"psychic",
 			"flying"
 		],
 		"evolution_stage": "evo 1",
@@ -20836,7 +20898,7 @@
 		"next_sprite": "poke-data/ProjectPokemon/0648meloetta/poke_capture_0648_001_uk_n_00000000_f_n.png",
 		"types": [
 			"normal",
-			"psychic"
+			"fighting"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -20848,7 +20910,7 @@
 		"next_sprite": "poke-data/ProjectPokemon/0648meloetta/poke_capture_0648_001_uk_n_00000000_f_r.png",
 		"types": [
 			"normal",
-			"psychic"
+			"fighting"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -22709,6 +22771,7 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0704goomy/poke_capture_0704_000_mf_n_00000000_f_n.png",
 		"next_sprite": "poke-data/ProjectPokemon/0705sliggoo/HOME0705H.png",
 		"types": [
+			"steel",
 			"dragon"
 		],
 		"evolution_stage": "evo 1",
@@ -22720,6 +22783,7 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0704goomy/poke_capture_0704_000_mf_n_00000000_f_r.png",
 		"next_sprite": "poke-data/ProjectPokemon/0705sliggoo/HOME0705H_s.png",
 		"types": [
+			"steel",
 			"dragon"
 		],
 		"evolution_stage": "evo 1",
@@ -22753,6 +22817,7 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0705sliggoo/poke_capture_0705_000_mf_n_00000000_f_n.png",
 		"next_sprite": "poke-data/ProjectPokemon/0706goodra/HOME0706H.png",
 		"types": [
+			"steel",
 			"dragon"
 		],
 		"evolution_stage": "evo 2",
@@ -22764,6 +22829,7 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0705sliggoo/poke_capture_0705_000_mf_n_00000000_f_r.png",
 		"next_sprite": "poke-data/ProjectPokemon/0706goodra/HOME0706H_s.png",
 		"types": [
+			"steel",
 			"dragon"
 		],
 		"evolution_stage": "evo 2",
@@ -23083,7 +23149,8 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0712bergmite/poke_capture_0712_000_mf_n_00000000_f_n.png",
 		"next_sprite": "poke-data/ProjectPokemon/0713avalugg/HOME0713H.png",
 		"types": [
-			"ice"
+			"ice",
+			"rock"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -23094,7 +23161,8 @@
 		"prev_sprite": "poke-data/ProjectPokemon/0712bergmite/poke_capture_0712_000_mf_n_00000000_f_r.png",
 		"next_sprite": "poke-data/ProjectPokemon/0713avalugg/HOME0713H_s.png",
 		"types": [
-			"ice"
+			"ice",
+			"rock"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "3d"
@@ -23366,7 +23434,7 @@
 		"next_sprite": "poke-data/ProjectPokemon/0720hoopa/poke_capture_0720_001_uk_n_00000000_f_n.png",
 		"types": [
 			"psychic",
-			"ghost"
+			"dark"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -23378,7 +23446,7 @@
 		"next_sprite": "poke-data/ProjectPokemon/0720hoopa/poke_capture_0720_001_uk_n_00000000_f_r.png",
 		"types": [
 			"psychic",
-			"ghost"
+			"dark"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -23486,7 +23554,7 @@
 		"next_sprite": "poke-data/ProjectPokemon/0724decidueye/HOME0724H.png",
 		"types": [
 			"grass",
-			"ghost"
+			"fighting"
 		],
 		"evolution_stage": "evo 2",
 		"art_style": "3d"
@@ -23498,7 +23566,7 @@
 		"next_sprite": "poke-data/ProjectPokemon/0724decidueye/HOME0724H_s.png",
 		"types": [
 			"grass",
-			"ghost"
+			"fighting"
 		],
 		"evolution_stage": "evo 2",
 		"art_style": "3d"
@@ -23901,7 +23969,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0741oricorio/poke_capture_0741_001_mf_n_00000000_f_n.png",
 		"types": [
-			"fire",
+			"electric",
 			"flying"
 		],
 		"evolution_stage": "base",
@@ -23913,7 +23981,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0741oricorio/poke_capture_0741_001_mf_n_00000000_f_r.png",
 		"types": [
-			"fire",
+			"electric",
 			"flying"
 		],
 		"evolution_stage": "base",
@@ -23925,7 +23993,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0741oricorio/poke_capture_0741_002_mf_n_00000000_f_n.png",
 		"types": [
-			"fire",
+			"psychic",
 			"flying"
 		],
 		"evolution_stage": "base",
@@ -23937,7 +24005,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0741oricorio/poke_capture_0741_002_mf_n_00000000_f_r.png",
 		"types": [
-			"fire",
+			"psychic",
 			"flying"
 		],
 		"evolution_stage": "base",
@@ -23949,7 +24017,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0741oricorio/poke_capture_0741_003_mf_n_00000000_f_n.png",
 		"types": [
-			"fire",
+			"ghost",
 			"flying"
 		],
 		"evolution_stage": "base",
@@ -23961,7 +24029,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0741oricorio/poke_capture_0741_003_mf_n_00000000_f_r.png",
 		"types": [
-			"fire",
+			"ghost",
 			"flying"
 		],
 		"evolution_stage": "base",
@@ -25521,7 +25589,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0800necrozma/poke_capture_0800_001_uk_n_00000000_f_n.png",
 		"types": [
-			"psychic"
+			"psychic",
+			"steel"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -25532,7 +25601,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0800necrozma/poke_capture_0800_001_uk_n_00000000_f_r.png",
 		"types": [
-			"psychic"
+			"psychic",
+			"steel"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -25543,7 +25613,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0800necrozma/poke_capture_0800_002_uk_n_00000000_f_n.png",
 		"types": [
-			"psychic"
+			"psychic",
+			"ghost"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -25554,7 +25625,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0800necrozma/poke_capture_0800_002_uk_n_00000000_f_r.png",
 		"types": [
-			"psychic"
+			"psychic",
+			"ghost"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -25565,7 +25637,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0800necrozma/poke_capture_0800_003_uk_n_00000000_f_n.png",
 		"types": [
-			"psychic"
+			"psychic",
+			"dragon"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -25576,7 +25649,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0800necrozma/poke_capture_0800_003_uk_n_00000000_f_r.png",
 		"types": [
-			"psychic"
+			"psychic",
+			"dragon"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -27763,7 +27837,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0888zacian/poke_capture_0888_001_uk_n_00000000_f_n.png",
 		"types": [
-			"fairy"
+			"fairy",
+			"steel"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -27774,7 +27849,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0888zacian/poke_capture_0888_001_uk_n_00000000_f_r.png",
 		"types": [
-			"fairy"
+			"fairy",
+			"steel"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -27807,7 +27883,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0889zamazenta/poke_capture_0889_001_uk_n_00000000_f_n.png",
 		"types": [
-			"fighting"
+			"fighting",
+			"steel"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -27818,7 +27895,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/0889zamazenta/poke_capture_0889_001_uk_n_00000000_f_r.png",
 		"types": [
-			"fighting"
+			"fighting",
+			"steel"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -28084,7 +28162,7 @@
 		"next_sprite": "poke-data/ProjectPokemon/0898calyrex/poke_capture_0898_001_uk_n_00000000_f_n.png",
 		"types": [
 			"psychic",
-			"grass"
+			"ice"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -28096,7 +28174,7 @@
 		"next_sprite": "poke-data/ProjectPokemon/0898calyrex/poke_capture_0898_001_uk_n_00000000_f_r.png",
 		"types": [
 			"psychic",
-			"grass"
+			"ice"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -28108,7 +28186,7 @@
 		"next_sprite": "poke-data/ProjectPokemon/0898calyrex/poke_capture_0898_002_uk_n_00000000_f_n.png",
 		"types": [
 			"psychic",
-			"grass"
+			"ghost"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -28120,7 +28198,7 @@
 		"next_sprite": "poke-data/ProjectPokemon/0898calyrex/poke_capture_0898_002_uk_n_00000000_f_r.png",
 		"types": [
 			"psychic",
-			"grass"
+			"ghost"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -30853,7 +30931,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/1017ogerpon/HOME1017C.png",
 		"types": [
-			"grass"
+			"grass",
+			"rock"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -30864,7 +30943,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/1017ogerpon/HOME1017C_s.png",
 		"types": [
-			"grass"
+			"grass",
+			"rock"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -30875,7 +30955,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/1017ogerpon/HOME1017H.png",
 		"types": [
-			"grass"
+			"grass",
+			"fire"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -30886,7 +30967,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/1017ogerpon/HOME1017H_s.png",
 		"types": [
-			"grass"
+			"grass",
+			"fire"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -30897,7 +30979,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/1017ogerpon/HOME1017W.png",
 		"types": [
-			"grass"
+			"grass",
+			"water"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"
@@ -30908,7 +30991,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/ProjectPokemon/1017ogerpon/HOME1017W_s.png",
 		"types": [
-			"grass"
+			"grass",
+			"water"
 		],
 		"evolution_stage": "base",
 		"art_style": "3d"

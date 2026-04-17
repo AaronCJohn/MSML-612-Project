@@ -643,6 +643,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0019rattata/0019 Rattata Alola.png",
 		"types": [
+			"dark",
 			"normal"
 		],
 		"evolution_stage": "base",
@@ -687,6 +688,7 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0019rattata/0019 Rattata Alola.png",
 		"next_sprite": "poke-data/SugimoriSprites/0020raticate/0020 Raticate Alola.png",
 		"types": [
+			"dark",
 			"normal"
 		],
 		"evolution_stage": "evo 1",
@@ -913,7 +915,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Alola.png",
 		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png",
 		"types": [
-			"electric"
+			"electric",
+			"psychic"
 		],
 		"evolution_stage": "evo 2",
 		"art_style": "sugimori"
@@ -957,7 +960,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0027sandshrew/0027 Sandshrew Alola.png",
 		"types": [
-			"ground"
+			"ice",
+			"steel"
 		],
 		"evolution_stage": "base",
 		"art_style": "sugimori"
@@ -1001,7 +1005,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0027sandshrew/0027 Sandshrew Alola.png",
 		"next_sprite": "poke-data/SugimoriSprites/0028sandslash/0028 Sandslash Alola.png",
 		"types": [
-			"ground"
+			"ice",
+			"steel"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "sugimori"
@@ -1315,7 +1320,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0037vulpix/0037 Vulpix Alola.png",
 		"types": [
-			"fire"
+			"ice"
 		],
 		"evolution_stage": "base",
 		"art_style": "sugimori"
@@ -1359,7 +1364,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0037vulpix/0037 Vulpix Alola.png",
 		"next_sprite": "poke-data/SugimoriSprites/0038ninetales/0038 Ninetales Alola.png",
 		"types": [
-			"fire"
+			"ice",
+			"fairy"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "sugimori"
@@ -1822,7 +1828,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0050diglett/0050 Diglett Alola.png",
 		"types": [
-			"ground"
+			"ground",
+			"steel"
 		],
 		"evolution_stage": "base",
 		"art_style": "sugimori"
@@ -1866,7 +1873,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0050diglett/0050 Diglett Alola.png",
 		"next_sprite": "poke-data/SugimoriSprites/0051dugtrio/0051 Dugtrio Alola.png",
 		"types": [
-			"ground"
+			"ground",
+			"steel"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "sugimori"
@@ -1910,7 +1918,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0052meowth/0052 Meowth Alola.png",
 		"types": [
-			"normal"
+			"dark"
 		],
 		"evolution_stage": "base",
 		"art_style": "sugimori"
@@ -1921,7 +1929,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0052meowth/0052 Meowth Galar.png",
 		"types": [
-			"normal"
+			"steel"
 		],
 		"evolution_stage": "base",
 		"art_style": "sugimori"
@@ -1965,7 +1973,7 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0052meowth/0052 Meowth Alola.png",
 		"next_sprite": "poke-data/SugimoriSprites/0053persian/0053 Persian Alola.png",
 		"types": [
-			"normal"
+			"dark"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "sugimori"
@@ -2164,7 +2172,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0058growlithe/0058 Growlithe Hisui.png",
 		"types": [
-			"fire"
+			"fire",
+			"rock"
 		],
 		"evolution_stage": "base",
 		"art_style": "sugimori"
@@ -2208,7 +2217,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0058growlithe/0058 Growlithe Hisui.png",
 		"next_sprite": "poke-data/SugimoriSprites/0059arcanine/0059 Arcanine Hisui.png",
 		"types": [
-			"fire"
+			"fire",
+			"rock"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "sugimori"
@@ -2733,7 +2743,7 @@
 		"next_sprite": "poke-data/SugimoriSprites/0074geodude/0074 Geodude Alola.png",
 		"types": [
 			"rock",
-			"ground"
+			"electric"
 		],
 		"evolution_stage": "base",
 		"art_style": "sugimori"
@@ -2781,7 +2791,7 @@
 		"next_sprite": "poke-data/SugimoriSprites/0075graveler/0075 Graveler Alola.png",
 		"types": [
 			"rock",
-			"ground"
+			"electric"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "sugimori"
@@ -2829,7 +2839,7 @@
 		"next_sprite": "poke-data/SugimoriSprites/0076golem/0076 Golem Alola.png",
 		"types": [
 			"rock",
-			"ground"
+			"electric"
 		],
 		"evolution_stage": "evo 2",
 		"art_style": "sugimori"
@@ -2876,7 +2886,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0077ponyta/0077 Ponyta Galar 2.png",
 		"types": [
-			"fire"
+			"psychic"
 		],
 		"evolution_stage": "base",
 		"art_style": "sugimori"
@@ -2887,7 +2897,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0077ponyta/0077 Ponyta Galar.png",
 		"types": [
-			"fire"
+			"psychic"
 		],
 		"evolution_stage": "base",
 		"art_style": "sugimori"
@@ -2931,7 +2941,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0077ponyta/0077 Ponyta Galar.png",
 		"next_sprite": "poke-data/SugimoriSprites/0078rapidash/0078 Rapidash Galar.png",
 		"types": [
-			"fire"
+			"psychic",
+			"fairy"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "sugimori"
@@ -2975,7 +2986,6 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0079slowpoke/0079 Slowpoke Galar.png",
 		"types": [
-			"water",
 			"psychic"
 		],
 		"evolution_stage": "base",
@@ -3023,7 +3033,7 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0079slowpoke/0079 Slowpoke Galar.png",
 		"next_sprite": "poke-data/SugimoriSprites/0080slowbro/0080 Slowbro Galar.png",
 		"types": [
-			"water",
+			"poison",
 			"psychic"
 		],
 		"evolution_stage": "evo 1",
@@ -3071,7 +3081,7 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0079slowpoke/0079 Slowpoke Galar.png",
 		"next_sprite": "poke-data/SugimoriSprites/0199slowking/0199 Slowking Galar.png",
 		"types": [
-			"water",
+			"poison",
 			"psychic"
 		],
 		"evolution_stage": "evo 1",
@@ -3191,8 +3201,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0083farfetch'd/0083 Farfetch'd Galar.png",
 		"types": [
-			"normal",
-			"flying"
+			"fighting"
 		],
 		"evolution_stage": "base",
 		"art_style": "sugimori"
@@ -3380,7 +3389,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0088grimer/0088 Grimer Alola.png",
 		"types": [
-			"poison"
+			"poison",
+			"dark"
 		],
 		"evolution_stage": "base",
 		"art_style": "sugimori"
@@ -3424,7 +3434,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0088grimer/0088 Grimer Alola.png",
 		"next_sprite": "poke-data/SugimoriSprites/0089muk/0089 Muk Alola.png",
 		"types": [
-			"poison"
+			"poison",
+			"dark"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "sugimori"
@@ -3825,7 +3836,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0100voltorb/0100 Voltorb Hisui.png",
 		"types": [
-			"electric"
+			"electric",
+			"grass"
 		],
 		"evolution_stage": "base",
 		"art_style": "sugimori"
@@ -3869,7 +3881,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0100voltorb/0100 Voltorb Hisui.png",
 		"next_sprite": "poke-data/SugimoriSprites/0101electrode/0101 Electrode Hisui.png",
 		"types": [
-			"electric"
+			"electric",
+			"grass"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "sugimori"
@@ -4898,7 +4911,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0128tauros/0128 Tauros Paldea Aqua.png",
 		"types": [
-			"normal"
+			"fighting",
+			"water"
 		],
 		"evolution_stage": "base",
 		"art_style": "sugimori"
@@ -4909,7 +4923,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0128tauros/0128 Tauros Paldea Blaze.png",
 		"types": [
-			"normal"
+			"fighting",
+			"fire"
 		],
 		"evolution_stage": "base",
 		"art_style": "sugimori"
@@ -4920,7 +4935,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0128tauros/0128 Tauros Paldea Combat.png",
 		"types": [
-			"normal"
+			"fighting"
 		],
 		"evolution_stage": "base",
 		"art_style": "sugimori"
@@ -5568,7 +5583,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0144articuno/0144 Articuno Galar 2.png",
 		"types": [
-			"ice",
+			"psychic",
 			"flying"
 		],
 		"evolution_stage": "base",
@@ -5580,7 +5595,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0144articuno/0144 Articuno Galar.png",
 		"types": [
-			"ice",
+			"psychic",
 			"flying"
 		],
 		"evolution_stage": "base",
@@ -5628,7 +5643,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0145zapdos/0145 Zapdos Galar 2.png",
 		"types": [
-			"electric",
+			"fighting",
 			"flying"
 		],
 		"evolution_stage": "base",
@@ -5640,7 +5655,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0145zapdos/0145 Zapdos Galar.png",
 		"types": [
-			"electric",
+			"fighting",
 			"flying"
 		],
 		"evolution_stage": "base",
@@ -5700,7 +5715,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0146moltres/0146 Moltres Galar 2.png",
 		"types": [
-			"fire",
+			"dark",
 			"flying"
 		],
 		"evolution_stage": "base",
@@ -5712,7 +5727,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0146moltres/0146 Moltres Galar.png",
 		"types": [
-			"fire",
+			"dark",
 			"flying"
 		],
 		"evolution_stage": "base",
@@ -6889,7 +6904,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0194wooper/0194 Wooper Paldea.png",
 		"types": [
-			"water",
+			"poison",
 			"ground"
 		],
 		"evolution_stage": "base",
@@ -7269,7 +7284,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0211qwilfish/0211 Qwilfish Hisui.png",
 		"types": [
-			"water",
+			"dark",
 			"poison"
 		],
 		"evolution_stage": "base",
@@ -7365,8 +7380,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0215sneasel/0215 Sneasel Hisui.png",
 		"types": [
-			"dark",
-			"ice"
+			"fighting",
+			"poison"
 		],
 		"evolution_stage": "base",
 		"art_style": "sugimori"
@@ -7587,8 +7602,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0222corsola/0222 Corsola Galar.png",
 		"types": [
-			"water",
-			"rock"
+			"ghost"
 		],
 		"evolution_stage": "base",
 		"art_style": "sugimori"
@@ -8375,6 +8389,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0263zigzagoon/0263 Zigzagoon Galar.png",
 		"types": [
+			"dark",
 			"normal"
 		],
 		"evolution_stage": "base",
@@ -8397,6 +8412,7 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0263zigzagoon/0263 Zigzagoon Galar.png",
 		"next_sprite": "poke-data/SugimoriSprites/0264linoone/0264 Linoone Galar.png",
 		"types": [
+			"dark",
 			"normal"
 		],
 		"evolution_stage": "evo 1",
@@ -12364,7 +12380,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0554darumaka/0554 Darumaka Galar.png",
 		"types": [
-			"fire"
+			"ice"
 		],
 		"evolution_stage": "base",
 		"art_style": "sugimori"
@@ -12386,7 +12402,7 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0554darumaka/0554 Darumaka Galar.png",
 		"next_sprite": "poke-data/SugimoriSprites/0555darmanitan/0555 Darmanitan Galar.png",
 		"types": [
-			"fire"
+			"ice"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "sugimori"
@@ -12479,6 +12495,7 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0562yamask/0562 Yamask Galar.png",
 		"types": [
+			"ground",
 			"ghost"
 		],
 		"evolution_stage": "base",
@@ -12594,7 +12611,8 @@
 		"prev_sprite": null,
 		"next_sprite": "poke-data/SugimoriSprites/0570zorua/0570 Zorua Hisui.png",
 		"types": [
-			"dark"
+			"normal",
+			"ghost"
 		],
 		"evolution_stage": "base",
 		"art_style": "sugimori"
@@ -12616,7 +12634,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0570zorua/0570 Zorua Hisui.png",
 		"next_sprite": "poke-data/SugimoriSprites/0571zoroark/0571 Zoroark Hisui.png",
 		"types": [
-			"dark"
+			"normal",
+			"ghost"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "sugimori"
@@ -13282,7 +13301,7 @@
 		"next_sprite": "poke-data/SugimoriSprites/0618stunfisk/0618 Stunfisk Galar.png",
 		"types": [
 			"ground",
-			"electric"
+			"steel"
 		],
 		"evolution_stage": "base",
 		"art_style": "sugimori"
@@ -14505,6 +14524,7 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0705sliggoo/0705 Sliggoo Hisui.png",
 		"next_sprite": "poke-data/SugimoriSprites/0706goodra/0706 Goodra Hisui.png",
 		"types": [
+			"steel",
 			"dragon"
 		],
 		"evolution_stage": "evo 2",
@@ -18689,6 +18709,7 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0554darumaka/0554 Darumaka Galar.png",
 		"next_sprite": "poke-data/SugimoriSprites/0555darmanitan/0555 Darmanitan Galar Zen.png",
 		"types": [
+			"ice",
 			"fire"
 		],
 		"evolution_stage": "evo 1",
@@ -18711,6 +18732,7 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0554darumaka/0554 Darumaka.png",
 		"next_sprite": "poke-data/SugimoriSprites/0555darmanitan/0555 Darmanitan Galar Zen.png",
 		"types": [
+			"ice",
 			"fire"
 		],
 		"evolution_stage": "evo 1",
@@ -18766,7 +18788,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu BDSP.png",
 		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png",
 		"types": [
-			"electric"
+			"electric",
+			"psychic"
 		],
 		"evolution_stage": "evo 2",
 		"art_style": "sugimori"
@@ -18777,7 +18800,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Belle.png",
 		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png",
 		"types": [
-			"electric"
+			"electric",
+			"psychic"
 		],
 		"evolution_stage": "evo 2",
 		"art_style": "sugimori"
@@ -18788,7 +18812,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu GS.png",
 		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png",
 		"types": [
-			"electric"
+			"electric",
+			"psychic"
 		],
 		"evolution_stage": "evo 2",
 		"art_style": "sugimori"
@@ -18799,7 +18824,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Hoenn.png",
 		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png",
 		"types": [
-			"electric"
+			"electric",
+			"psychic"
 		],
 		"evolution_stage": "evo 2",
 		"art_style": "sugimori"
@@ -18810,7 +18836,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Kalos.png",
 		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png",
 		"types": [
-			"electric"
+			"electric",
+			"psychic"
 		],
 		"evolution_stage": "evo 2",
 		"art_style": "sugimori"
@@ -18821,7 +18848,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Libre.png",
 		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png",
 		"types": [
-			"electric"
+			"electric",
+			"psychic"
 		],
 		"evolution_stage": "evo 2",
 		"art_style": "sugimori"
@@ -18832,7 +18860,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Original.png",
 		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png",
 		"types": [
-			"electric"
+			"electric",
+			"psychic"
 		],
 		"evolution_stage": "evo 2",
 		"art_style": "sugimori"
@@ -18843,7 +18872,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Partner.png",
 		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png",
 		"types": [
-			"electric"
+			"electric",
+			"psychic"
 		],
 		"evolution_stage": "evo 2",
 		"art_style": "sugimori"
@@ -18854,7 +18884,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu PhD.png",
 		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png",
 		"types": [
-			"electric"
+			"electric",
+			"psychic"
 		],
 		"evolution_stage": "evo 2",
 		"art_style": "sugimori"
@@ -18865,7 +18896,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Pok\u00e9mon Pia.png",
 		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png",
 		"types": [
-			"electric"
+			"electric",
+			"psychic"
 		],
 		"evolution_stage": "evo 2",
 		"art_style": "sugimori"
@@ -18876,7 +18908,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Pop Star.png",
 		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png",
 		"types": [
-			"electric"
+			"electric",
+			"psychic"
 		],
 		"evolution_stage": "evo 2",
 		"art_style": "sugimori"
@@ -18887,7 +18920,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu RB.png",
 		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png",
 		"types": [
-			"electric"
+			"electric",
+			"psychic"
 		],
 		"evolution_stage": "evo 2",
 		"art_style": "sugimori"
@@ -18898,7 +18932,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu RG.png",
 		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png",
 		"types": [
-			"electric"
+			"electric",
+			"psychic"
 		],
 		"evolution_stage": "evo 2",
 		"art_style": "sugimori"
@@ -18909,7 +18944,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Rock Star.png",
 		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png",
 		"types": [
-			"electric"
+			"electric",
+			"psychic"
 		],
 		"evolution_stage": "evo 2",
 		"art_style": "sugimori"
@@ -18920,7 +18956,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Sinnoh.png",
 		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png",
 		"types": [
-			"electric"
+			"electric",
+			"psychic"
 		],
 		"evolution_stage": "evo 2",
 		"art_style": "sugimori"
@@ -18931,7 +18968,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu TCG.png",
 		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png",
 		"types": [
-			"electric"
+			"electric",
+			"psychic"
 		],
 		"evolution_stage": "evo 2",
 		"art_style": "sugimori"
@@ -18942,7 +18980,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Unova.png",
 		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png",
 		"types": [
-			"electric"
+			"electric",
+			"psychic"
 		],
 		"evolution_stage": "evo 2",
 		"art_style": "sugimori"
@@ -18953,7 +18992,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu World.png",
 		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png",
 		"types": [
-			"electric"
+			"electric",
+			"psychic"
 		],
 		"evolution_stage": "evo 2",
 		"art_style": "sugimori"
@@ -18964,7 +19004,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Y 2.png",
 		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png",
 		"types": [
-			"electric"
+			"electric",
+			"psychic"
 		],
 		"evolution_stage": "evo 2",
 		"art_style": "sugimori"
@@ -18975,7 +19016,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu Y.png",
 		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png",
 		"types": [
-			"electric"
+			"electric",
+			"psychic"
 		],
 		"evolution_stage": "evo 2",
 		"art_style": "sugimori"
@@ -18986,7 +19028,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0025pikachu/0025 Pikachu.png",
 		"next_sprite": "poke-data/SugimoriSprites/0026raichu/0026 Raichu Alola.png",
 		"types": [
-			"electric"
+			"electric",
+			"psychic"
 		],
 		"evolution_stage": "evo 2",
 		"art_style": "sugimori"
@@ -18998,7 +19041,7 @@
 		"next_sprite": "poke-data/SugimoriSprites/0103exeggutor/0103 Exeggutor Alola.png",
 		"types": [
 			"grass",
-			"psychic"
+			"dragon"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "sugimori"
@@ -19010,7 +19053,7 @@
 		"next_sprite": "poke-data/SugimoriSprites/0103exeggutor/0103 Exeggutor Alola.png",
 		"types": [
 			"grass",
-			"psychic"
+			"dragon"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "sugimori"
@@ -19022,7 +19065,7 @@
 		"next_sprite": "poke-data/SugimoriSprites/0103exeggutor/0103 Exeggutor Alola.png",
 		"types": [
 			"grass",
-			"psychic"
+			"dragon"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "sugimori"
@@ -19033,7 +19076,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0104cubone/0104 Cubone RB.png",
 		"next_sprite": "poke-data/SugimoriSprites/0105marowak/0105 Marowak Alola.png",
 		"types": [
-			"ground"
+			"fire",
+			"ghost"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "sugimori"
@@ -19044,7 +19088,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0104cubone/0104 Cubone RG.png",
 		"next_sprite": "poke-data/SugimoriSprites/0105marowak/0105 Marowak Alola.png",
 		"types": [
-			"ground"
+			"fire",
+			"ghost"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "sugimori"
@@ -19055,7 +19100,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0104cubone/0104 Cubone.png",
 		"next_sprite": "poke-data/SugimoriSprites/0105marowak/0105 Marowak Alola.png",
 		"types": [
-			"ground"
+			"fire",
+			"ghost"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "sugimori"
@@ -19066,7 +19112,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0077ponyta/0077 Ponyta Galar 2.png",
 		"next_sprite": "poke-data/SugimoriSprites/0078rapidash/0078 Rapidash Galar.png",
 		"types": [
-			"fire"
+			"psychic",
+			"fairy"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "sugimori"
@@ -19088,7 +19135,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0109koffing/0109 Koffing RB.png",
 		"next_sprite": "poke-data/SugimoriSprites/0110weezing/0110 Weezing Galar.png",
 		"types": [
-			"poison"
+			"poison",
+			"fairy"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "sugimori"
@@ -19099,7 +19147,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0109koffing/0109 Koffing RG.png",
 		"next_sprite": "poke-data/SugimoriSprites/0110weezing/0110 Weezing Galar.png",
 		"types": [
-			"poison"
+			"poison",
+			"fairy"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "sugimori"
@@ -19110,7 +19159,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0109koffing/0109 Koffing.png",
 		"next_sprite": "poke-data/SugimoriSprites/0110weezing/0110 Weezing Galar.png",
 		"types": [
-			"poison"
+			"poison",
+			"fairy"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "sugimori"
@@ -19121,8 +19171,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0439mime jr/0439 Mime Jr.png",
 		"next_sprite": "poke-data/SugimoriSprites/0122mr. mime/0122 Mr. Mime Galar.png",
 		"types": [
-			"psychic",
-			"fairy"
+			"ice",
+			"psychic"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "sugimori"
@@ -19133,7 +19183,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0502dewott/0502 Dewott.png",
 		"next_sprite": "poke-data/SugimoriSprites/0503samurott/0503 Samurott Hisui.png",
 		"types": [
-			"water"
+			"water",
+			"dark"
 		],
 		"evolution_stage": "evo 2",
 		"art_style": "sugimori"
@@ -19144,7 +19195,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0548petilil/0548 Petilil.png",
 		"next_sprite": "poke-data/SugimoriSprites/0549lilligant/0549 Lilligant Hisui.png",
 		"types": [
-			"grass"
+			"grass",
+			"fighting"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "sugimori"
@@ -19155,7 +19207,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0712bergmite/0712 Bergmite.png",
 		"next_sprite": "poke-data/SugimoriSprites/0713avalugg/0713 Avalugg Hisui.png",
 		"types": [
-			"ice"
+			"ice",
+			"rock"
 		],
 		"evolution_stage": "evo 1",
 		"art_style": "sugimori"
@@ -19167,7 +19220,7 @@
 		"next_sprite": "poke-data/SugimoriSprites/0724decidueye/0724 Decidueye Hisui.png",
 		"types": [
 			"grass",
-			"ghost"
+			"fighting"
 		],
 		"evolution_stage": "base",
 		"art_style": "sugimori"
@@ -19178,7 +19231,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0156quilava/0156 Quilava GS.png",
 		"next_sprite": "poke-data/SugimoriSprites/0157typhlosion/0157 Typhlosion Hisui.png",
 		"types": [
-			"fire"
+			"fire",
+			"ghost"
 		],
 		"evolution_stage": "evo 2",
 		"art_style": "sugimori"
@@ -19189,7 +19243,8 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0156quilava/0156 Quilava.png",
 		"next_sprite": "poke-data/SugimoriSprites/0157typhlosion/0157 Typhlosion Hisui.png",
 		"types": [
-			"fire"
+			"fire",
+			"ghost"
 		],
 		"evolution_stage": "evo 2",
 		"art_style": "sugimori"
@@ -19200,7 +19255,7 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0627rufflet/0627 Rufflet.png",
 		"next_sprite": "poke-data/SugimoriSprites/0628braviary/0628 Braviary Hisui.png",
 		"types": [
-			"normal",
+			"psychic",
 			"flying"
 		],
 		"evolution_stage": "evo 1",
@@ -19212,6 +19267,7 @@
 		"prev_sprite": "poke-data/SugimoriSprites/0704goomy/0704 Goomy.png",
 		"next_sprite": "poke-data/SugimoriSprites/0705sliggoo/0705 Sliggoo Hisui.png",
 		"types": [
+			"steel",
 			"dragon"
 		],
 		"evolution_stage": "evo 1",

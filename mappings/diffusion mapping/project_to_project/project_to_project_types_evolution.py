@@ -2,7 +2,33 @@
 Enriches safe_project_to_project.json with type + evolution-stage info.
 
 For each entry we add:
-    - `types`          : list of types for `next` (from poke-data/pokedex.json).
+    - `types`          :    list of types for `next`.
+                            Base species use poke-data/pokedex.json.
+                            Regional variants and other alternate forms are
+                            resolved via PokeAPI's
+                                /pokemon-species/{name} -> varieties
+                                -> /pokemon/{slug}
+                            pipeline so region-specific typing (e.g. dark Alolan
+                            Meowth, fairy Galarian Ponyta, Hisuian Typhlosion
+                            fire/ghost) is preserved. Two cases are handled:
+
+                            1. Explicit region tokens in `next`, e.g.
+                                "Meowth-Alola", "Persian-Alola", "mr. mime galar".
+                            2. ProjectPokemon sprite filenames with a non-zero
+                                form index (e.g. poke_capture_0019_001_* for
+                                Alolan Rattata, _002_ for Galarian Meowth,
+                                _003_ for Galarian Zen Darmanitan).
+                            3. HOME-style sprite filenames with a variant tag
+                                after the dex number. Tag letters map to:
+                                    A = Alola, G = Galar, H = Hisui, P = Paldea.
+                                Two-letter tags like PA / PB / PC pick the 1st
+                                / 2nd / 3rd Paldean variety in PokeAPI order
+                                (e.g. Tauros PA = combat, PB = blaze,
+                                PC = aqua). Other species-specific tags (O for
+                                Dialga-Origin, B for Ursaluna-Bloodmoon, etc.)
+                                are resolved by first-letter token match.
+
+                            Requires --use-api (network).
     - `evolution_stage`: string label for the pokemon's depth within its chain:
                             "base"  -> 0 (prev: null)
                             "evo 1" -> 1 (first evolution)
@@ -12,9 +38,8 @@ For each entry we add:
 
 Stages are derived from the `prev` / `next` edges in safe_project_to_project.json
 via a BFS starting at every `prev: null` entry (chain starts). Any pokemon not
-reachable that way is optionally looked up against the PokeAPI
-(https://pokeapi.co/api/v2/pokemon-species/{name}) so nothing is silently
-dropped — network use is opt-in via --use-api.
+reachable that way is optionally looked up against the PokeAPI so nothing is
+silently dropped — network use is opt-in via --use-api.
 
 Output
 --
@@ -39,6 +64,17 @@ OUTPUT_JSON     = Path(__file__).parent / "safe_project_to_project_types_evoluti
 UNRESOLVED_JSON = Path(__file__).parent / "project_to_project_types_evolution_unresolved.json"
 
 ART_STYLE = "3d"
+
+REGIONS = ("alola", "galar", "hisui", "paldea")
+SPRITE_FORM_RE = re.compile(r"poke_capture_\d{4}_(\d{3})_")
+HOME_RE        = re.compile(r"HOME\d{4}([A-Za-z]*)(?:_s)?\.png$", re.IGNORECASE)
+
+HOME_REGION_LETTER: dict[str, str] = {
+    "A": "alola",
+    "G": "galar",
+    "H": "hisui",
+    "P": "paldea",
+}
 
 
 def stage_label(stage: int | None) -> str | None:
@@ -157,6 +193,300 @@ def _fetch_species(name: str) -> dict | None:
         return None
 
 
+def _fetch_json(url: str) -> dict | None:
+    try:
+        req = Request(url, headers={"User-Agent": "project-types/1.0"})
+        with urlopen(req, timeout=10) as resp:
+            return json.loads(resp.read().decode("utf-8"))
+    except Exception as exc:
+        print(f"  PokeAPI miss for {url}: {exc}")
+        return None
+
+
+def detect_form_index(sprite_path: str | None) -> int:
+    """
+    Pull the form index out of a ProjectPokemon sprite filename like
+    'poke_capture_0019_001_mf_n_00000000_f_n.png' -> 1. HOME-style or
+    unrecognised filenames return 0 (base form).
+    """
+    if not sprite_path:
+        return 0
+    m = SPRITE_FORM_RE.search(sprite_path)
+    if not m:
+        return 0
+    try:
+        return int(m.group(1))
+    except ValueError:
+        return 0
+
+
+def detect_variant_from_name(
+    next_name: str | None,
+) -> tuple[str | None, str | None, list[str]]:
+    """
+    Detect a regional variant encoded directly in a `next` value such as
+    'Meowth-Alola', 'Persian-Alola', or 'mr. mime galar'. Returns
+    (base_species, region, subtokens); (None, None, []) when no region token
+    is present.
+    """
+    if not next_name:
+        return None, None, []
+    tokens = [t for t in re.split(r"[\s\-_]+", next_name.lower().strip()) if t]
+    for i, tok in enumerate(tokens):
+        if tok in REGIONS:
+            base = " ".join(tokens[:i]).strip()
+            if not base:
+                return None, None, []
+            subtokens = [t for t in tokens[i + 1:] if t.isalpha()]
+            return base, tok, subtokens
+    return None, None, []
+
+
+def _variant_score(variant_name: str, region: str, subtokens: list[str]) -> int:
+    """
+    Rank a candidate PokeAPI variety name. Higher is better. Must contain
+    the region; subtoken matches boost, extras penalise.
+    """
+    parts = variant_name.split("-")
+    if region not in parts:
+        return -1
+    score = 100
+    for st in subtokens:
+        score += 50 if st in parts else -50
+    base = variant_name.split("-", 1)[0]
+    extras = [
+        p for p in parts
+        if p != region and p not in subtokens and p != base and not p.isdigit()
+    ]
+    score -= 5 * len(extras)
+    return score
+
+
+def _types_from_pokemon_payload(data: dict | None) -> list[str]:
+    if not data:
+        return []
+    out = []
+    for t in data.get("types") or []:
+        name = (t.get("type") or {}).get("name")
+        if name:
+            out.append(name.lower())
+    return out
+
+
+def resolve_variant_types_by_region(
+    species: str,
+    region: str,
+    subtokens: list[str],
+    species_cache: dict[str, dict | None],
+    variant_type_cache: dict[str, list[str]],
+) -> tuple[list[str], str | None]:
+    """
+    Pick the PokeAPI variety best matching (region, subtokens) and return
+    (types, matched_variant_name). Returns ([], None) on any failure.
+    """
+    if species not in species_cache:
+        print(f"  Fetching species {species!r} for {region} variant …")
+        species_cache[species] = _fetch_species(species)
+    species_data = species_cache[species]
+    if not species_data:
+        return [], None
+
+    varieties = species_data.get("varieties") or []
+    best_name: str | None = None
+    best_url: str | None = None
+    best_score = -1
+    for v in varieties:
+        poke = v.get("pokemon") or {}
+        name = poke.get("name") or ""
+        score = _variant_score(name, region, subtokens)
+        if score > best_score:
+            best_score, best_name, best_url = score, name, poke.get("url")
+
+    if not best_name or best_score < 0 or not best_url:
+        return [], None
+
+    if best_name in variant_type_cache:
+        return variant_type_cache[best_name], best_name
+
+    print(f"  Fetching variant {best_name!r} …")
+    types = _types_from_pokemon_payload(_fetch_json(best_url))
+    variant_type_cache[best_name] = types
+    return types, best_name
+
+
+def resolve_variant_types_by_form_index(
+    species: str,
+    form_index: int,
+    species_cache: dict[str, dict | None],
+    variant_type_cache: dict[str, list[str]],
+) -> tuple[list[str], str | None]:
+    """
+    Return (types, variety_name) for the PokeAPI variety at position
+    `form_index` in the species' `varieties` list. This mirrors the game's
+    internal FormIndex that ProjectPokemon filenames embed. Returns
+    ([], None) if the species has fewer varieties than the requested index
+    or the request fails.
+    """
+    if form_index <= 0:
+        return [], None
+    if species not in species_cache:
+        print(f"  Fetching species {species!r} for form index {form_index} …")
+        species_cache[species] = _fetch_species(species)
+    data = species_cache[species]
+    if not data:
+        return [], None
+
+    varieties = data.get("varieties") or []
+    if form_index >= len(varieties):
+        return [], None
+
+    poke = varieties[form_index].get("pokemon") or {}
+    name = poke.get("name") or ""
+    url = poke.get("url") or ""
+    if not name or not url:
+        return [], None
+
+    if name in variant_type_cache:
+        return variant_type_cache[name], name
+
+    print(f"  Fetching variant {name!r} (form {form_index}) …")
+    types = _types_from_pokemon_payload(_fetch_json(url))
+    variant_type_cache[name] = types
+    return types, name
+
+
+def detect_home_tag(sprite_path: str | None) -> str | None:
+    """
+    Parse a HOME-style ProjectPokemon filename like 'HOME0059H_s.png' and
+    return the upper-cased variant tag ('H'), 'PA' / 'PB' / 'PC' for the
+    three Paldean Tauros forms, etc. Returns None for base HOME sprites
+    ('HOME0001.png' / 'HOME0001_s.png') or non-HOME filenames.
+    """
+    if not sprite_path:
+        return None
+    m = HOME_RE.search(sprite_path)
+    if not m:
+        return None
+    tag = (m.group(1) or "").upper()
+    return tag or None
+
+
+def _distinctive_tokens(variety_name: str) -> list[str]:
+    """Variety-name tokens with the species base and filler words removed."""
+    noise = {"breed", "mask", "form", "standard"}
+    parts = variety_name.split("-")[1:]  # drop species base segment
+    return [p for p in parts if p and p not in noise]
+
+
+def resolve_variant_types_by_home_tag(
+    species: str,
+    tag: str,
+    species_cache: dict[str, dict | None],
+    variant_type_cache: dict[str, list[str]],
+) -> tuple[list[str], str | None]:
+    """
+    Resolve the variety that corresponds to a HOME-style file tag.
+
+    Tag rules
+    ---------
+        * Single-letter region tags ``A`` / ``G`` / ``H`` / ``P`` pick the variety
+            whose name contains ``alola`` / ``galar`` / ``hisui`` / ``paldea``.
+            Shortest matching variety wins (so ``wooper`` + ``P`` -> ``wooper-paldea``
+            and never a sub-form).
+        * Two-letter region + ordinal tags ``PA`` / ``PB`` / ``PC`` (generally
+            ``<R><X>`` with ``R`` in ``AGHP`` and ``X`` in ``A-Z``) pick the Nth
+            variety containing that region, in PokeAPI order
+            (e.g. Tauros ``PA`` -> combat-breed, ``PB`` -> blaze-breed, ``PC`` ->
+            aqua-breed).
+        * Any other tag falls back to a species-specific first-letter match:
+            pick the variety that has a distinctive token starting with the tag
+            (e.g. ``dialga`` + ``O`` -> ``dialga-origin``, ``ursaluna`` + ``B`` ->
+            ``ursaluna-bloodmoon``, ``palafin`` + ``H`` -> ``palafin-hero``,
+            ``ogerpon`` + ``C`` -> ``ogerpon-cornerstone-mask``).
+
+    Returns ``([], None)`` when nothing matches or the PokeAPI call fails.
+    """
+    if not tag:
+        return [], None
+
+    if species not in species_cache:
+        print(f"  Fetching species {species!r} for HOME tag {tag!r} …")
+        species_cache[species] = _fetch_species(species)
+    data = species_cache[species]
+    if not data:
+        return [], None
+
+    varieties = data.get("varieties") or []
+    t = tag.upper()
+    chosen: dict | None = None
+
+    def _region_matches(region: str) -> list[dict]:
+        out = []
+        for v in varieties:
+            name = (v.get("pokemon") or {}).get("name") or ""
+            if region in name.split("-"):
+                out.append(v)
+        return out
+
+    # Single-letter regional tag.
+    if chosen is None and len(t) == 1 and t in HOME_REGION_LETTER:
+        matches = _region_matches(HOME_REGION_LETTER[t])
+        if matches:
+            matches.sort(
+                key=lambda v: len(
+                    ((v.get("pokemon") or {}).get("name") or "").split("-")
+                )
+            )
+            chosen = matches[0]
+
+    # Two-letter region + ordinal tag.
+    if (
+        chosen is None
+        and len(t) == 2
+        and t[0] in HOME_REGION_LETTER
+        and "A" <= t[1] <= "Z"
+    ):
+        matches = _region_matches(HOME_REGION_LETTER[t[0]])
+        idx = ord(t[1]) - ord("A")
+        if 0 <= idx < len(matches):
+            chosen = matches[idx]
+
+    # Generic fallback: match any distinctive token whose first letter == tag.
+    if chosen is None and len(t) == 1:
+        region_tokens = set(REGIONS)
+        candidates: list[dict] = []
+        for v in varieties:
+            name = (v.get("pokemon") or {}).get("name") or ""
+            for tok in _distinctive_tokens(name):
+                if tok in region_tokens:
+                    continue
+                if tok[:1].upper() == t:
+                    candidates.append(v)
+                    break
+        candidates.sort(
+            key=lambda v: len(((v.get("pokemon") or {}).get("name") or "").split("-"))
+        )
+        if candidates:
+            chosen = candidates[0]
+
+    if chosen is None:
+        return [], None
+
+    poke = chosen.get("pokemon") or {}
+    name = poke.get("name") or ""
+    url = poke.get("url") or ""
+    if not name or not url:
+        return [], None
+
+    if name in variant_type_cache:
+        return variant_type_cache[name], name
+
+    print(f"  Fetching variant {name!r} (HOME tag {tag}) …")
+    types = _types_from_pokemon_payload(_fetch_json(url))
+    variant_type_cache[name] = types
+    return types, name
+
+
 def _stage_from_evolution_chain(chain_url: str, target_norm: str) -> int | None:
     """Walk the PokeAPI evolution-chain tree and return the target's depth."""
     try:
@@ -216,6 +546,9 @@ def main() -> None:
             stage_map[n] = 0
 
     api_cache: dict[str, int | None] = {}
+    species_cache: dict[str, dict | None] = {}
+    variant_type_cache: dict[str, list[str]] = {}
+    variants_used: dict[str, list[str]] = {}
 
     def resolve_stage(name: str | None) -> int | None:
         if not name:
@@ -237,7 +570,39 @@ def main() -> None:
 
     for entry in entries:
         next_name = entry.get("next")
-        types = lookup_types(next_name, type_index)
+        next_sprite = entry.get("next_sprite")
+
+        types: list[str] = []
+        matched_variant: str | None = None
+
+        if args.use_api and next_name:
+            base_species, region, subtokens = detect_variant_from_name(next_name)
+            if region and base_species:
+                types, matched_variant = resolve_variant_types_by_region(
+                    base_species, region, subtokens,
+                    species_cache, variant_type_cache,
+                )
+            else:
+                home_tag = detect_home_tag(next_sprite)
+                if home_tag:
+                    types, matched_variant = resolve_variant_types_by_home_tag(
+                        next_name, home_tag,
+                        species_cache, variant_type_cache,
+                    )
+                else:
+                    form_idx = detect_form_index(next_sprite)
+                    if form_idx > 0:
+                        types, matched_variant = resolve_variant_types_by_form_index(
+                            next_name, form_idx,
+                            species_cache, variant_type_cache,
+                        )
+
+        if matched_variant and types:
+            variants_used[matched_variant] = types
+
+        if not types:
+            types = lookup_types(next_name, type_index)
+
         stage = resolve_stage(next_name)
 
         if next_name:
@@ -301,7 +666,11 @@ def main() -> None:
     print(f"Missing types        : {len(missing_types_names)}")
     print(f"Missing stage        : {len(missing_stage_names)}")
     print(f"Stage distribution   : {dict(sorted(stage_hist.items()))}")
+    print(f"Variants resolved    : {len(variants_used)}")
     print(f"Unresolved log       : {UNRESOLVED_JSON}")
+    if variants_used:
+        for key, t in sorted(variants_used.items()):
+            print(f"  {key:35s} -> {t}")
     if missing_types_names:
         print(f"Missing types for    : {sorted(missing_types_names)}")
     if missing_stage_names:
