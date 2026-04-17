@@ -29,6 +29,11 @@ UNRESOLVED_JSON = Path(__file__).parent / "sugimori_to_sugimori_unresolved.json"
 # Words whose presence in an image stem marks it as a Mega / Gigantamax form.
 _SKIP_WORDS = {"mega", "gigantamax"}
 
+# Maps a variant word from evolution.json to the word actually used in image filenames.
+VARIANT_ALIASES: dict[str, str] = {
+    "sunshine": "sunny",   # cherrim-sunshine → "0421 Cherrim Sunny.png"
+}
+
 # Exact image stems (lowercased, with dex prefix) to exclude from all mappings.
 SKIP_STEMS = {
     "0175 togepi alternate",
@@ -42,6 +47,17 @@ SKIP_STEMS = {
     "0816 sobble 2",
     "koraidon 2",
     "miraidon 2",
+}
+
+# Evolution.json names (lowercase) to skip entirely — no sprite files exist for these.
+SKIP_POKEMON = {
+    "cherrim-sunshine",
+    "eternatus-eternamax",
+    "giratina-altered",
+    "tauros-paldea-aqua-breed",
+    "tauros-paldea-blaze-breed",
+    "tauros-paldea-combat-breed",
+    "ursaluna-bloodmoon",
 }
 
 # Folder index
@@ -153,8 +169,9 @@ def filter_by_variant(variant_map: dict[str, Path], variant_str: str) -> dict[st
     """
     Keep only entries whose key contains at least one word from variant_str.
     e.g. variant_str="white-striped" keeps keys containing "white" or "striped".
+    VARIANT_ALIASES remaps evolution.json words to their image-filename equivalents.
     """
-    words = set(variant_str.lower().split("-"))
+    words = {VARIANT_ALIASES.get(w, w) for w in variant_str.lower().split("-")}
     return {k: v for k, v in variant_map.items() if any(w in k for w in words)}
 
 # Pair generation
@@ -169,13 +186,13 @@ def make_pairs(
     Generate (prev_image, next_image) JSON entries.
 
     Matching strategy (prev_variant → next_variant) when prev is not null:
-      strict=True  (normal evolutions):
-        Exact suffix match only. "Eevee Y" will never map to regular Espeon.
-        Pairs with no matching suffix in next are skipped entirely.
-      strict=False (regional form chains, e.g. Meowth-Galar → Perrserker):
-        If no exact suffix match exists, fall back to the base ("") image of
-        next, then to the first available image. This is needed because the
-        next pokemon is a wholly different species with no matching suffix.
+        strict=True  (normal evolutions):
+            Exact suffix match only. "Eevee Y" will never map to regular Espeon.
+            Pairs with no matching suffix in next are skipped entirely.
+        strict=False (regional form chains, e.g. Meowth-Galar → Perrserker):
+            If no exact suffix match exists, fall back to the base ("") image of
+            next, then to the first available image. This is needed because the
+            next pokemon is a wholly different species with no matching suffix.
     """
     pairs: list[dict] = []
 
@@ -196,22 +213,33 @@ def make_pairs(
             })
         return pairs
 
-    base_next = next_vmap.get("") or next(iter(next_vmap.values()), None)
+    # If next has no base form at all (e.g. toxtricity only has "amped"/"low key"),
+    # strict matching can never succeed — treat as non-strict regardless.
+    effective_strict = strict and ("" in next_vmap)
 
     for variant_key, prev_img in prev_vmap.items():
         next_img = next_vmap.get(variant_key)
-        if next_img is None:
-            if strict:
-                continue  # no suffix match — skip
-            next_img = base_next  # regional chain — use base of next species
-        if next_img is None:
-            continue
-        pairs.append({
-            "prev": folder_name(prev_img),
-            "next": folder_name(next_img),
-            "prev_sprite": str(prev_img.relative_to(repo_root)),
-            "next_sprite": str(next_img.relative_to(repo_root)),
-        })
+        if next_img is not None:
+            pairs.append({
+                "prev": folder_name(prev_img),
+                "next": folder_name(next_img),
+                "prev_sprite": str(prev_img.relative_to(repo_root)),
+                "next_sprite": str(next_img.relative_to(repo_root)),
+            })
+        elif effective_strict:
+            continue  # no suffix match and strict — skip (e.g. Eevee Y → Espeon)
+        else:
+            # Non-strict: map this prev image to ALL available next images.
+            # This covers: regional form nexts (bergmite → avalugg hisui),
+            # pokemon with no base sprite (toxel → toxtricity amped + low key),
+            # and cross-species regional chains (mime-jr → mr. mime galar).
+            for next_fallback in next_vmap.values():
+                pairs.append({
+                    "prev": folder_name(prev_img),
+                    "next": folder_name(next_fallback),
+                    "prev_sprite": str(prev_img.relative_to(repo_root)),
+                    "next_sprite": str(next_fallback.relative_to(repo_root)),
+                })
 
     return pairs
 
@@ -224,7 +252,14 @@ def main() -> None:
     folder_index = build_folder_index(SUGIMORI_ROOT)
 
     results: list[dict] = []
+    seen: set[tuple] = set()        # for deduplication
     unresolved: list[dict] = []
+
+    def add_pair(pair: dict) -> None:
+        key = (pair["prev_sprite"], pair["next_sprite"])
+        if key not in seen:
+            seen.add(key)
+            results.append(pair)
 
     for entry in evolutions:
         prev_name: str | None = entry.get("prev")
@@ -232,6 +267,10 @@ def main() -> None:
 
         if not next_name:
             continue  # malformed entry
+
+        if  (prev_name and prev_name.lower() in SKIP_POKEMON) or \
+            (next_name and next_name.lower() in SKIP_POKEMON):
+            continue
 
         #  Resolve next folder 
         next_folder, next_variant = resolve_folder(next_name, folder_index)
@@ -247,7 +286,8 @@ def main() -> None:
         #  Resolve prev folder (null prev = chain start) 
         if prev_name is None:
             pairs = make_pairs(None, next_vmap, REPO_ROOT)
-            results.extend(pairs)
+            for pair in pairs:
+                add_pair(pair)
             continue
 
         prev_folder, prev_variant = resolve_folder(prev_name, folder_index)
@@ -264,10 +304,12 @@ def main() -> None:
             unresolved.append({"prev": prev_name, "next": next_name, "missing": ["prev_images"]})
             continue
 
-        # Regional form chains (prev_variant set) evolve into a wholly different
-        # species — use non-strict matching so the filtered prev maps to next's base.
-        pairs = make_pairs(prev_vmap, next_vmap, REPO_ROOT, strict=prev_variant is None)
-        results.extend(pairs)
+        # Use strict matching only when neither side is a regional form.
+        # If either variant is set, fall back to all available next images on mismatch.
+        strict = (prev_variant is None) and (next_variant is None)
+        pairs = make_pairs(prev_vmap, next_vmap, REPO_ROOT, strict=strict)
+        for pair in pairs:
+            add_pair(pair)
 
     #  Write outputs 
     with open(OUTPUT_JSON, "w", encoding="utf-8") as f:

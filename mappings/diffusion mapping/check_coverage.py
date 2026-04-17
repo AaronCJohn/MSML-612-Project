@@ -6,16 +6,16 @@ Coverage is determined by normalised name matching: separators (hyphens,
 spaces, dots, apostrophes) are stripped and comparison is case-insensitive.
 Each mapping entry contributes two name tokens per side:
 
-  1. The 'prev'/'next' field  (folder-derived base name, e.g. "arcanine")
-  2. The image stem extracted from 'prev_sprite'/'next_sprite'
-     (e.g. "0059 Arcanine Hisui" → includes the variant suffix)
+    1. The 'prev'/'next' field  (folder-derived base name, e.g. "arcanine")
+    2. The image stem extracted from 'prev_sprite'/'next_sprite'
+        (e.g. "0059 Arcanine Hisui" → includes the variant suffix)
 
 This catches regional forms like "Arcanine-Hisui" whose base folder name is
 just "arcanine" but whose sprite stem contains "arcaninehisui".
 
 Reports:
-  - Per-mapping coverage count / percentage and list of missing pokemon
-  - Pokemon missing from ALL checked mappings
+    - Per-mapping coverage count / percentage and list of missing pokemon
+    - Pokemon missing from ALL checked mappings
 
 Usage:
     python check_coverage.py
@@ -34,6 +34,7 @@ MAPPING_DIR    = Path(__file__).parent
 MAPPING_FILES = [
     MAPPING_DIR / "sugimori_to_sugimori.json",
     MAPPING_DIR / "sprite_to_sprite.json",
+    MAPPING_DIR / "project_to_project.json"
 ]
 
 LOG_FILE = MAPPING_DIR / "check_coverage.log"
@@ -65,8 +66,8 @@ def _norm_tokens_from_entry(entry: dict) -> set[str]:
     Extract normalised name tokens from one mapping entry.
 
     Two sources per side:
-      - The 'prev'/'next' name field (base folder name).
-      - The image stem from 'prev_sprite'/'next_sprite' (includes variant).
+        - The 'prev'/'next' name field (base folder name).
+        - The image stem from 'prev_sprite'/'next_sprite' (includes variant).
     """
     tokens: set[str] = set()
     for name_key, sprite_key in (("prev", "prev_sprite"), ("next", "next_sprite")):
