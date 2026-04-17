@@ -5,3 +5,6 @@ __py*
 # mapping previews
 mapping_preview_diffusion
 *log.txt
+
+*venv
+*env

@@ -116,7 +116,12 @@ def main():
     input_path = Path(args.input_path)
 
     classes = []
-    with open('all_pokemon_safe.json', 'r') as fp:
+    script_dir = Path(__file__).resolve().parent
+    project_root = script_dir.parent
+
+    # Go into the 'evolutions' folder
+    file_path = project_root / 'evolutions' / 'all_pokemon_safe.json'
+    with open(file_path, 'r') as fp:
         classes = json.load(fp)
 
     classes_lower = [c.lower() for c in classes]
