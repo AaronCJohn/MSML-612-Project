@@ -32,7 +32,7 @@ def display_padded_image(original_img, padded_img, filename, display_count, targ
 # -----------------------------
 # LOAD BBOX + ADD MARGIN
 # -----------------------------
-def load_bbox(label_path, img_w, img_h, margin=0.15):
+def load_bbox(label_path, img_w, img_h, margin=0.05):
     if not label_path.exists():
         return None
 
@@ -76,6 +76,7 @@ def pad_and_resize_image(
     show_display=False,
     display_count=None,
     save=False,
+    use_bbox=True
 ):
     try:
         with Image.open(image_path) as img:
@@ -91,11 +92,16 @@ def pad_and_resize_image(
                 image_path.parent.parent / "annotations" / "labels" / "train" / f"{image_path.stem}.txt"
             )
 
-            bbox = load_bbox(label_path, orig_w, orig_h)
+            if use_bbox:
+                bbox = load_bbox(label_path, orig_w, orig_h)
 
-            if bbox:
-                x1, y1, x2, y2 = bbox
-                img = img.crop((x1, y1, x2, y2))
+                if bbox:
+                    x1, y1, x2, y2 = bbox
+                    img = img.crop((x1, y1, x2, y2))
+            #     else:
+            #         print("WARNING: NOT USING BBOX")
+            # else:
+            #     print("WARNING: NOT USING BBOX")
 
             # -----------------------------
             # RESIZE (aspect ratio preserved)
@@ -126,6 +132,9 @@ def pad_and_resize_image(
                 raise ValueError(f"Invalid bg_type: {bg_type}")
 
             # img is still RGBA here — paste using alpha as mask
+            # -----------------------------
+            # PAD (center)
+            # -----------------------------
             x = (target_w - new_w) // 2
             y = (target_h - new_h) // 2
             new_img.paste(img, (x, y), img)
@@ -133,28 +142,6 @@ def pad_and_resize_image(
             # Flatten only at the end (not for transparent)
             if bg_type in ('white', 'black'):
                 new_img = new_img.convert("RGB")
-
-            # if bg_type == 'white':
-            #     new_img = Image.new('RGB', final_size, (255, 255, 255))
-            #     img = img.convert("RGB")
-            # elif bg_type == 'black':
-            #     new_img = Image.new('RGB', final_size, (0, 0, 0))
-            #     img = img.convert("RGB")
-            # elif bg_type == 'transparent':
-            #     new_img = Image.new('RGBA', final_size, (0, 0, 0, 0))
-            # else:
-            #     raise ValueError(f"Invalid bg_type: {bg_type}")
-
-            # # -----------------------------
-            # # PAD (center)
-            # # -----------------------------
-            # x = (target_w - new_w) // 2
-            # y = (target_h - new_h) // 2
-
-            # if new_img.mode == 'RGBA':
-            #     new_img.paste(img, (x, y), img)
-            # else:
-            #     new_img.paste(img, (x, y))
 
             # -----------------------------
             # DISPLAY (no saving required)
@@ -176,7 +163,7 @@ def pad_and_resize_image(
 
                 save_path = save_dir / image_path.name
                 new_img.save(save_path)
-                print(f"saved here: {save_path}")
+                # print(f"saved here: {save_path}")
 
             return True
 
@@ -195,6 +182,7 @@ def process_folder(
     is_sprite=False,
     show_display=False,
     save=False,
+    use_bbox=True
 ):
     image_extensions = {'.png', '.jpg', '.jpeg', '.webp'}
     processed = 0
@@ -214,6 +202,7 @@ def process_folder(
                     show_display,
                     display_count,
                     save,
+                    use_bbox=use_bbox
                 ):
                     processed += 1
                 else:
@@ -230,7 +219,8 @@ def process_single_image(
     final_size,
     bg_type='white',
     is_sprite=False,
-    save=False
+    save=False,
+    use_bbox=True
 ):
     pad_and_resize_image(
         Path(image_path),
@@ -239,7 +229,8 @@ def process_single_image(
         is_sprite,
         show_display=True,
         display_count=[0],
-        save=save
+        save=save,
+        use_bbox=use_bbox
     )
 
 
@@ -251,21 +242,22 @@ def main():
     project_root = script_dir.parent
 
     # -------- CONFIG --------
-    folder = project_root / "poke-data" / "ProjectPokemon"
+    folder = project_root / "poke-data" / "PokeSprite"
 
     # 🔥 set to None to process full dataset
-    single_image = folder / "0103exeggutor" / "poke_capture_0103_001_mf_n_00000000_f_n.png"
+    single_image = folder / "0103exeggutor" / "exeggutor alola.png"
 
-    final_size = (256, 256)
+    final_size = (512,512)
     bg_type = 'white'
-    is_sprite = False
+    is_sprite = True
+    use_bbox = True
 
     save = True  # 🔥 IMPORTANT: default = no saving
     # -----------------------
 
     if single_image:
         print(f"Testing single image: {single_image}")
-        process_single_image(single_image, final_size, bg_type, is_sprite, save=save)
+        process_single_image(single_image, final_size, bg_type, is_sprite, save=save, use_bbox=use_bbox)
         return
 
     if not folder.exists():
@@ -284,6 +276,7 @@ def main():
         is_sprite,
         show_display=True,
         save=save,
+        use_bbox=use_bbox
     )
 
     print("\nDone")
