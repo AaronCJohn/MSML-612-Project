@@ -9759,13 +9759,13 @@
 		"prev": "zorua",
 		"next": "zoroark",
 		"prev_sprite": "poke-data/ProjectPokemon/0570zorua/HOME0570H.png",
-		"next_sprite": "poke-data/ProjectPokemon/0570zorua/HOME0571H.png"
+		"next_sprite": "poke-data/ProjectPokemon/0571zoroark/HOME0571H.png"
 	},
 	{
 		"prev": "zorua",
 		"next": "zoroark",
 		"prev_sprite": "poke-data/ProjectPokemon/0570zorua/HOME0570H_s.png",
-		"next_sprite": "poke-data/ProjectPokemon/0570zorua/HOME0571H_s.png"
+		"next_sprite": "poke-data/ProjectPokemon/0571zoroark/HOME0571H_s.png"
 	},
 	{
 		"prev": null,
