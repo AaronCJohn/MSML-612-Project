@@ -2001,7 +2001,7 @@
 		"prev": "growlithe",
 		"next": "arcanine",
 		"prev_sprite": "/content/drive/MyDrive/612 data/poke-data/ProjectPokemon/0058growlithe/HOME0058H.png",
-		"next_sprite": "/content/drive/MyDrive/612 data/poke-data/ProjectPokemon/0058growlithe/HOME0059H_s.png",
+		"next_sprite": "/content/drive/MyDrive/612 data/poke-data/ProjectPokemon/0059arcanine/HOME0059H_s.png",
 		"types": [
 			"fire",
 			"rock"
@@ -2013,7 +2013,7 @@
 		"prev": "growlithe",
 		"next": "arcanine",
 		"prev_sprite": "/content/drive/MyDrive/612 data/poke-data/ProjectPokemon/0058growlithe/HOME0058H_s.png",
-		"next_sprite": "/content/drive/MyDrive/612 data/poke-data/ProjectPokemon/0058growlithe/HOME0059H_s.png",
+		"next_sprite": "/content/drive/MyDrive/612 data/poke-data/ProjectPokemon/0059arcanine/HOME0059H_s.png",
 		"types": [
 			"fire",
 			"rock"
@@ -27071,7 +27071,7 @@
 		"prev": "sinistea",
 		"next": "polteageist",
 		"prev_sprite": "/content/drive/MyDrive/612 data/poke-data/ProjectPokemon/0854sinistea/HOME0854_b.png",
-		"next_sprite": "/content/drive/MyDrive/612 data/poke-data/ProjectPokemon/0855polteageist/HOME0854_b.png",
+		"next_sprite": "/content/drive/MyDrive/612 data/poke-data/ProjectPokemon/0855polteageist/HOME0855_b.png",
 		"types": [
 			"ghost"
 		],
@@ -27093,7 +27093,7 @@
 		"prev": "sinistea",
 		"next": "polteageist",
 		"prev_sprite": "/content/drive/MyDrive/612 data/poke-data/ProjectPokemon/0854sinistea/HOME0854A_b.png",
-		"next_sprite": "/content/drive/MyDrive/612 data/poke-data/ProjectPokemon/0855polteageist/HOME0854A_b.png",
+		"next_sprite": "/content/drive/MyDrive/612 data/poke-data/ProjectPokemon/0855polteageist/HOME0855A_b.png",
 		"types": [
 			"ghost"
 		],
