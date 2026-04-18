@@ -20787,18 +20787,6 @@
 	},
 	{
 		"prev": null,
-		"next": "frigibax",
-		"prev_sprite": null,
-		"next_sprite": null,
-		"types": [
-			"dragon",
-			"ice"
-		],
-		"evolution_stage": "base",
-		"art_style": "sprite"
-	},
-	{
-		"prev": null,
 		"next": "basculin-white-striped",
 		"prev_sprite": null,
 		"next_sprite": "poke-data/PokeSprite/0550basculin/basculin white striped.png",
