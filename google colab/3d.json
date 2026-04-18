@@ -3463,7 +3463,7 @@
 		"prev": "voltorb",
 		"next": "electrode",
 		"prev_sprite": "/content/drive/MyDrive/612 data/poke-data/ProjectPokemon/0100voltorb/HOME0100H.png",
-		"next_sprite": "/content/drive/MyDrive/612 data/poke-data/ProjectPokemon/0100voltorb/HOME0101H.png",
+		"next_sprite": "/content/drive/MyDrive/612 data/poke-data/ProjectPokemon/0101electrode/HOME0101H.png",
 		"types": [
 			"electric",
 			"grass"
@@ -3475,7 +3475,7 @@
 		"prev": "voltorb",
 		"next": "electrode",
 		"prev_sprite": "/content/drive/MyDrive/612 data/poke-data/ProjectPokemon/0100voltorb/HOME0100H_s.png",
-		"next_sprite": "/content/drive/MyDrive/612 data/poke-data/ProjectPokemon/0100voltorb/HOME0101H_s.png",
+		"next_sprite": "/content/drive/MyDrive/612 data/poke-data/ProjectPokemon/0101electrode/HOME0101H_s.png",
 		"types": [
 			"electric",
 			"grass"
