@@ -1,0 +1,1847 @@
+data/images/train/0001 Bulbasaur RB.png
+data/images/train/0001 Bulbasaur RG.png
+data/images/train/0001 Bulbasaur.png
+data/images/train/0002 Ivysaur RB.png
+data/images/train/0002 Ivysaur RG.png
+data/images/train/0002 Ivysaur.png
+data/images/train/0003 Venusaur Gigantamax 2.png
+data/images/train/0003 Venusaur Gigantamax.png
+data/images/train/0003 Venusaur Mega.png
+data/images/train/0003 Venusaur RB.png
+data/images/train/0003 Venusaur RG.png
+data/images/train/0003 Venusaur.png
+data/images/train/0004 Charmander RB.png
+data/images/train/0004 Charmander RG.png
+data/images/train/0004 Charmander.png
+data/images/train/0005 Charmeleon RB.png
+data/images/train/0005 Charmeleon RG.png
+data/images/train/0005 Charmeleon.png
+data/images/train/0006 Charizard Gigantamax 2.png
+data/images/train/0006 Charizard Gigantamax.png
+data/images/train/0006 Charizard Mega X.png
+data/images/train/0006 Charizard Mega Y.png
+data/images/train/0006 Charizard RB.png
+data/images/train/0006 Charizard RG.png
+data/images/train/0006 Charizard.png
+data/images/train/0007 Squirtle MD.png
+data/images/train/0007 Squirtle RB.png
+data/images/train/0007 Squirtle RG.png
+data/images/train/0007 Squirtle.png
+data/images/train/0008 Wartortle RB.png
+data/images/train/0008 Wartortle RG.png
+data/images/train/0008 Wartortle.png
+data/images/train/0009 Blastoise Blue.png
+data/images/train/0009 Blastoise Gigantamax 2.png
+data/images/train/0009 Blastoise Gigantamax.png
+data/images/train/0009 Blastoise Mega.png
+data/images/train/0009 Blastoise RB.png
+data/images/train/0009 Blastoise RG.png
+data/images/train/0009 Blastoise.png
+data/images/train/0010 Caterpie RB.png
+data/images/train/0010 Caterpie RG.png
+data/images/train/0010 Caterpie.png
+data/images/train/0011 Metapod RB.png
+data/images/train/0011 Metapod RG.png
+data/images/train/0011 Metapod.png
+data/images/train/0012 Butterfree Gigantamax 2.png
+data/images/train/0012 Butterfree Gigantamax.png
+data/images/train/0012 Butterfree RB.png
+data/images/train/0012 Butterfree RG.png
+data/images/train/0012 Butterfree.png
+data/images/train/0013 Weedle RB.png
+data/images/train/0013 Weedle RG.png
+data/images/train/0013 Weedle.png
+data/images/train/0014 Kakuna RB.png
+data/images/train/0014 Kakuna RG.png
+data/images/train/0014 Kakuna.png
+data/images/train/0015 Beedrill Mega.png
+data/images/train/0015 Beedrill RB.png
+data/images/train/0015 Beedrill RG.png
+data/images/train/0015 Beedrill.png
+data/images/train/0016 Pidgey RB.png
+data/images/train/0016 Pidgey RG.png
+data/images/train/0016 Pidgey.png
+data/images/train/0017 Pidgeotto RB.png
+data/images/train/0017 Pidgeotto RG.png
+data/images/train/0017 Pidgeotto.png
+data/images/train/0018 Pidgeot Mega.png
+data/images/train/0018 Pidgeot RB.png
+data/images/train/0018 Pidgeot RG.png
+data/images/train/0018 Pidgeot.png
+data/images/train/0019 Rattata Alola.png
+data/images/train/0019 Rattata RB.png
+data/images/train/0019 Rattata RG.png
+data/images/train/0019 Rattata.png
+data/images/train/0020 Raticate Alola.png
+data/images/train/0020 Raticate RB.png
+data/images/train/0020 Raticate RG.png
+data/images/train/0020 Raticate.png
+data/images/train/0021 Spearow RB.png
+data/images/train/0021 Spearow RG.png
+data/images/train/0021 Spearow.png
+data/images/train/0022 Fearow RB.png
+data/images/train/0022 Fearow RG.png
+data/images/train/0022 Fearow.png
+data/images/train/0023 Ekans RB.png
+data/images/train/0023 Ekans RG.png
+data/images/train/0023 Ekans.png
+data/images/train/0024 Arbok RB.png
+data/images/train/0024 Arbok RG.png
+data/images/train/0024 Arbok.png
+data/images/train/0025 Pikachu Alola.png
+data/images/train/0025 Pikachu BDSP.png
+data/images/train/0025 Pikachu Belle.png
+data/images/train/0025 Pikachu Gigantamax 2.png
+data/images/train/0025 Pikachu Gigantamax.png
+data/images/train/0025 Pikachu GS.png
+data/images/train/0025 Pikachu Hoenn.png
+data/images/train/0025 Pikachu Kalos.png
+data/images/train/0025 Pikachu Libre.png
+data/images/train/0025 Pikachu Original.png
+data/images/train/0025 Pikachu Partner.png
+data/images/train/0025 Pikachu PhD.png
+data/images/train/0025 Pikachu Pokémon Pia.png
+data/images/train/0025 Pikachu Pop Star.png
+data/images/train/0025 Pikachu RB.png
+data/images/train/0025 Pikachu RG.png
+data/images/train/0025 Pikachu Rock Star.png
+data/images/train/0025 Pikachu Sinnoh.png
+data/images/train/0025 Pikachu TCG.png
+data/images/train/0025 Pikachu Unova.png
+data/images/train/0025 Pikachu World.png
+data/images/train/0025 Pikachu Y 2.png
+data/images/train/0025 Pikachu Y.png
+data/images/train/0025 Pikachu.png
+data/images/train/0026 Raichu Alola.png
+data/images/train/0026 Raichu RB.png
+data/images/train/0026 Raichu RG.png
+data/images/train/0026 Raichu.png
+data/images/train/0027 Sandshrew Alola.png
+data/images/train/0027 Sandshrew RB.png
+data/images/train/0027 Sandshrew RG.png
+data/images/train/0027 Sandshrew.png
+data/images/train/0028 Sandslash Alola.png
+data/images/train/0028 Sandslash RB.png
+data/images/train/0028 Sandslash RG.png
+data/images/train/0028 Sandslash.png
+data/images/train/0029 Nidoran RB.png
+data/images/train/0029 Nidoran RG.png
+data/images/train/0029 Nidoran.png
+data/images/train/0030 Nidorina RB.png
+data/images/train/0030 Nidorina RG.png
+data/images/train/0030 Nidorina.png
+data/images/train/0031 Nidoqueen RB.png
+data/images/train/0031 Nidoqueen RG.png
+data/images/train/0031 Nidoqueen.png
+data/images/train/0032 Nidoran RB.png
+data/images/train/0032 Nidoran RG.png
+data/images/train/0032 Nidoran.png
+data/images/train/0033 Nidorino RB.png
+data/images/train/0033 Nidorino RG.png
+data/images/train/0033 Nidorino.png
+data/images/train/0034 Nidoking RB.png
+data/images/train/0034 Nidoking RG.png
+data/images/train/0034 Nidoking.png
+data/images/train/0035 Clefairy C.png
+data/images/train/0035 Clefairy RB.png
+data/images/train/0035 Clefairy RG.png
+data/images/train/0035 Clefairy.png
+data/images/train/0036 Clefable RB.png
+data/images/train/0036 Clefable RG.png
+data/images/train/0036 Clefable.png
+data/images/train/0037 Vulpix Alola.png
+data/images/train/0037 Vulpix RB.png
+data/images/train/0037 Vulpix RG.png
+data/images/train/0037 Vulpix.png
+data/images/train/0038 Ninetales Alola.png
+data/images/train/0038 Ninetales RB.png
+data/images/train/0038 Ninetales RG.png
+data/images/train/0038 Ninetales.png
+data/images/train/0039 Jigglypuff RB.png
+data/images/train/0039 Jigglypuff RG.png
+data/images/train/0039 Jigglypuff.png
+data/images/train/0040 Wigglytuff RB.png
+data/images/train/0040 Wigglytuff RG.png
+data/images/train/0040 Wigglytuff.png
+data/images/train/0041 Zubat RB.png
+data/images/train/0041 Zubat RG.png
+data/images/train/0041 Zubat.png
+data/images/train/0042 Golbat RB.png
+data/images/train/0042 Golbat RG.png
+data/images/train/0042 Golbat.png
+data/images/train/0043 Oddish RB.png
+data/images/train/0043 Oddish RG.png
+data/images/train/0043 Oddish.png
+data/images/train/0044 Gloom RB.png
+data/images/train/0044 Gloom RG.png
+data/images/train/0044 Gloom.png
+data/images/train/0045 Vileplume RB.png
+data/images/train/0045 Vileplume RG.png
+data/images/train/0045 Vileplume.png
+data/images/train/0046 Paras RB.png
+data/images/train/0046 Paras RG.png
+data/images/train/0046 Paras.png
+data/images/train/0047 Parasect RB.png
+data/images/train/0047 Parasect RG.png
+data/images/train/0047 Parasect.png
+data/images/train/0048 Venonat RB.png
+data/images/train/0048 Venonat RG.png
+data/images/train/0048 Venonat.png
+data/images/train/0049 Venomoth RB.png
+data/images/train/0049 Venomoth RG.png
+data/images/train/0049 Venomoth.png
+data/images/train/0050 Diglett Alola.png
+data/images/train/0050 Diglett RB.png
+data/images/train/0050 Diglett RG.png
+data/images/train/0050 Diglett.png
+data/images/train/0051 Dugtrio Alola.png
+data/images/train/0051 Dugtrio RB.png
+data/images/train/0051 Dugtrio RG.png
+data/images/train/0051 Dugtrio.png
+data/images/train/0052 Meowth Alola.png
+data/images/train/0052 Meowth Galar.png
+data/images/train/0052 Meowth Gigantamax 2.png
+data/images/train/0052 Meowth Gigantamax.png
+data/images/train/0052 Meowth RB.png
+data/images/train/0052 Meowth RG.png
+data/images/train/0052 Meowth.png
+data/images/train/0053 Persian Alola.png
+data/images/train/0053 Persian RB.png
+data/images/train/0053 Persian RG.png
+data/images/train/0053 Persian.png
+data/images/train/0054 Psyduck RB.png
+data/images/train/0054 Psyduck RG.png
+data/images/train/0054 Psyduck.png
+data/images/train/0055 Golduck RB.png
+data/images/train/0055 Golduck RG.png
+data/images/train/0055 Golduck.png
+data/images/train/0056 Mankey RB.png
+data/images/train/0056 Mankey RG.png
+data/images/train/0056 Mankey.png
+data/images/train/0057 Primeape RB.png
+data/images/train/0057 Primeape RG.png
+data/images/train/0057 Primeape.png
+data/images/train/0058 Growlithe Hisui.png
+data/images/train/0058 Growlithe RB.png
+data/images/train/0058 Growlithe RG.png
+data/images/train/0058 Growlithe.png
+data/images/train/0059 Arcanine Hisui.png
+data/images/train/0059 Arcanine RB.png
+data/images/train/0059 Arcanine RG.png
+data/images/train/0059 Arcanine.png
+data/images/train/0060 Poliwag RB.png
+data/images/train/0060 Poliwag RG.png
+data/images/train/0060 Poliwag.png
+data/images/train/0061 Poliwhirl RB.png
+data/images/train/0061 Poliwhirl RG.png
+data/images/train/0061 Poliwhirl.png
+data/images/train/0062 Poliwrath RB.png
+data/images/train/0062 Poliwrath RG.png
+data/images/train/0062 Poliwrath.png
+data/images/train/0063 Abra RB.png
+data/images/train/0063 Abra RG.png
+data/images/train/0063 Abra.png
+data/images/train/0064 Kadabra RB.png
+data/images/train/0064 Kadabra RG.png
+data/images/train/0064 Kadabra.png
+data/images/train/0065 Alakazam Mega.png
+data/images/train/0065 Alakazam RB.png
+data/images/train/0065 Alakazam TCG.png
+data/images/train/0065 Alakazam.png
+data/images/train/0066 Machop RB.png
+data/images/train/0066 Machop TCG.png
+data/images/train/0066 Machop.png
+data/images/train/0067 Machoke RB.png
+data/images/train/0067 Machoke TCG.png
+data/images/train/0067 Machoke.png
+data/images/train/0068 Machamp Gigantamax.png
+data/images/train/0068 Machamp RB.png
+data/images/train/0068 Machamp TCG.png
+data/images/train/0068 Machamp.png
+data/images/train/0069 Bellsprout RB.png
+data/images/train/0069 Bellsprout RG.png
+data/images/train/0069 Bellsprout.png
+data/images/train/0070 Weepinbell RB.png
+data/images/train/0070 Weepinbell RG.png
+data/images/train/0070 Weepinbell.png
+data/images/train/0071 Victreebel RB.png
+data/images/train/0071 Victreebel RG.png
+data/images/train/0071 Victreebel.png
+data/images/train/0072 Tentacool RB.png
+data/images/train/0072 Tentacool RG.png
+data/images/train/0072 Tentacool.png
+data/images/train/0073 Tentacruel RB.png
+data/images/train/0073 Tentacruel RG.png
+data/images/train/0073 Tentacruel.png
+data/images/train/0074 Geodude Alola.png
+data/images/train/0074 Geodude RB.png
+data/images/train/0074 Geodude RG.png
+data/images/train/0074 Geodude.png
+data/images/train/0075 Graveler Alola.png
+data/images/train/0075 Graveler RB.png
+data/images/train/0075 Graveler RG.png
+data/images/train/0075 Graveler.png
+data/images/train/0076 Golem Alola.png
+data/images/train/0076 Golem RB.png
+data/images/train/0076 Golem RG.png
+data/images/train/0076 Golem.png
+data/images/train/0077 Ponyta Galar 2.png
+data/images/train/0077 Ponyta Galar.png
+data/images/train/0077 Ponyta RB.png
+data/images/train/0077 Ponyta RG.png
+data/images/train/0077 Ponyta.png
+data/images/train/0078 Rapidash Galar.png
+data/images/train/0078 Rapidash RB.png
+data/images/train/0078 Rapidash RG.png
+data/images/train/0078 Rapidash.png
+data/images/train/0079 Slowpoke Galar.png
+data/images/train/0079 Slowpoke RB.png
+data/images/train/0079 Slowpoke RG.png
+data/images/train/0079 Slowpoke.png
+data/images/train/0080 Slowbro Galar.png
+data/images/train/0080 Slowbro Mega.png
+data/images/train/0080 Slowbro RB.png
+data/images/train/0080 Slowbro RG.png
+data/images/train/0080 Slowbro.png
+data/images/train/0081 Magnemite MD.png
+data/images/train/0081 Magnemite RB.png
+data/images/train/0081 Magnemite RG.png
+data/images/train/0081 Magnemite.png
+data/images/train/0082 Magneton RB.png
+data/images/train/0082 Magneton RG.png
+data/images/train/0082 Magneton.png
+data/images/train/0083 Farfetch'd Galar.png
+data/images/train/0083 Farfetch'd RB.png
+data/images/train/0083 Farfetch'd RG.png
+data/images/train/0083 Farfetch'd.png
+data/images/train/0084 Doduo RB.png
+data/images/train/0084 Doduo RG.png
+data/images/train/0084 Doduo.png
+data/images/train/0085 Dodrio RB.png
+data/images/train/0085 Dodrio RG.png
+data/images/train/0085 Dodrio.png
+data/images/train/0086 Seel RB.png
+data/images/train/0086 Seel RG.png
+data/images/train/0086 Seel.png
+data/images/train/0087 Dewgong RB.png
+data/images/train/0087 Dewgong RG.png
+data/images/train/0087 Dewgong.png
+data/images/train/0088 Grimer Alola.png
+data/images/train/0088 Grimer RB.png
+data/images/train/0088 Grimer RG.png
+data/images/train/0088 Grimer.png
+data/images/train/0089 Muk Alola.png
+data/images/train/0089 Muk RB.png
+data/images/train/0089 Muk RG.png
+data/images/train/0089 Muk.png
+data/images/train/0090 Shellder RB.png
+data/images/train/0090 Shellder RG.png
+data/images/train/0090 Shellder.png
+data/images/train/0091 Cloyster RB.png
+data/images/train/0091 Cloyster RG.png
+data/images/train/0091 Cloyster.png
+data/images/train/0092 Gastly RB.png
+data/images/train/0092 Gastly RG.png
+data/images/train/0092 Gastly.png
+data/images/train/0093 Haunter RB.png
+data/images/train/0093 Haunter RG.png
+data/images/train/0093 Haunter.png
+data/images/train/0094 Gengar Gigantamax.png
+data/images/train/0094 Gengar Mega.png
+data/images/train/0094 Gengar RB.png
+data/images/train/0094 Gengar RG.png
+data/images/train/0094 Gengar.png
+data/images/train/0095 Onix RB.png
+data/images/train/0095 Onix RG.png
+data/images/train/0095 Onix.png
+data/images/train/0096 Drowzee RB.png
+data/images/train/0096 Drowzee RG.png
+data/images/train/0096 Drowzee.png
+data/images/train/0097 Hypno RB.png
+data/images/train/0097 Hypno RG.png
+data/images/train/0097 Hypno.png
+data/images/train/0098 Krabby RB.png
+data/images/train/0098 Krabby RG.png
+data/images/train/0098 Krabby.png
+data/images/train/0099 Kingler Gigantamax.png
+data/images/train/0099 Kingler RB.png
+data/images/train/0099 Kingler RG.png
+data/images/train/0099 Kingler.png
+data/images/train/0100 Voltorb Hisui.png
+data/images/train/0100 Voltorb RB.png
+data/images/train/0100 Voltorb RG.png
+data/images/train/0100 Voltorb.png
+data/images/train/0101 Electrode Hisui.png
+data/images/train/0101 Electrode RB.png
+data/images/train/0101 Electrode RG.png
+data/images/train/0101 Electrode.png
+data/images/train/0102 Exeggcute RB.png
+data/images/train/0102 Exeggcute RG.png
+data/images/train/0102 Exeggcute.png
+data/images/train/0103 Exeggutor Alola.png
+data/images/train/0103 Exeggutor RB.png
+data/images/train/0103 Exeggutor RG.png
+data/images/train/0103 Exeggutor.png
+data/images/train/0104 Cubone RB.png
+data/images/train/0104 Cubone RG.png
+data/images/train/0104 Cubone.png
+data/images/train/0105 Marowak Alola.png
+data/images/train/0105 Marowak RB.png
+data/images/train/0105 Marowak RG.png
+data/images/train/0105 Marowak.png
+data/images/train/0106 Hitmonlee alternate.png
+data/images/train/0106 Hitmonlee RB.png
+data/images/train/0106 Hitmonlee RG.png
+data/images/train/0106 Hitmonlee.png
+data/images/train/0107 Hitmonchan RB.png
+data/images/train/0107 Hitmonchan RG.png
+data/images/train/0107 Hitmonchan.png
+data/images/train/0108 Lickitung RB.png
+data/images/train/0108 Lickitung RG.png
+data/images/train/0108 Lickitung.png
+data/images/train/0109 Koffing RB.png
+data/images/train/0109 Koffing RG.png
+data/images/train/0109 Koffing.png
+data/images/train/0110 Weezing Galar.png
+data/images/train/0110 Weezing RB.png
+data/images/train/0110 Weezing RG.png
+data/images/train/0110 Weezing.png
+data/images/train/0111 Rhyhorn RB.png
+data/images/train/0111 Rhyhorn RG.png
+data/images/train/0111 Rhyhorn.png
+data/images/train/0112 Rhydon RB.png
+data/images/train/0112 Rhydon RG.png
+data/images/train/0112 Rhydon.png
+data/images/train/0113 Chansey BDSP.png
+data/images/train/0113 Chansey RB.png
+data/images/train/0113 Chansey RG.png
+data/images/train/0113 Chansey.png
+data/images/train/0114 Tangela RB.png
+data/images/train/0114 Tangela RG.png
+data/images/train/0114 Tangela.png
+data/images/train/0115 Kangaskhan Mega.png
+data/images/train/0115 Kangaskhan RB.png
+data/images/train/0115 Kangaskhan RG.png
+data/images/train/0115 Kangaskhan.png
+data/images/train/0116 Horsea C.png
+data/images/train/0116 Horsea RB.png
+data/images/train/0116 Horsea RG.png
+data/images/train/0116 Horsea.png
+data/images/train/0117 Seadra RB.png
+data/images/train/0117 Seadra RG.png
+data/images/train/0117 Seadra.png
+data/images/train/0118 Goldeen RB.png
+data/images/train/0118 Goldeen RG.png
+data/images/train/0118 Goldeen.png
+data/images/train/0119 Seaking RB.png
+data/images/train/0119 Seaking RG.png
+data/images/train/0119 Seaking.png
+data/images/train/0120 Staryu RB.png
+data/images/train/0120 Staryu RG.png
+data/images/train/0120 Staryu.png
+data/images/train/0121 Starmie RB.png
+data/images/train/0121 Starmie RG.png
+data/images/train/0121 Starmie.png
+data/images/train/0122 Mr. Mime .png
+data/images/train/0122 Mr. Mime Galar.png
+data/images/train/0123 Scyther RB.png
+data/images/train/0123 Scyther RG.png
+data/images/train/0123 Scyther.png
+data/images/train/0124 Jynx C.png
+data/images/train/0124 Jynx RB.png
+data/images/train/0124 Jynx RG.png
+data/images/train/0124 Jynx.png
+data/images/train/0125 Electabuzz RB.png
+data/images/train/0125 Electabuzz RG.png
+data/images/train/0125 Electabuzz.png
+data/images/train/0126 Magmar RB.png
+data/images/train/0126 Magmar RG.png
+data/images/train/0126 Magmar.png
+data/images/train/0127 Pinsir Mega.png
+data/images/train/0127 Pinsir RB.png
+data/images/train/0127 Pinsir RG.png
+data/images/train/0127 Pinsir.png
+data/images/train/0128 Tauros Paldea Aqua.png
+data/images/train/0128 Tauros Paldea Blaze.png
+data/images/train/0128 Tauros Paldea Combat.png
+data/images/train/0128 Tauros RB.png
+data/images/train/0128 Tauros RG.png
+data/images/train/0128 Tauros.png
+data/images/train/0129 Magikarp RB.png
+data/images/train/0129 Magikarp RG.png
+data/images/train/0129 Magikarp.png
+data/images/train/0130 Gyarados Mega.png
+data/images/train/0130 Gyarados RB.png
+data/images/train/0130 Gyarados RG.png
+data/images/train/0130 Gyarados.png
+data/images/train/0131 Lapras Gigantamax.png
+data/images/train/0131 Lapras RB.png
+data/images/train/0131 Lapras RG.png
+data/images/train/0131 Lapras.png
+data/images/train/0132 Ditto RB.png
+data/images/train/0132 Ditto RG.png
+data/images/train/0132 Ditto.png
+data/images/train/0133 Eevee Gigantamax 2.png
+data/images/train/0133 Eevee Gigantamax.png
+data/images/train/0133 Eevee RB.png
+data/images/train/0133 Eevee RG.png
+data/images/train/0133 Eevee Y.png
+data/images/train/0133 Eevee.png
+data/images/train/0134 Vaporeon RB.png
+data/images/train/0134 Vaporeon RG.png
+data/images/train/0134 Vaporeon.png
+data/images/train/0135 Jolteon RB.png
+data/images/train/0135 Jolteon RG.png
+data/images/train/0135 Jolteon.png
+data/images/train/0136 Flareon RB.png
+data/images/train/0136 Flareon RG.png
+data/images/train/0136 Flareon.png
+data/images/train/0137 Porygon RB.png
+data/images/train/0137 Porygon RG.png
+data/images/train/0137 Porygon.png
+data/images/train/0138 Omanyte RB.png
+data/images/train/0138 Omanyte RG.png
+data/images/train/0138 Omanyte.png
+data/images/train/0139 Omastar RB.png
+data/images/train/0139 Omastar RG.png
+data/images/train/0139 Omastar.png
+data/images/train/0140 Kabuto RB.png
+data/images/train/0140 Kabuto RG.png
+data/images/train/0140 Kabuto.png
+data/images/train/0141 Kabutops RB.png
+data/images/train/0141 Kabutops RG.png
+data/images/train/0141 Kabutops.png
+data/images/train/0142 Aerodactyl Mega.png
+data/images/train/0142 Aerodactyl RB.png
+data/images/train/0142 Aerodactyl TCG.png
+data/images/train/0142 Aerodactyl.png
+data/images/train/0143 Snorlax Gigantamax.png
+data/images/train/0143 Snorlax RB.png
+data/images/train/0143 Snorlax RG.png
+data/images/train/0143 Snorlax.png
+data/images/train/0144 Articuno Galar 2.png
+data/images/train/0144 Articuno Galar.png
+data/images/train/0144 Articuno RB.png
+data/images/train/0144 Articuno RG.png
+data/images/train/0144 Articuno.png
+data/images/train/0145 Zapdos Galar 2.png
+data/images/train/0145 Zapdos Galar.png
+data/images/train/0145 Zapdos RB.png
+data/images/train/0145 Zapdos RG.png
+data/images/train/0145 Zapdos.png
+data/images/train/0146 Moltres BDSP.png
+data/images/train/0146 Moltres Galar 2.png
+data/images/train/0146 Moltres Galar.png
+data/images/train/0146 Moltres RB.png
+data/images/train/0146 Moltres RG.png
+data/images/train/0146 Moltres.png
+data/images/train/0147 Dratini RB.png
+data/images/train/0147 Dratini RG.png
+data/images/train/0147 Dratini.png
+data/images/train/0148 Dragonair RB.png
+data/images/train/0148 Dragonair RG.png
+data/images/train/0148 Dragonair.png
+data/images/train/0149 Dragonite RB.png
+data/images/train/0149 Dragonite RG.png
+data/images/train/0149 Dragonite.png
+data/images/train/0150 Mewtwo BDSP.png
+data/images/train/0150 Mewtwo Mega X.png
+data/images/train/0150 Mewtwo Mega Y.png
+data/images/train/0150 Mewtwo RB.png
+data/images/train/0150 Mewtwo RG.png
+data/images/train/0150 Mewtwo.png
+data/images/train/0151 Mew BDSP.png
+data/images/train/0151 Mew RB.png
+data/images/train/0151 Mew RG 2.png
+data/images/train/0151 Mew RG.png
+data/images/train/0151 Mew.png
+data/images/train/0152 Chikorita E.png
+data/images/train/0152 Chikorita GS 2.png
+data/images/train/0152 Chikorita GS.png
+data/images/train/0152 Chikorita.png
+data/images/train/0153 Bayleef GS.png
+data/images/train/0153 Bayleef.png
+data/images/train/0154 Meganium GS.png
+data/images/train/0154 Meganium.png
+data/images/train/0155 Cyndaquil E.png
+data/images/train/0155 Cyndaquil GS.png
+data/images/train/0155 Cyndaquil LA.png
+data/images/train/0155 Cyndaquil.png
+data/images/train/0156 Quilava GS.png
+data/images/train/0156 Quilava.png
+data/images/train/0157 Typhlosion GS.png
+data/images/train/0157 Typhlosion Hisui.png
+data/images/train/0157 Typhlosion.png
+data/images/train/0158 Totodile E.png
+data/images/train/0158 Totodile GS.png
+data/images/train/0158 Totodile.png
+data/images/train/0159 Croconaw GS.png
+data/images/train/0159 Croconaw.png
+data/images/train/0160 Feraligatr GS.png
+data/images/train/0160 Feraligatr.png
+data/images/train/0161 Sentret GS.png
+data/images/train/0161 Sentret.png
+data/images/train/0162 Furret GS.png
+data/images/train/0162 Furret.png
+data/images/train/0163 Hoothoot GS.png
+data/images/train/0163 Hoothoot.png
+data/images/train/0164 Noctowl GS.png
+data/images/train/0164 Noctowl.png
+data/images/train/0165 Ledyba GS.png
+data/images/train/0165 Ledyba.png
+data/images/train/0166 Ledian GS.png
+data/images/train/0166 Ledian.png
+data/images/train/0167 Spinarak GS.png
+data/images/train/0167 Spinarak.png
+data/images/train/0168 Ariados GS.png
+data/images/train/0168 Ariados.png
+data/images/train/0169 Crobat GS.png
+data/images/train/0169 Crobat.png
+data/images/train/0170 Chinchou GS.png
+data/images/train/0170 Chinchou.png
+data/images/train/0171 Lanturn GS.png
+data/images/train/0171 Lanturn.png
+data/images/train/0172 Pichu GS.png
+data/images/train/0172 Pichu.png
+data/images/train/0173 Cleffa GS.png
+data/images/train/0173 Cleffa.png
+data/images/train/0174 Igglybuff GS.png
+data/images/train/0174 Igglybuff.png
+data/images/train/0175 Togepi alternate.png
+data/images/train/0175 Togepi GS.png
+data/images/train/0175 Togepi.png
+data/images/train/0176 Togetic GS.png
+data/images/train/0176 Togetic.png
+data/images/train/0177 Natu GS.png
+data/images/train/0177 Natu.png
+data/images/train/0178 Xatu GS.png
+data/images/train/0178 Xatu.png
+data/images/train/0179 Mareep GS.png
+data/images/train/0179 Mareep.png
+data/images/train/0180 Flaaffy GS.png
+data/images/train/0180 Flaaffy.png
+data/images/train/0181 Ampharos GS.png
+data/images/train/0181 Ampharos Mega.png
+data/images/train/0181 Ampharos.png
+data/images/train/0182 Bellossom GS.png
+data/images/train/0182 Bellossom.png
+data/images/train/0183 Marill GS.png
+data/images/train/0183 Marill.png
+data/images/train/0184 Azumarill GS.png
+data/images/train/0184 Azumarill.png
+data/images/train/0185 Sudowoodo GS.png
+data/images/train/0185 Sudowoodo.png
+data/images/train/0186 Politoed GS.png
+data/images/train/0186 Politoed.png
+data/images/train/0187 Hoppip GS.png
+data/images/train/0187 Hoppip.png
+data/images/train/0188 Skiploom GS.png
+data/images/train/0188 Skiploom.png
+data/images/train/0189 Jumpluff GS.png
+data/images/train/0189 Jumpluff.png
+data/images/train/0190 Aipom GS.png
+data/images/train/0190 Aipom.png
+data/images/train/0191 Sunkern GS.png
+data/images/train/0191 Sunkern.png
+data/images/train/0192 Sunflora GS.png
+data/images/train/0192 Sunflora.png
+data/images/train/0193 Yanma GS.png
+data/images/train/0193 Yanma.png
+data/images/train/0194 Wooper GS.png
+data/images/train/0194 Wooper Paldea.png
+data/images/train/0194 Wooper.png
+data/images/train/0195 Quagsire GS.png
+data/images/train/0195 Quagsire.png
+data/images/train/0196 Espeon GS.png
+data/images/train/0196 Espeon.png
+data/images/train/0197 Umbreon GS.png
+data/images/train/0197 Umbreon.png
+data/images/train/0198 Murkrow GS.png
+data/images/train/0198 Murkrow.png
+data/images/train/0199 Slowking Galar.png
+data/images/train/0199 Slowking GS.png
+data/images/train/0199 Slowking.png
+data/images/train/0200 Misdreavus GS.png
+data/images/train/0200 Misdreavus.png
+data/images/train/0201 Unown GS.png
+data/images/train/0201 Unown.png
+data/images/train/0202 Wobbuffet GS.png
+data/images/train/0202 Wobbuffet.png
+data/images/train/0203 Girafarig GS.png
+data/images/train/0203 Girafarig.png
+data/images/train/0204 Pineco GS.png
+data/images/train/0204 Pineco.png
+data/images/train/0205 Forretress GS.png
+data/images/train/0205 Forretress.png
+data/images/train/0206 Dunsparce GS.png
+data/images/train/0206 Dunsparce.png
+data/images/train/0207 Gligar GS.png
+data/images/train/0207 Gligar.png
+data/images/train/0208 Steelix GS.png
+data/images/train/0208 Steelix Mega.png
+data/images/train/0208 Steelix.png
+data/images/train/0209 Snubbull GS.png
+data/images/train/0209 Snubbull.png
+data/images/train/0210 Granbull GS.png
+data/images/train/0210 Granbull.png
+data/images/train/0211 Qwilfish GS.png
+data/images/train/0211 Qwilfish Hisui.png
+data/images/train/0211 Qwilfish.png
+data/images/train/0212 Scizor GS.png
+data/images/train/0212 Scizor Mega.png
+data/images/train/0212 Scizor.png
+data/images/train/0213 Shuckle GS.png
+data/images/train/0213 Shuckle.png
+data/images/train/0214 Heracross GS.png
+data/images/train/0214 Heracross Mega.png
+data/images/train/0214 Heracross.png
+data/images/train/0215 Sneasel GS.png
+data/images/train/0215 Sneasel Hisui.png
+data/images/train/0215 Sneasel.png
+data/images/train/0216 Teddiursa GS.png
+data/images/train/0216 Teddiursa.png
+data/images/train/0217 Ursaring GS.png
+data/images/train/0217 Ursaring.png
+data/images/train/0218 Slugma GS.png
+data/images/train/0218 Slugma.png
+data/images/train/0219 Magcargo GS.png
+data/images/train/0219 Magcargo.png
+data/images/train/0220 Swinub GS.png
+data/images/train/0220 Swinub.png
+data/images/train/0221 Piloswine GS.png
+data/images/train/0221 Piloswine.png
+data/images/train/0222 Corsola Galar.png
+data/images/train/0222 Corsola GS.png
+data/images/train/0222 Corsola.png
+data/images/train/0223 Remoraid GS.png
+data/images/train/0223 Remoraid.png
+data/images/train/0224 Octillery GS.png
+data/images/train/0224 Octillery.png
+data/images/train/0225 Delibird GS.png
+data/images/train/0225 Delibird.png
+data/images/train/0226 Mantine GS.png
+data/images/train/0226 Mantine.png
+data/images/train/0227 Skarmory GS.png
+data/images/train/0227 Skarmory.png
+data/images/train/0228 Houndour GS.png
+data/images/train/0228 Houndour.png
+data/images/train/0229 Houndoom GS.png
+data/images/train/0229 Houndoom Mega.png
+data/images/train/0229 Houndoom.png
+data/images/train/0230 Kingdra GS.png
+data/images/train/0230 Kingdra.png
+data/images/train/0231 Phanpy GS.png
+data/images/train/0231 Phanpy.png
+data/images/train/0232 Donphan GS.png
+data/images/train/0232 Donphan.png
+data/images/train/0233 Porygon2 GS.png
+data/images/train/0233 Porygon2.png
+data/images/train/0234 Stantler GS.png
+data/images/train/0234 Stantler.png
+data/images/train/0235 Smeargle GS.png
+data/images/train/0235 Smeargle.png
+data/images/train/0236 Tyrogue GS.png
+data/images/train/0236 Tyrogue.png
+data/images/train/0237 Hitmontop GS.png
+data/images/train/0237 Hitmontop.png
+data/images/train/0238 Smoochum GS.png
+data/images/train/0238 Smoochum.png
+data/images/train/0239 Elekid GS.png
+data/images/train/0239 Elekid.png
+data/images/train/0240 Magby GS.png
+data/images/train/0240 Magby.png
+data/images/train/0241 Miltank GS.png
+data/images/train/0241 Miltank.png
+data/images/train/0242 Blissey GS.png
+data/images/train/0242 Blissey.png
+data/images/train/0243 Raikou C.png
+data/images/train/0243 Raikou GS.png
+data/images/train/0243 Raikou.png
+data/images/train/0244 Entei C.png
+data/images/train/0244 Entei GS.png
+data/images/train/0244 Entei.png
+data/images/train/0245 Suicune BDSP.png
+data/images/train/0245 Suicune C 2.png
+data/images/train/0245 Suicune C 3.png
+data/images/train/0245 Suicune C.png
+data/images/train/0245 Suicune GS.png
+data/images/train/0245 Suicune.png
+data/images/train/0246 Larvitar GS.png
+data/images/train/0246 Larvitar.png
+data/images/train/0247 Pupitar GS.png
+data/images/train/0247 Pupitar.png
+data/images/train/0248 Tyranitar GS.png
+data/images/train/0248 Tyranitar Mega.png
+data/images/train/0248 Tyranitar.png
+data/images/train/0249 Lugia GS 2.png
+data/images/train/0249 Lugia GS.png
+data/images/train/0249 Lugia HGSS 2.png
+data/images/train/0249 Lugia.png
+data/images/train/0250 Ho-Oh.png
+data/images/train/0251 Celebi GS.png
+data/images/train/0251 Celebi.png
+data/images/train/0252 Treecko E.png
+data/images/train/0252 Treecko ORAS.png
+data/images/train/0252 Treecko.png
+data/images/train/0253 Grovyle.png
+data/images/train/0254 Sceptile Mega.png
+data/images/train/0254 Sceptile.png
+data/images/train/0255 Torchic E.png
+data/images/train/0255 Torchic ORAS.png
+data/images/train/0255 Torchic.png
+data/images/train/0256 Combusken.png
+data/images/train/0257 Blaziken Mega.png
+data/images/train/0257 Blaziken.png
+data/images/train/0258 Mudkip E.png
+data/images/train/0258 Mudkip ORAS.png
+data/images/train/0258 Mudkip.png
+data/images/train/0259 Marshtomp.png
+data/images/train/0260 Swampert Mega.png
+data/images/train/0260 Swampert.png
+data/images/train/0261 Poochyena.png
+data/images/train/0262 Mightyena.png
+data/images/train/0263 Zigzagoon Galar.png
+data/images/train/0263 Zigzagoon.png
+data/images/train/0264 Linoone Galar.png
+data/images/train/0264 Linoone.png
+data/images/train/0265 Wurmple.png
+data/images/train/0266 Silcoon.png
+data/images/train/0267 Beautifly.png
+data/images/train/0268 Cascoon.png
+data/images/train/0269 Dustox.png
+data/images/train/0270 Lotad.png
+data/images/train/0271 Lombre.png
+data/images/train/0272 Ludicolo.png
+data/images/train/0273 Seedot.png
+data/images/train/0274 Nuzleaf.png
+data/images/train/0275 Shiftry.png
+data/images/train/0276 Taillow.png
+data/images/train/0277 Swellow.png
+data/images/train/0278 Wingull.png
+data/images/train/0279 Pelipper.png
+data/images/train/0280 Ralts.png
+data/images/train/0281 Kirlia.png
+data/images/train/0282 Gardevoir Mega.png
+data/images/train/0282 Gardevoir.png
+data/images/train/0283 Surskit.png
+data/images/train/0284 Masquerain.png
+data/images/train/0285 Shroomish.png
+data/images/train/0286 Breloom.png
+data/images/train/0287 Slakoth.png
+data/images/train/0288 Vigoroth.png
+data/images/train/0289 Slaking.png
+data/images/train/0290 Nincada.png
+data/images/train/0291 Ninjask.png
+data/images/train/0292 Shedinja.png
+data/images/train/0293 Whismur.png
+data/images/train/0294 Loudred.png
+data/images/train/0295 Exploud.png
+data/images/train/0296 Makuhita.png
+data/images/train/0297 Hariyama.png
+data/images/train/0298 Azurill.png
+data/images/train/0299 Nosepass.png
+data/images/train/0300 Skitty.png
+data/images/train/0301 Delcatty.png
+data/images/train/0302 Sableye Mega.png
+data/images/train/0302 Sableye.png
+data/images/train/0303 Mawile Mega.png
+data/images/train/0303 Mawile.png
+data/images/train/0304 Aron.png
+data/images/train/0305 Lairon.png
+data/images/train/0306 Aggron Mega.png
+data/images/train/0306 Aggron.png
+data/images/train/0307 Meditite.png
+data/images/train/0308 Medicham Mega.png
+data/images/train/0308 Medicham.png
+data/images/train/0309 Electrike.png
+data/images/train/0310 Manectric Mega.png
+data/images/train/0310 Manectric.png
+data/images/train/0311 Plusle.png
+data/images/train/0312 Minun.png
+data/images/train/0313 Volbeat.png
+data/images/train/0314 Illumise.png
+data/images/train/0315 Roselia.png
+data/images/train/0316 Gulpin.png
+data/images/train/0317 Swalot.png
+data/images/train/0318 Carvanha.png
+data/images/train/0319 Sharpedo Mega.png
+data/images/train/0319 Sharpedo.png
+data/images/train/0320 Wailmer.png
+data/images/train/0321 Wailord.png
+data/images/train/0322 Numel.png
+data/images/train/0323 Camerupt Mega.png
+data/images/train/0323 Camerupt.png
+data/images/train/0324 Torkoal.png
+data/images/train/0325 Spoink.png
+data/images/train/0326 Grumpig.png
+data/images/train/0327 Spinda.png
+data/images/train/0328 Trapinch.png
+data/images/train/0329 Vibrava.png
+data/images/train/0330 Flygon.png
+data/images/train/0331 Cacnea.png
+data/images/train/0332 Cacturne.png
+data/images/train/0333 Swablu.png
+data/images/train/0334 Altaria Mega.png
+data/images/train/0334 Altaria.png
+data/images/train/0335 Zangoose.png
+data/images/train/0336 Seviper.png
+data/images/train/0337 Lunatone.png
+data/images/train/0338 Solrock.png
+data/images/train/0339 Barboach.png
+data/images/train/0340 Whiscash.png
+data/images/train/0341 Corphish.png
+data/images/train/0342 Crawdaunt.png
+data/images/train/0343 Baltoy.png
+data/images/train/0344 Claydol.png
+data/images/train/0345 Lileep.png
+data/images/train/0346 Cradily.png
+data/images/train/0347 Anorith.png
+data/images/train/0348 Armaldo.png
+data/images/train/0349 Feebas.png
+data/images/train/0350 Milotic.png
+data/images/train/0351 Castform Rainy.png
+data/images/train/0351 Castform Snowy.png
+data/images/train/0351 Castform Sunny.png
+data/images/train/0351 Castform.png
+data/images/train/0352 Kecleon.png
+data/images/train/0353 Shuppet.png
+data/images/train/0354 Banette Mega.png
+data/images/train/0354 Banette.png
+data/images/train/0355 Duskull.png
+data/images/train/0356 Dusclops.png
+data/images/train/0357 Tropius.png
+data/images/train/0358 Chimecho.png
+data/images/train/0359 Absol Mega.png
+data/images/train/0359 Absol.png
+data/images/train/0360 Wynaut.png
+data/images/train/0361 Snorunt.png
+data/images/train/0362 Glalie Mega.png
+data/images/train/0362 Glalie.png
+data/images/train/0363 Spheal.png
+data/images/train/0364 Sealeo.png
+data/images/train/0365 Walrein.png
+data/images/train/0366 Clamperl.png
+data/images/train/0367 Huntail.png
+data/images/train/0368 Gorebyss.png
+data/images/train/0369 Relicanth.png
+data/images/train/0370 Luvdisc.png
+data/images/train/0371 Bagon.png
+data/images/train/0372 Shelgon.png
+data/images/train/0373 Salamence Mega.png
+data/images/train/0373 Salamence.png
+data/images/train/0374 Beldum Shiny.png
+data/images/train/0374 Beldum.png
+data/images/train/0375 Metang.png
+data/images/train/0376 Metagross Mega.png
+data/images/train/0376 Metagross.png
+data/images/train/0377 Regirock.png
+data/images/train/0378 Regice.png
+data/images/train/0379 Registeel.png
+data/images/train/0380 Latias Mega.png
+data/images/train/0380 Latias.png
+data/images/train/0381 Latios Mega.png
+data/images/train/0381 Latios.png
+data/images/train/0382 Kyogre Primal 2.png
+data/images/train/0382 Kyogre Primal.png
+data/images/train/0382 Kyogre.png
+data/images/train/0383 Groudon Primal 2.png
+data/images/train/0383 Groudon Primal.png
+data/images/train/0383 Groudon.png
+data/images/train/0384 Rayquaza BDSP.png
+data/images/train/0384 Rayquaza E.png
+data/images/train/0384 Rayquaza Mega Shiny.png
+data/images/train/0384 Rayquaza Mega.png
+data/images/train/0384 Rayquaza ORAS.png
+data/images/train/0384 Rayquaza.png
+data/images/train/0385 Jirachi BDSP.png
+data/images/train/0385 Jirachi.png
+data/images/train/0386 Deoxys Attack.png
+data/images/train/0386 Deoxys Defense.png
+data/images/train/0386 Deoxys Speed.png
+data/images/train/0386 Deoxys.png
+data/images/train/0387 Turtwig BDSP.png
+data/images/train/0387 Turtwig Pt.png
+data/images/train/0387 Turtwig.png
+data/images/train/0388 Grotle.png
+data/images/train/0389 Torterra.png
+data/images/train/0390 Chimchar BDSP.png
+data/images/train/0390 Chimchar Pt.png
+data/images/train/0390 Chimchar.png
+data/images/train/0391 Monferno.png
+data/images/train/0392 Infernape.png
+data/images/train/0393 Piplup BDSP.png
+data/images/train/0393 Piplup Pt.png
+data/images/train/0393 Piplup.png
+data/images/train/0394 Prinplup.png
+data/images/train/0395 Empoleon.png
+data/images/train/0396 Starly BDSP.png
+data/images/train/0396 Starly.png
+data/images/train/0397 Staravia BDSP.png
+data/images/train/0397 Staravia.png
+data/images/train/0398 Staraptor.png
+data/images/train/0399 Bidoof BDSP.png
+data/images/train/0399 Bidoof.png
+data/images/train/0400 Bibarel.png
+data/images/train/0401 Kricketot.png
+data/images/train/0402 Kricketune.png
+data/images/train/0403 Shinx BDSP.png
+data/images/train/0403 Shinx.png
+data/images/train/0404 Luxio.png
+data/images/train/0405 Luxray BDSP.png
+data/images/train/0405 Luxray.png
+data/images/train/0406 Budew.png
+data/images/train/0407 Roserade BDSP.png
+data/images/train/0407 Roserade.png
+data/images/train/0408 Cranidos BDSP.png
+data/images/train/0408 Cranidos.png
+data/images/train/0409 Rampardos.png
+data/images/train/0410 Shieldon.png
+data/images/train/0411 Bastiodon.png
+data/images/train/0412 Burmy No Cloak.png
+data/images/train/0412 Burmy Plant.png
+data/images/train/0412 Burmy Sandy.png
+data/images/train/0412 Burmy Trash.png
+data/images/train/0412 Burmy.png
+data/images/train/0413 Wormadam Plant.png
+data/images/train/0413 Wormadam Sandy.png
+data/images/train/0413 Wormadam Trash.png
+data/images/train/0413 Wormadam.png
+data/images/train/0414 Mothim.png
+data/images/train/0415 Combee.png
+data/images/train/0416 Vespiquen.png
+data/images/train/0417 Pachirisu BDSP.png
+data/images/train/0417 Pachirisu.png
+data/images/train/0418 Buizel BDSP.png
+data/images/train/0418 Buizel.png
+data/images/train/0419 Floatzel.png
+data/images/train/0420 Cherubi.png
+data/images/train/0421 Cherrim Overcast.png
+data/images/train/0421 Cherrim Sunny.png
+data/images/train/0422 Shellos East.png
+data/images/train/0422 Shellos West.png
+data/images/train/0422 Shellos.png
+data/images/train/0423 Gastrodon East.png
+data/images/train/0423 Gastrodon West.png
+data/images/train/0423 Gastrodon.png
+data/images/train/0424 Ambipom.png
+data/images/train/0425 Drifloon.png
+data/images/train/0426 Drifblim.png
+data/images/train/0427 Buneary.png
+data/images/train/0428 Lopunny Mega.png
+data/images/train/0428 Lopunny.png
+data/images/train/0429 Mismagius.png
+data/images/train/0430 Honchkrow.png
+data/images/train/0431 Glameow.png
+data/images/train/0432 Purugly BDSP.png
+data/images/train/0432 Purugly.png
+data/images/train/0433 Chingling.png
+data/images/train/0434 Stunky.png
+data/images/train/0435 Skuntank BDSP.png
+data/images/train/0435 Skuntank.png
+data/images/train/0436 Bronzor.png
+data/images/train/0437 Bronzong.png
+data/images/train/0438 Bonsly.png
+data/images/train/0439 Mime Jr.png
+data/images/train/0440 Happiny.png
+data/images/train/0441 Chatot.png
+data/images/train/0442 Spiritomb.png
+data/images/train/0443 Gible.png
+data/images/train/0444 Gabite.png
+data/images/train/0445 Garchomp BDSP.png
+data/images/train/0445 Garchomp Mega.png
+data/images/train/0445 Garchomp.png
+data/images/train/0446 Munchlax SM.png
+data/images/train/0446 Munchlax.png
+data/images/train/0447 Riolu BDSP.png
+data/images/train/0447 Riolu.png
+data/images/train/0448 Lucario BDSP.png
+data/images/train/0448 Lucario Mega.png
+data/images/train/0448 Lucario.png
+data/images/train/0449 Hippopotas.png
+data/images/train/0450 Hippowdon.png
+data/images/train/0451 Skorupi.png
+data/images/train/0452 Drapion.png
+data/images/train/0453 Croagunk.png
+data/images/train/0454 Toxicroak BDSP.png
+data/images/train/0454 Toxicroak.png
+data/images/train/0455 Carnivine.png
+data/images/train/0456 Finneon.png
+data/images/train/0457 Lumineon.png
+data/images/train/0458 Mantyke.png
+data/images/train/0459 Snover.png
+data/images/train/0460 Abomasnow BDSP.png
+data/images/train/0460 Abomasnow Mega.png
+data/images/train/0460 Abomasnow.png
+data/images/train/0461 Weavile BDSP.png
+data/images/train/0461 Weavile.png
+data/images/train/0462 Magnezone.png
+data/images/train/0463 Lickilicky.png
+data/images/train/0464 Rhyperior.png
+data/images/train/0465 Tangrowth.png
+data/images/train/0466 Electivire BDSP.png
+data/images/train/0466 Electivire.png
+data/images/train/0467 Magmortar BDSP.png
+data/images/train/0467 Magmortar.png
+data/images/train/0468 Togekiss.png
+data/images/train/0469 Yanmega.png
+data/images/train/0470 Leafeon BDSP.png
+data/images/train/0470 Leafeon.png
+data/images/train/0471 Glaceon BDSP.png
+data/images/train/0471 Glaceon.png
+data/images/train/0472 Gliscor BDSP.png
+data/images/train/0472 Gliscor.png
+data/images/train/0473 Mamoswine.png
+data/images/train/0474 Porygon-Z.png
+data/images/train/0475 Gallade Mega.png
+data/images/train/0475 Gallade.png
+data/images/train/0476 Probopass.png
+data/images/train/0477 Dusknoir.png
+data/images/train/0478 Froslass.png
+data/images/train/0479 Rotom BDSP.png
+data/images/train/0479 Rotom Fan.png
+data/images/train/0479 Rotom Frost.png
+data/images/train/0479 Rotom Heat.png
+data/images/train/0479 Rotom Mow.png
+data/images/train/0479 Rotom Phone 2.png
+data/images/train/0479 Rotom Phone SV.png
+data/images/train/0479 Rotom Phone.png
+data/images/train/0479 Rotom Pokédex 2.png
+data/images/train/0479 Rotom Pokédex.png
+data/images/train/0479 Rotom Wash.png
+data/images/train/0479 Rotom.png
+data/images/train/0480 Uxie BDSP.png
+data/images/train/0480 Uxie.png
+data/images/train/0481 Mesprit BDSP.png
+data/images/train/0481 Mesprit.png
+data/images/train/0482 Azelf BDSP.png
+data/images/train/0482 Azelf.png
+data/images/train/0483 Dialga BDSP.png
+data/images/train/0483 Dialga Origin.png
+data/images/train/0483 Dialga.png
+data/images/train/0484 Palkia alternate.png
+data/images/train/0484 Palkia BDSP.png
+data/images/train/0484 Palkia Origin.png
+data/images/train/0484 Palkia.png
+data/images/train/0485 Heatran BDSP.png
+data/images/train/0485 Heatran.png
+data/images/train/0486 Regigigas BDSP.png
+data/images/train/0486 Regigigas.png
+data/images/train/0487 Giratina BDSP.png
+data/images/train/0487 Giratina Origin.png
+data/images/train/0487 Giratina.png
+data/images/train/0488 Cresselia BDSP.png
+data/images/train/0488 Cresselia.png
+data/images/train/0489 Phione BDSP.png
+data/images/train/0489 Phione.png
+data/images/train/0490 Manaphy BDSP.png
+data/images/train/0490 Manaphy.png
+data/images/train/0491 Darkrai.png
+data/images/train/0492 Shaymin Sky.png
+data/images/train/0492 Shaymin.png
+data/images/train/0493 Arceus.png
+data/images/train/0494 Victini.png
+data/images/train/0495 Snivy B2W2.png
+data/images/train/0495 Snivy.png
+data/images/train/0496 Servine.png
+data/images/train/0497 Serperior.png
+data/images/train/0498 Tepig B2W2.png
+data/images/train/0498 Tepig.png
+data/images/train/0499 Pignite.png
+data/images/train/0500 Emboar.png
+data/images/train/0501 Oshawott B2W2.png
+data/images/train/0501 Oshawott LA.png
+data/images/train/0501 Oshawott.png
+data/images/train/0502 Dewott.png
+data/images/train/0503 Samurott Hisui.png
+data/images/train/0503 Samurott.png
+data/images/train/0504 Patrat.png
+data/images/train/0505 Watchog.png
+data/images/train/0506 Lillipup.png
+data/images/train/0507 Herdier.png
+data/images/train/0508 Stoutland.png
+data/images/train/0509 Purrloin.png
+data/images/train/0510 Liepard.png
+data/images/train/0511 Pansage.png
+data/images/train/0512 Simisage.png
+data/images/train/0513 Pansear.png
+data/images/train/0514 Simisear.png
+data/images/train/0515 Panpour.png
+data/images/train/0516 Simipour.png
+data/images/train/0517 Munna.png
+data/images/train/0518 Musharna.png
+data/images/train/0519 Pidove.png
+data/images/train/0520 Tranquill.png
+data/images/train/0521 Unfezant Female.png
+data/images/train/0521 Unfezant Male.png
+data/images/train/0521 Unfezant.png
+data/images/train/0522 Blitzle.png
+data/images/train/0523 Zebstrika.png
+data/images/train/0524 Roggenrola.png
+data/images/train/0525 Boldore.png
+data/images/train/0526 Gigalith.png
+data/images/train/0527 Woobat.png
+data/images/train/0528 Swoobat.png
+data/images/train/0529 Drilbur.png
+data/images/train/0530 Excadrill.png
+data/images/train/0531 Audino Mega.png
+data/images/train/0531 Audino.png
+data/images/train/0532 Timburr.png
+data/images/train/0533 Gurdurr.png
+data/images/train/0534 Conkeldurr.png
+data/images/train/0535 Tympole.png
+data/images/train/0536 Palpitoad.png
+data/images/train/0537 Seismitoad.png
+data/images/train/0538 Throh.png
+data/images/train/0539 Sawk.png
+data/images/train/0540 Sewaddle.png
+data/images/train/0541 Swadloon.png
+data/images/train/0542 Leavanny.png
+data/images/train/0543 Venipede.png
+data/images/train/0544 Whirlipede.png
+data/images/train/0545 Scolipede.png
+data/images/train/0546 Cottonee.png
+data/images/train/0547 Whimsicott.png
+data/images/train/0548 Petilil.png
+data/images/train/0549 Lilligant Hisui.png
+data/images/train/0549 Lilligant.png
+data/images/train/0550 Basculin Blue.png
+data/images/train/0550 Basculin Red.png
+data/images/train/0550 Basculin White.png
+data/images/train/0550 Basculin.png
+data/images/train/0551 Sandile.png
+data/images/train/0552 Krokorok.png
+data/images/train/0553 Krookodile.png
+data/images/train/0554 Darumaka Galar.png
+data/images/train/0554 Darumaka.png
+data/images/train/0555 Darmanitan Galar Zen.png
+data/images/train/0555 Darmanitan Galar.png
+data/images/train/0555 Darmanitan Zen.png
+data/images/train/0555 Darmanitan.png
+data/images/train/0556 Maractus.png
+data/images/train/0557 Dwebble.png
+data/images/train/0558 Crustle.png
+data/images/train/0559 Scraggy.png
+data/images/train/0560 Scrafty.png
+data/images/train/0561 Sigilyph.png
+data/images/train/0562 Yamask Galar.png
+data/images/train/0562 Yamask.png
+data/images/train/0563 Cofagrigus.png
+data/images/train/0564 Tirtouga.png
+data/images/train/0565 Carracosta.png
+data/images/train/0566 Archen.png
+data/images/train/0567 Archeops.png
+data/images/train/0568 Trubbish.png
+data/images/train/0569 Garbodor Gigantamax.png
+data/images/train/0569 Garbodor.png
+data/images/train/0570 Zorua Hisui.png
+data/images/train/0570 Zorua.png
+data/images/train/0571 Zoroark Hisui.png
+data/images/train/0571 Zoroark.png
+data/images/train/0572 Minccino.png
+data/images/train/0573 Cinccino.png
+data/images/train/0574 Gothita.png
+data/images/train/0575 Gothorita.png
+data/images/train/0576 Gothitelle.png
+data/images/train/0577 Solosis.png
+data/images/train/0578 Duosion.png
+data/images/train/0579 Reuniclus.png
+data/images/train/0580 Ducklett.png
+data/images/train/0581 Swanna.png
+data/images/train/0582 Vanillite.png
+data/images/train/0583 Vanillish.png
+data/images/train/0584 Vanilluxe.png
+data/images/train/0585 Deerling Autumn.png
+data/images/train/0585 Deerling Spring.png
+data/images/train/0585 Deerling Summer.png
+data/images/train/0585 Deerling Winter.png
+data/images/train/0586 Sawsbuck Autumn.png
+data/images/train/0586 Sawsbuck Spring.png
+data/images/train/0586 Sawsbuck Summer.png
+data/images/train/0586 Sawsbuck Winter.png
+data/images/train/0587 Emolga.png
+data/images/train/0588 Karrablast.png
+data/images/train/0589 Escavalier.png
+data/images/train/0590 Foongus.png
+data/images/train/0591 Amoonguss.png
+data/images/train/0592 Frillish Female.png
+data/images/train/0592 Frillish Male.png
+data/images/train/0592 Frillish.png
+data/images/train/0593 Jellicent Female.png
+data/images/train/0593 Jellicent Male.png
+data/images/train/0593 Jellicent.png
+data/images/train/0594 Alomomola.png
+data/images/train/0595 Joltik.png
+data/images/train/0596 Galvantula.png
+data/images/train/0597 Ferroseed.png
+data/images/train/0598 Ferrothorn.png
+data/images/train/0599 Klink.png
+data/images/train/0600 Klang.png
+data/images/train/0601 Klinklang.png
+data/images/train/0602 Tynamo.png
+data/images/train/0603 Eelektrik.png
+data/images/train/0604 Eelektross.png
+data/images/train/0605 Elgyem.png
+data/images/train/0606 Beheeyem.png
+data/images/train/0607 Litwick.png
+data/images/train/0608 Lampent.png
+data/images/train/0609 Chandelure.png
+data/images/train/0610 Axew.png
+data/images/train/0611 Fraxure.png
+data/images/train/0612 Haxorus.png
+data/images/train/0613 Cubchoo.png
+data/images/train/0614 Beartic.png
+data/images/train/0615 Cryogonal.png
+data/images/train/0616 Shelmet.png
+data/images/train/0617 Accelgor.png
+data/images/train/0618 Stunfisk Galar.png
+data/images/train/0618 Stunfisk.png
+data/images/train/0619 Mienfoo.png
+data/images/train/0620 Mienshao.png
+data/images/train/0621 Druddigon.png
+data/images/train/0622 Golett.png
+data/images/train/0623 Golurk.png
+data/images/train/0624 Pawniard.png
+data/images/train/0625 Bisharp.png
+data/images/train/0626 Bouffalant.png
+data/images/train/0627 Rufflet.png
+data/images/train/0628 Braviary Hisui.png
+data/images/train/0628 Braviary.png
+data/images/train/0629 Vullaby.png
+data/images/train/0630 Mandibuzz.png
+data/images/train/0631 Heatmor.png
+data/images/train/0632 Durant.png
+data/images/train/0633 Deino.png
+data/images/train/0634 Zweilous.png
+data/images/train/0635 Hydreigon.png
+data/images/train/0636 Larvesta.png
+data/images/train/0637 Volcarona.png
+data/images/train/0638 Cobalion.png
+data/images/train/0639 Terrakion.png
+data/images/train/0640 Virizion.png
+data/images/train/0641 Tornadus Therian.png
+data/images/train/0641 Tornadus.png
+data/images/train/0642 Thundurus Therian.png
+data/images/train/0642 Thundurus.png
+data/images/train/0643 Reshiram Activated.png
+data/images/train/0643 Reshiram.png
+data/images/train/0644 Zekrom Activated.png
+data/images/train/0644 Zekrom.png
+data/images/train/0645 Landorus Therian.png
+data/images/train/0645 Landorus.png
+data/images/train/0646 Kyurem Black 2.png
+data/images/train/0646 Kyurem Black 3.png
+data/images/train/0646 Kyurem Black.png
+data/images/train/0646 Kyurem White 2.png
+data/images/train/0646 Kyurem White 3.png
+data/images/train/0646 Kyurem White.png
+data/images/train/0646 Kyurem.png
+data/images/train/0647 Keldeo Resolute.png
+data/images/train/0647 Keldeo.png
+data/images/train/0648 Meloetta Pirouette.png
+data/images/train/0648 Meloetta.png
+data/images/train/0649 Genesect.png
+data/images/train/0650 Chespin.png
+data/images/train/0651 Quilladin.png
+data/images/train/0652 Chesnaught.png
+data/images/train/0653 Fennekin.png
+data/images/train/0654 Braixen.png
+data/images/train/0655 Delphox.png
+data/images/train/0656 Froakie.png
+data/images/train/0657 Frogadier.png
+data/images/train/0658 Greninja Ash.png
+data/images/train/0658 Greninja.png
+data/images/train/0659 Bunnelby.png
+data/images/train/0660 Diggersby.png
+data/images/train/0661 Fletchling.png
+data/images/train/0662 Fletchinder.png
+data/images/train/0663 Talonflame.png
+data/images/train/0664 Scatterbug.png
+data/images/train/0665 Spewpa.png
+data/images/train/0666 Vivillon Archipelago.png
+data/images/train/0666 Vivillon Continental.png
+data/images/train/0666 Vivillon Elegant.png
+data/images/train/0666 Vivillon Fancy.png
+data/images/train/0666 Vivillon Garden.png
+data/images/train/0666 Vivillon High Plains.png
+data/images/train/0666 Vivillon Icy Snow.png
+data/images/train/0666 Vivillon Jungle.png
+data/images/train/0666 Vivillon Marine.png
+data/images/train/0666 Vivillon Meadow.png
+data/images/train/0666 Vivillon Modern.png
+data/images/train/0666 Vivillon Monsoon.png
+data/images/train/0666 Vivillon Ocean.png
+data/images/train/0666 Vivillon Poké Ball.png
+data/images/train/0666 Vivillon Polar.png
+data/images/train/0666 Vivillon River.png
+data/images/train/0666 Vivillon Sandstorm.png
+data/images/train/0666 Vivillon Savanna.png
+data/images/train/0666 Vivillon Sun.png
+data/images/train/0666 Vivillon Tundra.png
+data/images/train/0666 Vivillon.png
+data/images/train/0667 Litleo.png
+data/images/train/0668 Pyroar Female.png
+data/images/train/0668 Pyroar Male.png
+data/images/train/0668 Pyroar.png
+data/images/train/0669 Flabébé.png
+data/images/train/0670 Floette.png
+data/images/train/0671 Florges.png
+data/images/train/0672 Skiddo.png
+data/images/train/0673 Gogoat.png
+data/images/train/0674 Pancham.png
+data/images/train/0675 Pangoro.png
+data/images/train/0676 Furfrou Diamond.png
+data/images/train/0676 Furfrou Heart.png
+data/images/train/0676 Furfrou Star.png
+data/images/train/0676 Furfrou.png
+data/images/train/0677 Espurr.png
+data/images/train/0678 Meowstic Female.png
+data/images/train/0678 Meowstic Male.png
+data/images/train/0678 Meowstic.png
+data/images/train/0679 Honedge.png
+data/images/train/0680 Doublade.png
+data/images/train/0681 Aegislash Blade.png
+data/images/train/0681 Aegislash Shield.png
+data/images/train/0681 Aegislash.png
+data/images/train/0682 Spritzee.png
+data/images/train/0683 Aromatisse.png
+data/images/train/0684 Swirlix.png
+data/images/train/0685 Slurpuff.png
+data/images/train/0686 Inkay.png
+data/images/train/0687 Malamar.png
+data/images/train/0688 Binacle.png
+data/images/train/0689 Barbaracle.png
+data/images/train/0690 Skrelp.png
+data/images/train/0691 Dragalge.png
+data/images/train/0692 Clauncher.png
+data/images/train/0693 Clawitzer.png
+data/images/train/0694 Helioptile.png
+data/images/train/0695 Heliolisk.png
+data/images/train/0696 Tyrunt.png
+data/images/train/0697 Tyrantrum.png
+data/images/train/0698 Amaura.png
+data/images/train/0699 Aurorus.png
+data/images/train/0700 Sylveon.png
+data/images/train/0701 Hawlucha.png
+data/images/train/0702 Dedenne.png
+data/images/train/0703 Carbink.png
+data/images/train/0704 Goomy.png
+data/images/train/0705 Sliggoo Hisui.png
+data/images/train/0705 Sliggoo.png
+data/images/train/0706 Goodra Hisui.png
+data/images/train/0706 Goodra.png
+data/images/train/0707 Klefki.png
+data/images/train/0708 Phantump.png
+data/images/train/0709 Trevenant.png
+data/images/train/0710 Pumpkaboo.png
+data/images/train/0711 Gourgeist.png
+data/images/train/0712 Bergmite.png
+data/images/train/0713 Avalugg Hisui.png
+data/images/train/0713 Avalugg.png
+data/images/train/0714 Noibat.png
+data/images/train/0715 Noivern.png
+data/images/train/0716 Xerneas.png
+data/images/train/0717 Yveltal.png
+data/images/train/0718 Zygarde 10Percent.png
+data/images/train/0718 Zygarde Cell.png
+data/images/train/0718 Zygarde Complete.png
+data/images/train/0718 Zygarde Core.png
+data/images/train/0718 Zygarde.png
+data/images/train/0719 Diancie Mega.png
+data/images/train/0719 Diancie.png
+data/images/train/0720 Hoopa Unbound.png
+data/images/train/0720 Hoopa.png
+data/images/train/0721 Volcanion.png
+data/images/train/0722 Rowlet 2.png
+data/images/train/0722 Rowlet USUM.png
+data/images/train/0722 Rowlet.png
+data/images/train/0722Rowlet_LA.png
+data/images/train/0723 Dartrix.png
+data/images/train/0724 Decidueye Hisui.png
+data/images/train/0724 Decidueye.png
+data/images/train/0725 Litten 2.png
+data/images/train/0725 Litten USUM.png
+data/images/train/0725 Litten.png
+data/images/train/0726 Torracat.png
+data/images/train/0727 Incineroar.png
+data/images/train/0728 Popplio 2.png
+data/images/train/0728 Popplio USUM.png
+data/images/train/0728 Popplio.png
+data/images/train/0729 Brionne.png
+data/images/train/0730 Primarina.png
+data/images/train/0731 Pikipek.png
+data/images/train/0732 Trumbeak.png
+data/images/train/0733 Toucannon.png
+data/images/train/0734 Yungoos.png
+data/images/train/0735 Gumshoos.png
+data/images/train/0736 Grubbin.png
+data/images/train/0737 Charjabug.png
+data/images/train/0738 Vikavolt.png
+data/images/train/0739 Crabrawler.png
+data/images/train/0740 Crabominable.png
+data/images/train/0741 Oricorio Pa'u.png
+data/images/train/0741 Oricorio Pom-Pom.png
+data/images/train/0741 Oricorio Sensu.png
+data/images/train/0741 Oricorio.png
+data/images/train/0742 Cutiefly.png
+data/images/train/0743 Ribombee.png
+data/images/train/0744 Rockruff.png
+data/images/train/0745 Lycanroc Dusk.png
+data/images/train/0745 Lycanroc Midnight.png
+data/images/train/0745 Lycanroc.png
+data/images/train/0746 Wishiwashi School.png
+data/images/train/0746 Wishiwashi.png
+data/images/train/0747 Mareanie.png
+data/images/train/0748 Toxapex.png
+data/images/train/0749 Mudbray.png
+data/images/train/0750 Mudsdale.png
+data/images/train/0751 Dewpider.png
+data/images/train/0752 Araquanid.png
+data/images/train/0753 Fomantis.png
+data/images/train/0754 Lurantis.png
+data/images/train/0755 Morelull.png
+data/images/train/0756 Shiinotic.png
+data/images/train/0757 Salandit.png
+data/images/train/0758 Salazzle.png
+data/images/train/0759 Stufful.png
+data/images/train/0760 Bewear.png
+data/images/train/0761 Bounsweet.png
+data/images/train/0762 Steenee.png
+data/images/train/0763 Tsareena.png
+data/images/train/0764 Comfey.png
+data/images/train/0765 Oranguru.png
+data/images/train/0766 Passimian.png
+data/images/train/0767 Wimpod.png
+data/images/train/0768 Golisopod.png
+data/images/train/0769 Sandygast.png
+data/images/train/0770 Palossand.png
+data/images/train/0771 Pyukumuku.png
+data/images/train/0772 Type Null.png
+data/images/train/0773 Silvally Shiny.png
+data/images/train/0773 Silvally.png
+data/images/train/0774 Minior Core.png
+data/images/train/0774 Minior.png
+data/images/train/0775 Komala.png
+data/images/train/0776 Turtonator.png
+data/images/train/0777 Togedemaru.png
+data/images/train/0778 Mimikyu 2.png
+data/images/train/0778 Mimikyu.png
+data/images/train/0779 Bruxish.png
+data/images/train/0780 Drampa.png
+data/images/train/0781 Dhelmise.png
+data/images/train/0782 Jangmo o.png
+data/images/train/0783 Hakamo o.png
+data/images/train/0784 Kommo o.png
+data/images/train/0785 Tapu Koko 2.png
+data/images/train/0785 Tapu Koko.png
+data/images/train/0786 Tapu Lele.png
+data/images/train/0787 Tapu Bulu.png
+data/images/train/0788 Tapu Fini.png
+data/images/train/0789 Cosmog.png
+data/images/train/0790 Cosmoem.png
+data/images/train/0791 Solgaleo RadiantSunPhase.png
+data/images/train/0791 Solgaleo.png
+data/images/train/0792 Lunala FullMoonPhase.png
+data/images/train/0792 Lunala.png
+data/images/train/0793 Nihilego.png
+data/images/train/0794 Buzzwole.png
+data/images/train/0795 Pheromosa.png
+data/images/train/0796 Xurkitree.png
+data/images/train/0797 Celesteela.png
+data/images/train/0798 Kartana.png
+data/images/train/0799 Guzzlord.png
+data/images/train/0800 Necrozma Dawn Wings 2.png
+data/images/train/0800 Necrozma Dawn Wings.png
+data/images/train/0800 Necrozma Dusk Mane 2.png
+data/images/train/0800 Necrozma Dusk Mane.png
+data/images/train/0800 Necrozma Ultra.png
+data/images/train/0800 Necrozma.png
+data/images/train/0801 Magearna.png
+data/images/train/0802 Marshadow Alt.png
+data/images/train/0802 Marshadow.png
+data/images/train/0803 Poipole.png
+data/images/train/0804 Naganadel.png
+data/images/train/0805 Stakataka.png
+data/images/train/0806 Blacephalon.png
+data/images/train/0807 Zeraora.png
+data/images/train/0808 Meltan.png
+data/images/train/0809 Melmetal.png
+data/images/train/0809Melmetal-Gigantamax.png
+data/images/train/0810 Grookey 2.png
+data/images/train/0810 Grookey.png
+data/images/train/0811 Thwackey.png
+data/images/train/0812 Rillaboom Gigantamax 2.png
+data/images/train/0812 Rillaboom.png
+data/images/train/0812Rillaboom-Gigantamax.png
+data/images/train/0813 Scorbunny 2.png
+data/images/train/0813 Scorbunny.png
+data/images/train/0814 Raboot.png
+data/images/train/0815 Cinderace Gigantamax 2.png
+data/images/train/0815 Cinderace.png
+data/images/train/0815Cinderace-Gigantamax.png
+data/images/train/0816 Sobble 2.png
+data/images/train/0816 Sobble.png
+data/images/train/0817 Drizzile.png
+data/images/train/0818 Inteleon Gigantamax 2.png
+data/images/train/0818 Inteleon.png
+data/images/train/0818Inteleon-Gigantamax.png
+data/images/train/0819 Skwovet.png
+data/images/train/0820 Greedent.png
+data/images/train/0821 Rookidee.png
+data/images/train/0822 Corvisquire.png
+data/images/train/0823 Corviknight.png
+data/images/train/0823Corviknight-Gigantamax.png
+data/images/train/0824 Blipbug.png
+data/images/train/0825 Dottler.png
+data/images/train/0826 Orbeetle Gigantamax.png
+data/images/train/0826 Orbeetle.png
+data/images/train/0827 Nickit.png
+data/images/train/0828 Thievul.png
+data/images/train/0829 Gossifleur.png
+data/images/train/0830 Eldegoss.png
+data/images/train/0831 Wooloo 2.png
+data/images/train/0831 Wooloo.png
+data/images/train/0832 Dubwool.png
+data/images/train/0833 Chewtle.png
+data/images/train/0834 Drednaw Gigantamax.png
+data/images/train/0834 Drednaw.png
+data/images/train/0835 Yamper 2.png
+data/images/train/0835 Yamper.png
+data/images/train/0836 Boltund.png
+data/images/train/0837 Rolycoly 2.png
+data/images/train/0837 Rolycoly.png
+data/images/train/0838 Carkol.png
+data/images/train/0839 Coalossal Gigantamax.png
+data/images/train/0839 Coalossal.png
+data/images/train/0840 Applin.png
+data/images/train/0841 Flapple Gigantamax.png
+data/images/train/0841 Flapple.png
+data/images/train/0842 Appletun.png
+data/images/train/0843 Silicobra.png
+data/images/train/0844 Sandaconda Gigantamax.png
+data/images/train/0844 Sandaconda.png
+data/images/train/0845 Cramorant.png
+data/images/train/0846 Arrokuda.png
+data/images/train/0847 Barraskewda.png
+data/images/train/0848 Toxel.png
+data/images/train/0849 Toxtricity Amped.png
+data/images/train/0849 Toxtricity Gigantamax 2.png
+data/images/train/0849 Toxtricity Gigantamax.png
+data/images/train/0849 Toxtricity Low Key.png
+data/images/train/0850 Sizzlipede.png
+data/images/train/0851 Centiskorch Gigantamax.png
+data/images/train/0851 Centiskorch.png
+data/images/train/0852 Clobbopus.png
+data/images/train/0853 Grapploct.png
+data/images/train/0854 Sinistea.png
+data/images/train/0855 Polteageist.png
+data/images/train/0856 Hatenna.png
+data/images/train/0857 Hattrem.png
+data/images/train/0858 Hatterene Gigantamax.png
+data/images/train/0858 Hatterene.png
+data/images/train/0859 Impidimp.png
+data/images/train/0860 Morgrem.png
+data/images/train/0861 Grimmsnarl Gigantamax.png
+data/images/train/0861 Grimmsnarl.png
+data/images/train/0862 Obstagoon.png
+data/images/train/0863 Perrserker.png
+data/images/train/0864 Cursola.png
+data/images/train/0865 Sirfetch'd.png
+data/images/train/0866 Mr. Rime.png
+data/images/train/0867 Runerigus.png
+data/images/train/0868 Milcery.png
+data/images/train/0869 Alcremie Gigantamax.png
+data/images/train/0869 Alcremie.png
+data/images/train/0870 Falinks.png
+data/images/train/0871 Pincurchin.png
+data/images/train/0872 Snom.png
+data/images/train/0873 Frosmoth.png
+data/images/train/0874 Stonjourner.png
+data/images/train/0875 Eiscue Ice.png
+data/images/train/0875 Eiscue Noice.png
+data/images/train/0876 Indeedee Female.png
+data/images/train/0876 Indeedee Male.png
+data/images/train/0876 Indeedee.png
+data/images/train/0877 Morpeko Full.png
+data/images/train/0877 Morpeko Hangry.png
+data/images/train/0877 Morpeko.png
+data/images/train/0878 Cufant.png
+data/images/train/0879 Copperajah Gigantamax.png
+data/images/train/0879 Copperajah.png
+data/images/train/0880 Dracozolt.png
+data/images/train/0881 Arctozolt.png
+data/images/train/0882 Dracovish.png
+data/images/train/0883 Arctovish.png
+data/images/train/0884 Duraludon Gigantamax.png
+data/images/train/0884 Duraludon.png
+data/images/train/0885 Dreepy.png
+data/images/train/0886 Drakloak.png
+data/images/train/0887 Dragapult.png
+data/images/train/0888 Zacian 2.png
+data/images/train/0888 Zacian Hero.png
+data/images/train/0888 Zacian.png
+data/images/train/0889 Zamazenta 2.png
+data/images/train/0889 Zamazenta Hero.png
+data/images/train/0889 Zamazenta.png
+data/images/train/0890 Eternatus.png
+data/images/train/0891 Kubfu.png
+data/images/train/0892 Urshifu Gigantamax Rapid Strike.png
+data/images/train/0892 Urshifu Gigantamax Single Strike.png
+data/images/train/0892 Urshifu Rapid Strike.png
+data/images/train/0892 Urshifu Single Strike.png
+data/images/train/0892 Urshifu.png
+data/images/train/0892 Urshifu2.png
+data/images/train/0893 Zarude.png
+data/images/train/0894 Regieleki.png
+data/images/train/0895 Regidrago.png
+data/images/train/0896 Glastrier.png
+data/images/train/0897 Spectrier.png
+data/images/train/0898 Calyrex Ice Rider.png
+data/images/train/0898 Calyrex Shadow Rider.png
+data/images/train/0898 Calyrex.png
+data/images/train/0899 Wyrdeer.png
+data/images/train/0900 Kleavor.png
+data/images/train/0901 Ursaluna.png
+data/images/train/0902 Basculegion Female.png
+data/images/train/0902 Basculegion Male.png
+data/images/train/0902 Basculegion.png
+data/images/train/0903 Sneasler.png
+data/images/train/0904 Overqwil.png
+data/images/train/0905 Enamorus Therian.png
+data/images/train/0905 Enamorus.png
+data/images/train/0906 Sprigatito.png
+data/images/train/0907 Floragato.png
+data/images/train/0908 Meowscarada.png
+data/images/train/0909 Fuecoco.png
+data/images/train/0910 Crocalor.png
+data/images/train/0911 Skeledirge.png
+data/images/train/0912 Quaxly.png
+data/images/train/0913 Quaxwell.png
+data/images/train/0914 Quaquaval.png
+data/images/train/0915 Lechonk.png
+data/images/train/0916 Oinkologne Female.png
+data/images/train/0916 Oinkologne Male.png
+data/images/train/0916 Oinkologne.png
+data/images/train/0917 Tarountula.png
+data/images/train/0918 Spidops.png
+data/images/train/0919 Nymble.png
+data/images/train/0920 Lokix.png
+data/images/train/0921 Pawmi.png
+data/images/train/0922 Pawmo.png
+data/images/train/0923 Pawmot.png
+data/images/train/0924 Tandemaus.png
+data/images/train/0925 Maushold.png
+data/images/train/0926 Fidough.png
+data/images/train/0927 Dachsbun.png
+data/images/train/0928 Smoliv.png
+data/images/train/0929 Dolliv.png
+data/images/train/0930 Arboliva.png
+data/images/train/0931 Squawkabilly.png
+data/images/train/0932 Nacli.png
+data/images/train/0933 Naclstack.png
+data/images/train/0934 Garganacl.png
+data/images/train/0935 Charcadet.png
+data/images/train/0936 Armarouge.png
+data/images/train/0937 Ceruledge.png
+data/images/train/0938 Tadbulb.png
+data/images/train/0939 Bellibolt.png
+data/images/train/0940 Wattrel.png
+data/images/train/0941 Kilowattrel.png
+data/images/train/0942 Maschiff.png
+data/images/train/0943 Mabosstiff.png
+data/images/train/0944 Shroodle.png
+data/images/train/0945 Grafaiai.png
+data/images/train/0946 Bramblin.png
+data/images/train/0947 Brambleghast.png
+data/images/train/0948 Toedscool.png
+data/images/train/0949 Toedscruel.png
+data/images/train/0950 Klawf.png
+data/images/train/0951 Capsakid.png
+data/images/train/0952 Scovillain.png
+data/images/train/0953 Rellor.png
+data/images/train/0954 Rabsca.png
+data/images/train/0955 Flittle.png
+data/images/train/0956 Espathra.png
+data/images/train/0957 Tinkatink.png
+data/images/train/0958 Tinkatuff.png
+data/images/train/0959 Tinkaton.png
+data/images/train/0960 Wiglett.png
+data/images/train/0961 Wugtrio.png
+data/images/train/0962 Bombirdier.png
+data/images/train/0963 Finizen.png
+data/images/train/0964 Palafin Hero.png
+data/images/train/0964 Palafin Zero.png
+data/images/train/0964 Palafin.png
+data/images/train/0965 Varoom.png
+data/images/train/0966 Revavroom.png
+data/images/train/0967 Cyclizar.png
+data/images/train/0968 Orthworm.png
+data/images/train/0969 Glimmet.png
+data/images/train/0970 Glimmora.png
+data/images/train/0971 Greavard.png
+data/images/train/0972 Houndstone.png
+data/images/train/0973 Flamigo.png
+data/images/train/0974 Cetoddle.png
+data/images/train/0975 Cetitan.png
+data/images/train/0976 Veluza.png
+data/images/train/0977 Dondozo.png
+data/images/train/0978 Tatsugiri Droopy.png
+data/images/train/0978 Tatsugiri Stretchy.png
+data/images/train/0978 Tatsugiri.png
+data/images/train/0979 Annihilape.png
+data/images/train/0980 Clodsire.png
+data/images/train/0981 Farigiraf.png
+data/images/train/0982 Dudunsparce.png
+data/images/train/0983 Kingambit.png
+data/images/train/0984 Great Tusk.png
+data/images/train/0985 Scream Tail.png
+data/images/train/0986 Brute Bonnet.png
+data/images/train/0987 Flutter Mane.png
+data/images/train/0988 Slither Wing.png
+data/images/train/0989 Sandy Shocks.png
+data/images/train/0990 Iron Treads.png
+data/images/train/0991 Iron Bundle.png
+data/images/train/0992 Iron Hands.png
+data/images/train/0993 Iron Jugulis.png
+data/images/train/0994 Iron Moth.png
+data/images/train/0995 Iron Thorns.png
+data/images/train/0996 Frigibax.png
+data/images/train/0997 Arctibax.png
+data/images/train/0998 Baxcalibur.png
+data/images/train/0999 Gimmighoul Roaming.png
+data/images/train/0999 Gimmighoul.png
+data/images/train/1000 Gholdengo.png
+data/images/train/1001 Wo-Chien.png
+data/images/train/1002 Chien-Pao.png
+data/images/train/1003 Ting-Lu.png
+data/images/train/1004 Chi-Yu.png
+data/images/train/1005 Roaring Moon.png
+data/images/train/1006 Iron Valiant.png
+data/images/train/1007 Koraidon.png
+data/images/train/Koraidon 2.png
+data/images/train/1008 Miraidon.png
+data/images/train/Miraidon 2.png
+data/images/train/1009 Walking Wake.png
+data/images/train/1010 Iron Leaves.png
+data/images/train/1011 Dipplin.png
+data/images/train/1012 Poltchageist.png
+data/images/train/1013 Sinistcha.png
+data/images/train/1014 Okidogi.png
+data/images/train/1015 Munkidori.png
+data/images/train/1016 Fezandipiti.png
+data/images/train/1017 Ogerpon 2.png
+data/images/train/1017 Ogerpon Cornerstone Mask.png
+data/images/train/1017 Ogerpon Hearthflame Mask.png
+data/images/train/1017 Ogerpon Teal Mask.png
+data/images/train/1017 Ogerpon Wellspring Mask.png
+data/images/train/1017 Ogerpon.png
+data/images/train/1018 Archaludon.png
+data/images/train/1019 Hydrapple.png
+data/images/train/1020 Gouging Fire.png
+data/images/train/1021 Raging Bolt.png
+data/images/train/1022 Iron Boulder.png
+data/images/train/1023 Iron Crown.png
+data/images/train/1024 Terapagos Terastal 2.png
+data/images/train/1024 Terapagos Terastal.png
+data/images/train/1024 Terapagos.png
+data/images/train/terapagos stellar form.png
+data/images/train/1025 Pecharunt.png

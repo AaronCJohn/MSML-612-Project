@@ -6,7 +6,7 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 
 # WHERE IMAGES WILL BE SAVED
-output_root = r"C:\Users\varen\VSCode Projects\MSML612\proj\padded"
+output_root = r"H:\.shortcut-targets-by-id\1sDNc_3oujFrQjFhBM1lYLgCoEWNcBBqL\612 data\poke-data_128\SugimoriSprites"
 
 # -----------------------------
 # DISPLAY FUNCTION
@@ -32,7 +32,7 @@ def display_padded_image(original_img, padded_img, filename, display_count, targ
 # -----------------------------
 # LOAD BBOX + ADD MARGIN
 # -----------------------------
-def load_bbox(label_path, img_w, img_h, margin=0.05):
+def load_bbox(label_path, img_w, img_h, margin=0.3):
     if not label_path.exists():
         return None
 
@@ -113,8 +113,8 @@ def pad_and_resize_image(
             new_w = max(1, int(w * scale))
             new_h = max(1, int(h * scale))
 
-            resample = Image.NEAREST if is_sprite else Image.BICUBIC
-            # resample = Image.NEAREST if is_sprite else Image.LANCZOS
+            # resample = Image.NEAREST if is_sprite else Image.BICUBIC
+            resample = Image.NEAREST if is_sprite else Image.LANCZOS
             img = img.resize((new_w, new_h), resample=resample)
 
             # -----------------------------
@@ -242,17 +242,18 @@ def main():
     project_root = script_dir.parent
 
     # -------- CONFIG --------
-    folder = project_root / "poke-data" / "PokeSprite"
+    folder = project_root / "poke-data" / "SugimoriSprites"
 
-    # 🔥 set to None to process full dataset
-    single_image = folder / "0103exeggutor" / "exeggutor alola.png"
+    # set to None to process full dataset
+    single_image = folder / "1023iron crown" / "1023 Iron Crown.png"
+    # single_image = None
 
-    final_size = (512,512)
+    final_size = (128,128)
     bg_type = 'white'
-    is_sprite = True
+    is_sprite = False
     use_bbox = True
 
-    save = True  # 🔥 IMPORTANT: default = no saving
+    save = True  # IMPORTANT: default = no saving
     # -----------------------
 
     if single_image:
@@ -274,7 +275,7 @@ def main():
         final_size,
         bg_type,
         is_sprite,
-        show_display=True,
+        show_display=False,
         save=save,
         use_bbox=use_bbox
     )
