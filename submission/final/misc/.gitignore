@@ -1,0 +1,4 @@
+# LaTeX / latexmk build artifacts: not source-controlled. Keep exceptions for tracked config.
+*
+!.gitignore
+!.latexmkrc
