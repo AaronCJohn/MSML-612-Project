@@ -99,6 +99,28 @@ style: |
     section.tight li {
       margin-bottom: 2px;
     }
+    section.schema-fit {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+    section.schema-fit h2 {
+      font-size: 24px;
+      margin-bottom: 6px;
+    }
+    section.schema-fit p {
+      margin: 4px 0;
+    }
+    section.schema-fit pre {
+      font-size: 12px;
+      line-height: 1.08;
+      margin: 4px 0 8px 0;
+    }
+    section.schema-fit ul {
+      margin-top: 4px;
+    }
+    section.schema-fit li {
+      margin-bottom: 1px;
+    }
     section.refs {
       font-size: 15px;
       line-height: 1.3;
@@ -216,7 +238,7 @@ style: |
 
 ## with Conditional Evolution Modeling
 
-**MSML 612 — Final Presentation**
+**MSML 612 - Final Presentation**
 Aaron Cyril John, Yugaank Kalia, Varen Maniktala
 
 ---
@@ -252,7 +274,7 @@ Aaron Cyril John, Yugaank Kalia, Varen Maniktala
 
 ---
 
-## From GAN Baseline to Conditional Diffusion
+## From Baseline to Conditional Diffusion
 
 **Why move past the GAN baseline?**
 
@@ -302,7 +324,7 @@ Three complementary image sources, now unified into a single **diffusion-ready**
 
 ---
 
-<!-- _class: tight -->
+<!-- _class: schema-fit -->
 
 ## Dataset Enrichment: Types + Evolution Stage
 
@@ -310,19 +332,31 @@ Three complementary image sources, now unified into a single **diffusion-ready**
 
 ```json
 {
-  "prev": "bulbasaur", "next": "ivysaur",
+  "prev": null,
+  "next": "bulbasaur",
+  "prev_sprite": null,
+  "next_sprite": "poke-data/PokeSprite/0001bulbasaur/bulbasaur.png",
+  "types": ["grass", "poison"],
+  "evolution_stage": "base",
+  "art_style": "sprite"
+}
+{
+  "prev": "bulbasaur",
+  "next": "ivysaur",
   "prev_sprite": "poke-data/PokeSprite/0001bulbasaur/bulbasaur.png",
   "next_sprite": "poke-data/PokeSprite/0002ivysaur/ivysaur.png",
-  "types": ["grass", "poison"], "evolution_stage": "evo 1", "art_style": "sprite"
+  "types": ["grass", "poison"],
+  "evolution_stage": "evo 1",
+  "art_style": "sprite"
 }
 ```
 
 **Curation challenges we had to solve** (not off-the-shelf):
 
-- **Cross-format name collisions** — same Pokémon, different filename conventions across sources (e.g. `0006 Charizard.png` vs `charizard.png` vs `poke_capture_0006_*.png`); resolved via normalized lookup against `poke-data/pokedex.json`
-- **Regional / cosmetic variants** — `meowth-galar`, `bulbasaur shiny`, mega, gigantamax share base IDs; stripped and tagged so type lookup stays unambiguous
-- **Evolution-stage resolution** — no source labels stage directly; derived via **BFS over `prev → next` edges** from chain roots, with **PokeAPI fallback**
-- **Art-style labelling** — tagged per mapping file (`sprite`, `sugimori`, `3d`) so one unified dataset drives **style-conditioned** sampling
+- **Cross-format name collisions**: same Pokémon, different filename conventions across sources (e.g. `0006 Charizard.png` vs `charizard.png` vs `poke_capture_0006_*.png`); resolved via normalized lookup against `poke-data/pokedex.json`
+- **Regional/cosmetic variants**: `meowth-galar`, `bulbasaur shiny`, mega, gigantamax share base IDs; stripped and tagged so type lookup stays unambiguous
+- **Evolution-stage resolution**: no source labels stage directly; derived via **BFS over `prev → next` edges** from chain roots, with **PokeAPI fallback**
+- **Art-style labelling**: tagged per mapping file (`sprite`, `sugimori`, `3d`) so one unified dataset drives **style-conditioned** sampling
 
 ---
 
@@ -347,8 +381,8 @@ Three complementary image sources, now unified into a single **diffusion-ready**
     <ul>
       <li><strong>Small dataset (~6K) → diffusion over GAN</strong>: DDPM training is stable in low-data regimes where adversarial training collapses</li>
       <li><strong>Multi-modal conditioning</strong> (18 types × 3 stages × 3 styles + a <em>reference image</em>) → simple concatenation is insufficient; we use <strong>FiLM (γ, β) modulation at every ResBlock</strong> plus a dedicated CNN encoder for the prev-evo image</li>
-      <li><strong>Self-attention at 16×16 and 8×8</strong> — captures long-range shape coherence that pure convolutions miss at this resolution</li>
-      <li><strong>RGBA-preserving pipeline</strong> — 4-channel inputs throughout (non-trivial: standard ImageNet stats break alpha); keeps sprite transparency intact end-to-end</li>
+      <li><strong>Self-attention at 16×16 and 8×8</strong>: captures long-range shape coherence that pure convolutions miss at this resolution</li>
+      <li><strong>RGBA-preserving pipeline</strong>: 4-channel inputs throughout (non-trivial: standard ImageNet stats break alpha); keeps sprite transparency intact end-to-end</li>
       <li><strong>Unified conditioning vector</strong>: <code>[t_emb ‖ c_emb ‖ p_emb] → MLP → cond</code>, shared across all U-Net levels</li>
     </ul>
   </div>
@@ -358,17 +392,17 @@ Three complementary image sources, now unified into a single **diffusion-ready**
 
 ## Architecture: Conditioning Design
 
-Five heterogeneous conditioning signals — **categorical, set-valued, continuous, and image-valued** — all fused into a single control vector.
+Five heterogeneous conditioning signals: **categorical, set-valued, continuous, and image-valued**, all fused into a single control vector.
 
 | Conditioning Input               | Encoding                                         | Why this encoding                      |
 | -------------------------------- | ------------------------------------------------ | -------------------------------------- |
 | Pokémon Type (e.g., Fire, Water) | **Multi-hot** over 18 types (supports dual-type) | One-hot would lose dual-typing entirely |
 | Evolution Stage (base / evo1 / evo2) | One-hot over 3 stages                        | Discrete structural complexity control |
 | Visual Style (3d / sugimori / sprite) | One-hot over 3 styles                       | Enables cross-domain sampling at inference |
-| Previous Evolution Image         | **CNN encoder → 128-d vector** (masked if absent) | Base-stage Pokémon have no prior — mask token keeps batch shape valid |
+| Previous Evolution Image         | **CNN encoder → 128-d vector** (masked if absent) | Base-stage Pokémon have no prior; mask token keeps batch shape valid |
 | Timestep `t`                     | Sinusoidal embedding → MLP                       | Standard DDPM timestep encoding        |
 
-> All embeddings are concatenated and fused by `cond_combine` into a single 128-dim vector, which drives **FiLM (γ, β) modulation** inside every ResBlock at every resolution — not just at the bottleneck.
+> All embeddings are concatenated and fused by `cond_combine` into a single 128-dim vector, which drives **FiLM (γ, β) modulation** inside every ResBlock at every resolution, not just at the bottleneck.
 
 ---
 
@@ -397,7 +431,7 @@ Five heterogeneous conditioning signals — **categorical, set-valued, continuou
 | Model                       | Conditional U-Net, FiLM-modulated, self-attention at 16 & 8      |
 | Parameters                  | ~XX M                                                            |
 | Dataset                     | 6,373 entries merged across `3d` / `sugimori` / `sprite` mappings |
-| Hardware                    | NVIDIA T4 (Google Colab GPU)                                     |
+| Hardware                    | G4 High-RAM GPU: NVIDIA RTX PRO 6000 Blackwell (Google Colab)                                     |
 | Training time               | XX hours for XX epochs                                           |
 | Final training loss         | XX                                                               |
 
@@ -416,11 +450,11 @@ The full pipeline reproduces end-to-end from a clean checkout with a **single co
 | Concern                  | How we handle it                                                              |
 | ------------------------ | ----------------------------------------------------------------------------- |
 | Deterministic runs       | Fixed seeds for `torch`, `numpy`, `random`; deterministic `DataLoader` workers |
-| Dataset splits           | Train / val indices saved to JSON — same split across every experiment         |
-| Configuration            | YAML-driven (`configs/final.yaml`) — all hyperparameters live outside code    |
+| Dataset splits           | Train / val indices saved to JSON; same split across every experiment         |
+| Configuration            | YAML-driven (`configs/final.yaml`); all hyperparameters live outside code    |
 | Data loading             | Single `PokemonDiffusionDataset` class; unifies all 3 mapping files            |
 | Entry point              | `python train.py --config configs/final.yaml` reproduces the full run         |
-| Environment              | Pinned `requirements.txt`; tested on NVIDIA T4 (Colab) and local CUDA 12      |
+| Environment              | Pinned `requirements.txt`; tested on NVIDIA G4 (Colab) and local CUDA 12      |
 | Checkpoints              | EMA + raw weights saved every N epochs; resumable via `--resume`              |
 | Sampling                 | `python sample.py --ckpt ... --type fire --stage base --style sprite`         |
 
@@ -505,9 +539,9 @@ Filename suggestion: <code>images/diff_evo_chains.png</code>.
 
 <div class="todo">
 TODO: pick 3 Pokémon and show a 3-row comparison:
-<br>Row 1 — input artwork / target
-<br>Row 2 — GAN-predicted sprite (from baseline)
-<br>Row 3 — Diffusion-generated sprite (same conditioning)
+<br>Row 1: input artwork / target
+<br>Row 2: GAN-predicted sprite (from baseline)
+<br>Row 3: Diffusion-generated sprite (same conditioning)
 <br>Filename suggestion: <code>images/diff_vs_gan.png</code>.
 </div>
 
@@ -542,7 +576,7 @@ if time allows.
 
 ## Runtime & Efficiency
 
-Performance is not just sample quality — the rubric also credits **running time** and practical cost.
+Performance is not just sample quality; the rubric also credits **running time** and practical cost.
 
 | Measurement                           | GAN Baseline | Diffusion (ours) |
 | ------------------------------------- | ------------ | ---------------- |
@@ -558,7 +592,7 @@ TODO: log these numbers directly from the training/sampling scripts so they are 
 
 ---
 
-## Ablation Study
+<!-- ## Ablation Study
 
 | Experiment                                          | What It Tests                          | Result |
 | --------------------------------------------------- | -------------------------------------- | ------ |
@@ -571,14 +605,14 @@ TODO: log these numbers directly from the training/sampling scripts so they are 
 TODO: run each ablation and report FID + qualitative notes.
 </div>
 
----
+--- -->
 
 ## Discussion
 
 **What worked well**
 
 - Unified multi-source dataset (~6.4K entries) with clean `types` / `stage` / `style` labels
-- FiLM conditioning integrates cleanly with the U-Net — no architectural surprises
+- FiLM conditioning integrates cleanly with the U-Net; no architectural surprises
 - RGBA-preserving pipeline keeps sprite transparency intact
 
 **What was hard**
@@ -593,8 +627,8 @@ TODO: run each ablation and report FID + qualitative notes.
 
 **Current limitations**
 
-- Trained at **64×64 RGBA** — fine sprite detail still bounded by resolution
-- Only 3 styles and 3 evolution stages — real Pokémon have far more visual variants
+- Trained at **64×64 RGBA**; fine sprite detail still bounded by resolution
+- Only 3 styles and 3 evolution stages; real Pokémon have far more visual variants
 - No text conditioning (e.g. natural-language prompts for abilities or lore)
 
 **Future directions**
