@@ -416,10 +416,9 @@ Three complementary image sources, now unified into a single **diffusion-ready**
     <p><strong>Design decisions under constraint:</strong></p>
     <ul>
       <li><strong>Small dataset (~6K) → diffusion over GAN</strong>: DDPM training is stable in low-data regimes where adversarial training collapses</li>
-      <li><strong>Multi-modal conditioning</strong> (18 types × 3 stages × 3 styles + a <em>reference image</em>) → simple concatenation is insufficient; we use <strong>FiLM (γ, β) modulation at every ResBlock</strong> plus a dedicated CNN encoder for the prev-evo image</li>
+      <li><strong>Multi-modal conditioning</strong> (18 types × 3 stages × 3 styles + a <em>reference image</em>) → injected via additive timestep-style modulation in every ResBlock, with a dedicated CNN encoder that compresses the prev-evo image into the same embedding space.</li>
       <li><strong>Self-attention at 32x32, 16×16, and 8×8</strong>: captures long-range shape coherence that pure convolutions miss at this resolution</li>
-      <li><strong>RGBA-preserving pipeline</strong>: Using 4 channel inputs (RGBA) we used the last channel for creating correct transparency masking (non-trivial: standard ImageNet stats break alpha) to produce clean RGB images</li>
-      <li><strong>Unified conditioning vector</strong>: <code>[t_emb ‖ c_emb ‖ p_emb] → MLP → cond</code>, shared across all U-Net levels</li>
+      <li><strong>Unified conditioning embedding</strong>: Each input is independently MLP-projected to a shared dimension, then <code>emb = t_emb + c_emb + p_emb</code> is broadcast to every ResBlock.</li>
     </ul>
   </div>
 </div>
@@ -428,17 +427,17 @@ Three complementary image sources, now unified into a single **diffusion-ready**
 
 ## Architecture: Conditioning Design
 
-Five heterogeneous conditioning signals: **categorical, set-valued, continuous, and image-valued**, all fused into a single control vector.
+**Five conditioning signals of different types**: type labels, evolution stage, art style, a reference image, and the diffusion timestep all compressed into a single vector that guides the U-Net at every layer.
 
-| Conditioning Input               | Encoding                                         | Why this encoding                      |
-| -------------------------------- | ------------------------------------------------ | -------------------------------------- |
+| Conditioning Input | Encoding | Why this encoding |
+|---|---|---|
 | Pokémon Type (e.g., Fire, Water) | **Multi-hot** over 18 types (supports dual-type) | One-hot would lose dual-typing entirely |
-| Evolution Stage (base / evo1 / evo2) | One-hot over 3 stages                        | Discrete structural complexity control |
-| Visual Style (3d / sugimori / sprite) | One-hot over 3 styles                       | Enables cross-domain sampling at inference |
-| Previous Evolution Image         | **CNN encoder → 128-d vector** (masked if absent) | Base-stage Pokémon have no prior; mask token keeps batch shape valid |
-| Timestep `t`                     | Sinusoidal embedding → MLP                       | Standard DDPM timestep encoding        |
+| Evolution Stage (base / evo1 / evo2) | One-hot over 3 stages | Discrete structural complexity control |
+| Visual Style (3d / sugimori / sprite) | One-hot over 3 styles | Enables cross-domain sampling at inference |
+| Previous Evolution Image | **CNN encoder → dense vector** (zeroed if absent) | Base-stage Pokémon have no prior; zero-masking via `has_prev` keeps batch shape valid |
+| Timestep `t` | Sinusoidal embedding → MLP | Standard DDPM timestep encoding |
 
-> All embeddings are concatenated and fused by `cond_combine` into a single 128-dim vector, which drives **FiLM (γ, β) modulation** inside every ResBlock at every resolution, not just at the bottleneck.
+> Each signal is independently MLP-projected to a shared dimension, then **summed** (`emb = t_emb + c_emb + p_emb`) into a single embedding vector, which is injected additively into every ResBlock at every resolution via a learned linear projection - not just at the bottleneck.
 
 ---
 
@@ -468,7 +467,7 @@ Five heterogeneous conditioning signals: **categorical, set-valued, continuous, 
 | Parameters                  | ~XX M                                                            |
 | Dataset                     | 6,373 entries merged across `3d` / `sugimori` / `sprite` mappings |
 | Hardware                    | G4 High-RAM GPU: NVIDIA RTX PRO 6000 Blackwell (Google Colab)                                     |
-| Training time               | XX hours for XX epochs                                           |
+| Training time               | ~5 hours for 500 epochs                                           |
 | Final training loss         | XX                                                               |
 
 <div class="todo">
@@ -682,6 +681,7 @@ TODO: run each ablation and report FID + qualitative notes.
 - **Classifier-free guidance** via conditioning dropout for stronger attribute adherence
 - **Text conditioning** using a pretrained text encoder (e.g. CLIP) for descriptive generation
 - **Full evolution-chain consistency loss** that ties together all generated stages jointly
+- **RGBA masking** Using 4 channel inputs (RGBA) for creating correct transparency masking to produce clean RGB images
 
 ---
 
