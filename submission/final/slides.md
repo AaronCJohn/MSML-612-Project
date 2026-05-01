@@ -247,15 +247,16 @@ Aaron Cyril John, Yugaank Kalia, Varen Maniktala
 
 1. Problem Motivation & Recap
 2. From Unconditional Diffusion Baseline to Conditional Diffusion
-3. Dataset & Curation Challenges
-4. Preprocessing Pipeline
-5. Diffusion System Architecture
-6. Conditioning Design (Type / Style / Stage / Prev-Evo)
-7. Training Procedure
-8. Reproducibility & Code Organization
-9. Results (Unconditional, Type-, Style-, Evolution-Conditioned)
-10. Evaluation & Runtime 
-11. Discussion, Limitations & Future Work
+3. Novelty vs. Prior Work
+4. Dataset & Curation Challenges
+5. Preprocessing Pipeline
+6. Diffusion System Architecture
+7. Conditioning Design (Type / Style / Stage / Prev-Evo)
+8. Training Procedure
+9. Reproducibility & Code Organization
+10. Results (Unconditional, Type-, Style-, Evolution-Conditioned)
+11. Evaluation & Runtime 
+12. Discussion, Limitations & Future Work
 
 ---
 
@@ -274,7 +275,7 @@ Aaron Cyril John, Yugaank Kalia, Varen Maniktala
 
 ---
 
-## From Unconditional Diffusion Baseline to Conditional Diffusion.
+## From Unconditional Diffusion Baseline to Conditional Diffusion
 
 **Baseline: Unconditional Diffusion**
 
@@ -288,6 +289,24 @@ Aaron Cyril John, Yugaank Kalia, Varen Maniktala
 - Conditions generation on **type**, **style**, **stage**, and optional **previous evolution image**
 - Supports controlled samples: “make a fire-type base sprite” or “generate the next evolution”
 - Keeps diffusion's stable denoising objective while adding user-directed control
+
+---
+
+## Novelty vs. Prior Pokémon Generators
+
+Prior work mostly generates **standalone Pokémon-like images**. Our contribution is **structured, controllable, evolution-aware generation**.
+
+| Prior Work | What It Does | Limitation We Address |
+| ---------- | ------------ | --------------------- |
+| Generated-Pokemon DDPM/DDIM [16] | Unconditional diffusion on 819 JPG images | No type, style, stage, or previous-evolution conditioning |
+| Wong CS230 StyleGAN2-ADA [17] | GAN-generated sprites + separate name generation from <1K examples | No diffusion objective; no explicit evolution or attribute controls |
+| **Ours** | Conditional diffusion over **6.4K curated mappings** | Generates with `types`, `art_style`, `evolution_stage`, and optional `prev_sprite` |
+
+**Novel pieces in our pipeline**
+
+- Multi-source alignment across sprites, Sugimori art, and 3D renders
+- Evolution-chain supervision: `prev_sprite → next_sprite`
+- Unified conditioning vector for type, style, stage, timestep, and previous-evolution image
 
 ---
 
@@ -560,11 +579,11 @@ TODO: pick 3 Pokémon and show a 3-row comparison:
 
 ## Quantitative Results
 
-| Metric        | GAN Baseline | Diffusion (ours) |
-| ------------- | ------------ | ---------------- |
-| FID ↓         | XX           | XX               |
-| SSIM ↑        | XX           | XX               |
-| Diversity ↑   | XX           | XX               |
+| Metric        | Unconditional Diffusion Baseline | Conditional Diffusion (ours) |
+| ------------- | -------------------------------- | ---------------------------- |
+| FID ↓         | XX                               | XX                           |
+| SSIM ↑        | XX                               | XX                           |
+| Diversity ↑   | XX                               | XX                           |
 
 <div class="todo">
 TODO: fill in the numerical results once evaluation scripts are run on the
@@ -578,13 +597,13 @@ if time allows.
 
 Performance is not just sample quality; the rubric also credits **running time** and practical cost.
 
-| Measurement                           | GAN Baseline | Diffusion (ours) |
-| ------------------------------------- | ------------ | ---------------- |
-| Parameters                            | XX M         | XX M             |
-| Peak GPU memory (training, batch=32)  | XX GB        | XX GB            |
-| Wall-clock training time              | XX h         | XX h             |
-| Inference time per sample (T4, 1000 steps) | n/a     | XX s             |
-| Inference throughput (samples / min)  | XX           | XX               |
+| Measurement                           | Unconditional Diffusion Baseline | Conditional Diffusion (ours) |
+| ------------------------------------- | -------------------------------- | ---------------------------- |
+| Parameters                            | XX M                             | XX M                         |
+| Peak GPU memory (training, batch=32)  | XX GB                            | XX GB                        |
+| Wall-clock training time              | XX h                             | XX h                         |
+| Inference time per sample (1000 steps) | XX s                            | XX s                         |
+| Inference throughput (samples / min)  | XX                               | XX                           |
 
 <div class="todo">
 TODO: log these numbers directly from the training/sampling scripts so they are reproducible from the checkpoint.
@@ -647,7 +666,7 @@ TODO: run each ablation and report FID + qualitative notes.
 - Implemented a **FiLM-conditioned U-Net** with a dedicated prev-evolution image encoder
 - Demonstrated type-, style-, stage-, and evolution-chain-conditioned generation of novel Pokémon
 
-> Conditional diffusion is a substantially better fit than the GAN baseline for the structured, low-data, multi-domain setting of Pokémon generation.
+> Conditional diffusion is a substantially better fit than the unconditional baseline for the structured, low-data, multi-domain setting of Pokémon generation.
 
 ---
 
@@ -670,3 +689,5 @@ TODO: run each ablation and report FID + qualitative notes.
 13. msikma. *pokesprite.* github.com/msikma/pokesprite
 14. Project Pokémon. Sprite and asset resources. projectpokemon.org
 15. Pokémon Database. National Pokédex and image resources. pokemondb.net/pokedex/national
+16. Followb1ind1y. *Generated-Pokemon: New Pokemon Generation using Diffusion Models.* github.com/Followb1ind1y/Generated-Pokemon
+17. Wong, R. *Pokémon Generator.* Stanford CS230, 2021. cs230.stanford.edu/projects_fall_2021/reports/103146257.pdf
