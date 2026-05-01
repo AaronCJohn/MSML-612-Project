@@ -417,8 +417,8 @@ Three complementary image sources, now unified into a single **diffusion-ready**
     <ul>
       <li><strong>Small dataset (~6K) → diffusion over GAN</strong>: DDPM training is stable in low-data regimes where adversarial training collapses</li>
       <li><strong>Multi-modal conditioning</strong> (18 types × 3 stages × 3 styles + a <em>reference image</em>) → simple concatenation is insufficient; we use <strong>FiLM (γ, β) modulation at every ResBlock</strong> plus a dedicated CNN encoder for the prev-evo image</li>
-      <li><strong>Self-attention at 16×16 and 8×8</strong>: captures long-range shape coherence that pure convolutions miss at this resolution</li>
-      <li><strong>RGBA-preserving pipeline</strong>: 4-channel inputs throughout (non-trivial: standard ImageNet stats break alpha); keeps sprite transparency intact end-to-end</li>
+      <li><strong>Self-attention at 32x32, 16×16, and 8×8</strong>: captures long-range shape coherence that pure convolutions miss at this resolution</li>
+      <li><strong>RGBA-preserving pipeline</strong>: Using 4 channel inputs (RGBA) we used the last channel for creating correct transparency masking (non-trivial: standard ImageNet stats break alpha) to produce clean RGB images</li>
       <li><strong>Unified conditioning vector</strong>: <code>[t_emb ‖ c_emb ‖ p_emb] → MLP → cond</code>, shared across all U-Net levels</li>
     </ul>
   </div>
@@ -464,7 +464,7 @@ Five heterogeneous conditioning signals: **categorical, set-valued, continuous, 
 
 | Component                   | Setting                                                          |
 | --------------------------- | ---------------------------------------------------------------- |
-| Model                       | Conditional U-Net, FiLM-modulated, self-attention at 16 & 8      |
+| Model                       | Conditional U-Net, FiLM-modulated, self-attention at 32, 16, & 8 |
 | Parameters                  | ~XX M                                                            |
 | Dataset                     | 6,373 entries merged across `3d` / `sugimori` / `sprite` mappings |
 | Hardware                    | G4 High-RAM GPU: NVIDIA RTX PRO 6000 Blackwell (Google Colab)                                     |
@@ -485,7 +485,7 @@ The full pipeline reproduces end-to-end from a clean checkout with a **single co
 
 | Concern                  | How we handle it                                                              |
 | ------------------------ | ----------------------------------------------------------------------------- |
-| Deterministic runs       | Fixed seeds for `torch`, `numpy`, `random`; deterministic `DataLoader` workers |
+| Deterministic runs       | Deterministic `DataLoader` workers                                            |
 | Dataset splits           | Train / val indices saved to JSON; same split across every experiment         |
 | Configuration            | YAML-driven (`configs/final.yaml`); all hyperparameters live outside code    |
 | Data loading             | Single `PokemonDiffusionDataset` class; unifies all 3 mapping files            |
