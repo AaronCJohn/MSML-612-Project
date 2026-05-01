@@ -552,7 +552,7 @@ the previous generated image. Show 3–4 chains (e.g. fire, water, grass, dragon
 Filename suggestion: <code>images/diff_evo_chains.png</code>.
 </div>
 
----
+<!-- ---
 
 ## Diffusion vs. GAN: Side-by-Side
 
@@ -562,7 +562,7 @@ TODO: pick 3 Pokémon and show a 3-row comparison:
 <br>Row 2: GAN-predicted sprite (from baseline)
 <br>Row 3: Diffusion-generated sprite (same conditioning)
 <br>Filename suggestion: <code>images/diff_vs_gan.png</code>.
-</div>
+</div> -->
 
 ---
 
