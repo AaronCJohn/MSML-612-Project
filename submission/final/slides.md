@@ -216,6 +216,23 @@ style: |
       max-width: 150px;
       height: auto;
     }
+    .sample-pair {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: start;
+      text-align: center;
+      margin-top: 10px;
+    }
+    .sample-pair h3 {
+      margin: 0 0 8px 0;
+      color: #0f3460;
+    }
+    .sample-pair img {
+      width: 100%;
+      max-height: 430px;
+      object-fit: contain;
+    }
     .centered-figure {
       text-align: center;
       margin: 6px 0 0 0;
@@ -513,21 +530,30 @@ The full pipeline reproduces end-to-end from a clean checkout with a **single co
 
 ## Diffusion Results: Unconditional Samples
 
-<div class="todo">
-TODO: add a grid of unconditionally-sampled Pokémon from the trained diffusion model.
-Suggested layout: 4×4 grid of 128×128 RGB samples on a checkerboard background.
-Filename suggestion: <code>images/diff_uncond_grid.png</code>.
+<div class="sample-pair">
+  <div>
+    <h3>3D</h3>
+    <img src="images/slide 16/3d_samples_epoch_400.png">
+  </div>
+  <div>
+    <h3>Sprites</h3>
+    <img src="images/slide 16/sprite_samples_epoch_500.png">
+  </div>
 </div>
 
 ---
 
 ## Diffusion Results: Type-Conditioned Samples
 
-<div class="todo">
-TODO: add a figure showing samples conditioned on different <strong>types</strong>
-(e.g. one row per type: fire, water, grass, electric, psychic, dragon),
-all with <code>style = sprite</code>, <code>stage = base</code>.
-Filename suggestion: <code>images/diff_type_grid.png</code>.
+<div class="sample-pair">
+  <div>
+    <h3>3D</h3>
+    <img src="images/slide 17/3d_samples_epoch_350.png">
+  </div>
+  <div>
+    <h3>Sprites</h3>
+    <img src="images/slide 17/sprite_samples_epoch_500.png">
+  </div>
 </div>
 
 ---
@@ -552,7 +578,7 @@ the previous generated image. Show 3–4 chains (e.g. fire, water, grass, dragon
 Filename suggestion: <code>images/diff_evo_chains.png</code>.
 </div>
 
-<!-- ---
+---
 
 ## Diffusion vs. GAN: Side-by-Side
 
@@ -562,7 +588,7 @@ TODO: pick 3 Pokémon and show a 3-row comparison:
 <br>Row 2: GAN-predicted sprite (from baseline)
 <br>Row 3: Diffusion-generated sprite (same conditioning)
 <br>Filename suggestion: <code>images/diff_vs_gan.png</code>.
-</div> -->
+</div>
 
 ---
 
