@@ -246,7 +246,7 @@ Aaron Cyril John, Yugaank Kalia, Varen Maniktala
 ## Outline
 
 1. Problem Motivation & Recap
-2. From GAN Baseline to Conditional Diffusion
+2. From Unconditional Diffusion Baseline to Conditional Diffusion
 3. Dataset & Curation Challenges
 4. Preprocessing Pipeline
 5. Diffusion System Architecture
@@ -274,20 +274,20 @@ Aaron Cyril John, Yugaank Kalia, Varen Maniktala
 
 ---
 
-## From Baseline to Conditional Diffusion
+## From Unconditional Diffusion Baseline to Conditional Diffusion.
 
-**Why move past the GAN baseline?**
+**Baseline: Unconditional Diffusion**
 
-- The preliminary image-to-image GAN captured broad **color palettes** and rough **silhouettes** of target sprites
-- It struggled with **fine-grained detail**, **sharp edges**, and **mode coverage** (outputs collapsed toward average sprites)
-- It was fundamentally a **translator**, not a **generator**: it could only replay styles it had been shown paired with
+- Trains on Pokémon images only: no labels, no evolution pairs, no reference sprite
+- Learns the overall sprite distribution, but cannot control **type**, **stage**, or **style**
+- Generates plausible images, but cannot model **base → evo1 → evo2** progression
 
 **What a conditional diffusion model gives us instead**
 
-- **Iterative denoising** produces sharper, higher-frequency detail than a single-pass GAN generator
-- Naturally supports **structured conditioning** (type, style, stage, reference image) via FiLM + cross-attention
-- Supports **true generation** of unseen Pokémon, not just translation of existing ones
-- Training is more **stable** (no adversarial collapse) on our relatively small (~2k–6k) dataset
+- Uses structured records: `prev_sprite`, `next_sprite`, `types`, `evolution_stage`, `art_style`
+- Conditions generation on **type**, **style**, **stage**, and optional **previous evolution image**
+- Supports controlled samples: “make a fire-type base sprite” or “generate the next evolution”
+- Keeps diffusion's stable denoising objective while adding user-directed control
 
 ---
 
@@ -339,7 +339,7 @@ Three complementary image sources, now unified into a single **diffusion-ready**
   "types": ["grass", "poison"],
   "evolution_stage": "base",
   "art_style": "sprite"
-}
+},
 {
   "prev": "bulbasaur",
   "next": "ivysaur",
@@ -364,7 +364,7 @@ Three complementary image sources, now unified into a single **diffusion-ready**
 
 ![w:900](images/data-preprocessing.png)
 
-> Filename normalization → form-variant handling (Mega, Gigantamax) → cross-format mapping generation → **types + evolution enrichment** → RGBA 64×64 resize for diffusion training
+> Filename normalization → form-variant handling (Mega, Gigantamax) → cross-format mapping generation → **types + evolution enrichment** → RGB 128x128 resize for diffusion training
 
 ---
 
@@ -419,7 +419,7 @@ Five heterogeneous conditioning signals: **categorical, set-valued, continuous, 
 - Noise schedule: **linear β** from 1e-4 → 0.02 over **1000 timesteps**
 - **EMA** (decay = 0.9999) of model weights for stable sampling
 - **Gradient clipping** at 1.0; **dropout** 0.1 inside ResBlocks
-- Batch size 32, images at **64×64 RGBA** (alpha preserved for sprite transparency)
+- Batch size 32, images at **128×128 RGB** (alpha preserved for sprite transparency)
 - Base channels = 128, channel multipliers (1, 2, 2, 4), 2 ResBlocks per level
 
 ---
@@ -464,7 +464,7 @@ The full pipeline reproduces end-to-end from a clean checkout with a **single co
 
 <!-- _class: gan-side -->
 
-## Preliminary GAN Baseline (for comparison)
+## Preliminary Baseline (for comparison)
 
 <div class="gan-wrap">
   <div class="gan-visuals">
@@ -496,7 +496,7 @@ The full pipeline reproduces end-to-end from a clean checkout with a **single co
 
 <div class="todo">
 TODO: add a grid of unconditionally-sampled Pokémon from the trained diffusion model.
-Suggested layout: 4×4 grid of 64×64 RGBA samples on a checkerboard background.
+Suggested layout: 4×4 grid of 128×128 RGB samples on a checkerboard background.
 Filename suggestion: <code>images/diff_uncond_grid.png</code>.
 </div>
 
@@ -627,7 +627,7 @@ TODO: run each ablation and report FID + qualitative notes.
 
 **Current limitations**
 
-- Trained at **64×64 RGBA**; fine sprite detail still bounded by resolution
+- Trained at *128×128 RGB**; fine sprite detail still bounded by resolution
 - Only 3 styles and 3 evolution stages; real Pokémon have far more visual variants
 - No text conditioning (e.g. natural-language prompts for abilities or lore)
 
@@ -642,7 +642,7 @@ TODO: run each ablation and report FID + qualitative notes.
 
 ## Conclusion
 
-- Moved from a **preliminary GAN translator** to a **conditional diffusion generator**
+- Moved from an **unconditional diffusion baseline** to a **conditional diffusion generator**
 - Built a **6.4K-entry** diffusion-ready dataset with type, stage, and style metadata across sprite, Sugimori, and 3D sources
 - Implemented a **FiLM-conditioned U-Net** with a dedicated prev-evolution image encoder
 - Demonstrated type-, style-, stage-, and evolution-chain-conditioned generation of novel Pokémon
