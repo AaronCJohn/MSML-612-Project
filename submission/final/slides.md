@@ -254,7 +254,7 @@ Aaron Cyril John, Yugaank Kalia, Varen Maniktala
 7. Training Procedure
 8. Reproducibility & Code Organization
 9. Results (Unconditional, Type-, Style-, Evolution-Conditioned)
-10. Evaluation, Runtime & Ablations
+10. Evaluation & Runtime 
 11. Discussion, Limitations & Future Work
 
 ---
@@ -627,7 +627,7 @@ TODO: run each ablation and report FID + qualitative notes.
 
 **Current limitations**
 
-- Trained at *128×128 RGB**; fine sprite detail still bounded by resolution
+- Trained at **128×128 RGB**; fine sprite detail still bounded by resolution
 - Only 3 styles and 3 evolution stages; real Pokémon have far more visual variants
 - No text conditioning (e.g. natural-language prompts for abilities or lore)
 
