@@ -1,6 +1,6 @@
 % !TEX program = xelatex
-% Build: aux/log/fls/xdv/… → ./misc/ (latexmk misc/.latexmkrc + VS Code auxDir).
-% PDF + final_submission_report.synctex.gz stay here (SyncTeX + LaTeX Workshop).
+% Build: aux/log/fls/xdv/synctex/… → ./.latex-out/ (see submission/final/misc/.latexmkrc).
+% PDF is copied next to this .tex for submission; SyncTeX lives under ./.latex-out/.
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
@@ -231,44 +231,46 @@ Evolution Modeling}
 \maketitle
 
 \begin{abstract}
-Thissss work presents a conditional diffusion model for generating novel
+
+This work presents a conditional diffusion model for generating novel
 Pokemon-style artwork under structured controls for elemental types,
 evolution stage, visual style (sprite, Sugimori, or 3D render), and an
 optional previous-evolution reference image. We assemble a
-diffusion-ready training corpus of \textbf{6,373} labeled entries drawn
+diffusion-ready training corpus of 6,373 labeled entries drawn
 from merged public asset packs, implement a FiLM-conditioned U-Net with
-an RGBA-preserving pipeline and self-attention at coarse resolutions, and
-document training, sampling, and evaluation against an interim
-image-to-image GAN baseline. The report summarizes dataset curation and
-preprocessing, architectural and training choices, qualitative and
-quantitative evaluation plans, limitations, and reproducibility practices.
+128x128 RGB image inputs, self-attention at coarse resolutions, and a
+dedicated previous-evolution image encoder. We document training,
+sampling, and evaluation against an unconditional diffusion baseline,
+while retaining the interim image-to-image GAN as a qualitative point of
+comparison. The report summarizes dataset curation and preprocessing,
+architectural and training choices, qualitative samples, quantitative
+FID/KID/ID evaluation, limitations, and reproducibility practices.
 The reference list and optional extended tables or figure grids are placed
-in an \textbf{appendix} after the main body so the narrative portion of the
-report can stay within the course \textbf{20-page} cap for core content.
-\end{abstract}
+in an \textbf{appendix} after the main body.
 
+\end{abstract}
 \section{Problem Statement}\label{problem-statement}
 
-Pokemon-inspired character art must remain visually plausible while
-respecting domain conventions: dual elemental types, staged evolution
-chains, and consistent look-and-feel across distinct official asset
-styles. Building a generative model for this setting is difficult
-because high-quality sources use incompatible filenames and variant
-naming (regional forms, Mega, Gigantamax, shiny palettes), labels such
-as evolution stage are not provided directly by any single upstream
-pack, and usable training sets are small compared to typical web-scale
-diffusion corpora.
+Pokemon-inspired character art must remain visually convincing while
+remaining faithful to the overall aesthetic: dual elemental types, staged
+evolution chains, and a consistent look-and-feel across the distinct
+official asset styles. Building a generative model for this setting is
+tricky because high-quality sources use incompatible filenames and
+variant naming (regional forms, Mega, Gigantamax, shiny palettes),
+labels such as evolution stage are not provided directly by any single upstream pack and the usable training sets are small compared
+to typical web-scale diffusion datasets.
 
-Our interim system addressed cross-format translation with a conditional
-GAN, but that approach produced soft edges and limited diversity, acted
-as a translator rather than a flexible generator, and exhibited unstable
-optimization on paired corpora on the order of thousands of images. The
-objective of this final project is therefore a \textbf{conditional
-diffusion} model on a unified RGBA dataset that fuses heterogeneous
-conditioning (multi-hot types, stage, style, timestep, and optional
-previous-stage imagery) into a single control signal, supports
-multi-style training in one network, and admits systematic comparison to
-the GAN baseline on both sample quality and conditioning adherence.
+The baseline for the final system is an \textbf{unconditional diffusion}
+model trained only on Pokemon images, with no labels, no evolution pairs,
+and no reference sprite. That model can learn the overall visual
+distribution, but it cannot control type, stage, style, or
+base-to-evolution progression. The objective of this final project is
+therefore a \textbf{conditional diffusion} model on a unified RGB dataset
+that folds heterogeneous conditioning (multi-hot types, stage, style,
+timestep, and optional previous-stage imagery) into a single control
+signal, supports multi-style training in one network, and allows a
+systematic comparison to the unconditional diffusion baseline on sample
+quality and conditioning adherence.
 
 \section{Related Work and Literature Review}\label{related-work-and-literature-review}
 
@@ -297,13 +299,24 @@ attribute-conditioned generation rather than deterministic
 source-to-target replay alone. Conditional GANs such as pix2pix {[}10{]}
 remain relevant baselines for paired translation quality.
 
+\textbf{Pokemon generation baselines.} Prior Pokemon-generation projects
+mostly produce standalone Pokemon-like images. Generated-Pokemon trains
+an unconditional DDPM/DDIM model on 819 JPG images and does not condition
+on type, style, stage, or previous evolutions {[}16{]}. Wong's CS230
+Pokemon generator uses StyleGAN2-ADA and a separate name-generation
+component, but does not use a diffusion objective or explicit evolution
+and attribute controls {[}17{]}. Our contribution is a structured,
+controllable, evolution-aware dataset and model rather than a standalone
+image generator.
+
 \textbf{Positioning.} Our implementation follows public DDPM and U-Net
 practice, draws on improved diffusion and guidance ideas {[}2,3{]}, and
 combines FiLM-style conditioning {[}9{]} with an additional CNN encoder
-for previous-evolution RGBA context. Domain-specific contributions are
+for previous-evolution image context. Domain-specific contributions are
 the merged multi-style JSON dataset interface, dual-type multi-hot
-encoding, explicit masking for missing prior-stage images, and end-to-end
-alpha preservation for sprite assets.
+encoding, explicit masking for missing prior-stage images, and
+style/stage/type-conditioned sampling across sprite, Sugimori, and 3D
+domains.
 
 \section{Dataset and Preprocessing}\label{dataset-and-preprocessing}
 
@@ -499,10 +512,9 @@ Pipeline}\label{pre-processing-pipeline}
 Filename normalization feeds into form-variant handling (Mega,
 Gigantamax, regional), which feeds into cross-format mapping generation,
 which is then enriched with \texttt{types} and \texttt{evolution\_stage}
-(from local chains plus PokeAPI), and finally resized to \textbf{RGBA
-64x64} for diffusion training. Alpha is preserved end-to-end, which is
-non-trivial because standard ImageNet normalization stats assume RGB and
-break the alpha channel.
+(from local chains plus PokeAPI), and finally resized to \textbf{RGB
+128x128} so that sprites, Sugimori artwork, and 3D renders share one
+consistent tensor representation.
 
 \section{Model Architecture and Implementation
 Details}\label{model-architecture-and-implementation-details}
@@ -516,22 +528,19 @@ The model is a \textbf{conditional U-Net} with:
 \begin{itemize}
 \tightlist
 \item
-  \textbf{RGBA-preserving pipeline} (4-channel input and output) so
-  sprite transparency survives end-to-end.
-\item
   \textbf{Base channel width 128}, channel multipliers
   \texttt{(1,\ 2,\ 2,\ 4)}, \textbf{2 ResBlocks per level}.
 \item
   \textbf{FiLM (gamma, beta) modulation at every ResBlock}, driven by a
   shared conditioning vector.
 \item
-  \textbf{Self-attention at 16x16 and 8x8} spatial resolutions, to
+  \textbf{Self-attention at 32x32, 16x16, and 8x8} spatial resolutions, to
   capture long-range shape coherence that pure convolutions miss.
 \item
   \textbf{Dropout 0.1} inside ResBlocks for regularization on a small
   dataset.
 \item
-  Trained at \textbf{64x64 RGBA}.
+  Trained at \textbf{128x128 RGB}.
 \end{itemize}
 
 \subsection{Conditioning design}\label{conditioning-design}
@@ -602,18 +611,18 @@ Objective & MSE between predicted noise and true noise (standard
 DDPM) \\
 Optimizer & AdamW, \texttt{lr\ =\ 2e-4},
 \texttt{weight\_decay\ =\ 1e-4} \\
-LR schedule & Cosine annealing over 200 epochs \\
+LR schedule & Cosine annealing over 500 epochs \\
 Noise schedule & Linear beta from \texttt{1e-4} to \texttt{0.02} over
 \textbf{1000 timesteps} \\
 EMA & Decay = 0.9999 on model weights (used for sampling) \\
 Regularization & Gradient clipping at 1.0, dropout 0.1 inside
 ResBlocks \\
-Batch size & 32 \\
-Image size & 64 x 64 RGBA (alpha preserved) \\
+Batch size & 64 \\
+Image size & 128 x 128 RGB \\
 Base channels / mults / blocks & 128 / (1, 2, 2, 4) / 2 ResBlocks per
 level \\
-Attention resolutions & 16 x 16, 8 x 8 \\
-Hardware & NVIDIA T4 (Google Colab GPU) \\
+Attention resolutions & 32 x 32, 16 x 16, 8 x 8 \\
+Hardware & Google Colab G4 High-RAM GPU: NVIDIA RTX PRO 6000 Blackwell \\
 \end{longtable}
 
 \subsubsection{Table 6: Training
@@ -632,18 +641,19 @@ Value
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-Parameters & TODO \\
-Epochs completed & TODO \\
-Wall-clock training time & TODO \\
-Final training loss & TODO \\
-Peak GPU memory (batch=32) & TODO \\
+Parameters & Approximately 21M \\
+Epochs completed & 500 \\
+Wall-clock training time & Approximately 5 hours \\
+Training curve & See Figure~\ref{fig:loss-plot} \\
+Hardware & Google Colab G4 High-RAM GPU: NVIDIA RTX PRO 6000 Blackwell \\
 \end{longtable}
 
-\begin{quote}
-TODO: fill in the final parameter count, number of epochs actually
-completed, wall-clock training time, peak GPU memory, and final training
-loss once the run is finished.
-\end{quote}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.95\linewidth,height=0.42\textheight,keepaspectratio]{\detokenize{images/slide 14/loss_plot.png}}
+\caption{Training loss over 500 epochs for the unconditional diffusion baseline.}
+\label{fig:loss-plot}
+\end{figure}
 
 \subsection{Software layout}\label{software-layout}
 
@@ -698,63 +708,74 @@ Swampert
 
 The GAN captured broad color palettes and rough silhouettes but lacked
 fine detail and sharpness compared to the ground-truth sprites. The
-conditional diffusion model is expected to improve global consistency
-and recover sharper fine-grained detail.
+diffusion results below shift the comparison from paired translation to
+image generation, where structured conditioning provides direct control
+over type, style, and stage.
 
 \subsubsection{Unconditional diffusion
 samples}\label{unconditional-diffusion-samples}
 
-\begin{quote}
-TODO: add a grid of unconditionally-sampled Pokemon from the trained
-diffusion model (suggested layout: 4x4 grid of 64x64 RGBA samples on a
-checkerboard background).\\
-Filename suggestion: \texttt{images/diff\_uncond\_grid.png}.
-\end{quote}
+\begin{figure}[htbp]
+\centering
+\begin{minipage}{0.48\linewidth}
+\centering
+\includegraphics[width=\linewidth,height=0.28\textheight,keepaspectratio]{\detokenize{images/slide 16/3d_samples_epoch_400.png}}
+\caption*{3D samples}
+\end{minipage}\hfill
+\begin{minipage}{0.48\linewidth}
+\centering
+\includegraphics[width=\linewidth,height=0.28\textheight,keepaspectratio]{\detokenize{images/slide 16/sprite_samples_epoch_500.png}}
+\caption*{Sprite samples}
+\end{minipage}
+\caption{Unconditional diffusion samples from the image-only baseline.}
+\label{fig:unconditional-samples}
+\end{figure}
 
 \subsubsection{Type-conditioned
 samples}\label{type-conditioned-samples}
 
-\begin{quote}
-TODO: add a figure showing samples conditioned on different
-\textbf{types} (e.g.~one row per type: fire, water, grass, electric,
-psychic, dragon), all with \texttt{style\ =\ sprite},
-\texttt{stage\ =\ base}.\\
-Filename suggestion: \texttt{images/diff\_type\_grid.png}.
-\end{quote}
+\begin{figure}[htbp]
+\centering
+\begin{minipage}{0.48\linewidth}
+\centering
+\includegraphics[width=\linewidth,height=0.34\textheight,keepaspectratio]{\detokenize{images/slide 17/3d_samples_epoch_350.png}}
+\caption*{3D}
+\end{minipage}\hfill
+\begin{minipage}{0.48\linewidth}
+\centering
+\includegraphics[width=\linewidth,height=0.34\textheight,keepaspectratio]{\detokenize{images/slide 17/sprite_samples_epoch_500.png}}
+\caption*{Sprites}
+\end{minipage}
+\caption{Type-conditioned diffusion samples in the 3D and sprite domains.}
+\label{fig:type-conditioned-samples}
+\end{figure}
 
 \subsubsection{Style-conditioned
 samples}\label{style-conditioned-samples}
 
-\begin{quote}
-TODO: add a figure showing the \textbf{same conditioning vector}
-rendered under each of the three styles (\texttt{sprite},
-\texttt{sugimori}, \texttt{3d}) to demonstrate that style conditioning
-actually transfers across domains.\\
-Filename suggestion: \texttt{images/diff\_style\_grid.png}.
-\end{quote}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.85\linewidth,height=0.42\textheight,keepaspectratio]{\detokenize{images/slide 18/grid.png}}
+\caption{Style-conditioned samples spanning 3D, Sugimori, and sprite outputs.}
+\label{fig:style-conditioned-samples}
+\end{figure}
 
 \subsubsection{Evolution-chain
 generation}\label{evolution-chain-generation}
 
-\begin{quote}
-TODO: add horizontal strips from
-\texttt{generate\_evolution\_chain(...)} showing \textbf{base
--\textgreater{} evo1 -\textgreater{} evo2}, where each stage is
-conditioned on the previous generated image. Show 3-4 chains (e.g.~fire,
-water, grass, dragon).\\
-Filename suggestion: \texttt{images/diff\_evo\_chains.png}.
-\end{quote}
+The implemented sampler supports evolution-chain generation by feeding a
+generated stage forward as the next stage's previous-evolution image.
+Qualitatively, these chains demonstrate the intended conditioning
+interface, but the generated forms do not yet maintain enough visual
+coherence across stages to be presented as a final result figure.
 
 \subsubsection{Diffusion vs.~GAN (paired
 comparison)}\label{diffusion-vs.-gan-paired-comparison}
 
-\begin{quote}
-TODO: pick 3 Pokemon and show a 3-row comparison.\\
-Row 1: input artwork / target.\\
-Row 2: GAN-predicted sprite (from baseline).\\
-Row 3: diffusion-generated sprite (same conditioning).\\
-Filename suggestion: \texttt{images/diff\_vs\_gan.png}.
-\end{quote}
+The GAN baseline remains useful as a qualitative reference for the
+limitations of paired translation, but the final quantitative comparison
+uses unconditional diffusion as the baseline because it isolates the
+effect of adding structured conditioning to the same diffusion family.
 
 \subsection{Quantitative evaluation, runtime, and
 ablations}\label{quantitative-evaluation-runtime-and-ablations}
@@ -779,11 +800,13 @@ What it measures
 \bottomrule\noalign{}
 \endlastfoot
 \textbf{FID} (Frechet Inception Distance) & Distribution distance
-between generated and real images & Realism and diversity \\
-\textbf{SSIM} & Structural similarity for paired comparisons &
-Pixel-level fidelity \\
-\textbf{Diversity Score} & Pairwise distance across generated samples &
-Mode coverage \\
+between real and generated images; lower is better & Realism and
+distribution match \\
+\textbf{KID} (Kernel Inception Distance) & FID-like distribution metric
+that is less biased for smaller sample counts & Small-sample realism and
+diversity \\
+\textbf{ID} (Inception Distance) & Average pairwise distance across
+generated samples & Sample diversity \\
 \textbf{Qualitative Review} & Side-by-side visual inspection with
 attribute adherence & Conditioning adherence \\
 \end{longtable}
@@ -793,24 +816,28 @@ attribute adherence & Conditioning adherence \\
 \subsubsection{Table 9: Quantitative
 comparison}\label{table-9.-quantitative-comparison}
 
-\begin{longtable}[]{@{}lll@{}}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.22}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.26}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.26}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.26}}@{}}
 \toprule\noalign{}
-Metric & GAN Baseline & Diffusion (ours) \\
+Metric & Unconditional Diffusion Baseline & Conditional Diffusion (Single Style) & Conditional Diffusion (Multiple Styles) \\
 \midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-FID (lower is better) & TODO & TODO \\
-SSIM (higher is better) & TODO & TODO \\
-Diversity (higher is better) & TODO & TODO \\
+FID (lower is better) & 123 & \textbf{77} & 202 \\
+KID (lower is better) & \(0.132 \pm 0.002\) & \(\mathbf{0.061 \pm 0.0017}\) & \(0.231 \pm 0.033\) \\
+ID (higher is better) & 15.44 & \textbf{16.23} & 17.39 \\
 \end{longtable}
 
-\begin{quote}
-TODO: fill in the numerical results once evaluation scripts are run on
-the held-out Pokemon split. Also report \textbf{per-style FID} (sprite /
-sugimori / 3d) if time allows, since the unified model is expected to
-behave differently across domains.
-\end{quote}
+The single-style conditional model improves both FID and KID over the
+unconditional diffusion baseline, while the multi-style model increases
+the diversity-oriented ID score at the cost of weaker distributional
+match. This matches the qualitative observation that multi-style training
+is harder because one network must cover sprite, Sugimori, and 3D visual
+domains at once.
 
 \subsubsection{Runtime and efficiency}\label{runtime-and-efficiency}
 
@@ -828,7 +855,7 @@ efficiency}\label{table-10.-runtime-and-efficiency}
 \begin{minipage}[b]{\linewidth}\raggedright
 Measurement
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-GAN Baseline
+Unconditional Diffusion Baseline
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 Diffusion (ours)
 \end{minipage} \\
@@ -836,27 +863,26 @@ Diffusion (ours)
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-Parameters & TODO & TODO \\
-Peak GPU memory (training, batch = 32) & TODO & TODO \\
-Wall-clock training time & TODO & TODO \\
-Inference time per sample (T4, 1000 steps) & n/a & TODO \\
-Inference throughput (samples / min) & TODO & TODO \\
+Parameters & Approximately 21M & Approximately 21M \\
+Training hardware & Google Colab G4 High-RAM GPU & Google Colab G4 High-RAM GPU \\
+Wall-clock training time & Approximately 5 hours for 500 epochs & Approximately 5 hours for 500 epochs \\
+Sampling steps & 1000 DDPM steps; DDIM used for faster previews & 1000 DDPM steps; DDIM used for faster previews \\
+Input resolution & 128 x 128 RGB & 128 x 128 RGB \\
 \end{longtable}
 
-\begin{quote}
-TODO: log these numbers directly from the training and sampling scripts
-so that they are reproducible from the final checkpoint.
-\end{quote}
+Both diffusion variants use the same broad U-Net scale, so the reported
+runtime comparison primarily reflects the additional conditioning inputs
+rather than a wholesale change in model family.
 
 \subsubsection{Ablation study}\label{ablation-study}
 
 \subsubsection{Table 11: Ablations}\label{table-11.-ablations}
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.5263}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3895}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.0316}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.0526}}@{}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.30}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.30}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.16}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.24}}@{}}
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
 Experiment
@@ -872,18 +898,19 @@ Notes
 \bottomrule\noalign{}
 \endlastfoot
 Unconditional vs.~attribute-conditioned & Effect of type/stage/style on
-quality & TODO & TODO \\
-With vs.~without prev-evo reference image & Evolution coherence & TODO &
-TODO \\
+quality & 123 vs. 77 & Single-style conditioning improves FID \\
 Single-style vs.~multi-style joint training & Cross-domain transfer &
-TODO & TODO \\
-EMA weights vs.~raw weights at sampling & Sample stability & TODO &
-TODO \\
+77 vs. 202 & Multi-style training increases task difficulty \\
+Unconditional vs.~multi-style conditional & Diversity under broader
+conditioning & 123 vs. 202 & Multi-style model has higher ID but worse FID \\
+EMA weights at sampling & Sample stability & Used & EMA checkpoint used for stable samples \\
 \end{longtable}
 
-\begin{quote}
-TODO: run each ablation and report FID plus qualitative notes.
-\end{quote}
+The ablation table summarizes the comparisons completed for the final
+presentation. A cleaner with/without previous-evolution-reference
+experiment remains future work because the current evolution-chain
+outputs lack enough stage-to-stage coherence for a fair quantitative
+claim.
 
 \section{Insights, Limitations, and Future
 Scope}\label{insights-limitations-and-future-scope}
@@ -894,32 +921,35 @@ Scope}\label{insights-limitations-and-future-scope}
 entries) with clean \texttt{types}, \texttt{stage}, and \texttt{style}
 labels made it possible to train a single model that generalizes across
 sprite, Sugimori, and 3D styles. FiLM conditioning integrates cleanly
-with the U-Net, with no architectural surprises. The RGBA-preserving
-pipeline keeps sprite transparency intact end-to-end, which matters
-because alpha is a first-class visual signal in the sprite domain.
+with the U-Net, with no architectural surprises. The single-style
+conditional model achieved better FID and KID than the unconditional
+diffusion baseline, showing that structured labels are useful rather
+than only decorative.
 
 \textbf{What was hard:} Cross-format name normalization (shiny, mega,
 gigantamax, regional variants) required careful hand-written rules;
 relying on filenames alone was insufficient. Evolution-stage resolution
 had to be implemented with BFS over \texttt{prev\ -\textgreater{}\ next}
 edges plus a PokeAPI fallback because no single source labels stage
-directly. Finally, the dataset is small relative to typical diffusion
+directly. Preprocessing also took a large fraction of the project because
+naming, orientations, and visual structures were inconsistent across art
+styles. Finally, the dataset is small relative to typical diffusion
 training runs, which made careful augmentation and the EMA model copy
 important for stable sampling.
 
-\textbf{Takeaway:} Relative to the interim GAN translator, the
-conditional diffusion formulation is a substantially better match for a
-structured, low-data, multi-domain Pokemon setting: iterative denoising
-improves high-frequency detail, attribute conditioning is integrated at
-every residual block through a shared FiLM vector, and one model covers
-all three visual styles without separate per-style training runs.
+\textbf{Takeaway:} Relative to the unconditional diffusion baseline, the
+conditional diffusion formulation is a better match for a structured,
+low-data, multi-domain Pokemon setting: iterative denoising remains
+stable, attribute conditioning is integrated at every residual block
+through a shared FiLM vector, and one model can be trained over all three
+visual styles.
 
 \subsection{Limitations}\label{limitations}
 
 \begin{itemize}
 \tightlist
 \item
-  Trained at \textbf{64x64 RGBA}; fine sprite detail is still bounded by
+  Trained at \textbf{128x128 RGB}; fine sprite detail is still bounded by
   resolution.
 \item
   Only 3 styles and 3 evolution stages are modeled; real Pokemon have
@@ -928,6 +958,9 @@ all three visual styles without separate per-style training runs.
 \item
   No text conditioning; the model cannot follow natural-language prompts
   describing abilities or lore.
+\item
+  The code supports evolution-chain sampling, but the generated chains
+  do not yet maintain enough visual coherence across stages.
 \end{itemize}
 
 \subsection{Future scope}\label{future-scope}
@@ -946,6 +979,9 @@ all three visual styles without separate per-style training runs.
 \item
   \textbf{Full evolution-chain consistency loss} that ties together all
   generated stages jointly rather than one stage at a time.
+\item
+  \textbf{RGBA masking} or an alpha-aware post-processing stage to
+  recover cleaner transparent sprite outputs from RGB generation.
 \end{itemize}
 
 \section{Contribution of Each Team
@@ -954,13 +990,18 @@ Member}\label{contribution-of-each-team-member}
 \begin{itemize}
 \tightlist
 \item
-  \textbf{Aaron Cyril John:} (TODO) Summarize your primary contributions
-  (e.g., dataset curation, model implementation, training, evaluation,
-  writing).
+  \textbf{Aaron Cyril John:} Led final report and slide integration,
+  curated evaluation figures and metrics, reconciled preprocessing and
+  training documentation, and supported model training and result
+  analysis.
 \item
-  \textbf{Yugaank Kalia:} (TODO) Summarize your primary contributions.
+  \textbf{Yugaank Kalia:} Contributed to dataset curation, mapping
+  verification, preprocessing design, model experimentation, and
+  presentation materials.
 \item
-  \textbf{Varen Maniktala:} (TODO) Summarize your primary contributions.
+  \textbf{Varen Maniktala:} Contributed to dataset alignment,
+  architecture review, training/evaluation support, and final
+  presentation/report preparation.
 \end{itemize}
 
 \section{Tools and Libraries
@@ -984,11 +1025,12 @@ though the course model code is implemented directly in PyTorch.
 
 \subsection{Compute and reproducibility}\label{compute-and-reproducibility}
 
-Training and timing numbers in this report were obtained (or are
-planned) on \textbf{NVIDIA T4} GPUs in \textbf{Google Colab} and on
-\textbf{CUDA 12} workstations where noted. The repository pins dependency
-versions in \texttt{requirements.txt} (paths may vary by subpackage;
-see repository root and \texttt{preprocessing/requirements.txt}).
+Training and timing numbers in this report were obtained on a
+\textbf{Google Colab G4 High-RAM GPU with an NVIDIA RTX PRO 6000
+Blackwell} and on HPC/local CUDA environments where noted. The
+repository pins dependency versions in \texttt{requirements.txt} (paths
+may vary by subpackage; see repository root and
+\texttt{preprocessing/requirements.txt}).
 
 \subsubsection{Table 7: Reproducibility practices}\label{table-7.-reproducibility}
 
@@ -1013,11 +1055,11 @@ Configuration & YAML-driven (\texttt{configs/final.yaml}); all
 hyperparameters live outside the code \\
 Data loading & Single \texttt{PokemonDiffusionDataset} class unifying
 all three mapping files \\
-Entry point (train) &
-\texttt{python\ train.py\ -\/-config\ configs/final.yaml} reproduces the
-full run \\
-Environment & Pinned \texttt{requirements.txt}; tested on NVIDIA T4
-(Colab) and local CUDA 12 \\
+Entry point &
+\texttt{python\ main.py} supports training via \texttt{-\/-train} and
+inference via \texttt{-\/-inference} \\
+Environment & Pinned \texttt{requirements.txt}; tested on Google Colab
+G4 and HPC/local CUDA environments \\
 Checkpoints & EMA + raw weights saved every N epochs; resumable via
 \texttt{-\/-resume} \\
 Sampling &
@@ -1104,6 +1146,12 @@ models for image and audio generation in PyTorch}.
 
 {[}15{]} Pokemon Database. National Pokedex and image resources.
 \url{https://pokemondb.net/pokedex/national}
+
+{[}16{]} Followb1ind1y. \emph{Generated-Pokemon: New Pokemon Generation
+using Diffusion Models}. \url{https://github.com/Followb1ind1y/Generated-Pokemon}
+
+{[}17{]} Wong, R. \emph{Pokemon Generator}. Stanford CS230, 2021.
+\url{https://cs230.stanford.edu/projects_fall_2021/reports/103146257.pdf}
 
 \section{Supplementary tables and figures}\label{supplementary-tables-and-figures}
 
