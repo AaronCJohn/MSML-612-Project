@@ -404,7 +404,7 @@ Three complementary image sources, now unified into a single **diffusion-ready**
 
 - **Cross-format name collisions**: same Pokémon, different filename conventions across sources (e.g. `0006 Charizard.png` vs `charizard.png` vs `poke_capture_0006_*.png`); resolved via normalized lookup against `poke-data/pokedex.json`
 - **Regional/cosmetic variants**: `meowth-galar`, `bulbasaur shiny`, mega, gigantamax share base IDs; stripped and tagged so type lookup stays unambiguous
-- **Evolution-stage resolution**: no source labels stage directly; derived via **BFS over `prev → next` edges** from chain roots, with **PokeAPI fallback**
+- **Evolution-stage resolution**: no source labels stage directly; derived via **DFS over `prev → next` edges** from chain roots, with **PokeAPI fallback**
 - **Art-style labelling**: tagged per mapping file (`sprite`, `sugimori`, `3d`) so one unified dataset drives **style-conditioned** sampling
 
 ---
@@ -444,10 +444,10 @@ Three complementary image sources, now unified into a single **diffusion-ready**
 
 | Conditioning Input | Encoding | Why this encoding |
 |---|---|---|
-| Pokémon Type (e.g., Fire, Water) | **Multi-hot** over 18 types (supports dual-type) | One-hot would lose dual-typing entirely |
+| Pokémon Type (e.g., Fire, Water) | Multi-hot over 18 types (supports dual-type) | One-hot would lose dual-typing entirely |
 | Evolution Stage (base / evo1 / evo2) | One-hot over 3 stages | Discrete structural complexity control |
 | Visual Style (3d / sugimori / sprite) | One-hot over 3 styles | Enables cross-domain sampling at inference |
-| Previous Evolution Image | **CNN encoder → dense vector** (zeroed if absent) | Base-stage Pokémon have no prior; zero-masking via `has_prev` keeps batch shape valid |
+| Previous Evolution Image | CNN encoder → dense vector (zeroed if absent) | Base-stage Pokémon have no prior; zero-masking via `has_prev` keeps batch shape valid |
 | Timestep `t` | Sinusoidal embedding → MLP | Standard DDPM timestep encoding |
 
 > Each signal is independently MLP-projected to a shared dimension, then **summed** (`emb = t_emb + c_emb + p_emb`) into a single embedding vector, which is injected additively into every ResBlock at every resolution via a learned linear projection - not just at the bottleneck.
@@ -467,7 +467,7 @@ Three complementary image sources, now unified into a single **diffusion-ready**
 - Noise schedule: **linear β** from 1e-4 → 0.02 over **1000 timesteps**
 - **EMA** (decay = 0.9999) of model weights for stable sampling
 - **Gradient clipping** at 1.0; **dropout** 0.1 inside ResBlocks
-- Batch size 32, images at **128×128 RGB** (alpha preserved for sprite transparency)
+- Batch size 64, images at **128×128 RGB** (alpha preserved for transparency)
 - Base channels = 128, channel multipliers (1, 2, 2, 4), 2 ResBlocks per level
 
 ---
@@ -509,7 +509,7 @@ The full pipeline reproduces end-to-end from a clean checkout with a **single co
 | Deterministic runs       | Deterministic `DataLoader` workers with dataset sampler to avoid dataset imbalance |
 | Data loading             | Single `PokemonDiffusionDataset` class; unifies all 3 mapping files                |
 | Entry point              | `python main.py` reproduces training via `--train` or inference via `--inference`  |
-| Environment              | `requirements.txt`; tested on NVIDIA G4 (Colab) and local CUDA 12           |
+| Environment              | `requirements.txt`; tested on NVIDIA G4 (Colab) and HPC                            |
 | Checkpoints              | EMA + raw weights saved every N epochs; hardcoded resumable option                 |
 | Sampling                 | `python main.py --inference --ckpt ... --type fire --stage base --style sprite`    |
 
@@ -594,7 +594,7 @@ to demonstrate that style conditioning actually transfers across domains.
 Filename suggestion: <code>images/diff_style_grid.png</code>.
 </div> -->
 
----
+<!-- ---
 
 ## Diffusion Results: Evolution-Chain Generation
 
@@ -603,7 +603,7 @@ TODO: add horizontal strips from <code>generate_evolution_chain(...)</code>
 showing <strong>base → evo1 → evo2</strong>, where each stage is conditioned on
 the previous generated image. Show 3–4 chains (e.g. fire, water, grass, dragon).
 Filename suggestion: <code>images/diff_evo_chains.png</code>.
-</div>
+</div> -->
 
 ---
 
@@ -621,22 +621,22 @@ TODO: pick 3 Pokémon and show a 3-row comparison:
 
 ## Evaluation Plan
 
-| Metric                               | Description                                             | What It Measures     |
-| ------------------------------------ | ------------------------------------------------------- | -------------------- |
-| **FID** (Fréchet Inception Distance) | Distribution distance between generated and real images | Realism & diversity  |
-| **SSIM**                             | Structural similarity for paired comparisons            | Pixel-level fidelity |
-| **Diversity Score**                  | Pairwise distance across generated samples              | Mode coverage        |
-| **Qualitative Review**               | Side-by-side visual inspection                          | Attribute adherence  |
+| Metric                               | Description                                                                      |
+| ------------------------------------ | -------------------------------------------------------                          |
+| **FID** (Fréchet Inception Distance) | Distribution distance between real and generated images (lower = more realistic) |
+| **KID** (Kernel Inception Distance)  | Same as FID but unbiased for small N (2000 samples) (more reliable than FID at smaller dataset size) |
+| **ID**  (Inception Distance)         | Average pairwise distance between generated images                                       |
+| **Qualitative Review**               | Side-by-side visual inspection                                                   |
 
 ---
 
 ## Quantitative Results
 
-| Metric | Unconditional Diffusion Baseline | Conditional Diffusion (ours) |
-| ------ | -------------------------------- | ---------------------------- |
-| FID ↓  | 123                              | 112                          |
-| KID ↓  | 0.132 ± 0.002                    | 0.0827 ± 0.00144             |
-| ID ↑   | 15.44                            | 17.22                        |
+| Metric | Unconditional Diffusion Baseline | Conditional Diffusion (Single Style) | Conditional Diffusion (Multiple Styles) |
+| ------ | -------------------------------- | ---------------------------- | ---------------------------- |
+| FID  | 123                              | 77                          |  202 |
+| KID  | 0.132 ± 0.002                    | 0.061 ± 0.0017             | 0.231 ± 0.033 |
+| ID   | 15.44                            | 16.23                        | 17.39 |
 
 
 <!-- <div class="todo">
@@ -686,13 +686,14 @@ TODO: run each ablation and report FID + qualitative notes.
 
 - Unified multi-source dataset (~6.4K entries) with clean `types` / `stage` / `style` labels
 <!-- - FiLM conditioning integrates cleanly with the U-Net; no architectural surprises -->
-- RGBA-preserving pipeline keeps sprite transparency intact
+<!-- - RGBA-preserving pipeline keeps sprite transparency intact -->
 
 **What was hard**
 
 - Cross-format name normalization (shiny, mega, gigantamax, regional variants)
-- Evolution-stage resolution required BFS + PokeAPI fallback
-- Small dataset relative to typical diffusion training → careful augmentation & EMA were important
+- Preprocessing took a large majority of time since naming, orientations, and structures were inconsistent across art styles
+<!-- - Evolution-stage resolution required BFS + PokeAPI fallback -->
+- Small dataset relative to typical diffusion training, so careful augmentation & EMA were important
 
 ---
 
@@ -717,7 +718,7 @@ TODO: run each ablation and report FID + qualitative notes.
 ## Conclusion
 
 - Moved from an **unconditional diffusion baseline** to a **conditional diffusion generator**
-- Built a **6.4K-entry** diffusion-ready dataset with type, stage, and style metadata across sprite, Sugimori, and 3D sources
+- Built a 6.4K-entry diffusion-ready dataset with type, stage, and style metadata across sprite, Sugimori, and 3D sources
 - Implemented a **Conditional U-Net** with a dedicated prev-evolution image encoder
 - Demonstrated type-, style-, stage-, and evolution-chain-conditioned generation of novel Pokémon
 
