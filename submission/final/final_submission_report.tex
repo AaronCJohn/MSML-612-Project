@@ -256,7 +256,7 @@ Pokemon-inspired character art must remain visually convincing while
 remaining faithful to the overall aesthetic: dual elemental types, staged
 evolution chains, and a consistent look-and-feel across the distinct
 official asset styles. Building a generative model for this setting is
-tricky because high-quality sources use incompatible filenames and
+challenging because high-quality sources use incompatible filenames and
 variant naming (regional forms, Mega, Gigantamax, shiny palettes),
 labels such as evolution stage are not provided directly by any single upstream pack and the usable training sets are small compared
 to typical web-scale diffusion datasets.
@@ -269,9 +269,9 @@ base-to-evolution progression. The objective of this final project is
 therefore a \textbf{conditional diffusion} model trained on a unified RGB dataset
 that folds heterogeneous conditioning (multi-hot types, stage, style,
 timestep, and optional previous-stage imagery) into a single control
-signal, supports multi-style training within one network, and enables a
-systematic comparison to the unconditional diffusion baseline on sample
-quality and conditioning adherence.
+signal, supports multi-style training within one network, and supports 
+a clear comparison with the unconditional diffusion baseline in terms 
+of sample quality and conditioning accuracy.
 
 \section{Related Work and Literature Review}\label{related-work-and-literature-review}
 
@@ -593,7 +593,7 @@ the design motivation of FiLM {[}9{]}.
 \subsection{Training procedure}\label{training-procedure}
 
 \begin{center}
-\includegraphics[width=0.72\linewidth,height=0.45\textheight,keepaspectratio]{images/training.png}
+\includegraphics[width=0.78\linewidth,height=0.56\textheight,keepaspectratio]{images/training.png}
 \end{center}
 
 \subsubsection{Table 5: Training setup}\label{table-5.-training-setup}
@@ -682,7 +682,7 @@ figure shows three sample results; each column shows the input artwork
 (top), the GAN-predicted sprite (middle), and the original ground-truth
 sprite (bottom).
 
-\paragraph{Figure 1. Preliminary GAN Translation Results (Sugimori/3D
+\paragraph{Figure 1. GAN Translation Results (Sugimori/3D
 -\textgreater{}
 Sprite)}\label{figure-1.-preliminary-gan-translation-results-sugimori3d---sprite}
 
@@ -908,11 +908,11 @@ conditioning & 123 vs. 202 & Multi-style model has higher ID but worse FID \\
 EMA weights at sampling & Sample stability & Used & EMA checkpoint used for stable samples \\
 \end{longtable}
 
-The ablation table summarizes the comparisons completed for the final
-presentation. A cleaner with/without previous-evolution-reference
-experiment remains future work because the current evolution-chain
-outputs lack enough stage-to-stage coherence for a fair quantitative
-claim.
+These comparisons isolate the effects of attribute conditioning, style
+scope, and EMA sampling. We leave the previous-evolution reference as a
+qualitative conditioning pathway rather than a quantitative ablation,
+since the generated evolution chains are not yet coherent enough to
+support a controlled stage-to-stage comparison.
 
 \section{Insights, Limitations, and Future
 Scope}\label{insights-limitations-and-future-scope}
