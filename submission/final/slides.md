@@ -285,7 +285,7 @@ Aaron Cyril John, Yugaank Kalia, Varen Maniktala
 8. Training Procedure
 9. Reproducibility & Code Organization
 10. Results (Unconditional, Type-, Style-, Evolution-Conditioned)
-11. Evaluation & Runtime 
+11. Evaluation 
 12. Discussion, Limitations & Future Work
 
 ---
@@ -342,7 +342,7 @@ Prior work mostly generates **standalone Pokémon-like images**. Our contributio
 
 ## Dataset Overview 
 
-Three complementary image sources, now unified into a single **diffusion-ready** training set with type, stage, and style labels.
+Three complementary image sources, now unified into a single diffusion-ready training set with type, stage, and style labels.
 
 | Source            | Files | Role                                               |
 | ----------------- | ----- | -------------------------------------------------- |
@@ -404,7 +404,7 @@ Three complementary image sources, now unified into a single **diffusion-ready**
 
 - **Cross-format name collisions**: same Pokémon, different filename conventions across sources (e.g. `0006 Charizard.png` vs `charizard.png` vs `poke_capture_0006_*.png`); resolved via normalized lookup against `poke-data/pokedex.json`
 - **Regional/cosmetic variants**: `meowth-galar`, `bulbasaur shiny`, mega, gigantamax share base IDs; stripped and tagged so type lookup stays unambiguous
-- **Evolution-stage resolution**: no source labels stage directly; derived via **DFS over `prev → next` edges** from chain roots, with **PokeAPI fallback**
+- **Evolution-stage resolution**: no source labels stage directly; derived via DFS over `prev → next` edges from chain roots, with PokeAPI fallback
 - **Art-style labelling**: tagged per mapping file (`sprite`, `sugimori`, `3d`) so one unified dataset drives **style-conditioned** sampling
 
 ---
@@ -413,7 +413,7 @@ Three complementary image sources, now unified into a single **diffusion-ready**
 
 ![w:900](images/data-preprocessing.png)
 
-> Filename normalization → form-variant handling (Mega, Gigantamax) → cross-format mapping generation → **types + evolution enrichment** → RGB 128x128 resize for diffusion training
+> Filename normalization → form-variant handling (Mega, Gigantamax) → cross-format mapping generation → types + evolution enrichment → RGB 128x128 resize for diffusion training
 
 ---
 
@@ -502,7 +502,7 @@ TODO: fill in parameter count, epochs completed, wall-clock training time, and f
 
 ## Reproducibility & Code Organization
 
-The full pipeline reproduces end-to-end from a clean checkout with a **single command**.
+The full pipeline reproduces end-to-end from a clean checkout with a single command.
 
 | Concern                  | How we handle it                                                                   |
 | ------------------------ | -----------------------------------------------------------------------------      |
