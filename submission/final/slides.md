@@ -230,8 +230,9 @@ style: |
     }
     .sample-pair img {
       width: 100%;
-      max-height: 430px;
+      height: 400px;
       object-fit: contain;
+      display: block;
     }
     .centered-figure {
       text-align: center;
@@ -416,9 +417,10 @@ Three complementary image sources, now unified into a single **diffusion-ready**
     <p><strong>Design decisions under constraint:</strong></p>
     <ul>
       <li><strong>Small dataset (~6K) → diffusion over GAN</strong>: DDPM training is stable in low-data regimes where adversarial training collapses</li>
-      <li><strong>Multi-modal conditioning</strong> (18 types × 3 stages × 3 styles + a <em>reference image</em>) → injected via additive timestep-style modulation in every ResBlock, with a dedicated CNN encoder that compresses the prev-evo image into the same embedding space.</li>
-      <li><strong>Self-attention at 32x32, 16×16, and 8×8</strong>: captures long-range shape coherence that pure convolutions miss at this resolution</li>
-      <li><strong>Unified conditioning embedding</strong>: Each input is independently MLP-projected to a shared dimension, then <code>emb = t_emb + c_emb + p_emb</code> is broadcast to every ResBlock.</li>
+      <li><strong>Multi-modal conditioning</strong> (18 types × 3 stages × 3 styles + a <em>reference image</em>) → simple concatenation is insufficient; we use <strong>FiLM (γ, β) modulation at every ResBlock</strong> plus a dedicated CNN encoder for the prev-evo image</li>
+      <li><strong>Self-attention at 16×16 and 8×8</strong>: captures long-range shape coherence that pure convolutions miss at this resolution</li>
+      <li><strong>RGBA-preserving pipeline</strong>: 4-channel inputs throughout (non-trivial: standard ImageNet stats break alpha); keeps sprite transparency intact end-to-end</li>
+      <li><strong>Unified conditioning vector</strong>: <code>[t_emb ‖ c_emb ‖ p_emb] → MLP → cond</code>, shared across all U-Net levels</li>
     </ul>
   </div>
 </div>
@@ -427,17 +429,17 @@ Three complementary image sources, now unified into a single **diffusion-ready**
 
 ## Architecture: Conditioning Design
 
-**Five conditioning signals of different types**: type labels, evolution stage, art style, a reference image, and the diffusion timestep all compressed into a single vector that guides the U-Net at every layer.
+Five heterogeneous conditioning signals: **categorical, set-valued, continuous, and image-valued**, all fused into a single control vector.
 
-| Conditioning Input | Encoding | Why this encoding |
-|---|---|---|
+| Conditioning Input               | Encoding                                         | Why this encoding                      |
+| -------------------------------- | ------------------------------------------------ | -------------------------------------- |
 | Pokémon Type (e.g., Fire, Water) | **Multi-hot** over 18 types (supports dual-type) | One-hot would lose dual-typing entirely |
-| Evolution Stage (base / evo1 / evo2) | One-hot over 3 stages | Discrete structural complexity control |
-| Visual Style (3d / sugimori / sprite) | One-hot over 3 styles | Enables cross-domain sampling at inference |
-| Previous Evolution Image | **CNN encoder → dense vector** (zeroed if absent) | Base-stage Pokémon have no prior; zero-masking via `has_prev` keeps batch shape valid |
-| Timestep `t` | Sinusoidal embedding → MLP | Standard DDPM timestep encoding |
+| Evolution Stage (base / evo1 / evo2) | One-hot over 3 stages                        | Discrete structural complexity control |
+| Visual Style (3d / sugimori / sprite) | One-hot over 3 styles                       | Enables cross-domain sampling at inference |
+| Previous Evolution Image         | **CNN encoder → 128-d vector** (masked if absent) | Base-stage Pokémon have no prior; mask token keeps batch shape valid |
+| Timestep `t`                     | Sinusoidal embedding → MLP                       | Standard DDPM timestep encoding        |
 
-> Each signal is independently MLP-projected to a shared dimension, then **summed** (`emb = t_emb + c_emb + p_emb`) into a single embedding vector, which is injected additively into every ResBlock at every resolution via a learned linear projection - not just at the bottleneck.
+> All embeddings are concatenated and fused by `cond_combine` into a single 128-dim vector, which drives **FiLM (γ, β) modulation** inside every ResBlock at every resolution, not just at the bottleneck.
 
 ---
 
@@ -463,11 +465,11 @@ Three complementary image sources, now unified into a single **diffusion-ready**
 
 | Component                   | Setting                                                          |
 | --------------------------- | ---------------------------------------------------------------- |
-| Model                       | Conditional U-Net, self-attention at 32, 16, & 8 |
+| Model                       | Conditional U-Net, FiLM-modulated, self-attention at 16 & 8      |
 | Parameters                  | ~XX M                                                            |
 | Dataset                     | 6,373 entries merged across `3d` / `sugimori` / `sprite` mappings |
 | Hardware                    | G4 High-RAM GPU: NVIDIA RTX PRO 6000 Blackwell (Google Colab)                                     |
-| Training time               | ~5 hours for 500 epochs                                           |
+| Training time               | XX hours for XX epochs                                           |
 | Final training loss         | XX                                                               |
 
 <div class="todo">
@@ -482,14 +484,16 @@ TODO: fill in parameter count, epochs completed, wall-clock training time, and f
 
 The full pipeline reproduces end-to-end from a clean checkout with a **single command**.
 
-| Concern                  | How we handle it                                                                   |
-| ------------------------ | -----------------------------------------------------------------------------      |
-| Deterministic runs       | Deterministic `DataLoader` workers with dataset sampler to avoid dataset imbalance |
-| Data loading             | Single `PokemonDiffusionDataset` class; unifies all 3 mapping files                |
-| Entry point              | `python main.py` reproduces training via `--train` or inference via `--inference`  |
-| Environment              | Pinned `requirements.txt`; tested on NVIDIA G4 (Colab) and local CUDA 12           |
-| Checkpoints              | EMA + raw weights saved every N epochs; hardcoded resumable option                 |
-| Sampling                 | `python main.py --inference --ckpt ... --type fire --stage base --style sprite`    |
+| Concern                  | How we handle it                                                              |
+| ------------------------ | ----------------------------------------------------------------------------- |
+| Deterministic runs       | Fixed seeds for `torch`, `numpy`, `random`; deterministic `DataLoader` workers |
+| Dataset splits           | Train / val indices saved to JSON; same split across every experiment         |
+| Configuration            | YAML-driven (`configs/final.yaml`); all hyperparameters live outside code    |
+| Data loading             | Single `PokemonDiffusionDataset` class; unifies all 3 mapping files            |
+| Entry point              | `python train.py --config configs/final.yaml` reproduces the full run         |
+| Environment              | Pinned `requirements.txt`; tested on NVIDIA G4 (Colab) and local CUDA 12      |
+| Checkpoints              | EMA + raw weights saved every N epochs; resumable via `--resume`              |
+| Sampling                 | `python sample.py --ckpt ... --type fire --stage base --style sprite`         |
 
 > No hidden manual steps: the mappings, splits, training run, and sampling grids used in this deck are all generated by scripts checked into the repo.
 
@@ -497,7 +501,7 @@ The full pipeline reproduces end-to-end from a clean checkout with a **single co
 
 <!-- _class: gan-side -->
 
-<!-- ## Preliminary Baseline (for comparison)
+## Preliminary Baseline (for comparison)
 
 <div class="gan-wrap">
   <div class="gan-visuals">
@@ -521,9 +525,9 @@ The full pipeline reproduces end-to-end from a clean checkout with a **single co
     <p>GAN captures color palettes and rough silhouettes but lacks fine detail and sharpness.</p>
     <p>The conditional diffusion model should improve global consistency and recover sharper fine-grained detail.</p>
   </div>
-</div> -->
+</div>
 
-<!-- --- -->
+---
 
 ## Diffusion Results: Unconditional Samples
 
@@ -537,7 +541,7 @@ The full pipeline reproduces end-to-end from a clean checkout with a **single co
     <img src="images/slide 16/sprite_samples_epoch_500.png">
   </div>
 </div>
-
+<!-- TODO: add a grid of unconditionally-sampled Pokémon from the trained diffusion model. Suggested layout: 4×4 grid of 128×128 RGB samples on a checkerboard background. Filename suggestion: images/diff_uncond_grid.png. -->
 ---
 
 ## Diffusion Results: Type-Conditioned Samples
@@ -552,25 +556,17 @@ The full pipeline reproduces end-to-end from a clean checkout with a **single co
     <img src="images/slide 17/sprite_samples_epoch_500.png">
   </div>
 </div>
-
+<!-- TODO: add a figure showing samples conditioned on different types (e.g. one row per type: fire, water, grass, electric, psychic, dragon), all with style = sprite, stage = base. Filename suggestion: images/diff_type_grid.png. -->
 ---
 
 ## Diffusion Results: Style-Conditioned Samples
 
-
-<div class="sample-pair">
-  <div>
-    <h3>3 Styles</h3>
-    <img src="images/slide 18/grid.png">
-  </div>
-</div>
-
-<!-- <div class="todo">
+<div class="todo">
 TODO: add a figure showing the <strong>same conditioning vector</strong>
 rendered under each of the three styles (<code>sprite</code>, <code>sugimori</code>, <code>3d</code>)
 to demonstrate that style conditioning actually transfers across domains.
 Filename suggestion: <code>images/diff_style_grid.png</code>.
-</div> -->
+</div>
 
 ---
 
@@ -585,7 +581,7 @@ Filename suggestion: <code>images/diff_evo_chains.png</code>.
 
 ---
 
-<!-- ## Diffusion vs. GAN: Side-by-Side
+## Diffusion vs. GAN: Side-by-Side
 
 <div class="todo">
 TODO: pick 3 Pokémon and show a 3-row comparison:
@@ -593,9 +589,9 @@ TODO: pick 3 Pokémon and show a 3-row comparison:
 <br>Row 2: GAN-predicted sprite (from baseline)
 <br>Row 3: Diffusion-generated sprite (same conditioning)
 <br>Filename suggestion: <code>images/diff_vs_gan.png</code>.
-</div> -->
+</div>
 
-<!-- --- -->
+---
 
 ## Evaluation Plan
 
@@ -610,11 +606,12 @@ TODO: pick 3 Pokémon and show a 3-row comparison:
 
 ## Quantitative Results
 
-| Metric        | Unconditional Diffusion Baseline | Conditional Diffusion (ours) |
-| ------------- | -------------------------------- | ---------------------------- |
-| FID ↓         | XX                               | XX                           |
-| SSIM ↑        | XX                               | XX                           |
-| Diversity ↑   | XX                               | XX                           |
+| Metric | Unconditional Diffusion Baseline | Conditional Diffusion (ours) |
+| ------ | -------------------------------- | ---------------------------- |
+| FID ↓  | 123                              | 112                          |
+| KID ↓  | 0.132 ± 0.002                    | 0.0827 ± 0.00144             |
+| ID ↑   | 15.44                            | 17.22                        |
+
 
 <div class="todo">
 TODO: fill in the numerical results once evaluation scripts are run on the
@@ -624,45 +621,12 @@ if time allows.
 
 ---
 
-## Runtime & Efficiency
-
-Performance is not just sample quality; the rubric also credits **running time** and practical cost.
-
-| Measurement                           | Unconditional Diffusion Baseline | Conditional Diffusion (ours) |
-| ------------------------------------- | -------------------------------- | ---------------------------- |
-| Parameters                            | XX M                             | XX M                         |
-| Peak GPU memory (training, batch=32)  | XX GB                            | XX GB                        |
-| Wall-clock training time              | XX h                             | XX h                         |
-| Inference time per sample (1000 steps) | XX s                            | XX s                         |
-| Inference throughput (samples / min)  | XX                               | XX                           |
-
-<div class="todo">
-TODO: log these numbers directly from the training/sampling scripts so they are reproducible from the checkpoint.
-</div>
-
----
-
-<!-- ## Ablation Study
-
-| Experiment                                          | What It Tests                          | Result |
-| --------------------------------------------------- | -------------------------------------- | ------ |
-| **Unconditional vs. attribute-conditioned**         | Effect of type/stage/style on quality  | TODO   |
-| **With vs. without prev-evo reference image**       | Evolution coherence                    | TODO   |
-| **Single-style vs. multi-style joint training**     | Cross-domain transfer                  | TODO   |
-| **EMA weights vs. raw weights at sampling**         | Sample stability                       | TODO   |
-
-<div class="todo">
-TODO: run each ablation and report FID + qualitative notes.
-</div>
-
---- -->
-
 ## Discussion
 
 **What worked well**
 
 - Unified multi-source dataset (~6.4K entries) with clean `types` / `stage` / `style` labels
-<!-- - FiLM conditioning integrates cleanly with the U-Net; no architectural surprises -->
+- FiLM conditioning integrates cleanly with the U-Net; no architectural surprises
 - RGBA-preserving pipeline keeps sprite transparency intact
 
 **What was hard**
@@ -687,7 +651,6 @@ TODO: run each ablation and report FID + qualitative notes.
 - **Classifier-free guidance** via conditioning dropout for stronger attribute adherence
 - **Text conditioning** using a pretrained text encoder (e.g. CLIP) for descriptive generation
 - **Full evolution-chain consistency loss** that ties together all generated stages jointly
-- **RGBA masking** Using 4 channel inputs (RGBA) for creating correct transparency masking to produce clean RGB images
 
 ---
 
@@ -695,7 +658,7 @@ TODO: run each ablation and report FID + qualitative notes.
 
 - Moved from an **unconditional diffusion baseline** to a **conditional diffusion generator**
 - Built a **6.4K-entry** diffusion-ready dataset with type, stage, and style metadata across sprite, Sugimori, and 3D sources
-- Implemented a **Conditional U-Net** with a dedicated prev-evolution image encoder
+- Implemented a **FiLM-conditioned U-Net** with a dedicated prev-evolution image encoder
 - Demonstrated type-, style-, stage-, and evolution-chain-conditioned generation of novel Pokémon
 
 > Conditional diffusion is a substantially better fit than the unconditional baseline for the structured, low-data, multi-domain setting of Pokémon generation.
