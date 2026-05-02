@@ -234,20 +234,16 @@ Evolution Modeling}
 \begin{abstract}
 
 This work presents a conditional diffusion model for generating novel
-Pokemon-style artwork under structured controls for elemental types,
-evolution stage, visual style (sprite, Sugimori, or 3D render), and an
-optional previous-evolution reference image. We assemble a
-diffusion-ready training corpus of 6,373 labeled entries drawn
-from merged public asset packs, implement a FiLM-conditioned U-Net with
-128x128 RGB image inputs, self-attention at coarse resolutions, and a
-dedicated previous-evolution image encoder. We document training,
-sampling, and evaluation against an unconditional diffusion baseline,
-while retaining the interim image-to-image GAN as a qualitative point of
-comparison. The report summarizes dataset curation and preprocessing,
-architectural and training choices, qualitative samples, quantitative
-FID/KID/ID evaluation, limitations, and reproducibility practices.
-The reference list and optional extended tables or figure grids are placed
-in an \textbf{appendix} after the main body.
+Pokemon-style artwork with controls for elemental type, evolution stage,
+visual style (sprite, Sugimori, or 3D render), and previous-evolution
+references. We assemble a diffusion-ready training corpus of 6,373
+labeled entries from merged public asset packs and implement a
+FiLM-conditioned U-Net with 128x128 RGB image inputs, self-attention at
+coarse resolutions, and a dedicated previous-evolution image encoder. We
+document the data pipeline, model architecture, training setup, sampling
+procedure, and evaluation against an unconditional diffusion baseline.
+The report summarizes dataset curation and preprocessing, qualitative
+samples, quantitative results, and limitations.
 
 \end{abstract}
 \section{Problem Statement}\label{problem-statement}
