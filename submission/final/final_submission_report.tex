@@ -193,6 +193,7 @@
 
 % Ensure figures/tables caption in deep color
 \usepackage{caption}
+\usepackage{float}
 \captionsetup{labelfont={color=deep,bf},textfont={color=ink}}
 
 % Page geometry
@@ -260,15 +261,15 @@ variant naming (regional forms, Mega, Gigantamax, shiny palettes),
 labels such as evolution stage are not provided directly by any single upstream pack and the usable training sets are small compared
 to typical web-scale diffusion datasets.
 
-The baseline for the final system is an \textbf{unconditional diffusion}
+The baseline is an \textbf{unconditional diffusion}
 model trained only on Pokemon images, with no labels, no evolution pairs,
 and no reference sprite. That model can learn the overall visual
 distribution, but it cannot control type, stage, style, or
 base-to-evolution progression. The objective of this final project is
-therefore a \textbf{conditional diffusion} model on a unified RGB dataset
+therefore a \textbf{conditional diffusion} model trained on a unified RGB dataset
 that folds heterogeneous conditioning (multi-hot types, stage, style,
 timestep, and optional previous-stage imagery) into a single control
-signal, supports multi-style training in one network, and allows a
+signal, supports multi-style training within one network, and enables a
 systematic comparison to the unconditional diffusion baseline on sample
 quality and conditioning adherence.
 
@@ -357,14 +358,14 @@ Raw Images
 \bottomrule\noalign{}
 \endlastfoot
 SugimoriSprites &
-\includegraphics[width=1.33333in,height=\textheight,keepaspectratio]{../../poke-data/SugimoriSprites/0001bulbasaur/0001 Bulbasaur.png}
-\includegraphics[width=1.33333in,height=\textheight,keepaspectratio]{../../poke-data/SugimoriSprites/0006charizard/0006 Charizard.png} \\
+\includegraphics[width=0.95in,height=0.95in,keepaspectratio]{../../poke-data/SugimoriSprites/0001bulbasaur/0001 Bulbasaur.png}
+\includegraphics[width=0.95in,height=0.95in,keepaspectratio]{../../poke-data/SugimoriSprites/0006charizard/0006 Charizard.png} \\
 PokeSprite &
 \includegraphics[width=1.33333in,height=\textheight,keepaspectratio]{../../poke-data/PokeSprite/0001bulbasaur/bulbasaur.png}
 \includegraphics[width=1.33333in,height=\textheight,keepaspectratio]{../../poke-data/PokeSprite/0006charizard/charizard.png} \\
 ProjectPokemon &
-\includegraphics[width=1.33333in,height=\textheight,keepaspectratio]{../../poke-data/ProjectPokemon/0001bulbasaur/poke_capture_0001_000_mf_n_00000000_f_n.png}
-\includegraphics[width=1.33333in,height=\textheight,keepaspectratio]{../../poke-data/ProjectPokemon/0006charizard/poke_capture_0006_000_mf_n_00000000_f_n.png} \\
+\includegraphics[width=0.95in,height=0.95in,keepaspectratio]{../../poke-data/ProjectPokemon/0001bulbasaur/poke_capture_0001_000_mf_n_00000000_f_n.png}
+\includegraphics[width=0.95in,height=0.95in,keepaspectratio]{../../poke-data/ProjectPokemon/0006charizard/poke_capture_0006_000_mf_n_00000000_f_n.png} \\
 \end{longtable}
 
 \subsubsection{Table 2: Raw dataset
@@ -395,10 +396,11 @@ ProjectPokemon 3D & 2,799 & 1,026 & Alternate visual domain for
 cross-format use \\
 \end{longtable}
 
-\subsection{Cross-format Mapping (GAN baseline
-era)}\label{cross-format-mapping-gan-baseline-era}
+\subsection{Cross-format Mapping (Interim Paired-Translation
+Era)}\label{cross-format-mapping-interim-paired-translation-era}
 
-Our earlier GAN baseline required explicit source-to-target image pairs.
+Our earlier paired-translation experiment required explicit
+source-to-target image pairs.
 We implemented mapping scripts that parsed filenames, normalized naming
 differences, handled form-specific cases (Mega, Gigantamax, regional
 variants), and produced CSV mappings. An important part of the curation
@@ -590,7 +592,9 @@ the design motivation of FiLM {[}9{]}.
 
 \subsection{Training procedure}\label{training-procedure}
 
-\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio]{images/training.png}
+\begin{center}
+\includegraphics[width=0.72\linewidth,height=0.45\textheight,keepaspectratio]{images/training.png}
+\end{center}
 
 \subsubsection{Table 5: Training setup}\label{table-5.-training-setup}
 
@@ -670,18 +674,17 @@ dependency pins are summarized in Section~\ref{tools-and-libraries-used}.
 
 \subsection{Qualitative results}\label{qualitative-results}
 
-\subsubsection{Preliminary GAN baseline (from
-interim)}\label{preliminary-gan-baseline-from-interim}
+\subsubsection{Preliminary GAN translator}\label{preliminary-gan-translator-from-interim}
 
-As a baseline, we trained a GAN-based image-to-image model that
+As an interim comparison, we trained a GAN-based image-to-image model that
 translates Sugimori/3D artwork into game-style sprites. The following
 figure shows three sample results; each column shows the input artwork
 (top), the GAN-predicted sprite (middle), and the original ground-truth
 sprite (bottom).
 
-\paragraph{Figure 1. Preliminary GAN Results (Sugimori/3D
+\paragraph{Figure 1. Preliminary GAN Translation Results (Sugimori/3D
 -\textgreater{}
-Sprite)}\label{figure-1.-preliminary-gan-results-sugimori3d---sprite}
+Sprite)}\label{figure-1.-preliminary-gan-translation-results-sugimori3d---sprite}
 
 \begin{longtable}[]{@{}
   >{\centering\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
@@ -699,14 +702,14 @@ Swampert
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-\includegraphics[width=2.08333in,height=\textheight,keepaspectratio]{images/gan_result_3.png}
+\includegraphics[width=1.55in,height=3.2in,keepaspectratio]{images/gan_result_3.png}
 &
-\includegraphics[width=2.08333in,height=\textheight,keepaspectratio]{images/gan_result_1.png}
+\includegraphics[width=1.55in,height=3.2in,keepaspectratio]{images/gan_result_1.png}
 &
-\includegraphics[width=2.08333in,height=\textheight,keepaspectratio]{images/gan_result_2.png} \\
+\includegraphics[width=1.55in,height=3.2in,keepaspectratio]{images/gan_result_2.png} \\
 \end{longtable}
 
-The GAN captured broad color palettes and rough silhouettes but lacked
+The GAN translator captured broad color palettes and rough silhouettes but lacked
 fine detail and sharpness compared to the ground-truth sprites. The
 diffusion results below shift the comparison from paired translation to
 image generation, where structured conditioning provides direct control
@@ -715,7 +718,7 @@ over type, style, and stage.
 \subsubsection{Unconditional diffusion
 samples}\label{unconditional-diffusion-samples}
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \begin{minipage}{0.48\linewidth}
 \centering
@@ -734,16 +737,16 @@ samples}\label{unconditional-diffusion-samples}
 \subsubsection{Type-conditioned
 samples}\label{type-conditioned-samples}
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
-\begin{minipage}{0.48\linewidth}
+\begin{minipage}{0.44\linewidth}
 \centering
-\includegraphics[width=\linewidth,height=0.34\textheight,keepaspectratio]{\detokenize{images/slide 17/3d_samples_epoch_350.png}}
+\includegraphics[width=\linewidth,height=0.31\textheight,keepaspectratio]{\detokenize{images/slide 17/3d_samples_epoch_350.png}}
 \caption*{3D}
 \end{minipage}\hfill
-\begin{minipage}{0.48\linewidth}
+\begin{minipage}{0.44\linewidth}
 \centering
-\includegraphics[width=\linewidth,height=0.34\textheight,keepaspectratio]{\detokenize{images/slide 17/sprite_samples_epoch_500.png}}
+\includegraphics[width=\linewidth,height=0.31\textheight,keepaspectratio]{\detokenize{images/slide 17/sprite_samples_epoch_500.png}}
 \caption*{Sprites}
 \end{minipage}
 \caption{Type-conditioned diffusion samples in the 3D and sprite domains.}
@@ -753,9 +756,9 @@ samples}\label{type-conditioned-samples}
 \subsubsection{Style-conditioned
 samples}\label{style-conditioned-samples}
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
-\includegraphics[width=0.85\linewidth,height=0.42\textheight,keepaspectratio]{\detokenize{images/slide 18/grid.png}}
+\includegraphics[width=0.70\linewidth,height=0.34\textheight,keepaspectratio]{\detokenize{images/slide 18/grid.png}}
 \caption{Style-conditioned samples spanning 3D, Sugimori, and sprite outputs.}
 \label{fig:style-conditioned-samples}
 \end{figure}
@@ -769,10 +772,9 @@ Qualitatively, these chains demonstrate the intended conditioning
 interface, but the generated forms do not yet maintain enough visual
 coherence across stages to be presented as a final result figure.
 
-\subsubsection{Diffusion vs.~GAN (paired
-comparison)}\label{diffusion-vs.-gan-paired-comparison}
+\subsubsection{Interim translator comparison}\label{interim-translator-comparison}
 
-The GAN baseline remains useful as a qualitative reference for the
+The interim GAN translator remains useful as a qualitative reference for the
 limitations of paired translation, but the final quantitative comparison
 uses unconditional diffusion as the baseline because it isolates the
 effect of adding structured conditioning to the same diffusion family.
@@ -990,18 +992,11 @@ Member}\label{contribution-of-each-team-member}
 \begin{itemize}
 \tightlist
 \item
-  \textbf{Aaron Cyril John:} Led final report and slide integration,
-  curated evaluation figures and metrics, reconciled preprocessing and
-  training documentation, and supported model training and result
-  analysis.
+  \textbf{Aaron Cyril John:} 
 \item
-  \textbf{Yugaank Kalia:} Contributed to dataset curation, mapping
-  verification, preprocessing design, model experimentation, and
-  presentation materials.
+  \textbf{Yugaank Kalia:} 
 \item
-  \textbf{Varen Maniktala:} Contributed to dataset alignment,
-  architecture review, training/evaluation support, and final
-  presentation/report preparation.
+  \textbf{Varen Maniktala:} 
 \end{itemize}
 
 \section{Tools and Libraries
@@ -1016,7 +1011,7 @@ I/O/transforms. Configuration is loaded from \textbf{YAML} files
 \textbf{NumPy}; plotting and contact-sheet style figures for curation use
 \textbf{Matplotlib} where applicable. Optional preprocessing utilities in
 the repository may additionally use \textbf{Pandas} and
-\textbf{Pillow}. The GAN-era exploratory stack referenced
+\textbf{Pillow}. The paired-translation exploratory stack referenced
 \textbf{Streamlit} for lightweight inspection in some preprocessing
 paths. External metadata is supplemented via the \textbf{PokeAPI} HTTP
 API {[}12{]}. Public references for diffusion tooling include the
@@ -1158,7 +1153,7 @@ using Diffusion Models}. \url{https://github.com/Followb1ind1y/Generated-Pokemon
 Use this appendix section for material that supports the main report but
 need not appear in the 20-page core: for example full-page sampling grids
 (unconditional, type- or style-conditioned strips, evolution chains,
-GAN-vs-diffusion comparisons), extended quantitative tables (per-style FID,
+interim-translator comparisons), extended quantitative tables (per-style FID,
 full ablation grids), or additional mapping contact sheets. The main body
 should retain only the figures and tables needed to follow the argument;
 move overflow content here and cite it explicitly from the main text
