@@ -233,6 +233,19 @@ style: |
       max-height: 430px;
       object-fit: contain;
     }
+    .sample-single {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .sample-single h3 {
+      margin: 0 0 8px 0;
+      color: #0f3460;
+    }
+    .sample-single img {
+      width: 78%;
+      max-height: 430px;
+      object-fit: contain;
+    }
     .centered-figure {
       text-align: center;
       margin: 6px 0 0 0;
@@ -558,9 +571,9 @@ The full pipeline reproduces end-to-end from a clean checkout with a **single co
 ## Diffusion Results: Style-Conditioned Samples
 
 
-<div class="sample-pair">
+<div class="sample-single">
   <div>
-    <h3>3 Styles</h3>
+    <h3>3 Styles (3d, sugimori, sprite)</h3>
     <img src="images/slide 18/grid.png">
   </div>
 </div>
@@ -610,21 +623,22 @@ TODO: pick 3 Pokémon and show a 3-row comparison:
 
 ## Quantitative Results
 
-| Metric        | Unconditional Diffusion Baseline | Conditional Diffusion (ours) |
-| ------------- | -------------------------------- | ---------------------------- |
-| FID ↓         | XX                               | XX                           |
-| SSIM ↑        | XX                               | XX                           |
-| Diversity ↑   | XX                               | XX                           |
+| Metric | Unconditional Diffusion Baseline | Conditional Diffusion (ours) |
+| ------ | -------------------------------- | ---------------------------- |
+| FID ↓  | 123                              | 112                          |
+| KID ↓  | 0.132 ± 0.002                    | 0.0827 ± 0.00144             |
+| ID ↑   | 15.44                            | 17.22                        |
 
-<div class="todo">
+
+<!-- <div class="todo">
 TODO: fill in the numerical results once evaluation scripts are run on the
 held-out Pokémon split. Also include per-style FID (sprite / sugimori / 3d)
 if time allows.
-</div>
+</div> -->
 
 ---
 
-## Runtime & Efficiency
+<!-- ## Runtime & Efficiency
 
 Performance is not just sample quality; the rubric also credits **running time** and practical cost.
 
@@ -638,9 +652,9 @@ Performance is not just sample quality; the rubric also credits **running time**
 
 <div class="todo">
 TODO: log these numbers directly from the training/sampling scripts so they are reproducible from the checkpoint.
-</div>
-
----
+</div> -->
+<!-- 
+--- -->
 
 <!-- ## Ablation Study
 
