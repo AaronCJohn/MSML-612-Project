@@ -463,7 +463,7 @@ Three complementary image sources, now unified into a single **diffusion-ready**
 
 | Component                   | Setting                                                          |
 | --------------------------- | ---------------------------------------------------------------- |
-| Model                       | Conditional U-Net, FiLM-modulated, self-attention at 32, 16, & 8 |
+| Model                       | Conditional U-Net, self-attention at 32, 16, & 8 |
 | Parameters                  | ~XX M                                                            |
 | Dataset                     | 6,373 entries merged across `3d` / `sugimori` / `sprite` mappings |
 | Hardware                    | G4 High-RAM GPU: NVIDIA RTX PRO 6000 Blackwell (Google Colab)                                     |
@@ -523,7 +523,7 @@ The full pipeline reproduces end-to-end from a clean checkout with a **single co
   </div>
 </div> -->
 
----
+<!-- --- -->
 
 ## Diffusion Results: Unconditional Samples
 
@@ -595,7 +595,7 @@ TODO: pick 3 Pokémon and show a 3-row comparison:
 <br>Filename suggestion: <code>images/diff_vs_gan.png</code>.
 </div> -->
 
----
+<!-- --- -->
 
 ## Evaluation Plan
 
@@ -662,7 +662,7 @@ TODO: run each ablation and report FID + qualitative notes.
 **What worked well**
 
 - Unified multi-source dataset (~6.4K entries) with clean `types` / `stage` / `style` labels
-- FiLM conditioning integrates cleanly with the U-Net; no architectural surprises
+<!-- - FiLM conditioning integrates cleanly with the U-Net; no architectural surprises -->
 - RGBA-preserving pipeline keeps sprite transparency intact
 
 **What was hard**
@@ -695,7 +695,7 @@ TODO: run each ablation and report FID + qualitative notes.
 
 - Moved from an **unconditional diffusion baseline** to a **conditional diffusion generator**
 - Built a **6.4K-entry** diffusion-ready dataset with type, stage, and style metadata across sprite, Sugimori, and 3D sources
-- Implemented a **FiLM-conditioned U-Net** with a dedicated prev-evolution image encoder
+- Implemented a **Conditional U-Net** with a dedicated prev-evolution image encoder
 - Demonstrated type-, style-, stage-, and evolution-chain-conditioned generation of novel Pokémon
 
 > Conditional diffusion is a substantially better fit than the unconditional baseline for the structured, low-data, multi-domain setting of Pokémon generation.
