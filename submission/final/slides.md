@@ -634,9 +634,9 @@ TODO: pick 3 Pokémon and show a 3-row comparison:
 
 | Metric | Unconditional Diffusion Baseline | Conditional Diffusion (Single Style) | Conditional Diffusion (Multiple Styles) |
 | ------ | -------------------------------- | ---------------------------- | ---------------------------- |
-| FID  | 123                              | 77                          |  202 |
-| KID  | 0.132 ± 0.002                    | 0.061 ± 0.0017             | 0.231 ± 0.033 |
-| ID   | 15.44                            | 16.23                        | 17.39 |
+| FID  | 123                              | **77**                          |  202 |
+| KID  | 0.132 ± 0.002                    | **0.061 ± 0.0017**             | 0.231 ± 0.033 |
+| ID   | 15.44                            | **16.23**                        | 17.39 |
 
 
 <!-- <div class="todo">
@@ -704,11 +704,12 @@ TODO: run each ablation and report FID + qualitative notes.
 - Trained at **128×128 RGB**; fine sprite detail still bounded by resolution
 - Only 3 styles and 3 evolution stages; real Pokémon have far more visual variants
 - No text conditioning (e.g. natural-language prompts for abilities or lore)
+- Our code currently produces evo chains (pokemon images based on previous pokemon evos), but they lack visual coherence (structure)
 
 **Future directions**
 
 - **Scale up resolution** with a latent diffusion / super-resolution stage
-- **Classifier-free guidance** via conditioning dropout for stronger attribute adherence
+<!-- - **Classifier-free guidance** via conditioning dropout for stronger attribute adherence -->
 - **Text conditioning** using a pretrained text encoder (e.g. CLIP) for descriptive generation
 - **Full evolution-chain consistency loss** that ties together all generated stages jointly
 - **RGBA masking** Using 4 channel inputs (RGBA) for creating correct transparency masking to produce clean RGB images
@@ -720,7 +721,7 @@ TODO: run each ablation and report FID + qualitative notes.
 - Moved from an **unconditional diffusion baseline** to a **conditional diffusion generator**
 - Built a 6.4K-entry diffusion-ready dataset with type, stage, and style metadata across sprite, Sugimori, and 3D sources
 - Implemented a **Conditional U-Net** with a dedicated prev-evolution image encoder
-- Demonstrated type-, style-, stage-, and evolution-chain-conditioned generation of novel Pokémon
+- Demonstrated type-, style-, and stage- conditioned generation of novel Pokémon
 
 > Conditional diffusion is a substantially better fit than the unconditional baseline for the structured, low-data, multi-domain setting of Pokémon generation.
 
