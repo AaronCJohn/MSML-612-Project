@@ -35,3 +35,4 @@ submission/final/.latex-out/
 
 # Model checkpoints (hundreds of MB each; use releases/drive/LFS instead)
 inference/scripts/checkpoints/
+scripts/checkpoints/
