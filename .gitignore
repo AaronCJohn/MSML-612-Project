@@ -32,3 +32,6 @@ metrics*
 
 # LaTeX Workshop output dir for this repo
 submission/final/.latex-out/
+
+# Model checkpoints (hundreds of MB each; use releases/drive/LFS instead)
+inference/scripts/checkpoints/
