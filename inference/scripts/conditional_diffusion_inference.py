@@ -22,8 +22,6 @@ How to run (pick folder + epoch, or a single file)
   Defaults: checkpoints live in inference/scripts/checkpoints/; PNGs go under
   inference/outputs/ unless you pass --output-dir.
 
-  Teammate setup (venv, weights layout, examples): see inference/README.md
-
 Styles are comma-separated: 3d, sugimori, sprite (subset is fine for style-specific runs).
 
 Optional: add --defaults to also sweep every checkpoint under --checkpoint-root
@@ -470,7 +468,7 @@ class InferenceJob:
 
 
 def _default_checkpoint_jobs(checkpoint_root: Path) -> list[InferenceJob]:
-    """Jobs aligned with the expected layout under --checkpoint-root (see inference/README.md)."""
+    """Jobs aligned with the expected layout under --checkpoint-root."""
     r = checkpoint_root
     jobs: list[InferenceJob] = []
 
@@ -548,11 +546,7 @@ def run_one_job(
     attn_resolutions: tuple[int, ...] | None = None,
 ) -> None:
     if not job.path.is_file():
-        raise FileNotFoundError(
-            f"Missing checkpoint: {job.path}\n"
-            "  Weights are not in Git. See inference/README.md — unpack checkpoints under "
-            "inference/scripts/checkpoints/ or pass --ckpt-file / --ckpt-dir + --epoch."
-        )
+        raise FileNotFoundError(f"Missing checkpoint: {job.path}")
 
     model, ema, noise_schedule = load_for_inference(job.path, device, attn_resolutions)
     subdir = out_root / job.label
