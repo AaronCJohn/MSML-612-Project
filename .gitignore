@@ -12,7 +12,7 @@ mapping_preview_diffusion
 
 metrics*
 
-# LaTeX build artifacts (keep PDFs tracked/visible)
+# LaTeX build artifacts
 *.aux
 *.log
 *.synctex.gz
@@ -30,9 +30,11 @@ metrics*
 *.bcf
 *.run.xml
 
-# LaTeX Workshop output dir for this repo
+# LaTeX
 submission/final/.latex-out/
 
-# Model checkpoints (hundreds of MB each; use releases/drive/LFS instead)
-inference/scripts/checkpoints/
-scripts/checkpoints/
+# Model checkpoints
+checkpoints/
+
+generated/
+good_results/
