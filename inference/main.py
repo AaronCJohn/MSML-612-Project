@@ -13,7 +13,7 @@ import torch.nn.functional as F
 from PIL import Image
 from torchvision import transforms
 
-CHECKPOINT = "checkpoints/ckpt_epoch_400.pt"   # path to .pt checkpoint
+CHECKPOINT = "ckpt_epoch_450.pt"   # path to .pt checkpoint
 OUTPUT_DIR = "./generated"                   # where images are saved
 SEED       = None                            # set an int for reproducibility
 
@@ -24,20 +24,20 @@ SEED       = None                            # set an int for reproducibility
 MODE = "single"
 
 # --- Conditioning (used by "single" and "chain" modes) ---
-GEN_TYPES    = ["water"]     # 1 or 2 types, e.g. ["grass", "poison"]
+GEN_TYPES    = ["grass"]     # 1 or 2 types, e.g. ["grass", "poison"]
 GEN_STYLE    = "3d"             # "3d" | "sugimori" | "sprite"
 GEN_STAGE    = "base"           # "base" | "evo 1" | "evo 2"
-GEN_PREV_EVO = None             # path to a previous evolution image, or None
+GEN_PREV_EVO = None            # path to a previous evolution image, or None
 
 # --- Sampling ---
 NUM_SAMPLES = 4      # images per generation call
 GUIDANCE    = 3.0    # CFG guidance scale (1.0 = no guidance)
-DDIM_STEPS  = 250    # more steps = slower but slightly higher quality
+DDIM_STEPS  = 200    # more steps = slower but slightly higher quality
 
 # --- Random mode ---
 N_RANDOM = 16        # number of random generations (MODE = "random")
-COND_EMBED_DIM   = 256 
-ATTN_RESOLUTIONS = (32, 16, 8)
+COND_EMBED_DIM   = 256
+ATTN_RESOLUTIONS = (16, 8)
 IMG_SIZE       = 128
 IMG_CHANNELS   = 3
 TIMESTEPS      = 1000
@@ -63,9 +63,6 @@ NUM_TYPES  = len(TYPE_TO_IDX)
 NUM_STYLES = len(STYLE_TO_IDX)
 NUM_STAGES = len(ALL_STAGES)
 
-# ===========================================================================
-# Model (must match training notebook exactly)
-# ===========================================================================
 class SinusoidalPosEmb(nn.Module):
     def __init__(self, dim):
         super().__init__()
@@ -238,10 +235,6 @@ class ConditionalUNet(nn.Module):
 
         return self.final_conv(F.silu(self.final_norm(h)))
 
-
-# ===========================================================================
-# Noise schedule
-# ===========================================================================
 class NoiseSchedule:
     def __init__(self, timesteps, device, s=0.008):
         self.timesteps = timesteps
@@ -285,9 +278,6 @@ class NoiseSchedule:
         return x.clamp(-1, 1)
 
 
-# ===========================================================================
-# EMA
-# ===========================================================================
 class EMA:
     def __init__(self, model, decay):
         self.model = model
@@ -315,9 +305,6 @@ class EMA:
             self.shadow[n] = self.shadow[n].to(device)
 
 
-# ===========================================================================
-# Helpers
-# ===========================================================================
 def make_cond_vec(type_names, style, stage):
     type_vec = torch.zeros(NUM_TYPES)
     if isinstance(type_names, str):
@@ -377,9 +364,6 @@ def load_checkpoint(ckpt_path, device):
     return model, ema, NoiseSchedule(TIMESTEPS, device)
 
 
-# ===========================================================================
-# Core generation
-# ===========================================================================
 @torch.no_grad()
 def generate(model, noise_schedule, cond_vec, device, prev_evo_tensor=None):
     model.eval()
@@ -408,9 +392,6 @@ def save_grid(images, path, cols=4):
     print(f"  Grid saved → {path}")
 
 
-# ===========================================================================
-# Generation modes
-# ===========================================================================
 def run_single(model, ema, noise_schedule, device):
     ema.apply_shadow()
     try:
@@ -434,13 +415,25 @@ def run_chain(model, ema, noise_schedule, device):
     ema.apply_shadow()
     try:
         chain = []
-        prev_tensor = None
-        for stage in ALL_STAGES:
+
+        # If a base image is provided, use it as prev for evo 1 and start from evo 1
+        # Otherwise generate from scratch starting at base
+        if GEN_PREV_EVO is not None:
+            base_img = load_prev_evo_image(GEN_PREV_EVO, device)
+            chain.append(Image.open(GEN_PREV_EVO).convert("RGB").resize((IMG_SIZE, IMG_SIZE)))
+            stages_to_generate = ["evo 1", "evo 2"]
+            prev_tensor = base_img
+        else:
+            stages_to_generate = ALL_STAGES
+            prev_tensor = None
+
+        for stage in stages_to_generate:
             cond = make_cond_vec(GEN_TYPES, GEN_STYLE, stage)
             imgs = generate(model, noise_schedule, cond, device, prev_tensor)
             pil  = tensor_to_pil(imgs[0])
             chain.append(pil)
             prev_tensor = imgs[0] * 2 - 1   # back to [-1, 1] for next stage
+
         strip = Image.new("RGB", (IMG_SIZE * len(chain), IMG_SIZE), (255, 255, 255))
         for i, img in enumerate(chain):
             strip.paste(img, (i * IMG_SIZE, 0))
@@ -472,9 +465,6 @@ def run_random(model, ema, noise_schedule, device):
     save_grid(all_imgs, f"{OUTPUT_DIR}/random_grid_gs{GUIDANCE}.png", cols=NUM_SAMPLES)
 
 
-# ===========================================================================
-# Entry point
-# ===========================================================================
 def main():
     if SEED is not None:
         torch.manual_seed(SEED)
