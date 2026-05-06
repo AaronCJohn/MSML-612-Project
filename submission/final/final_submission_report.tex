@@ -248,20 +248,18 @@ samples, quantitative results, and limitations.
 \end{abstract}
 \section{Problem Statement}\label{problem-statement}
 
-Pokemon-inspired character art must remain visually convincing while
-remaining faithful to the overall aesthetic: dual elemental types, staged
+Pokemon-inspired character art must balance creativity with faithfulness 
+to the overall aesthetic: dual elemental types, staged
 evolution chains, and a consistent look-and-feel across the distinct
-official asset styles. Building a generative model for this setting is
-challenging because high-quality sources use incompatible filenames and
-variant naming (regional forms, Mega, Gigantamax, shiny palettes),
-labels such as evolution stage are not provided directly by any single upstream pack and the usable training sets are small compared
-to typical web-scale diffusion datasets.
+official asset styles. The core problem in this project is whether a deep 
+learning model can generate novel Pokémon-like designs that follow these 
+patterns while remaining distinct from any species in the training set.
 
 The baseline is an \textbf{unconditional diffusion}
 model trained only on Pokemon images, with no labels, no evolution pairs,
 and no reference sprite. That model can learn the overall visual
 distribution, but it cannot control type, stage, style, or
-base-to-evolution progression. The objective of this final project is
+base-to-evolution progression. The objective of this project is
 therefore a \textbf{conditional diffusion} model trained on a unified RGB dataset
 that folds heterogeneous conditioning (multi-hot types, stage, style,
 timestep, and optional previous-stage imagery) into a single control
@@ -272,16 +270,17 @@ of sample quality and conditioning accuracy.
 \section{Related Work and Literature Review}\label{related-work-and-literature-review}
 
 \textbf{Diffusion and score-based image models.} Denoising diffusion
-probabilistic models (DDPMs) learn a reverse noising process for image
-generation and have become a standard alternative to GANs for
-high-fidelity synthesis {[}1{]}. Training and sampling recipes were
-refined by improved noise schedules and parameterizations {[}2{]}, and
-diffusion models were later shown to be competitive with or superior to
-GANs on large-scale benchmarks when combined with guidance mechanisms
-{[}3{]}. Subsequent work explores latent-space diffusion for efficiency
-at higher resolutions {[}4{]} and broader design spaces for diffusion
-training objectives {[}5{]}. Classifier-free guidance {[}6{]} is a widely
-used technique for strengthening conditioning at inference time.
+probabilistic models (DDPMs) generate images by learning to iteratively
+remove noise, providing a practical alternative to GANs for
+high fidelity synthesis {[}1{]}. Follow-on work improved stability and
+sample quality through better noise schedules, parameterizations, and
+sampling procedures {[}2{]}. Diffusion models also support conditioning
+via guidance mechanisms, which can improve adherence to inputs at
+inference time {[}3{]}. For higher resolutions, latent-space diffusion
+reduces compute by operating in a learned compressed representation
+{[}4{]}, and alternative objectives broaden the design space of diffusion
+training {[}5{]}. We use classifier-free guidance to strengthen
+conditional generation at sampling time {[}6{]}.
 
 \textbf{Backbones, conditioning, and image-to-image diffusion.}
 Convolutional U-Net encoders and decoders remain the de facto spatial
@@ -297,14 +296,15 @@ source-to-target replay alone. Conditional GANs such as pix2pix {[}10{]}
 remain relevant baselines for paired translation quality.
 
 \textbf{Pokemon generation baselines.} Prior Pokemon-generation projects
-mostly produce standalone Pokemon-like images. Generated-Pokemon trains
-an unconditional DDPM/DDIM model on 819 JPG images and does not condition
-on type, style, stage, or previous evolutions {[}16{]}. Wong's CS230
-Pokemon generator uses StyleGAN2-ADA and a separate name-generation
-component, but does not use a diffusion objective or explicit evolution
-and attribute controls {[}17{]}. Our contribution is a structured,
-controllable, evolution-aware dataset and model rather than a standalone
-image generator.
+primarily target standalone Pokemon-like images rather than controlled
+generation. Generated-Pokemon trains an unconditional DDPM/DDIM model on
+819 JPG images and does not condition on type, style, evolution stage, or
+previous evolutions {[}16{]}. Wong's CS230 Pokemon generator uses
+StyleGAN2-ADA and a separate name-generation component, but it does not
+use a diffusion objective and it does not provide explicit evolution or
+attribute controls {[}17{]}. In contrast, our contribution is a
+structured, controllable, evolution-aware dataset and model intended to
+support attribute- and evolution-conditioned generation.
 
 \textbf{Positioning.} Our implementation follows public DDPM and U-Net
 practice, draws on improved diffusion and guidance ideas {[}2,3{]}, and
@@ -317,8 +317,8 @@ domains.
 
 \section{Dataset and Preprocessing}\label{dataset-and-preprocessing}
 
-The dataset combines three complementary visual sources and enriches
-each entry with structured Pokemon metadata:
+We construct a dataset that integrates three complementary visual sources
+and augments each entry with structured Pokemon metadata:
 
 \begin{itemize}
 \tightlist
@@ -392,18 +392,14 @@ ProjectPokemon 3D & 2,799 & 1,026 & Alternate visual domain for
 cross-format use \\
 \end{longtable}
 
-\subsection{Cross-format Mapping (Interim Paired-Translation
-Era)}\label{cross-format-mapping-interim-paired-translation-era}
+\subsection{Cross-format Mapping }\label{cross-format-mapping-interim-paired-translation-era}
 
-Our earlier paired-translation experiment required explicit
-source-to-target image pairs.
-We implemented mapping scripts that parsed filenames, normalized naming
-differences, handled form-specific cases (Mega, Gigantamax, regional
-variants), and produced CSV mappings. An important part of the curation
-effort was manual verification via page-based contact sheets for
-side-by-side inspection of mapped pairs, because naming conventions
-across sources are inconsistent and automatic matching alone is not
-reliable enough for a clean training set.
+Cross-format mapping required explicit source-to-target image pairs to
+link the same Pokemon across visual domains. We implemented scripts
+that parsed filenames, normalized naming differences, handled form-specific
+cases (Mega, Gigantamax, regional variants), and exported the mappings to CSV files.
+Because naming conventions were inconsistent, automatic matching alone was insufficient so
+we manually verified the mapped pairs.
 
 \begin{itemize}
 \tightlist
@@ -421,13 +417,12 @@ reliable enough for a clean training set.
 \end{itemize}
 
 \subsection{Diffusion-Ready Dataset
-(Final)}\label{diffusion-ready-dataset-final}
+}\label{diffusion-ready-dataset-final}
 
-For the final conditional diffusion model, we moved from paired
-translation (source-style to sprite) to a unified generative dataset in
-which \textbf{every entry is a (target image, conditioning vector)
-pair}, optionally with a previous-evolution image to support
-evolution-chain conditioning. The per-entry schema is:
+For the final conditional diffusion model, we constructed a unified
+generative dataset in which \textbf{every entry is a (target image,
+conditioning vector) pair}, optionally with a previous-evolution image
+to support evolution-chain conditioning. The per-entry schema is:
 
 \begin{Shaded}
 \begin{Highlighting}[]
