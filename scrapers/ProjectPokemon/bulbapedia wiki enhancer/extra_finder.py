@@ -7,9 +7,7 @@ JSONL_FILE = "image_urls_dedup.jsonl"
 DATASET_ROOT = "MSML-612-Project\poke-data\ProjectPokemon"  # <-- CHANGE THIS
 OUTPUT_LOG = "comparison_log.txt"
 
-# -----------------------------
 # Extract HOME ID (e.g. 0001)
-# -----------------------------
 def extract_home_id(filename):
     match = re.search(r'HOME(\d{4})', filename)
     if match:
@@ -17,9 +15,7 @@ def extract_home_id(filename):
     return None
 
 
-# -----------------------------
 # Count images from JSONL
-# -----------------------------
 def count_json_images():
     counts = defaultdict(int)
 
@@ -40,9 +36,7 @@ def count_json_images():
     return counts
 
 
-# -----------------------------
 # Count images in dataset folders
-# -----------------------------
 def count_dataset_images():
     counts = defaultdict(int)
 
@@ -66,9 +60,7 @@ def count_dataset_images():
     return counts
 
 
-# -----------------------------
 # Compare and log differences
-# -----------------------------
 def compare_counts(json_counts, dataset_counts):
     all_ids = set(json_counts.keys()) | set(dataset_counts.keys())
 
@@ -88,9 +80,7 @@ def compare_counts(json_counts, dataset_counts):
                 log.write(msg + "\n")
 
 
-# -----------------------------
 # Main
-# -----------------------------
 def main():
     print("Counting JSON images...")
     json_counts = count_json_images()

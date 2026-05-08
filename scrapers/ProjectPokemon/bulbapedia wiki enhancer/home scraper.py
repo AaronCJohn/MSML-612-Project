@@ -16,10 +16,7 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; PokemonScraper/2.0)"
 }
 
-# -----------------------------
 # Persistence helpers
-# -----------------------------
-
 def log(msg):
     print(msg)
     with open(LOG_FILE, "a", encoding="utf-8") as f:
@@ -43,9 +40,7 @@ def save_result(data):
         f.write(json.dumps(data) + "\n")
 
 
-# -----------------------------
 # Async rate limiter
-# -----------------------------
 class RateLimiter:
     def __init__(self, delay=0.3):
         self.delay = delay
@@ -64,9 +59,7 @@ class RateLimiter:
 limiter = RateLimiter(delay=0.1)  # safe default
 
 
-# -----------------------------
 # HTTP fetch
-# -----------------------------
 async def fetch(session, url):
     await limiter.wait()
     async with session.get(url, headers=HEADERS, timeout=30) as resp:
@@ -74,9 +67,7 @@ async def fetch(session, url):
         return await resp.text()
 
 
-# -----------------------------
 # Parse category page
-# -----------------------------
 def parse_category(html):
     soup = BeautifulSoup(html, "html.parser")
 
@@ -94,9 +85,7 @@ def parse_category(html):
     return file_links, next_page
 
 
-# -----------------------------
 # Parse file page
-# -----------------------------
 def parse_file_page(html):
     soup = BeautifulSoup(html, "html.parser")
     meta = soup.find("meta", property="og:image")
@@ -105,9 +94,7 @@ def parse_file_page(html):
     return None
 
 
-# -----------------------------
 # Worker for file pages
-# -----------------------------
 async def process_file(session, file_url, seen, sem):
     async with sem:
         if file_url in seen:
@@ -126,8 +113,8 @@ async def process_file(session, file_url, seen, sem):
                 save_result(data)
                 seen.add(file_url)
 
-                # ✅ ADD THIS: log full resolution image URL like old script
-                log(f"✔ {file_url} -> {img_url}")
+                # log full resolution image URL like old script
+                log(f"{file_url} -> {img_url}")
 
                 return data
 
@@ -140,9 +127,7 @@ async def process_file(session, file_url, seen, sem):
         return None
 
 
-# -----------------------------
 # Main loop
-# -----------------------------
 async def main():
     seen = load_seen()
     log(f"Loaded {len(seen)} seen files")
