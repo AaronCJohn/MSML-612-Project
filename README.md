@@ -22,13 +22,15 @@ A diffusion model for generating Pokemon images. Supports two architectures: a *
 ├── mappings/                           # Style-to-style and type/evolution mapping JSONs
 ├── evolutions/                         # Pokemon evolution chain data
 └── good_results/                       # Curated sample outputs
+└── gemini experiment/                  # Experiments with generated images and visual searches
 ```
 
 ## Setup
 
-Install PyTorch first, then the remaining dependencies:
+Install PyTorch first, then the remaining dependencies (venv optional; if running into version errors, create a venv):
 
 ```bash
+
 # CUDA 12.1 (HPC / GPU machines)
 pip install torch==2.3.1 torchvision==0.18.1 --index-url https://download.pytorch.org/whl/cu121
 
@@ -71,6 +73,8 @@ Supported styles for baseline: `3d`, `sprite`.
 
 Running `python main.py` with no arguments defaults to `inference conditional --type water --style sprite`.
 
+**NOTE: IF MAKING ANY CHANGES TO CONFIG FILES IN MODEL FOLDER, DO NOT EDIT THE ARCHITECTURE (ATTENTION RESOLUTIONS, BASE_CH, CHANNEL_MULTS, IMG_SIZE, IMG_CHANNELS, ETC), UNLESS RETRAINING
+
 ### Training
 
 ```bash
@@ -90,7 +94,7 @@ All parameters (checkpoint paths, sampling steps, model architecture, etc.) are 
 ## Data Pipeline
 
 1. **Scraping**: Scripts in `scrapers/` collect images from ProjectPokemon, PokeSprite, and Sugimori sources.
-2. **Preprocessing**: `preprocessing/gen_bb_box.py` detects bounding boxes, then `preprocessing/pad_resize_images.py` pads and resizes images to 128x128.
+2. **Preprocessing**: `preprocessing/gen_bb_box.py` detects bounding boxes, then `preprocessing/pad_resize_images.py` pads and resizes images to 512x512.
 3. **Mappings**: `mappings/` contains scripts and JSON files that map images across styles and attach type/evolution metadata.
 4. **Evolution data**: `evolutions/` holds Pokemon evolution chain JSONs used for evolution-conditioned generation.
 
@@ -100,3 +104,7 @@ Both architectures use a U-Net with sinusoidal time embeddings, residual blocks,
 
 - **Conditional**: Accepts a conditioning vector (multi-hot type encoding + one-hot style + one-hot stage) and an optional previous-evolution image encoder. Trained with classifier-free guidance (CFG dropout).
 - **Baseline**: Time-conditioned only, no external conditioning. Separate checkpoints trained per art style.
+
+## Gemini Experiments
+
+Under the gemini experiment folder there are a couple screenshots of a Gemini visual search on a couple generated images we had. We actually fooled the AI into thinking they were actual Fakemon (non-official fan made creatures that resemble real Pokemon) or Pokemon Fusion characters.
