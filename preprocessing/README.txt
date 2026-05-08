@@ -1,0 +1,2 @@
+find bounding boxes for each image first using: gen_bb_box.py "input_path_to_image_directory" (optional --visualize to view bounding boxes)
+then run pad_resize_images.py (ensure output roots in main function point to full image directory along with the bounding box coordinates under the annotations folder)
