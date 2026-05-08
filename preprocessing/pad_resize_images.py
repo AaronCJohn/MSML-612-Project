@@ -20,8 +20,7 @@ def load_bbox(label_path, img_w, img_h, margin):
     x2, y2 = min(img_w, int(cx + w/2)), min(img_h, int(cy + h/2))
     return (x1, y1, x2, y2)
 
-def pad_and_resize_image(image_path, final_size, bg_type, is_sprite, show_display,
-                         save, use_bbox, scale, bbox_margin, output_root, display_count=None):
+def pad_and_resize_image(image_path, final_size, bg_type, is_sprite, show_display, save, use_bbox, scale, bbox_margin, output_root, display_count=None):
     if display_count is None:
         display_count = [0]
     try:
@@ -88,8 +87,7 @@ def pad_and_resize_image(image_path, final_size, bg_type, is_sprite, show_displa
     except Exception as e:
         print(f"Error processing {image_path}: {e}"); return False
 
-def process_folder(folder_path, final_size, bg_type, is_sprite, save, use_bbox,
-                   scale, bbox_margin, output_root, show_display=False):
+def process_folder(folder_path, final_size, bg_type, is_sprite, save, use_bbox, scale, bbox_margin, output_root, show_display=False):
     image_extensions = {'.png', '.jpg', '.jpeg', '.webp'}
     processed = skipped = 0
     display_count = [0]
@@ -104,8 +102,7 @@ def process_folder(folder_path, final_size, bg_type, is_sprite, save, use_bbox,
                     skipped += 1
     return processed, skipped
 
-def process_single_image(image_path, final_size, bg_type, is_sprite, show_display,
-                         save, use_bbox, scale, bbox_margin, output_root):
+def process_single_image(image_path, final_size, bg_type, is_sprite, show_display, save, use_bbox, scale, bbox_margin, output_root):
     pad_and_resize_image(
         Path(image_path), final_size,
         bg_type=bg_type, is_sprite=is_sprite, show_display=show_display,

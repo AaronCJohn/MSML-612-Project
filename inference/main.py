@@ -13,7 +13,7 @@ import torch.nn.functional as F
 from PIL import Image
 from torchvision import transforms
 
-CHECKPOINT = "ckpt_epoch_450.pt"   # path to .pt checkpoint
+CHECKPOINT = "checkpoints/all_styles/ckpt_epoch_450.pt"   # path to .pt checkpoint
 OUTPUT_DIR = "./generated"                   # where images are saved
 SEED       = None                            # set an int for reproducibility
 

@@ -1,6 +1,5 @@
-#!/usr/bin/env python3
 """
-Script to analyze image sizes in the PokeSprite folder.
+Script to analyze image sizes in the poke-data folder.
 Lists all unique image dimensions with their counts.
 """
 
