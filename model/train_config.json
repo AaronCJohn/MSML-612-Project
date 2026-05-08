@@ -1,0 +1,84 @@
+{
+    "baseline": {
+        "data_dir": "./poke-data",
+        "json_files": [
+            "3d.json"
+        ],
+        "output_dir": "model/baseline_outputs",
+        "checkpoint_dir": "model/baseline_checkpoints",
+        "img_size": 128,
+        "img_channels": 3,
+        "timesteps": 1000,
+        "ddim_steps": 100,
+        "epochs": 500,
+        "batch_size": 64,
+        "lr": 2e-4,
+        "weight_decay": 1e-4,
+        "ema_decay": 0.999,
+        "grad_clip": 1.0,
+        "use_amp": true,
+        "num_workers": 4,
+        "base_ch": 64,
+        "ch_mults": [
+            1,
+            2,
+            2,
+            4
+        ],
+        "num_res_blocks": 2,
+        "attn_resolutions": [
+            32,
+            16,
+            8
+        ],
+        "dropout": 0.1,
+        "time_embed_dim": 128,
+        "fg_weight_high": 1.0,
+        "fg_weight_low": 0.2,
+        "sample_every": 50,
+        "seed": null,
+        "resume": null
+    },
+    "conditional": {
+        "data_dir": "./poke-data",
+        "json_files": [
+            "3d.json",
+            "sugimori.json",
+            "sprite.json"
+        ],
+        "output_dir": "model/conditional_outputs",
+        "checkpoint_dir": "model/conditional_checkpoints",
+        "img_size": 128,
+        "img_channels": 3,
+        "timesteps": 1000,
+        "ddim_steps": 100,
+        "cfg_dropout": 0.05,
+        "guidance_scale": 3.0,
+        "epochs": 500,
+        "batch_size": 64,
+        "lr": 2e-4,
+        "weight_decay": 1e-4,
+        "ema_decay": 0.999,
+        "grad_clip": 1.0,
+        "use_amp": true,
+        "num_workers": 4,
+        "base_ch": 64,
+        "ch_mults": [
+            1,
+            2,
+            2,
+            4
+        ],
+        "num_res_blocks": 2,
+        "attn_resolutions": [
+            32,
+            16,
+            8
+        ],
+        "dropout": 0.1,
+        "cond_embed_dim": 256,
+        "sample_every": 50,
+        "seed": null,
+        "resume": null
+    }
+}

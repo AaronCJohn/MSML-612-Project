@@ -1,0 +1,62 @@
+{
+    "conditional": {
+        "checkpoint": "model/safe_checkpoints/all_styles/ckpt_epoch_450.pt",
+        "output_dir": "./generated/conditional",
+        "seed": null,
+        "mode": "single",
+        "stage": "base",
+        "prev_evo": null,
+        "num_samples": 4,
+        "guidance": 3.0,
+        "ddim_steps": 200,
+        "n_random": 16,
+        "cond_embed_dim": 256,
+        "attn_resolutions": [
+            32,
+            16,
+            8
+        ],
+        "img_size": 128,
+        "img_channels": 3,
+        "timesteps": 1000,
+        "ema_decay": 0.999,
+        "base_ch": 64,
+        "ch_mults": [
+            1,
+            2,
+            2,
+            4
+        ],
+        "num_res_blocks": 2,
+        "dropout": 0.1
+    },
+    "baseline": {
+        "checkpoints": {
+            "3d": "model/safe_checkpoints/baseline_3d/ckpt_epoch_450.pt",
+            "sprite": "model/safe_checkpoints/baseline_sprite/ckpt_epoch_300.pt"
+        },
+        "output_dir": "./generated/baseline",
+        "seed": null,
+        "num_samples": 4,
+        "ddim_steps": 200,
+        "time_embed_dim": 128,
+        "attn_resolutions": [
+            32,
+            16,
+            8
+        ],
+        "img_size": 128,
+        "img_channels": 3,
+        "timesteps": 1000,
+        "ema_decay": 0.999,
+        "base_ch": 64,
+        "ch_mults": [
+            1,
+            2,
+            2,
+            4
+        ],
+        "num_res_blocks": 2,
+        "dropout": 0.1
+    }
+}

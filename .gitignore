@@ -34,6 +34,6 @@ metrics*
 submission/final/.latex-out/
 
 # Model checkpoints
-checkpoints/
+*.pt
 
 generated/

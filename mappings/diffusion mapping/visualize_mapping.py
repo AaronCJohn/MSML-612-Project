@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Visualize mappings side by side for manual verification.
 

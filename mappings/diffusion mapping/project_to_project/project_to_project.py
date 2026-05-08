@@ -43,10 +43,7 @@ EVOLUTION_JSON = REPO_ROOT / "evolutions" / "evolution.json"
 OUTPUT_JSON    = Path(__file__).parent / "project_to_project.json"
 UNRESOLVED_JSON = Path(__file__).parent / "project_to_project_unresolved.json"
 
-
-# ---------------------------------------------------------------------------
 # Image dataclass
-# ---------------------------------------------------------------------------
 
 @dataclass(frozen=True)
 class SpriteFile:
@@ -67,7 +64,7 @@ class SpriteFile:
         """
         parts = path.stem.split("_")
 
-        # ---- Standard format ----
+        # Standard format
         if len(parts) >= 9 and parts[0] == "poke" and parts[1] == "capture":
             form = parts[5]       # n or g
             if form == "g":       # skip gigantamax
@@ -83,7 +80,7 @@ class SpriteFile:
 
             return cls(path=path, variant=variant, gender=gender, is_shiny=is_shiny)
 
-        # ---- Fallback: HOME format (e.g., "HOME0001.png", "HOME0001_s.png") ----
+        # Fallback: HOME format (e.g., "HOME0001.png", "HOME0001_s.png")
         home_match = re.fullmatch(r"HOME(\d{4})(?:_s)?", path.stem, re.IGNORECASE)
 
         if home_match:
@@ -98,10 +95,7 @@ class SpriteFile:
 
         return None
 
-
-# ---------------------------------------------------------------------------
 # Folder index
-# ---------------------------------------------------------------------------
 
 def _norm(s: str) -> str:
     """Collapse all separators (space, hyphen, dot, apostrophe) for matching."""
@@ -141,10 +135,7 @@ def resolve_folder(
 
     return None, None
 
-
-# ---------------------------------------------------------------------------
 # Per-folder image index
-# ---------------------------------------------------------------------------
 
 def load_sprites(folder: Path) -> list[SpriteFile]:
     """Return all valid (non-gmax) SpriteFile objects from a folder."""
@@ -246,10 +237,7 @@ def find_best_next(
 #             return next_lookup[(v, g)]
 #     return None, None
 
-
-# ---------------------------------------------------------------------------
 # Pair builder
-# ---------------------------------------------------------------------------
 
 _FOLDER_NAME_RE = re.compile(r"^\d+(.+)$")
 
@@ -276,10 +264,7 @@ def make_entry(
         "next_sprite": rel(next_sf),
     }
 
-
-# ---------------------------------------------------------------------------
 # Main
-# ---------------------------------------------------------------------------
 
 def main() -> None:
     with open(EVOLUTION_JSON, encoding="utf-8") as f:
@@ -297,7 +282,7 @@ def main() -> None:
         if not next_name:
             continue
 
-        # ---- Resolve next ----
+        # Resolve next
         next_folder, next_variant_str = resolve_folder(next_name, folder_index)
         if next_folder is None:
             unresolved.append({
@@ -322,7 +307,7 @@ def main() -> None:
             })
             continue
 
-        # ---- Chain start (prev = null) ----
+        # Chain start (prev = null)
         if prev_name is None:
             for (var, gen), (normal_sf, shiny_sf) in sorted(next_lookup.items()):
                 if normal_sf:
@@ -331,7 +316,7 @@ def main() -> None:
                     results.append(make_entry(None, shiny_sf))
             continue
 
-        # ---- Resolve prev ----
+        # Resolve prev
         prev_folder, prev_variant_str = resolve_folder(prev_name, folder_index)
         if prev_folder is None:
             unresolved.append({
@@ -356,7 +341,7 @@ def main() -> None:
             })
             continue
 
-        # ---- Match and emit pairs ----
+        # Match and emit pairs
         for (var, gen), (prev_normal, prev_shiny) in sorted(prev_lookup.items()):
             next_normal, next_shiny = find_best_next(var, gen, next_lookup)
 
@@ -383,7 +368,7 @@ def main() -> None:
                 # # shiny → shiny; if next has no shiny fall back to its normal
                 # results.append(make_entry(prev_shiny, next_shiny or next_normal))
 
-    # ---- Write outputs ----
+    # Write outputs
     with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
         json.dump(results, f, indent="\t")
 
