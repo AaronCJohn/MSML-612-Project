@@ -23,8 +23,9 @@ A diffusion model for generating Pokemon images. Supports two architectures: a *
 ├── scrapers/                           # Data collection scripts (ProjectPokemon, PokeSprite, Sugimori)
 ├── mappings/                           # Style-to-style and type/evolution mapping JSONs
 ├── evolutions/                         # Pokemon evolution chain data
-└── good_results/                       # Curated sample outputs
-└── gemini experiment/                  # Experiments with generated images and visual searches
+├── good_results/                       # Curated sample outputs
+├── gemini experiment/                  # Experiments with generated images and visual searches
+└── submission/                         # Final report and presentation slides
 ```
 
 ## Setup
@@ -126,6 +127,13 @@ Both architectures use a U-Net with sinusoidal time embeddings, residual blocks,
 
 - **Conditional**: Accepts a conditioning vector (multi-hot type encoding + one-hot style + one-hot stage) and an optional previous-evolution image encoder. Trained with classifier-free guidance (CFG dropout).
 - **Baseline**: Time-conditioned only, no external conditioning. Separate checkpoints trained per art style.
+
+## Submission
+
+The `submission/` folder contains the final deliverables for this project:
+
+- **final report.pdf** — Full project report covering motivation, methodology, architecture, training details, evaluation results, and analysis.
+- **slides.pdf** — Presentation slides summarizing the project.
 
 ## Gemini Experiments
 
