@@ -633,7 +633,7 @@ def main(arch=None, gen_types=None, gen_style=None, gen_stage=None):
         )
         p.add_argument(
             "--type", nargs="+", default=["water"],
-            help="Pokémon type(s) — used by conditional only (default: water)",
+            help="Pokémon type(s), used by conditional only (default: water)",
         )
         p.add_argument(
             "--style", choices=ALL_STYLES, default="sprite",
@@ -641,7 +641,7 @@ def main(arch=None, gen_types=None, gen_style=None, gen_stage=None):
         )
         p.add_argument(
             "--stage", choices=["base", "evo 1", "evo 2"], default="base",
-            help="Evolution stage — used by conditional only (default: base)",
+            help="Evolution stage, used by conditional only (default: base)",
         )
         cli = p.parse_args()
         arch = cli.arch

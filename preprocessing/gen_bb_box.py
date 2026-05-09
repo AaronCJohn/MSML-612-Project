@@ -64,7 +64,7 @@ def process_image(path: Path, classes: list[str], viz_path: Path, min_alpha: int
     }
 
     if bbox is None:
-        print(f"[SKIP] {path.name} — fully transparent")
+        print(f"[SKIP] {path.name}, fully transparent")
         return result
 
     center_x = ((bbox["x"] + bbox["x2"]) / 2.0) / w

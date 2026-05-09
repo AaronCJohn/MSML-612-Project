@@ -124,7 +124,7 @@ def main() -> None:
 
     for mapping_path in MAPPING_FILES:
         if not mapping_path.exists():
-            out(f"[SKIP] {mapping_path.name} — file not found")
+            out(f"[SKIP] {mapping_path.name}, file not found")
             out()
             continue
 

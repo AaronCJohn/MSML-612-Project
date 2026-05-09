@@ -117,7 +117,7 @@ def main():
     print(f"Downloaded: {downloaded}")
 
     if DRY_RUN:
-        print("\nDRY RUN ENABLED — no files downloaded.")
+        print("\nDRY RUN ENABLED, no files downloaded.")
     else:
         print("\nDownload complete.")
 

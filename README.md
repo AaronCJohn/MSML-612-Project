@@ -95,7 +95,7 @@ Training hyperparameters are stored in `model/train_config.json`. Each architect
 
 ### Evaluation
 
-`eval.py` evaluates checkpoints by generating images and comparing them against real Pokémon sprites using Inception V3 features. It computes three metrics: **FID** (Fréchet Inception Distance) measures how close the generated feature distribution is to the real one — lower is better; **KID** (Kernel Inception Distance) uses polynomial-kernel MMD over random subsets for a more robust distributional comparison — lower is better; **ID Distance** (Intra-class Distance) measures mean pairwise distance among generated features to quantify diversity — higher means less mode collapse. Results are saved as `metrics.json`, `metrics.csv`, and `metrics.png` per checkpoint group under `eval_outputs/`.
+`eval.py` evaluates checkpoints by generating images and comparing them against real Pokémon sprites using Inception V3 features. It computes three metrics: **FID** (Fréchet Inception Distance) measures how close the generated feature distribution is to the real one (lower is better), **KID** (Kernel Inception Distance) uses polynomial-kernel MMD over random subsets for a more robust distributional comparison (lower is better), **ID Distance** (Intra-class Distance) measures mean pairwise distance among generated features to quantify diversity (higher is better). Results are saved as `metrics.json`, `metrics.csv`, and `metrics.png` per checkpoint group under `eval_outputs/`.
 
 ```bash
 python eval.py                                                      # evaluate all checkpoint groups
@@ -132,8 +132,8 @@ Both architectures use a U-Net with sinusoidal time embeddings, residual blocks,
 
 The `submission/` folder contains the final deliverables for this project:
 
-- **final report.pdf** — Full project report covering motivation, methodology, architecture, training details, evaluation results, and analysis.
-- **slides.pdf** — Presentation slides summarizing the project.
+- **final report.pdf**: Full project report covering motivation, methodology, architecture, training details, evaluation results, and analysis.
+- **slides.pdf**: Presentation slides summarizing the project.
 
 ## Gemini Experiments
 

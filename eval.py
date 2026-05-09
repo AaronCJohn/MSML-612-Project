@@ -702,7 +702,7 @@ def main():
 
         ckpts = find_checkpoints(cfg.checkpoint_dir, args.epochs)
         if not ckpts:
-            print("No checkpoints found — skipping")
+            print("No checkpoints found, skipping")
             continue
 
         print(f"Checkpoints: {[e for e, _ in ckpts]}")

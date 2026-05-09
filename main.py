@@ -1,5 +1,5 @@
 """
-Pokémon Diffusion — unified entry point.
+Pokémon Diffusion, a unified entry point.
 
 Usage:
     
@@ -38,7 +38,7 @@ def main():
     base_p.add_argument(
         "--style", default="sprite",
         choices=["3d", "sprite"],
-        help="Art style — selects the baseline checkpoint  (default: sprite)",
+        help="Art style, selects the baseline checkpoint  (default: sprite)",
     )
 
     # Inference Conditional

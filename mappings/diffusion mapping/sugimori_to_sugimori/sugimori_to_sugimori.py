@@ -49,7 +49,7 @@ SKIP_STEMS = {
     "miraidon 2",
 }
 
-# Evolution.json names (lowercase) to skip entirely — no sprite files exist for these.
+# Evolution.json names (lowercase) to skip entirely, no sprite files exist for these.
 SKIP_POKEMON = {
     "cherrim-sunshine",
     "eternatus-eternamax",
@@ -214,7 +214,7 @@ def make_pairs(
         return pairs
 
     # If next has no base form at all (e.g. toxtricity only has "amped"/"low key"),
-    # strict matching can never succeed — treat as non-strict regardless.
+    # strict matching can never succeed, treat as non-strict regardless.
     effective_strict = strict and ("" in next_vmap)
 
     for variant_key, prev_img in prev_vmap.items():
@@ -227,7 +227,7 @@ def make_pairs(
                 "next_sprite": str(next_img.relative_to(repo_root)),
             })
         elif effective_strict:
-            continue  # no suffix match and strict — skip (e.g. Eevee Y → Espeon)
+            continue  # no suffix match and strict, skip (e.g. Eevee Y → Espeon)
         else:
             # Non-strict: map this prev image to ALL available next images.
             # This covers: regional form nexts (bergmite → avalugg hisui),

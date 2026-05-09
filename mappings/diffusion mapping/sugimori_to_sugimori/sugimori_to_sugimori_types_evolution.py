@@ -20,7 +20,7 @@ For each entry we add:
 Stages are derived from the `prev` / `next` edges in safe_sugimori_to_sugimori.json
 via a BFS starting at every `prev: null` entry (chain starts). Any pokemon not
 reachable that way is optionally looked up against the PokeAPI so nothing is
-silently dropped — network use is opt-in via --use-api.
+silently dropped, network use is opt-in via --use-api.
 
 Output
 --

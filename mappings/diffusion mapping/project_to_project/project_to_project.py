@@ -293,7 +293,7 @@ def main() -> None:
         if next_variant_str is not None:
             unresolved.append({
                 "prev": prev_name, "next": next_name,
-                "reason": f"next is regional form '{next_variant_str}' — variant number unknown",
+                "reason": f"next is regional form '{next_variant_str}', variant number unknown",
             })
             continue
 
@@ -327,7 +327,7 @@ def main() -> None:
         if prev_variant_str is not None:
             unresolved.append({
                 "prev": prev_name, "next": next_name,
-                "reason": f"prev is regional form '{prev_variant_str}' — variant number unknown",
+                "reason": f"prev is regional form '{prev_variant_str}', variant number unknown",
             })
             continue
 
