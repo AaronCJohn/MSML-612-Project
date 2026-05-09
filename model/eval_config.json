@@ -1,0 +1,49 @@
+{
+    "data_dir": "./poke-data",
+    "styles": [
+        "sprite",
+        "3d",
+        "sugimori"
+    ],
+    "output_dir": "./eval_outputs",
+    "img_size": 128,
+    "img_channels": 3,
+    "timesteps": 1000,
+    "ddim_steps": 100,
+    "n_samples": 2000,
+    "batch_size": 32,
+    "base_ch": 64,
+    "ch_mults": [
+        1,
+        2,
+        2,
+        4
+    ],
+    "num_res_blocks": 2,
+    "attn_resolutions": [
+        32,
+        16,
+        8
+    ],
+    "dropout": 0.1,
+    "num_types": 18,
+    "num_styles": 3,
+    "num_stages": 3,
+    "checkpoint_groups": {
+        "all_styles": {
+            "checkpoint_dir": "model/safe_checkpoints/all_styles",
+            "is_conditional": true,
+            "time_embed_dim": 256
+        },
+        "baseline_3d": {
+            "checkpoint_dir": "model/safe_checkpoints/baseline_3d",
+            "is_conditional": false,
+            "time_embed_dim": 128
+        },
+        "baseline_sprite": {
+            "checkpoint_dir": "model/safe_checkpoints/baseline_sprite",
+            "is_conditional": false,
+            "time_embed_dim": 128
+        }
+    }
+}

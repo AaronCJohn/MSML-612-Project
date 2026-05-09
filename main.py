@@ -10,12 +10,13 @@ Usage:
     Conditional Inference:
         python main.py inference conditional --type water --style sprite
         python main.py inference conditional --type grass poison --style 3d
+        python main.py inference conditional --type fire --style sprite --stage "evo 1"
 
     Train:
         python main.py train --arch conditional
         python main.py train --arch baseline
 
-Defaults (no arguments): inference conditional --type water --style sprite
+Defaults (no arguments): inference conditional --type water --style sprite --stage base
 """
 
 import argparse
@@ -51,6 +52,11 @@ def main():
         choices=["3d", "sugimori", "sprite"],
         help="Art style  (default: sprite)",
     )
+    cond_p.add_argument(
+        "--stage", default="base",
+        choices=["base", "evo 1", "evo 2"],
+        help="Evolution stage  (default: base)",
+    )
 
     # Train
     train_p = top.add_parser("train", help="Train a diffusion model")
@@ -74,7 +80,8 @@ def main():
         arch = args.arch or "conditional"
         gen_types = getattr(args, "type", ["water"])
         gen_style = getattr(args, "style", "sprite")
-        inference_main(arch=arch, gen_types=gen_types, gen_style=gen_style)
+        gen_stage = getattr(args, "stage", "base")
+        inference_main(arch=arch, gen_types=gen_types, gen_style=gen_style, gen_stage=gen_stage)
     else:
         parser.print_help()
 

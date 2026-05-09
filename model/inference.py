@@ -597,7 +597,7 @@ def run_baseline(model, ema, noise_schedule, device, cfg):
 
 # Config loading & CLI
 
-def load_config(arch, gen_types, gen_style):
+def load_config(arch, gen_types, gen_style, gen_stage="base"):
     with open(CONFIG_PATH) as f:
         all_cfg = json.load(f)
 
@@ -618,10 +618,11 @@ def load_config(arch, gen_types, gen_style):
     raw["attn_resolutions"] = tuple(raw["attn_resolutions"])
     raw["gen_types"] = gen_types
     raw["gen_style"] = gen_style
+    raw["stage"] = gen_stage
     return SimpleNamespace(**raw)
 
 
-def main(arch=None, gen_types=None, gen_style=None):
+def main(arch=None, gen_types=None, gen_style=None, gen_stage=None):
     if arch is None:
         p = argparse.ArgumentParser(
             description="Generate Pokémon images (params from inference_config.json)"
@@ -638,12 +639,20 @@ def main(arch=None, gen_types=None, gen_style=None):
             "--style", choices=ALL_STYLES, default="sprite",
             help="Art style (default: sprite)",
         )
+        p.add_argument(
+            "--stage", choices=["base", "evo 1", "evo 2"], default="base",
+            help="Evolution stage — used by conditional only (default: base)",
+        )
         cli = p.parse_args()
         arch = cli.arch
         gen_types = cli.type
         gen_style = cli.style
+        gen_stage = cli.stage
 
-    cfg = load_config(arch, gen_types, gen_style)
+    if gen_stage is None:
+        gen_stage = "base"
+
+    cfg = load_config(arch, gen_types, gen_style, gen_stage)
 
     if cfg.seed is not None:
         torch.manual_seed(cfg.seed)

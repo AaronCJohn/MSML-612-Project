@@ -6,3 +6,4 @@ pillow
 protobuf
 PyYAML
 tqdm
+scipy
